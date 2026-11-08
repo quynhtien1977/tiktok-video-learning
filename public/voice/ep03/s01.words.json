@@ -1,0 +1,202 @@
+[
+  {
+    "text": "Tập",
+    "startMs": 0,
+    "endMs": 240
+  },
+  {
+    "text": "trước",
+    "startMs": 240,
+    "endMs": 400
+  },
+  {
+    "text": "kết",
+    "startMs": 440,
+    "endMs": 560
+  },
+  {
+    "text": "thúc",
+    "startMs": 560,
+    "endMs": 720
+  },
+  {
+    "text": "ở",
+    "startMs": 720,
+    "endMs": 840
+  },
+  {
+    "text": "chỗ",
+    "startMs": 840,
+    "endMs": 1000
+  },
+  {
+    "text": "bộ",
+    "startMs": 1040,
+    "endMs": 1200
+  },
+  {
+    "text": "chuẩn",
+    "startMs": 1200,
+    "endMs": 1540
+  },
+  {
+    "text": "SOAP",
+    "startMs": 1540,
+    "endMs": 1880
+  },
+  {
+    "text": "và",
+    "startMs": 1880,
+    "endMs": 2120
+  },
+  {
+    "text": "WSDL",
+    "startMs": 2120,
+    "endMs": 3320
+  },
+  {
+    "text": "bị",
+    "startMs": 3320,
+    "endMs": 3480
+  },
+  {
+    "text": "chê",
+    "startMs": 3520,
+    "endMs": 3720
+  },
+  {
+    "text": "là",
+    "startMs": 3760,
+    "endMs": 3920
+  },
+  {
+    "text": "nặng.",
+    "startMs": 3920,
+    "endMs": 4120
+  },
+  {
+    "text": "Hôm",
+    "startMs": 4520,
+    "endMs": 4640
+  },
+  {
+    "text": "nay",
+    "startMs": 4640,
+    "endMs": 4800
+  },
+  {
+    "text": "là",
+    "startMs": 4800,
+    "endMs": 4920
+  },
+  {
+    "text": "cách",
+    "startMs": 4920,
+    "endMs": 5080
+  },
+  {
+    "text": "làm",
+    "startMs": 5120,
+    "endMs": 5320
+  },
+  {
+    "text": "thay",
+    "startMs": 5320,
+    "endMs": 5480
+  },
+  {
+    "text": "thế,",
+    "startMs": 5480,
+    "endMs": 6000
+  },
+  {
+    "text": "nhẹ",
+    "startMs": 6000,
+    "endMs": 6160
+  },
+  {
+    "text": "hơn",
+    "startMs": 6240,
+    "endMs": 6360
+  },
+  {
+    "text": "hẳn,",
+    "startMs": 6400,
+    "endMs": 6600
+  },
+  {
+    "text": "và",
+    "startMs": 7120,
+    "endMs": 7240
+  },
+  {
+    "text": "cũng",
+    "startMs": 7240,
+    "endMs": 7360
+  },
+  {
+    "text": "là",
+    "startMs": 7360,
+    "endMs": 7480
+  },
+  {
+    "text": "cách",
+    "startMs": 7480,
+    "endMs": 7760
+  },
+  {
+    "text": "mà",
+    "startMs": 7760,
+    "endMs": 7920
+  },
+  {
+    "text": "gần",
+    "startMs": 7960,
+    "endMs": 8120
+  },
+  {
+    "text": "như",
+    "startMs": 8120,
+    "endMs": 8280
+  },
+  {
+    "text": "mọi",
+    "startMs": 8280,
+    "endMs": 8560
+  },
+  {
+    "text": "API",
+    "startMs": 8640,
+    "endMs": 9120
+  },
+  {
+    "text": "bạn",
+    "startMs": 9240,
+    "endMs": 9360
+  },
+  {
+    "text": "gọi",
+    "startMs": 9400,
+    "endMs": 9560
+  },
+  {
+    "text": "hằng",
+    "startMs": 9560,
+    "endMs": 9720
+  },
+  {
+    "text": "ngày",
+    "startMs": 9720,
+    "endMs": 9960
+  },
+  {
+    "text": "đang",
+    "startMs": 9960,
+    "endMs": 10080
+  },
+  {
+    "text": "dùng.",
+    "startMs": 10080,
+    "endMs": 10575
+  }
+]

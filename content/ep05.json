@@ -1,0 +1,268 @@
+{
+  "id": "ep05",
+  "episodeNumber": 5,
+  "seriesTitle": "Service-oriented Software Engineering",
+  "title": "Thiết kế interface và triển khai service",
+  "voice": {
+    "provider": "azure",
+    "name": "vi-VN-Grant:MAI-Voice-2.1",
+    "style": "educational",
+    "rate": "+18%"
+  },
+  "voices": {
+    "host": {
+      "provider": "azure",
+      "name": "vi-VN-Grant:MAI-Voice-2.1",
+      "style": "educational",
+      "rate": "+18%"
+    },
+    "ask": {
+      "provider": "gemini",
+      "name": "aoede",
+      "style": "curious student interrupting the lecture politely, warm and a little playful"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "title",
+      "part": 1,
+      "title": "Thiết kế interface và triển khai",
+      "subtitle": "Chapter 18 · Tập 5 / 6 — service engineering phần hai",
+      "narration": "Tập trước chúng ta dừng ở sáu operation của catalog service. Hôm nay biến chúng thành một interface thật, rồi mang service đi triển khai."
+    },
+    {
+      "id": "s02",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Hai nguyên tắc chi phối",
+      "bullets": [
+        "Giảm tối đa số message cho một lần phục vụ",
+        "Service không giữ state thì state phải nằm trong message",
+        "Message càng ít, chi phí mạng càng thấp"
+      ],
+      "cues": [
+        "giảm",
+        "state",
+        "Hai nguyên tắc"
+      ],
+      "narration": "Thiết kế interface cho service bị chi phối bởi hai nguyên tắc mà thiết kế hàm trong một chương trình không có. Thứ nhất, giảm tối đa số message cần trao đổi để hoàn thành một yêu cầu, vì mỗi message là một vòng đi về qua mạng. Thứ hai, nếu service không giữ state thì thông tin state phải được nhét vào trong chính message. Hai nguyên tắc này khiến interface của service thường thô hơn interface của một lớp."
+    },
+    {
+      "id": "s02b",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Vì sao interface service thô hơn interface lớp",
+      "bullets": [
+        "Gọi một hàm trong máy tốn micro giây, gọi service tốn mili giây",
+        "Nên gom nhiều việc vào một lời gọi thay vì chia nhỏ",
+        "Interface service thường ít operation nhưng mỗi cái làm nhiều hơn"
+      ],
+      "cues": [
+        "micro",
+        "gom",
+        "Kết quả"
+      ],
+      "narration": "Hiểu vì sao hai nguyên tắc đó tồn tại thì mới thiết kế đúng. Gọi một hàm bên trong chương trình tốn cỡ micro giây. Gọi một service qua mạng tốn cỡ mili giây, chậm hơn cả nghìn lần, chưa kể có thể rớt mạng. Nên thay vì chia nhỏ thành nhiều lời gọi như khi thiết kế lớp, bạn gom nhiều việc vào một lời gọi. Kết quả là interface của service thường có ít operation hơn, nhưng mỗi operation làm nhiều việc hơn."
+    },
+    {
+      "id": "s03",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Ba bước thiết kế",
+      "bullets": [
+        "Logical interface design — tên operation, tham số, exception",
+        "Message design cho SOAP — vẽ bằng UML rồi sinh ra WSDL",
+        "Interface design cho REST — ánh xạ sang resource và HTTP verb"
+      ],
+      "cues": [
+        "logical",
+        "SOAP",
+        "REST"
+      ],
+      "narration": "Quy trình gồm ba bước. Bước một là logical interface design: xuất phát từ yêu cầu, đặt tên operation, xác định tham số, và đừng quên định nghĩa exception. Bước hai, nếu làm theo hướng SOAP thì thiết kế cấu trúc message, thường vẽ bằng UML cho dễ nhìn rồi mới chuyển thành WSDL. Bước ba, nếu làm theo hướng REST thì ánh xạ các operation đó sang resource và HTTP verb."
+    },
+    {
+      "id": "s04",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Ba operation đầu của catalog",
+      "bullets": [
+        "MakeCatalog — vào: mã công ty và cờ PDF; ra: URL catalog",
+        "Lookup — vào: URL catalog và mã mục; ra: URL trang thông tin",
+        "Search — vào: URL catalog và chuỗi tìm kiếm; ra: URL trang kết quả"
+      ],
+      "cues": [
+        "MakeCatalog",
+        "Lookup",
+        "Search"
+      ],
+      "narration": "Xem ba operation đầu được thiết kế ra sao. MakeCatalog nhận vào mã công ty và một cờ cho biết có cần bản PDF không, trả về URL của bản catalog riêng cho công ty đó, và có fault khi mã công ty không hợp lệ. Lookup nhận URL catalog cùng mã mục, trả về URL của trang chứa thông tin mục đó. Search nhận URL catalog và chuỗi tìm kiếm, trả về URL trang kết quả, fault khi chuỗi tìm kiếm sai cú pháp."
+    },
+    {
+      "id": "s05",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Ba operation còn lại",
+      "bullets": [
+        "Compare — tối đa sáu đặc tính của tối đa bốn mục",
+        "CheckDelivery — trả về ngày giao dự kiến",
+        "MakeVirtualOrder — giữ hàng và trả về giá ước tính"
+      ],
+      "cues": [
+        "Compare",
+        "CheckDelivery",
+        "MakeVirtualOrder"
+      ],
+      "narration": "Ba operation còn lại phức tạp hơn. Compare nhận URL catalog, tối đa sáu đặc tính cần so và tối đa bốn mã mục, trả về URL của trang bảng so sánh. Nó có tới ba loại fault. CheckDelivery nhận mã công ty, mã mục và số lượng, trả về ngày giao dự kiến, fault khi hết hàng hoặc khi số lượng bằng không. MakeVirtualOrder giữ hàng lại và trả về cả số lượng, ngày giao, đơn giá lẫn tổng giá ước tính."
+    },
+    {
+      "id": "s06",
+      "type": "image",
+      "part": 2,
+      "src": "images/ch18/slide51-image9.png",
+      "caption": "Hình trong slide 51 — message vào và ra vẽ bằng UML",
+      "narration": "Đây là cách giáo trình vẽ cấu trúc message bằng UML. Mỗi message vào và ra là một khối có các trường rõ ràng. Vẽ ở mức này dễ nhìn và dễ sửa hơn nhiều so với ngồi viết XML, rồi từ bản vẽ này mới sinh ra tài liệu WSDL."
+    },
+    {
+      "id": "s07",
+      "type": "question",
+      "part": 2,
+      "speaker": "ask",
+      "question": "Cùng service đó mà làm kiểu REST thì khác gì?",
+      "narration": "Em thắc mắc <short pause> cùng một catalog service đó, nếu làm theo kiểu REST thì interface sẽ khác thế nào?"
+    },
+    {
+      "id": "s08",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Bản REST của catalog",
+      "bullets": [
+        "Catalog của mỗi công ty là một resource, tạo bằng POST",
+        "Mỗi mục có URL riêng, lấy bằng GET",
+        "Search là GET kèm chuỗi tìm kiếm làm query parameter"
+      ],
+      "cues": [
+        "POST",
+        "GET",
+        "Search"
+      ],
+      "narration": "Khác khá nhiều. Catalog riêng của mỗi công ty trở thành một resource, có URL dạng catalog gốc gạch tên công ty, và được tạo bằng POST. Mỗi mục trong catalog lại là một resource con, có URL riêng, lấy về bằng GET. Lookup biến mất, nó chính là GET trên URL của mục. Search cũng là GET trên URL catalog, với chuỗi tìm kiếm làm query parameter, và trả về danh sách URL của các mục khớp."
+    },
+    {
+      "id": "s09",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Chỗ REST phải tách nhiều bước",
+      "bullets": [
+        "Compare thành chuỗi GET, rồi POST tạo bảng, rồi GET lấy bảng",
+        "CheckDelivery và MakeVirtualOrder cần thêm resource virtual order",
+        "Một operation SOAP có thể thành ba bốn bước REST"
+      ],
+      "cues": [
+        "Compare",
+        "virtual order",
+        "bước"
+      ],
+      "narration": "Và đây là điểm đáng nhớ nhất của tập này. Compare không ánh xạ gọn được. Nó phải thành một chuỗi GET để lấy từng mục, rồi một POST để tạo ra bảng so sánh như một resource mới, rồi một GET nữa để lấy bảng đó về. Tương tự, CheckDelivery và MakeVirtualOrder đòi thêm hẳn một resource mới tên là virtual order. Nói cách khác, một operation trong SOAP có thể phải tách thành ba bốn bước trong REST."
+    },
+    {
+      "id": "s09b",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Bài học rút ra từ chỗ đó",
+      "bullets": [
+        "Không phải service nào cũng hợp với REST",
+        "Thao tác mang tính hành động thì SOAP diễn đạt gọn hơn",
+        "Chọn lối kỹ thuật sau khi đã có logical interface, không chọn trước"
+      ],
+      "cues": [
+        "Không phải",
+        "hành động",
+        "Bài học"
+      ],
+      "narration": "Chỗ Compare phải tách nhiều bước cho ta một bài học quan trọng. Không phải service nào cũng hợp với REST. Những thao tác mang tính hành động, kiểu tính toán rồi trả kết quả, thì SOAP diễn đạt gọn hơn vì nó vốn nghĩ theo lời gọi thủ tục. Bài học thực hành là: hãy làm logical interface trước, rồi mới nhìn vào đó mà quyết định đi theo SOAP hay REST. Chọn lối kỹ thuật trước rồi mới thiết kế là làm ngược."
+    },
+    {
+      "id": "s10",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Triển khai",
+      "bullets": [
+        "Viết bằng ngôn ngữ thường hoặc bằng workflow language",
+        "Test bằng cách bơm message vào và so message ra",
+        "Deploy là publish thông tin và cài lên web server"
+      ],
+      "cues": [
+        "ngôn ngữ",
+        "test",
+        "deploy"
+      ],
+      "narration": "Sang giai đoạn triển khai. Service được viết bằng một ngôn ngữ lập trình thường, hoặc bằng một workflow language nếu nó chủ yếu là điều phối. Việc test khá đặc thù: bạn tạo message đầu vào rồi kiểm tra message đầu ra có đúng như kỳ vọng không, chứ không gọi hàm trực tiếp. Còn deploy gồm hai phần, publicise tức công bố thông tin cho người ta tìm thấy, và cài đặt lên web server."
+    },
+    {
+      "id": "s11",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Bọc hệ thống cũ thành service",
+      "bullets": [
+        "Legacy system có sẵn rất nhiều chức năng",
+        "Chỉ cần viết một lớp service interface bọc bên ngoài",
+        "Giữ được đầu tư cũ, chi phí thấp hơn viết lại"
+      ],
+      "cues": [
+        "legacy",
+        "bọc",
+        "đầu tư"
+      ],
+      "narration": "Có một cách làm service rẻ mà giáo trình nhấn mạnh: bọc hệ thống cũ. Legacy system thường đã chứa rất nhiều chức năng chạy ổn định nhiều năm. Thay vì viết lại từ đầu, bạn chỉ cần viết một lớp service interface bọc bên ngoài nó. Ứng dụng mới gọi vào lớp đó, còn bên trong vẫn là hệ thống cũ. Vừa giữ được đầu tư đã bỏ ra, vừa rẻ hơn nhiều so với viết lại."
+    },
+    {
+      "id": "s11b",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Bọc legacy có cái giá của nó",
+      "bullets": [
+        "Hệ cũ chậm thì service mới cũng chậm theo",
+        "Mô hình dữ liệu cũ nhiều khi không khớp interface muốn có",
+        "Nhưng vẫn rẻ hơn viết lại, nên thực tế rất hay dùng"
+      ],
+      "cues": [
+        "chậm",
+        "mô hình",
+        "rẻ hơn"
+      ],
+      "narration": "Nói công bằng thì bọc legacy cũng có cái giá. Hệ thống cũ chạy chậm thì service bọc ngoài cũng chậm theo, bạn không thể nhanh hơn thứ nằm bên dưới. Mô hình dữ liệu cũ nhiều khi không khớp với interface bạn muốn phơi ra, nên lớp bọc phải làm thêm việc chuyển đổi. Dù vậy, so với viết lại cả hệ thống thì nó vẫn rẻ hơn nhiều, nên trong thực tế đây là cách rất hay gặp, nhất là ở ngân hàng và cơ quan nhà nước."
+    },
+    {
+      "id": "s12",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Bản mô tả service cần gì để người lạ dám dùng",
+      "bullets": [
+        "Thông tin doanh nghiệp và liên hệ — vấn đề niềm tin",
+        "Mô tả chức năng bằng lời, để người ta biết có đúng thứ cần không",
+        "Hướng dẫn dùng, và thông tin đăng ký nhận cập nhật"
+      ],
+      "cues": [
+        "doanh nghiệp",
+        "chức năng",
+        "đăng ký"
+      ],
+      "narration": "Cuối cùng là bản mô tả service, và đây là phần nhiều người bỏ quên. Nó phải có thông tin doanh nghiệp và liên hệ, vì đây là vấn đề niềm tin: người dùng phải tin rằng service của bạn không làm điều xấu. Phải có mô tả chức năng bằng lời, để người ta biết đây có đúng thứ họ cần hay không. Phải có hướng dẫn sử dụng cho cả SOAP lẫn REST. Và phải có thông tin đăng ký, để người dùng nhận được thông báo khi service thay đổi."
+    },
+    {
+      "id": "s13",
+      "type": "outro",
+      "part": 3,
+      "heading": "Ba ý cần nhớ",
+      "points": [
+        "Giảm số message và nhét state vào message là hai ràng buộc riêng của service",
+        "Thiết kế đi từ logical interface rồi mới xuống SOAP hoặc REST",
+        "Một operation SOAP có thể phải tách thành nhiều bước REST"
+      ],
+      "next": "Tập 6 — Ghép service thành hệ thống, và vì sao test rất khó",
+      "narration": "Tóm lại ba ý. Hai ràng buộc riêng của service là giảm số message và nhét state vào trong message. Thiết kế luôn đi từ logical interface rồi mới xuống bản cụ thể cho SOAP hoặc REST. Và điểm hay ra đề: một operation trong SOAP có thể phải tách thành nhiều bước trong REST, như trường hợp Compare. Tập cuối, chúng ta ghép các service lại thành hệ thống, và xem vì sao việc test lại khó tới vậy."
+    }
+  ]
+}

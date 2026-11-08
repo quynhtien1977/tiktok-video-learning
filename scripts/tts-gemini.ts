@@ -170,9 +170,15 @@ const callGateway = async (key: Key, text: string, voice: string): Promise<Synth
 /** Thử lần lượt từng key: free trước, hết lượt thì sang key kế, hết cả thì sang trả tiền. */
 const synth = async (keys: Key[], text: string, voice: string, style: string): Promise<Synth> => {
   let lastErr: Error | null = null;
+  // --paid / --free: ép cả tập chạy trên cùng một tầng. Trộn hai tầng nghĩa là trộn
+  // hai model (3.8 trực tiếp vs 3.1 qua gateway), nghe sẽ không đồng nhất.
+  const onlyPaid = hasFlag("paid");
+  const onlyFree = hasFlag("free");
 
   for (const key of keys) {
     if (key.exhausted) continue;
+    if (onlyPaid && key.kind !== "gateway") continue;
+    if (onlyFree && key.kind !== "direct") continue;
 
     for (let attempt = 0; attempt < 3; attempt++) {
       const wait = key.lastCallAt + MIN_GAP_MS - Date.now();
@@ -277,6 +283,17 @@ const main = async () => {
       unlinkSync(wav);
     } else {
       writeFileSync(mp3, out.audio);
+    }
+
+    // Gateway bỏ qua style nên không chỉ đạo được nhịp đọc -> chỉnh bằng ffmpeg atempo
+    const speed = Number(resolved.speed ?? 1);
+    if (Math.abs(speed - 1) > 1e-3) {
+      const sp = mp3.replace(/\.mp3$/, ".sp.mp3");
+      execFileSync("ffmpeg", [
+        "-y", "-hide_banner", "-loglevel", "error", "-i", mp3,
+        "-filter:a", `atempo=${speed}`, "-c:a", "libmp3lame", "-b:a", "128k", sp,
+      ]);
+      renameSync(sp, mp3);
     }
 
     // Cắt khoảng lặng thừa hai đầu, giống đường Azure

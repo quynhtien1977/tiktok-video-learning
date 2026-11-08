@@ -1,0 +1,307 @@
+[
+  {
+    "text": "Phần",
+    "startMs": 0,
+    "endMs": 160
+  },
+  {
+    "text": "what,",
+    "startMs": 320,
+    "endMs": 680
+  },
+  {
+    "text": "giáo",
+    "startMs": 680,
+    "endMs": 880
+  },
+  {
+    "text": "trình",
+    "startMs": 880,
+    "endMs": 1120
+  },
+  {
+    "text": "gọi",
+    "startMs": 1120,
+    "endMs": 1240
+  },
+  {
+    "text": "là",
+    "startMs": 1240,
+    "endMs": 1440
+  },
+  {
+    "text": "interface,",
+    "startMs": 1440,
+    "endMs": 2160
+  },
+  {
+    "text": "liệt",
+    "startMs": 2160,
+    "endMs": 2360
+  },
+  {
+    "text": "kê",
+    "startMs": 2400,
+    "endMs": 2600
+  },
+  {
+    "text": "các",
+    "startMs": 2640,
+    "endMs": 2880
+  },
+  {
+    "text": "operation",
+    "startMs": 2880,
+    "endMs": 3360
+  },
+  {
+    "text": "mà",
+    "startMs": 3360,
+    "endMs": 3520
+  },
+  {
+    "text": "service",
+    "startMs": 3600,
+    "endMs": 4080
+  },
+  {
+    "text": "hỗ",
+    "startMs": 4080,
+    "endMs": 4240
+  },
+  {
+    "text": "trợ.",
+    "startMs": 4240,
+    "endMs": 4360
+  },
+  {
+    "text": "Với",
+    "startMs": 4680,
+    "endMs": 4800
+  },
+  {
+    "text": "mỗi",
+    "startMs": 4840,
+    "endMs": 5040
+  },
+  {
+    "text": "operation",
+    "startMs": 5120,
+    "endMs": 5480
+  },
+  {
+    "text": "nó",
+    "startMs": 5480,
+    "endMs": 5640
+  },
+  {
+    "text": "định",
+    "startMs": 5680,
+    "endMs": 5880
+  },
+  {
+    "text": "nghĩa",
+    "startMs": 5880,
+    "endMs": 6200
+  },
+  {
+    "text": "message",
+    "startMs": 6200,
+    "endMs": 6280
+  },
+  {
+    "text": "gửi",
+    "startMs": 6720,
+    "endMs": 6880
+  },
+  {
+    "text": "vào",
+    "startMs": 6920,
+    "endMs": 7080
+  },
+  {
+    "text": "và",
+    "startMs": 7200,
+    "endMs": 7360
+  },
+  {
+    "text": "message",
+    "startMs": 7440,
+    "endMs": 7760
+  },
+  {
+    "text": "nhận",
+    "startMs": 7760,
+    "endMs": 7920
+  },
+  {
+    "text": "về.",
+    "startMs": 7960,
+    "endMs": 8560
+  },
+  {
+    "text": "Và",
+    "startMs": 8720,
+    "endMs": 8840
+  },
+  {
+    "text": "quan",
+    "startMs": 8840,
+    "endMs": 8960
+  },
+  {
+    "text": "trọng,",
+    "startMs": 8960,
+    "endMs": 9400
+  },
+  {
+    "text": "nó",
+    "startMs": 9400,
+    "endMs": 9560
+  },
+  {
+    "text": "khai",
+    "startMs": 9600,
+    "endMs": 9800
+  },
+  {
+    "text": "báo",
+    "startMs": 9840,
+    "endMs": 10080
+  },
+  {
+    "text": "luôn",
+    "startMs": 10080,
+    "endMs": 10200
+  },
+  {
+    "text": "cả",
+    "startMs": 10240,
+    "endMs": 10360
+  },
+  {
+    "text": "lỗi",
+    "startMs": 10400,
+    "endMs": 10640
+  },
+  {
+    "text": "có",
+    "startMs": 10640,
+    "endMs": 10760
+  },
+  {
+    "text": "thể",
+    "startMs": 10760,
+    "endMs": 10840
+  },
+  {
+    "text": "xảy",
+    "startMs": 10880,
+    "endMs": 11040
+  },
+  {
+    "text": "ra,",
+    "startMs": 11040,
+    "endMs": 11440
+  },
+  {
+    "text": "gọi",
+    "startMs": 11480,
+    "endMs": 11640
+  },
+  {
+    "text": "là",
+    "startMs": 11640,
+    "endMs": 11760
+  },
+  {
+    "text": "fault.",
+    "startMs": 11760,
+    "endMs": 12440
+  },
+  {
+    "text": "Thiếu",
+    "startMs": 12440,
+    "endMs": 12640
+  },
+  {
+    "text": "phần",
+    "startMs": 12680,
+    "endMs": 12840
+  },
+  {
+    "text": "fault",
+    "startMs": 12840,
+    "endMs": 13320
+  },
+  {
+    "text": "là",
+    "startMs": 13320,
+    "endMs": 13480
+  },
+  {
+    "text": "bên",
+    "startMs": 13480,
+    "endMs": 13680
+  },
+  {
+    "text": "gọi",
+    "startMs": 13720,
+    "endMs": 14000
+  },
+  {
+    "text": "không",
+    "startMs": 14000,
+    "endMs": 14120
+  },
+  {
+    "text": "biết",
+    "startMs": 14120,
+    "endMs": 14280
+  },
+  {
+    "text": "xử",
+    "startMs": 14280,
+    "endMs": 14440
+  },
+  {
+    "text": "lý",
+    "startMs": 14440,
+    "endMs": 14600
+  },
+  {
+    "text": "thế",
+    "startMs": 14680,
+    "endMs": 14800
+  },
+  {
+    "text": "nào",
+    "startMs": 14800,
+    "endMs": 15080
+  },
+  {
+    "text": "khi",
+    "startMs": 15200,
+    "endMs": 15360
+  },
+  {
+    "text": "service",
+    "startMs": 15440,
+    "endMs": 15760
+  },
+  {
+    "text": "trả",
+    "startMs": 15760,
+    "endMs": 15920
+  },
+  {
+    "text": "về",
+    "startMs": 15920,
+    "endMs": 16080
+  },
+  {
+    "text": "lỗi.",
+    "startMs": 16120,
+    "endMs": 16560
+  }
+]

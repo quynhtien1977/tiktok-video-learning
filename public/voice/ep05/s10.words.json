@@ -1,0 +1,387 @@
+[
+  {
+    "text": "Sang",
+    "startMs": 120,
+    "endMs": 360
+  },
+  {
+    "text": "giai",
+    "startMs": 400,
+    "endMs": 520
+  },
+  {
+    "text": "đoạn",
+    "startMs": 520,
+    "endMs": 760
+  },
+  {
+    "text": "triển",
+    "startMs": 760,
+    "endMs": 960
+  },
+  {
+    "text": "khai.",
+    "startMs": 960,
+    "endMs": 1560
+  },
+  {
+    "text": "Service",
+    "startMs": 1560,
+    "endMs": 1960
+  },
+  {
+    "text": "được",
+    "startMs": 1960,
+    "endMs": 2120
+  },
+  {
+    "text": "viết",
+    "startMs": 2120,
+    "endMs": 2400
+  },
+  {
+    "text": "bằng",
+    "startMs": 2400,
+    "endMs": 2560
+  },
+  {
+    "text": "một",
+    "startMs": 2560,
+    "endMs": 2720
+  },
+  {
+    "text": "ngôn",
+    "startMs": 2720,
+    "endMs": 2880
+  },
+  {
+    "text": "ngữ",
+    "startMs": 2880,
+    "endMs": 3160
+  },
+  {
+    "text": "lập",
+    "startMs": 3160,
+    "endMs": 3320
+  },
+  {
+    "text": "trình",
+    "startMs": 3360,
+    "endMs": 3600
+  },
+  {
+    "text": "thường,",
+    "startMs": 3600,
+    "endMs": 3920
+  },
+  {
+    "text": "hoặc",
+    "startMs": 3920,
+    "endMs": 4080
+  },
+  {
+    "text": "bằng",
+    "startMs": 4120,
+    "endMs": 4240
+  },
+  {
+    "text": "một",
+    "startMs": 4240,
+    "endMs": 4480
+  },
+  {
+    "text": "workflow",
+    "startMs": 4480,
+    "endMs": 5080
+  },
+  {
+    "text": "language",
+    "startMs": 5080,
+    "endMs": 5680
+  },
+  {
+    "text": "nếu",
+    "startMs": 5680,
+    "endMs": 5800
+  },
+  {
+    "text": "nó",
+    "startMs": 5840,
+    "endMs": 6000
+  },
+  {
+    "text": "chủ",
+    "startMs": 6040,
+    "endMs": 6160
+  },
+  {
+    "text": "yếu",
+    "startMs": 6160,
+    "endMs": 6400
+  },
+  {
+    "text": "là",
+    "startMs": 6400,
+    "endMs": 6520
+  },
+  {
+    "text": "điều",
+    "startMs": 6560,
+    "endMs": 6760
+  },
+  {
+    "text": "phối.",
+    "startMs": 6840,
+    "endMs": 7200
+  },
+  {
+    "text": "Việc",
+    "startMs": 7320,
+    "endMs": 7480
+  },
+  {
+    "text": "test",
+    "startMs": 7600,
+    "endMs": 7920
+  },
+  {
+    "text": "khá",
+    "startMs": 7920,
+    "endMs": 8120
+  },
+  {
+    "text": "đặc",
+    "startMs": 8160,
+    "endMs": 8360
+  },
+  {
+    "text": "thù:",
+    "startMs": 8400,
+    "endMs": 8720
+  },
+  {
+    "text": "bạn",
+    "startMs": 8920,
+    "endMs": 9080
+  },
+  {
+    "text": "tạo",
+    "startMs": 9120,
+    "endMs": 9280
+  },
+  {
+    "text": "message",
+    "startMs": 9400,
+    "endMs": 9720
+  },
+  {
+    "text": "đầu",
+    "startMs": 9800,
+    "endMs": 9960
+  },
+  {
+    "text": "vào",
+    "startMs": 10000,
+    "endMs": 10600
+  },
+  {
+    "text": "rồi",
+    "startMs": 10760,
+    "endMs": 10920
+  },
+  {
+    "text": "kiểm",
+    "startMs": 10960,
+    "endMs": 11080
+  },
+  {
+    "text": "tra",
+    "startMs": 11080,
+    "endMs": 11360
+  },
+  {
+    "text": "message",
+    "startMs": 11360,
+    "endMs": 11480
+  },
+  {
+    "text": "đầu",
+    "startMs": 11640,
+    "endMs": 11760
+  },
+  {
+    "text": "ra",
+    "startMs": 11840,
+    "endMs": 12160
+  },
+  {
+    "text": "có",
+    "startMs": 12240,
+    "endMs": 12400
+  },
+  {
+    "text": "đúng",
+    "startMs": 12400,
+    "endMs": 12560
+  },
+  {
+    "text": "như",
+    "startMs": 12560,
+    "endMs": 12680
+  },
+  {
+    "text": "kỳ",
+    "startMs": 12720,
+    "endMs": 12920
+  },
+  {
+    "text": "vọng",
+    "startMs": 12920,
+    "endMs": 13040
+  },
+  {
+    "text": "không,",
+    "startMs": 13160,
+    "endMs": 13680
+  },
+  {
+    "text": "chứ",
+    "startMs": 13680,
+    "endMs": 13680
+  },
+  {
+    "text": "không",
+    "startMs": 13680,
+    "endMs": 13920
+  },
+  {
+    "text": "gọi",
+    "startMs": 13920,
+    "endMs": 14080
+  },
+  {
+    "text": "hàm",
+    "startMs": 14120,
+    "endMs": 14400
+  },
+  {
+    "text": "trực",
+    "startMs": 14400,
+    "endMs": 14480
+  },
+  {
+    "text": "tiếp.",
+    "startMs": 14480,
+    "endMs": 14640
+  },
+  {
+    "text": "Còn",
+    "startMs": 14840,
+    "endMs": 15120
+  },
+  {
+    "text": "deploy",
+    "startMs": 15120,
+    "endMs": 15720
+  },
+  {
+    "text": "gồm",
+    "startMs": 15720,
+    "endMs": 15920
+  },
+  {
+    "text": "hai",
+    "startMs": 15920,
+    "endMs": 16040
+  },
+  {
+    "text": "phần,",
+    "startMs": 16040,
+    "endMs": 16480
+  },
+  {
+    "text": "publicise",
+    "startMs": 16480,
+    "endMs": 17320
+  },
+  {
+    "text": "tức",
+    "startMs": 17320,
+    "endMs": 17520
+  },
+  {
+    "text": "công",
+    "startMs": 17600,
+    "endMs": 17720
+  },
+  {
+    "text": "bố",
+    "startMs": 17760,
+    "endMs": 18000
+  },
+  {
+    "text": "thông",
+    "startMs": 18000,
+    "endMs": 18080
+  },
+  {
+    "text": "tin",
+    "startMs": 18080,
+    "endMs": 18320
+  },
+  {
+    "text": "cho",
+    "startMs": 18320,
+    "endMs": 18440
+  },
+  {
+    "text": "người",
+    "startMs": 18440,
+    "endMs": 18560
+  },
+  {
+    "text": "ta",
+    "startMs": 18560,
+    "endMs": 18680
+  },
+  {
+    "text": "tìm",
+    "startMs": 18680,
+    "endMs": 18800
+  },
+  {
+    "text": "thấy,",
+    "startMs": 18840,
+    "endMs": 19480
+  },
+  {
+    "text": "và",
+    "startMs": 19520,
+    "endMs": 19640
+  },
+  {
+    "text": "cài",
+    "startMs": 19680,
+    "endMs": 19840
+  },
+  {
+    "text": "đặt",
+    "startMs": 19840,
+    "endMs": 20080
+  },
+  {
+    "text": "lên",
+    "startMs": 20080,
+    "endMs": 20240
+  },
+  {
+    "text": "web",
+    "startMs": 20320,
+    "endMs": 20600
+  },
+  {
+    "text": "server.",
+    "startMs": 20640,
+    "endMs": 20920
+  }
+]

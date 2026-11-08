@@ -367,8 +367,89 @@ const RestVerbs: React.FC<DiagramProps> = ({ durationInFrames, cues }) => {
   );
 };
 
+/** Slide 36 — ba giai đoạn của service engineering. */
+const ServiceProcess: React.FC<DiagramProps> = ({ durationInFrames, vertical, cues }) => {
+  const s = useSteps(3, durationInFrames, cues);
+  const steps: [string, string][] = [
+    ["Candidate identification", "nghiệp vụ nào đáng thành service"],
+    ["Service design", "interface logic, rồi SOAP và REST"],
+    ["Implementation & deployment", "viết, test, publish lên server"],
+  ];
+  if (vertical) {
+    return (
+      <svg viewBox="0 0 900 820" style={{ width: "100%", height: "100%", display: "block" }}>
+        {steps.map(([t, sub], i) => (
+          <g key={t}>
+            <Node x={450} y={110 + i * 290} w={760} h={120} title={t} sub={sub} t={s(i)}
+              tone={i === 1 ? "accent" : "ink"} />
+            {i < 2 ? <Arrow from={[450, 180 + i * 290]} to={[450, 330 + i * 290]} t={s(i + 1)} /> : null}
+          </g>
+        ))}
+      </svg>
+    );
+  }
+  return (
+    <svg viewBox="0 0 1280 320" style={{ width: "100%", height: "100%", display: "block" }}>
+      {steps.map(([t, sub], i) => (
+        <g key={t}>
+          <Node x={215 + i * 425} w={380} y={160} h={120} title={t} sub={sub} t={s(i)}
+            tone={i === 1 ? "accent" : "ink"} />
+          {i < 2 ? <Arrow from={[410 + i * 425, 160]} to={[600 + i * 425, 160]} t={s(i + 1)} /> : null}
+        </g>
+      ))}
+    </svg>
+  );
+};
+
+/** Slide 38–40 — ba loại service nhân hai trục task / entity. */
+const ServiceMatrix: React.FC<DiagramProps> = ({ durationInFrames, vertical, cues }) => {
+  const s = useSteps(4, durationInFrames, cues);
+  const cols = ["Utility", "Business", "Coordination"];
+  const rows: [string, string[]][] = [
+    ["Task", ["Currency converter", "Validate claim form", "Process expense claim"]],
+    ["Entity", ["Web form to XML", "Student application form", "—"]],
+  ];
+  const W = vertical ? 900 : 1240;
+  const colW = (W - 150) / 3;
+  return (
+    <svg viewBox={`0 0 ${W} 460`} style={{ width: "100%", height: "100%", display: "block" }}>
+      {cols.map((c, i) => (
+        <text key={c} x={150 + colW * i + colW / 2} y={48} textAnchor="middle" opacity={s(0)}
+          fontFamily={theme.fontFamily} fontSize={26} fontWeight={700} fill={theme.accent}>
+          {c}
+        </text>
+      ))}
+      {rows.map(([label, cells], r) => (
+        <g key={label}>
+          <text x={16} y={160 + r * 160} opacity={s(r + 1)} fontFamily={theme.fontFamily}
+            fontSize={26} fontWeight={700} fill={theme.ink}>
+            {label}
+          </text>
+          {cells.map((cell, i) => (
+            <g key={i} opacity={s(r + 1)}>
+              <rect x={150 + colW * i + 8} y={100 + r * 160} width={colW - 16} height={110} rx={12}
+                fill={cell === "—" ? "transparent" : theme.paper}
+                stroke={cell === "—" ? theme.rule : theme.ink} strokeWidth={cell === "—" ? 1.5 : 2}
+                strokeDasharray={cell === "—" ? "6 6" : undefined} />
+              <text x={150 + colW * i + colW / 2} y={162 + r * 160} textAnchor="middle"
+                fontFamily={theme.fontFamily} fontSize={22} fill={theme.ink}>
+                {cell}
+              </text>
+            </g>
+          ))}
+        </g>
+      ))}
+      <text x={16} y={430} opacity={s(3)} fontFamily={theme.fontFamily} fontSize={22} fill={theme.inkSoft}>
+        Coordination service luôn là task-oriented, không bao giờ entity-oriented
+      </text>
+    </svg>
+  );
+};
+
 export const diagrams: Record<string, React.FC<DiagramProps>> = {
   "soa-triangle": SoaTriangle,
   "in-car-system": InCarSystem,
   "rest-verbs": RestVerbs,
+  "service-process": ServiceProcess,
+  "service-matrix": ServiceMatrix,
 };

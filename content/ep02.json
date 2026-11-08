@@ -1,0 +1,284 @@
+{
+  "id": "ep02",
+  "episodeNumber": 2,
+  "seriesTitle": "Service-oriented Software Engineering",
+  "title": "SOAP và WSDL: mô tả một service thế nào",
+  "voice": {
+    "provider": "azure",
+    "name": "vi-VN-Grant:MAI-Voice-2.1",
+    "style": "educational",
+    "rate": "+18%"
+  },
+  "voices": {
+    "host": {
+      "provider": "azure",
+      "name": "vi-VN-Grant:MAI-Voice-2.1",
+      "style": "educational",
+      "rate": "+18%"
+    },
+    "ask": {
+      "provider": "gemini",
+      "name": "aoede",
+      "style": "curious student interrupting the lecture politely, warm and a little playful"
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "title",
+      "part": 1,
+      "title": "SOAP và WSDL",
+      "subtitle": "Chapter 18 · Tập 2 / 6 — mô tả một service thế nào",
+      "narration": "Tập trước chúng ta dừng ở ba động tác publish, find, bind. Hôm nay đi vào động tác đầu tiên: muốn publish một service, bạn phải mô tả nó sao cho máy của người khác đọc vào là hiểu."
+    },
+    {
+      "id": "s02",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Ba chuẩn trụ cột",
+      "bullets": [
+        "SOAP — chuẩn trao đổi message giữa hai bên",
+        "WSDL — định nghĩa interface và binding của service",
+        "WS-BPEL — ngôn ngữ workflow để ghép nhiều service"
+      ],
+      "cues": [
+        "SOAP",
+        "WSDL",
+        "workflow"
+      ],
+      "narration": "Thế giới web service cổ điển đứng trên ba chuẩn. SOAP lo việc trao đổi message giữa hai bên. WSDL định nghĩa interface của service và cách kết nối tới nó. Còn WS-BPEL là ngôn ngữ workflow, dùng khi bạn ghép nhiều service lại thành một quy trình. Tập này tập trung vào WSDL, vì đó là thứ quyết định người khác có dùng được service của bạn hay không."
+    },
+    {
+      "id": "s03",
+      "type": "image",
+      "part": 1,
+      "src": "images/ch18/slide16-image4.png",
+      "caption": "Hình trong slide 16 — chồng chuẩn web service",
+      "narration": "Nhìn tổng thể thì các chuẩn xếp thành nhiều tầng. Dưới cùng là tầng vận chuyển, trên đó là tầng trao đổi message, rồi tới tầng mô tả service, trên nữa là tầng ghép service thành quy trình. Mỗi tầng giải quyết một việc, và bạn không cần nhớ hết tên, chỉ cần thấy rằng WSDL nằm ở tầng mô tả."
+    },
+    {
+      "id": "s03b",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Vì sao phải có chuẩn chung",
+      "bullets": [
+        "Hai bên không biết nhau, không họp được để thống nhất",
+        "Mỗi bên viết bằng một ngôn ngữ khác nhau",
+        "Chỉ có message đi qua, nên khuôn message phải cố định"
+      ],
+      "cues": [
+        "biết nhau",
+        "ngôn ngữ",
+        "khuôn"
+      ],
+      "narration": "Có thể bạn thắc mắc vì sao phải bày ra lắm chuẩn thế. Lý do nằm ở hoàn cảnh. Bên cung cấp và bên dùng thường không biết nhau, không thể ngồi lại họp để thống nhất cách gọi. Mỗi bên lại viết bằng một ngôn ngữ khác nhau, kiểu dữ liệu khác nhau. Và giữa hai bên chỉ có message đi qua chứ không có gì khác. Trong hoàn cảnh đó, nếu khuôn message và bản mô tả không cố định theo một chuẩn, thì đơn giản là không ai dùng được của ai."
+    },
+    {
+      "id": "s04",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Nhắc lại chỗ dễ nhầm",
+      "bullets": [
+        "Service không có requires interface",
+        "Hai bên chỉ trao đổi message, không gọi hàm trực tiếp",
+        "Message viết bằng XML nên bên nào đọc cũng được"
+      ],
+      "cues": [
+        "requires",
+        "message",
+        "XML"
+      ],
+      "narration": "Trước khi đi tiếp, nhắc lại điểm phân biệt với component. Service không có requires interface, nên nó không khai báo rằng nó cần ai. Hai bên không gọi hàm của nhau mà chỉ trao đổi message. Và message viết bằng XML, một định dạng text mà ngôn ngữ nào cũng đọc được. Chính vì chỉ có message đi qua, nên bản mô tả service phải cực kỳ rõ ràng."
+    },
+    {
+      "id": "s05",
+      "type": "question",
+      "part": 1,
+      "speaker": "ask",
+      "question": "Vậy một bản mô tả service phải ghi những gì?",
+      "narration": "Khoan đã <short pause> nếu chỉ có message đi qua lại, thì bản mô tả service phải ghi những gì mới đủ cho người ta dùng?"
+    },
+    {
+      "id": "s06",
+      "type": "bullets",
+      "part": 2,
+      "heading": "WSDL trả lời đúng ba câu",
+      "bullets": [
+        "What — service có những operation nào",
+        "How — binding, ánh xạ xuống giao thức cụ thể",
+        "Where — endpoint, service nằm ở địa chỉ nào"
+      ],
+      "cues": [
+        "what",
+        "how",
+        "where"
+      ],
+      "narration": "Câu trả lời gọn đến bất ngờ: đúng ba câu. What, tức service hỗ trợ những operation nào và message vào ra có dạng gì. How, tức binding, ánh xạ interface trừu tượng đó xuống một bộ giao thức cụ thể. Và where, tức endpoint, địa chỉ thật của service, thường là một URI. Nhớ ba chữ này là nhớ được WSDL."
+    },
+    {
+      "id": "s07",
+      "type": "image",
+      "part": 2,
+      "src": "images/ch18/slide20-image5.png",
+      "caption": "Hình trong slide 20 — cấu trúc một tài liệu WSDL",
+      "narration": "Đây là cấu trúc một tài liệu WSDL. Phần đầu khai báo các kiểu dữ liệu dùng trong message. Phần giữa định nghĩa interface với các operation. Phần sau là binding. Và cuối cùng là service với endpoint của nó. Ba câu hỏi what, how, where nằm đúng ở ba phần đó."
+    },
+    {
+      "id": "s08",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Phần what — interface",
+      "bullets": [
+        "Liệt kê các operation service hỗ trợ",
+        "Định nghĩa message gửi vào và nhận về",
+        "Khai báo cả lỗi có thể xảy ra"
+      ],
+      "cues": [
+        "operation",
+        "message",
+        "lỗi"
+      ],
+      "narration": "Phần what, giáo trình gọi là interface, liệt kê các operation mà service hỗ trợ. Với mỗi operation nó định nghĩa message gửi vào và message nhận về. Và quan trọng, nó khai báo luôn cả lỗi có thể xảy ra, gọi là fault. Thiếu phần fault là bên gọi không biết xử lý thế nào khi service trả về lỗi."
+    },
+    {
+      "id": "s09",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Phần how và where",
+      "bullets": [
+        "Binding chốt chi tiết kỹ thuật để nói chuyện với service",
+        "Cùng một interface có thể có nhiều binding",
+        "Endpoint là địa chỉ cụ thể, thường là một URI"
+      ],
+      "cues": [
+        "binding",
+        "nhiều",
+        "endpoint"
+      ],
+      "narration": "Phần how là binding. Nó chốt mọi chi tiết kỹ thuật để thật sự nói chuyện được với service. Điểm hay là cùng một interface có thể có nhiều binding khác nhau, nghĩa là cùng một chức năng nhưng cho phép truy cập theo nhiều cách. Còn phần where đơn giản nhất: endpoint, địa chỉ cụ thể của service, thường viết dưới dạng một URI."
+    },
+    {
+      "id": "s10",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Ví dụ: service tra thời tiết",
+      "bullets": [
+        "Kiểu dữ liệu vào: tên thành phố, quốc gia, ngày",
+        "Kiểu dữ liệu ra: nhiệt độ cao nhất và thấp nhất",
+        "Operation getMaxMinTemps, có kèm fault"
+      ],
+      "cues": [
+        "thành phố",
+        "nhiệt độ",
+        "getMaxMinTemps"
+      ],
+      "narration": "Giáo trình lấy ví dụ một service tra thời tiết. Phần khai báo kiểu định nghĩa dữ liệu vào gồm tên thành phố, quốc gia và ngày. Dữ liệu ra gồm nhiệt độ cao nhất và thấp nhất. Rồi phần interface định nghĩa một operation duy nhất tên là getMaxMinTemps, nhận vào khối dữ liệu thứ nhất, trả về khối thứ hai, và khai báo thêm một fault cho trường hợp dữ liệu vào không hợp lệ."
+    },
+    {
+      "id": "s10b",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Fault — chỗ hay bị bỏ quên",
+      "bullets": [
+        "Mỗi operation nên khai báo fault của riêng nó",
+        "Thiếu fault thì bên gọi không biết phân biệt lỗi gì",
+        "Trong ví dụ catalog ở tập 4, có operation tới ba loại fault"
+      ],
+      "cues": [
+        "khai báo",
+        "Nếu thiếu",
+        "ba loại"
+      ],
+      "narration": "Có một phần trong WSDL mà sinh viên hay bỏ qua khi làm bài: fault. Mỗi operation nên khai báo những lỗi riêng của nó. Nếu thiếu, bên gọi nhận về một thông báo chung chung và không biết là dữ liệu vào sai, hay mã không tồn tại, hay hệ thống đang quá tải. Ở tập bốn chúng ta sẽ gặp một service mà riêng một operation đã có tới ba loại fault khác nhau. Khai báo fault đầy đủ là dấu hiệu của một interface được thiết kế nghiêm túc."
+    },
+    {
+      "id": "s11",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Còn SOAP thì làm gì",
+      "bullets": [
+        "Quy định khuôn của một message trao đổi",
+        "Không quan tâm service làm gì, chỉ lo đóng gói",
+        "Nhờ vậy hai hệ thống xa lạ vẫn hiểu nhau"
+      ],
+      "cues": [
+        "khuôn",
+        "đóng gói",
+        "xa lạ"
+      ],
+      "narration": "Vậy còn SOAP. SOAP quy định khuôn của một message khi nó đi trên đường. Nó không quan tâm service làm gì, nó chỉ lo việc đóng gói sao cho chuẩn. Nhờ có một khuôn chung như vậy, hai hệ thống hoàn toàn xa lạ, viết bằng hai ngôn ngữ khác nhau, vẫn hiểu nhau được. WSDL nói service có gì, SOAP nói message trông ra sao."
+    },
+    {
+      "id": "s11b",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Một message SOAP gồm gì",
+      "bullets": [
+        "Envelope — phong bì bọc ngoài toàn bộ message",
+        "Header — thông tin phụ như bảo mật, định tuyến",
+        "Body — nội dung thật sự của lời gọi hoặc kết quả"
+      ],
+      "cues": [
+        "envelope",
+        "header",
+        "body"
+      ],
+      "narration": "Nhìn kỹ hơn một message SOAP thì nó có ba phần. Ngoài cùng là envelope, cái phong bì bọc toàn bộ. Bên trong có header chứa thông tin phụ như xác thực, bảo mật hay định tuyến. Và body chứa nội dung thật sự, tức lời gọi operation kèm tham số, hoặc kết quả trả về. Cấu trúc phong bì này chính là lý do người ta nói SOAP nặng: mỗi lần gọi đều phải dựng và tháo cả bộ khung đó."
+    },
+    {
+      "id": "s12",
+      "type": "question",
+      "part": 3,
+      "speaker": "ask",
+      "question": "Nghe nặng nề quá, có cách nào nhẹ hơn không?",
+      "narration": "Nghe tới đây thì <short pause> thấy nặng nề thật đấy. XML, binding, fault, đủ thứ. Chẳng lẽ không có cách nào nhẹ hơn à?"
+    },
+    {
+      "id": "s13",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Vì sao bị chê heavyweight",
+      "bullets": [
+        "Bộ chuẩn quá tổng quát cho phần lớn nhu cầu",
+        "Mỗi lần gọi phải gói và mở một đống XML",
+        "Viết tay WSDL thì dài và khó đọc"
+      ],
+      "cues": [
+        "tổng quát",
+        "XML",
+        "dài"
+      ],
+      "narration": "Câu hỏi đó chính là điều mà cả ngành đã hỏi. Giáo trình ghi thẳng rằng bộ chuẩn này bị chê là heavyweight, tức quá nặng. Nó quá tổng quát so với phần lớn nhu cầu thực tế. Mỗi lần gọi là một lần gói và mở một đống XML. Và bản thân tài liệu WSDL viết ra thì dài, khó đọc với người. Chính sự nặng nề đó sinh ra một cách làm khác, nhẹ hơn hẳn."
+    },
+    {
+      "id": "s13b",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Ôn thi: đừng lẫn hai cái tên",
+      "bullets": [
+        "WSDL mô tả service: có gì, gọi thế nào, ở đâu",
+        "SOAP quy định khuôn của message khi nó đi trên đường",
+        "Một bên là bản mô tả, một bên là định dạng trao đổi"
+      ],
+      "cues": [
+        "WSDL",
+        "SOAP",
+        "tờ khai"
+      ],
+      "narration": "Trước khi khép lại, chốt một chỗ rất hay bị lẫn trong bài thi. WSDL là bản mô tả service: nó có operation gì, gọi bằng giao thức nào, nằm ở địa chỉ nào. SOAP là định dạng của message khi nó đi trên đường. Một bên là tờ khai, một bên là cái phong bì. Hỏi WSDL dùng làm gì mà trả lời trao đổi message là mất điểm, và ngược lại."
+    },
+    {
+      "id": "s14",
+      "type": "outro",
+      "part": 3,
+      "heading": "Ba ý cần nhớ",
+      "points": [
+        "WSDL trả lời đúng ba câu: what, how, where",
+        "Interface khai báo cả operation lẫn fault; binding chốt giao thức; endpoint là địa chỉ",
+        "SOAP lo khuôn message, WSDL lo mô tả service — hai việc khác nhau"
+      ],
+      "next": "Tập 3 — RESTful services: cách làm nhẹ hơn",
+      "narration": "Tóm lại ba ý. WSDL trả lời đúng ba câu: what, how và where. Phần interface khai báo cả operation lẫn fault, binding chốt giao thức, endpoint là địa chỉ thật. Và đừng nhầm hai vai: SOAP lo khuôn của message, WSDL lo mô tả service. Tập sau chúng ta xem cách làm nhẹ hơn mà hiện nay bạn gặp mỗi ngày, đó là REST."
+    }
+  ]
+}

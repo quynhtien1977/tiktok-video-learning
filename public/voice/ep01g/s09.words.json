@@ -1,0 +1,302 @@
+[
+  {
+    "text": "Vậy",
+    "startMs": 40,
+    "endMs": 280
+  },
+  {
+    "text": "đổi",
+    "startMs": 360,
+    "endMs": 520
+  },
+  {
+    "text": "sang",
+    "startMs": 680,
+    "endMs": 840
+  },
+  {
+    "text": "service",
+    "startMs": 880,
+    "endMs": 1240
+  },
+  {
+    "text": "thì",
+    "startMs": 1240,
+    "endMs": 1400
+  },
+  {
+    "text": "được",
+    "startMs": 1400,
+    "endMs": 1520
+  },
+  {
+    "text": "gì.",
+    "startMs": 1520,
+    "endMs": 1880
+  },
+  {
+    "text": "Thứ",
+    "startMs": 1880,
+    "endMs": 2040
+  },
+  {
+    "text": "nhất,",
+    "startMs": 2040,
+    "endMs": 2280
+  },
+  {
+    "text": "bạn",
+    "startMs": 2280,
+    "endMs": 2480
+  },
+  {
+    "text": "ghép",
+    "startMs": 2520,
+    "endMs": 2800
+  },
+  {
+    "text": "được",
+    "startMs": 2840,
+    "endMs": 3040
+  },
+  {
+    "text": "service",
+    "startMs": 3040,
+    "endMs": 3240
+  },
+  {
+    "text": "từ",
+    "startMs": 3360,
+    "endMs": 3560
+  },
+  {
+    "text": "nhiều",
+    "startMs": 3560,
+    "endMs": 3720
+  },
+  {
+    "text": "nhà",
+    "startMs": 3720,
+    "endMs": 4000
+  },
+  {
+    "text": "cung",
+    "startMs": 4000,
+    "endMs": 4080
+  },
+  {
+    "text": "cấp",
+    "startMs": 4080,
+    "endMs": 4400
+  },
+  {
+    "text": "khác",
+    "startMs": 4400,
+    "endMs": 4520
+  },
+  {
+    "text": "nhau,",
+    "startMs": 4520,
+    "endMs": 4880
+  },
+  {
+    "text": "cả",
+    "startMs": 4880,
+    "endMs": 5040
+  },
+  {
+    "text": "trong",
+    "startMs": 5040,
+    "endMs": 5240
+  },
+  {
+    "text": "lẫn",
+    "startMs": 5320,
+    "endMs": 5600
+  },
+  {
+    "text": "ngoài",
+    "startMs": 5600,
+    "endMs": 5800
+  },
+  {
+    "text": "tổ",
+    "startMs": 5840,
+    "endMs": 5960
+  },
+  {
+    "text": "chức,",
+    "startMs": 6040,
+    "endMs": 6320
+  },
+  {
+    "text": "miễn",
+    "startMs": 6320,
+    "endMs": 6520
+  },
+  {
+    "text": "là",
+    "startMs": 6520,
+    "endMs": 6640
+  },
+  {
+    "text": "họ",
+    "startMs": 6640,
+    "endMs": 6840
+  },
+  {
+    "text": "công",
+    "startMs": 6840,
+    "endMs": 6960
+  },
+  {
+    "text": "bố",
+    "startMs": 7000,
+    "endMs": 7200
+  },
+  {
+    "text": "thông",
+    "startMs": 7200,
+    "endMs": 7320
+  },
+  {
+    "text": "tin",
+    "startMs": 7320,
+    "endMs": 7520
+  },
+  {
+    "text": "về",
+    "startMs": 7520,
+    "endMs": 7640
+  },
+  {
+    "text": "service",
+    "startMs": 7720,
+    "endMs": 7880
+  },
+  {
+    "text": "đó.",
+    "startMs": 7960,
+    "endMs": 8320
+  },
+  {
+    "text": "Thứ",
+    "startMs": 8320,
+    "endMs": 8440
+  },
+  {
+    "text": "hai,",
+    "startMs": 8440,
+    "endMs": 8960
+  },
+  {
+    "text": "và",
+    "startMs": 8960,
+    "endMs": 9120
+  },
+  {
+    "text": "đây",
+    "startMs": 9120,
+    "endMs": 9240
+  },
+  {
+    "text": "là",
+    "startMs": 9240,
+    "endMs": 9320
+  },
+  {
+    "text": "điểm",
+    "startMs": 9320,
+    "endMs": 9520
+  },
+  {
+    "text": "mạnh",
+    "startMs": 9520,
+    "endMs": 9720
+  },
+  {
+    "text": "nhất,",
+    "startMs": 9720,
+    "endMs": 9920
+  },
+  {
+    "text": "gọi",
+    "startMs": 10040,
+    "endMs": 10200
+  },
+  {
+    "text": "là",
+    "startMs": 10200,
+    "endMs": 10520
+  },
+  {
+    "text": "late",
+    "startMs": 10640,
+    "endMs": 10880
+  },
+  {
+    "text": "binding.",
+    "startMs": 11080,
+    "endMs": 11480
+  },
+  {
+    "text": "Thứ",
+    "startMs": 11720,
+    "endMs": 11880
+  },
+  {
+    "text": "ba,",
+    "startMs": 11880,
+    "endMs": 12320
+  },
+  {
+    "text": "bạn",
+    "startMs": 12320,
+    "endMs": 12480
+  },
+  {
+    "text": "trả",
+    "startMs": 12520,
+    "endMs": 12640
+  },
+  {
+    "text": "tiền",
+    "startMs": 12680,
+    "endMs": 12880
+  },
+  {
+    "text": "theo",
+    "startMs": 12880,
+    "endMs": 13040
+  },
+  {
+    "text": "lượng",
+    "startMs": 13080,
+    "endMs": 13240
+  },
+  {
+    "text": "dùng",
+    "startMs": 13320,
+    "endMs": 13560
+  },
+  {
+    "text": "chứ",
+    "startMs": 13560,
+    "endMs": 13720
+  },
+  {
+    "text": "không",
+    "startMs": 13720,
+    "endMs": 13840
+  },
+  {
+    "text": "mua",
+    "startMs": 13920,
+    "endMs": 14120
+  },
+  {
+    "text": "đứt.",
+    "startMs": 14120,
+    "endMs": 14360
+  }
+]

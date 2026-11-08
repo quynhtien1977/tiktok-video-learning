@@ -1,0 +1,337 @@
+[
+  {
+    "text": "Tóm",
+    "startMs": 0,
+    "endMs": 320
+  },
+  {
+    "text": "lại",
+    "startMs": 320,
+    "endMs": 480
+  },
+  {
+    "text": "ba",
+    "startMs": 520,
+    "endMs": 680
+  },
+  {
+    "text": "ý.",
+    "startMs": 680,
+    "endMs": 920
+  },
+  {
+    "text": "Service",
+    "startMs": 1200,
+    "endMs": 1600
+  },
+  {
+    "text": "engineering",
+    "startMs": 1600,
+    "endMs": 2160
+  },
+  {
+    "text": "gồm",
+    "startMs": 2360,
+    "endMs": 2600
+  },
+  {
+    "text": "ba",
+    "startMs": 2600,
+    "endMs": 2760
+  },
+  {
+    "text": "giai",
+    "startMs": 2760,
+    "endMs": 2960
+  },
+  {
+    "text": "đoạn:",
+    "startMs": 2960,
+    "endMs": 3400
+  },
+  {
+    "text": "identification,",
+    "startMs": 3560,
+    "endMs": 4360
+  },
+  {
+    "text": "design,",
+    "startMs": 4640,
+    "endMs": 5000
+  },
+  {
+    "text": "rồi",
+    "startMs": 5520,
+    "endMs": 5760
+  },
+  {
+    "text": "implementation",
+    "startMs": 5840,
+    "endMs": 6640
+  },
+  {
+    "text": "và",
+    "startMs": 6760,
+    "endMs": 6960
+  },
+  {
+    "text": "deployment.",
+    "startMs": 7080,
+    "endMs": 7600
+  },
+  {
+    "text": "Service",
+    "startMs": 7880,
+    "endMs": 8160
+  },
+  {
+    "text": "chia",
+    "startMs": 8160,
+    "endMs": 8360
+  },
+  {
+    "text": "thành",
+    "startMs": 8400,
+    "endMs": 8560
+  },
+  {
+    "text": "ba",
+    "startMs": 8560,
+    "endMs": 8720
+  },
+  {
+    "text": "loại",
+    "startMs": 8720,
+    "endMs": 8880
+  },
+  {
+    "text": "utility,",
+    "startMs": 9320,
+    "endMs": 9880
+  },
+  {
+    "text": "business,",
+    "startMs": 10160,
+    "endMs": 10800
+  },
+  {
+    "text": "coordination,",
+    "startMs": 10800,
+    "endMs": 11600
+  },
+  {
+    "text": "nhân",
+    "startMs": 11720,
+    "endMs": 11920
+  },
+  {
+    "text": "với",
+    "startMs": 12000,
+    "endMs": 12120
+  },
+  {
+    "text": "hai",
+    "startMs": 12120,
+    "endMs": 12360
+  },
+  {
+    "text": "trục",
+    "startMs": 12360,
+    "endMs": 12600
+  },
+  {
+    "text": "task",
+    "startMs": 12600,
+    "endMs": 12880
+  },
+  {
+    "text": "và",
+    "startMs": 13120,
+    "endMs": 13240
+  },
+  {
+    "text": "entity.",
+    "startMs": 13240,
+    "endMs": 14120
+  },
+  {
+    "text": "Và",
+    "startMs": 14120,
+    "endMs": 14240
+  },
+  {
+    "text": "chi",
+    "startMs": 14280,
+    "endMs": 14400
+  },
+  {
+    "text": "tiết",
+    "startMs": 14400,
+    "endMs": 14600
+  },
+  {
+    "text": "hay",
+    "startMs": 14600,
+    "endMs": 14760
+  },
+  {
+    "text": "ra",
+    "startMs": 14800,
+    "endMs": 14920
+  },
+  {
+    "text": "đề:",
+    "startMs": 15000,
+    "endMs": 15400
+  },
+  {
+    "text": "coordination",
+    "startMs": 15480,
+    "endMs": 16160
+  },
+  {
+    "text": "service",
+    "startMs": 16160,
+    "endMs": 16480
+  },
+  {
+    "text": "luôn",
+    "startMs": 16600,
+    "endMs": 16760
+  },
+  {
+    "text": "là",
+    "startMs": 16760,
+    "endMs": 16960
+  },
+  {
+    "text": "task-oriented,",
+    "startMs": 16960,
+    "endMs": 18160
+  },
+  {
+    "text": "ô",
+    "startMs": 18160,
+    "endMs": 18280
+  },
+  {
+    "text": "entity",
+    "startMs": 18280,
+    "endMs": 18760
+  },
+  {
+    "text": "của",
+    "startMs": 18760,
+    "endMs": 18880
+  },
+  {
+    "text": "nó",
+    "startMs": 18880,
+    "endMs": 19000
+  },
+  {
+    "text": "bỏ",
+    "startMs": 19040,
+    "endMs": 19200
+  },
+  {
+    "text": "trống.",
+    "startMs": 19240,
+    "endMs": 19720
+  },
+  {
+    "text": "Tập",
+    "startMs": 19720,
+    "endMs": 19840
+  },
+  {
+    "text": "sau",
+    "startMs": 19960,
+    "endMs": 20240
+  },
+  {
+    "text": "chúng",
+    "startMs": 20240,
+    "endMs": 20360
+  },
+  {
+    "text": "ta",
+    "startMs": 20360,
+    "endMs": 20440
+  },
+  {
+    "text": "lấy",
+    "startMs": 20440,
+    "endMs": 20600
+  },
+  {
+    "text": "sáu",
+    "startMs": 20600,
+    "endMs": 20920
+  },
+  {
+    "text": "operation",
+    "startMs": 20920,
+    "endMs": 21320
+  },
+  {
+    "text": "của",
+    "startMs": 21360,
+    "endMs": 21600
+  },
+  {
+    "text": "catalog",
+    "startMs": 21600,
+    "endMs": 22200
+  },
+  {
+    "text": "service",
+    "startMs": 22200,
+    "endMs": 22360
+  },
+  {
+    "text": "vừa",
+    "startMs": 22440,
+    "endMs": 22560
+  },
+  {
+    "text": "rồi",
+    "startMs": 22560,
+    "endMs": 23000
+  },
+  {
+    "text": "và",
+    "startMs": 23240,
+    "endMs": 23360
+  },
+  {
+    "text": "thiết",
+    "startMs": 23360,
+    "endMs": 23480
+  },
+  {
+    "text": "kế",
+    "startMs": 23480,
+    "endMs": 23720
+  },
+  {
+    "text": "chúng",
+    "startMs": 23720,
+    "endMs": 23840
+  },
+  {
+    "text": "thành",
+    "startMs": 23880,
+    "endMs": 24160
+  },
+  {
+    "text": "interface",
+    "startMs": 24160,
+    "endMs": 24680
+  },
+  {
+    "text": "thật.",
+    "startMs": 24760,
+    "endMs": 24960
+  }
+]

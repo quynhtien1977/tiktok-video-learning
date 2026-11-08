@@ -1,0 +1,147 @@
+[
+  {
+    "text": "Bạn",
+    "startMs": 0,
+    "endMs": 200
+  },
+  {
+    "text": "đã",
+    "startMs": 200,
+    "endMs": 320
+  },
+  {
+    "text": "có",
+    "startMs": 320,
+    "endMs": 520
+  },
+  {
+    "text": "object,",
+    "startMs": 520,
+    "endMs": 880
+  },
+  {
+    "text": "đã",
+    "startMs": 1000,
+    "endMs": 1120
+  },
+  {
+    "text": "có",
+    "startMs": 1120,
+    "endMs": 1320
+  },
+  {
+    "text": "component.",
+    "startMs": 1320,
+    "endMs": 2120
+  },
+  {
+    "text": "Vậy",
+    "startMs": 2200,
+    "endMs": 2400
+  },
+  {
+    "text": "tại",
+    "startMs": 2400,
+    "endMs": 2520
+  },
+  {
+    "text": "sao",
+    "startMs": 2520,
+    "endMs": 2720
+  },
+  {
+    "text": "ngành",
+    "startMs": 2720,
+    "endMs": 2960
+  },
+  {
+    "text": "phần",
+    "startMs": 3000,
+    "endMs": 3160
+  },
+  {
+    "text": "mềm",
+    "startMs": 3200,
+    "endMs": 3520
+  },
+  {
+    "text": "lại",
+    "startMs": 3560,
+    "endMs": 3680
+  },
+  {
+    "text": "cần",
+    "startMs": 3680,
+    "endMs": 3880
+  },
+  {
+    "text": "thêm",
+    "startMs": 3880,
+    "endMs": 4040
+  },
+  {
+    "text": "một",
+    "startMs": 4040,
+    "endMs": 4160
+  },
+  {
+    "text": "thứ",
+    "startMs": 4160,
+    "endMs": 4360
+  },
+  {
+    "text": "nữa",
+    "startMs": 4360,
+    "endMs": 4520
+  },
+  {
+    "text": "gọi",
+    "startMs": 4600,
+    "endMs": 4720
+  },
+  {
+    "text": "là",
+    "startMs": 4760,
+    "endMs": 4880
+  },
+  {
+    "text": "service?",
+    "startMs": 5000,
+    "endMs": 5400
+  },
+  {
+    "text": "Đó",
+    "startMs": 5600,
+    "endMs": 5720
+  },
+  {
+    "text": "là",
+    "startMs": 5720,
+    "endMs": 5840
+  },
+  {
+    "text": "câu",
+    "startMs": 5840,
+    "endMs": 5960
+  },
+  {
+    "text": "hỏi",
+    "startMs": 5960,
+    "endMs": 6120
+  },
+  {
+    "text": "của",
+    "startMs": 6120,
+    "endMs": 6280
+  },
+  {
+    "text": "tập",
+    "startMs": 6280,
+    "endMs": 6400
+  },
+  {
+    "text": "này.",
+    "startMs": 6440,
+    "endMs": 6729
+  }
+]
