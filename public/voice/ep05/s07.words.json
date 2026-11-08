@@ -1,97 +1,97 @@
 [
   {
     "text": "Em",
-    "startMs": 40,
-    "endMs": 280
+    "startMs": 48,
+    "endMs": 285
   },
   {
     "text": "thắc",
-    "startMs": 320,
-    "endMs": 480
+    "startMs": 333,
+    "endMs": 475
   },
   {
     "text": "mắc",
-    "startMs": 480,
-    "endMs": 840
+    "startMs": 475,
+    "endMs": 760
   },
   {
     "text": "cùng",
-    "startMs": 1560,
-    "endMs": 1800
+    "startMs": 760,
+    "endMs": 951
   },
   {
     "text": "một",
-    "startMs": 1840,
-    "endMs": 2000
+    "startMs": 951,
+    "endMs": 1236
   },
   {
     "text": "catalog",
-    "startMs": 2160,
-    "endMs": 2880
+    "startMs": 1236,
+    "endMs": 1854
   },
   {
     "text": "service",
-    "startMs": 2880,
-    "endMs": 3160
+    "startMs": 1854,
+    "endMs": 2186
   },
   {
     "text": "đó,",
-    "startMs": 3240,
-    "endMs": 3400
+    "startMs": 2281,
+    "endMs": 2424
   },
   {
     "text": "nếu",
-    "startMs": 3680,
-    "endMs": 3840
+    "startMs": 2614,
+    "endMs": 2757
   },
   {
     "text": "làm",
-    "startMs": 3840,
-    "endMs": 4000
+    "startMs": 2757,
+    "endMs": 2899
   },
   {
     "text": "theo",
-    "startMs": 4000,
-    "endMs": 4120
+    "startMs": 2899,
+    "endMs": 3042
   },
   {
     "text": "kiểu",
-    "startMs": 4160,
-    "endMs": 4320
+    "startMs": 3042,
+    "endMs": 3232
   },
   {
     "text": "REST",
-    "startMs": 4480,
-    "endMs": 4960
+    "startMs": 3422,
+    "endMs": 3755
   },
   {
     "text": "thì",
-    "startMs": 4960,
-    "endMs": 5080
+    "startMs": 3755,
+    "endMs": 3898
   },
   {
     "text": "interface",
-    "startMs": 5160,
-    "endMs": 5720
+    "startMs": 4040,
+    "endMs": 4658
   },
   {
     "text": "sẽ",
-    "startMs": 5720,
-    "endMs": 5840
+    "startMs": 4658,
+    "endMs": 4801
   },
   {
     "text": "khác",
-    "startMs": 5840,
-    "endMs": 6000
+    "startMs": 4848,
+    "endMs": 4991
   },
   {
     "text": "thế",
-    "startMs": 6080,
-    "endMs": 6200
+    "startMs": 5086,
+    "endMs": 5181
   },
   {
     "text": "nào?",
-    "startMs": 6200,
-    "endMs": 6508
+    "startMs": 5181,
+    "endMs": 5449
   }
 ]

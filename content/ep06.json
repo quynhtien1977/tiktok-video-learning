@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "Ghép service thành hệ thống, và bài toán testing",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
     }
   },
   "scenes": [
@@ -71,7 +72,7 @@
         "compensating",
         "nhánh hỏng"
       ],
-      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ, nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon."
+      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ <laugh> nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon."
     },
     {
       "id": "s04",
@@ -180,7 +181,7 @@
         "sửa",
         "binding"
       ],
-      "narration": "Giờ tới phần khó chịu. Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được."
+      "narration": "Giờ tới phần khó chịu <sigh> Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được."
     },
     {
       "id": "s11",

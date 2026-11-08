@@ -55,7 +55,28 @@ Tạo/sửa `content/epNN.json` theo `src/types.ts`. Quy tắc:
 
 ## 3. Giọng đọc
 
-Hai nhà cung cấp, chọn bằng `"voice": {"provider": "azure" | "capcut", ...}`.
+Ba nhà cung cấp: `"voice": {"provider": "gemini" | "azure" | "capcut", ...}`.
+**Chapter 18 đang dùng Gemini cho cả giọng giảng lẫn giọng hỏi.**
+
+**Gemini (đang dùng)** — engine duy nhất phát được tiếng cười giữa câu:
+```
+npm run quota                               # còn bao nhiêu lượt miễn phí hôm nay
+npm run voice:gemini -- --ep ep01           # free trước, hết thì tràn sang Beeknoee
+npm run voice:gemini -- --ep ep01 --free    # chỉ dùng key free, hết thì dừng (không lẫn model)
+python -I scripts/align_stt.py --ep ep01    # BẮT BUỘC, Gemini không trả word boundary
+```
+- Giọng: `achird` (nam, ấm) cho host, `aoede` (nữ) cho vai hỏi.
+- `style` nhận **tiếng Anh tự nhiên**: `"clear and friendly teacher, brisk confident pace"`.
+- Tag chèn giữa câu: `<laugh>`, `<sigh>`, `<gasp>`, `<breath>`, `<short pause>`.
+  Chúng bị lọc khỏi phụ đề và khỏi từ khoá dò mốc, nên cứ viết thẳng vào `narration`.
+- **Hai tầng key khác model**: key trực tiếp chạy `gemini-3.8-flash-tts` (free ~10 lượt/ngày/key,
+  có `style`); key Beeknoee chạy `3.1-flash-tts-preview` (trả tiền, **gateway nuốt mất `style`**
+  nên đọc chậm hơn). Đừng để một tập lẫn hai tầng — dùng `--free` hoặc `--paid` để ép một tầng.
+- Nhịp đọc giữa hai tầng lệch nhau nhiều. Sau khi sinh, **luôn đo lại và kéo về cùng nhịp**:
+  `npm run retime -- --ep epNN --target 19.0` (19,0 ký tự/giây là nhịp chuẩn của loạt này).
+  Lệnh này sửa cả mp3 lẫn timing phụ đề, không gọi API.
+
+
 
 **Azure (chất lượng cao nhất)** — dòng MAI-Voice, cần `AZURE_SPEECH_KEY` trong `.env`:
 ```

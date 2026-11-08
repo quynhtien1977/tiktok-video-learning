@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "Service là gì, và vì sao cần SOA",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.18
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.18
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.18
     }
   },
   "scenes": [
@@ -78,7 +79,7 @@
         "Bản đồ — gọi sang nhà cung cấp bản đồ",
         "Gửi tin nhắn xác thực — gọi sang nhà mạng"
       ],
-      "narration": "Nghe thì trừu tượng. Nhưng thật ra, ngày nào bạn cũng đang dùng service đấy! Một app bán hàng muốn thu tiền thì không tự viết hệ thống thanh toán, nó gọi sang cổng thanh toán của bên khác. Muốn hiện bản đồ thì gọi sang nhà cung cấp bản đồ. Muốn gửi mã xác thực thì gọi sang nhà mạng. Trong cả ba trường hợp, bạn không cài phần mềm của họ, không biết nó chạy ở đâu, và vẫn dùng được. Đó chính là tinh thần của service.",
+      "narration": "Nghe thì trừu tượng <short pause> nhưng thật ra, ngày nào bạn cũng đang dùng service đấy! <laugh> Một app bán hàng muốn thu tiền thì không tự viết hệ thống thanh toán, nó gọi sang cổng thanh toán của bên khác. Muốn hiện bản đồ thì gọi sang nhà cung cấp bản đồ. Muốn gửi mã xác thực thì gọi sang nhà mạng. Trong cả ba trường hợp, bạn không cài phần mềm của họ, không biết nó chạy ở đâu, và vẫn dùng được. Đó chính là tinh thần của service.",
       "voice": {
         "style": "narrator"
       },
@@ -126,7 +127,7 @@
         "Service chỉ nói chuyện bằng message",
         "Bạn cài component, nhưng chỉ gọi service"
       ],
-      "narration": "Khác ở đúng một chữ thôi: độc lập! Một component luôn có requires interface, tức là nó khai báo rằng nó cần thứ khác hiện diện thì mới chạy được, và bạn phải cài nó vào hệ thống của mình rồi biên dịch cùng. Service thì không có requires interface. Nó đứng một mình, ở một nơi khác, do người khác vận hành, và chỉ nói chuyện với bên ngoài bằng message. Đây là câu rất hay ra đề, nên nhớ kỹ: component thì cài, service thì gọi.",
+      "narration": "Khác ở đúng một chữ thôi <short pause> độc lập! Một component luôn có requires interface, tức là nó khai báo rằng nó cần thứ khác hiện diện thì mới chạy được, và bạn phải cài nó vào hệ thống của mình rồi biên dịch cùng. Service thì không có requires interface. Nó đứng một mình, ở một nơi khác, do người khác vận hành, và chỉ nói chuyện với bên ngoài bằng message. Đây là câu rất hay ra đề, nên nhớ kỹ: component thì cài, service thì gọi.",
       "cues": [
         "luôn",
         "Service thì không",
@@ -208,7 +209,7 @@
         "Xe chạy tới đâu, service discovery tìm tới đó",
         "Qua biên giới thì gọi thêm translation service"
       ],
-      "narration": "Thế vì sao ví dụ này bắt buộc phải dùng SOA? Vì lúc lập trình và lúc bán xe, không ai biết được ở mỗi vùng thì nhà cung cấp nào tốt. Xe chạy tới đâu, phần mềm dùng service discovery để tìm service phù hợp ở đó rồi bind vào. Và vì có thêm translation service, chiếc xe chạy qua biên giới vẫn đọc được thông tin địa phương cho người không biết tiếng bản xứ. Thử tưởng tượng làm việc này bằng cách cài sẵn mọi thứ vào xe lúc xuất xưởng, bạn sẽ thấy nó bất khả thi tới mức nào.",
+      "narration": "Thế vì sao ví dụ này bắt buộc phải dùng SOA? Vì lúc lập trình và lúc bán xe, không ai biết được ở mỗi vùng thì nhà cung cấp nào tốt. Xe chạy tới đâu, phần mềm dùng service discovery để tìm service phù hợp ở đó rồi bind vào. Và vì có thêm translation service, chiếc xe chạy qua biên giới vẫn đọc được thông tin địa phương cho người không biết tiếng bản xứ. Thử tưởng tượng làm việc này bằng cách cài sẵn mọi thứ vào xe lúc xuất xưởng <laugh> bạn sẽ thấy nó bất khả thi tới mức nào.",
       "voice": {
         "style": "narrator"
       }
@@ -285,7 +286,7 @@
         "Sức mạnh thật nằm ở late binding: chọn nhà cung cấp lúc đang chạy"
       ],
       "next": "Tập 2 — SOAP và WSDL: mô tả một service thế nào",
-      "narration": "Tóm lại ba ý. Service là thành phần dùng lại được, ghép lỏng, và quan trọng nhất là độc lập, không có requires interface. SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Và sức mạnh thật sự của nó nằm ở late binding, thứ cho phép ứng dụng chọn nhà cung cấp ngay khi đang chạy. Tập sau, chúng ta sẽ xem một service được mô tả ra sao để máy khác hiểu được, với hai cái tên SOAP và WSDL. Hẹn gặp lại bạn."
+      "narration": "Tóm lại ba ý. Service là thành phần dùng lại được, ghép lỏng, và quan trọng nhất là độc lập, không có requires interface. SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Và sức mạnh thật sự của nó nằm ở late binding, thứ cho phép ứng dụng chọn nhà cung cấp ngay khi đang chạy. Tập sau, chúng ta sẽ xem một service được mô tả ra sao để máy khác hiểu được, với hai cái tên SOAP và WSDL. <short pause> Hẹn gặp lại bạn nhé."
     }
   ]
 }

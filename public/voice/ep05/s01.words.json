@@ -1,127 +1,127 @@
 [
   {
     "text": "Tập",
-    "startMs": 0,
-    "endMs": 120
+    "startMs": 48,
+    "endMs": 238
   },
   {
     "text": "trước",
-    "startMs": 160,
-    "endMs": 320
+    "startMs": 333,
+    "endMs": 618
   },
   {
     "text": "chúng",
-    "startMs": 320,
-    "endMs": 440
+    "startMs": 618,
+    "endMs": 760
   },
   {
     "text": "ta",
-    "startMs": 440,
-    "endMs": 480
+    "startMs": 760,
+    "endMs": 856
   },
   {
     "text": "dừng",
-    "startMs": 520,
-    "endMs": 720
+    "startMs": 903,
+    "endMs": 1141
   },
   {
     "text": "ở",
-    "startMs": 760,
-    "endMs": 920
+    "startMs": 1188,
+    "endMs": 1378
   },
   {
     "text": "sáu",
-    "startMs": 920,
-    "endMs": 1120
+    "startMs": 1378,
+    "endMs": 1664
   },
   {
     "text": "operation",
-    "startMs": 1120,
-    "endMs": 1480
+    "startMs": 1664,
+    "endMs": 2186
   },
   {
     "text": "của",
-    "startMs": 1520,
-    "endMs": 1720
+    "startMs": 2186,
+    "endMs": 2329
   },
   {
     "text": "catalog",
-    "startMs": 1720,
-    "endMs": 2360
+    "startMs": 2424,
+    "endMs": 3042
   },
   {
     "text": "service.",
-    "startMs": 2360,
-    "endMs": 2600
+    "startMs": 3042,
+    "endMs": 3375
   },
   {
     "text": "Hôm",
-    "startMs": 2800,
-    "endMs": 2920
+    "startMs": 3612,
+    "endMs": 3755
   },
   {
     "text": "nay",
-    "startMs": 2920,
-    "endMs": 3120
+    "startMs": 3755,
+    "endMs": 3898
   },
   {
     "text": "biến",
-    "startMs": 3120,
-    "endMs": 3320
+    "startMs": 3898,
+    "endMs": 4088
   },
   {
     "text": "chúng",
-    "startMs": 3360,
-    "endMs": 3560
+    "startMs": 4135,
+    "endMs": 4325
   },
   {
     "text": "thành",
-    "startMs": 3560,
-    "endMs": 3720
+    "startMs": 4325,
+    "endMs": 4515
   },
   {
     "text": "một",
-    "startMs": 3760,
-    "endMs": 3960
+    "startMs": 4515,
+    "endMs": 4706
   },
   {
     "text": "interface",
-    "startMs": 3960,
-    "endMs": 4480
+    "startMs": 4706,
+    "endMs": 5276
   },
   {
     "text": "thật,",
-    "startMs": 4560,
-    "endMs": 4760
+    "startMs": 5371,
+    "endMs": 5656
   },
   {
     "text": "rồi",
-    "startMs": 5080,
-    "endMs": 5280
+    "startMs": 5656,
+    "endMs": 5799
   },
   {
     "text": "mang",
-    "startMs": 5320,
-    "endMs": 5560
+    "startMs": 5799,
+    "endMs": 6036
   },
   {
     "text": "service",
-    "startMs": 5560,
-    "endMs": 5880
+    "startMs": 6036,
+    "endMs": 6322
   },
   {
     "text": "đi",
-    "startMs": 5880,
-    "endMs": 6040
+    "startMs": 6322,
+    "endMs": 6464
   },
   {
     "text": "triển",
-    "startMs": 6040,
-    "endMs": 6280
+    "startMs": 6464,
+    "endMs": 6702
   },
   {
     "text": "khai.",
-    "startMs": 6280,
-    "endMs": 6680
+    "startMs": 6702,
+    "endMs": 7123
   }
 ]

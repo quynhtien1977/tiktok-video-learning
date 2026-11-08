@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "Thiết kế interface và triển khai service",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
     }
   },
   "scenes": [
@@ -63,7 +64,7 @@
         "gom",
         "Kết quả"
       ],
-      "narration": "Hiểu vì sao hai nguyên tắc đó tồn tại thì mới thiết kế đúng. Gọi một hàm bên trong chương trình tốn cỡ micro giây. Gọi một service qua mạng tốn cỡ mili giây, chậm hơn cả nghìn lần, chưa kể có thể rớt mạng. Nên thay vì chia nhỏ thành nhiều lời gọi như khi thiết kế lớp, bạn gom nhiều việc vào một lời gọi. Kết quả là interface của service thường có ít operation hơn, nhưng mỗi operation làm nhiều việc hơn."
+      "narration": "Hiểu vì sao hai nguyên tắc đó tồn tại thì mới thiết kế đúng. Gọi một hàm bên trong chương trình tốn cỡ micro giây. Gọi một service qua mạng tốn cỡ mili giây, chậm hơn cả nghìn lần <laugh> chưa kể có thể rớt mạng. Nên thay vì chia nhỏ thành nhiều lời gọi như khi thiết kế lớp, bạn gom nhiều việc vào một lời gọi. Kết quả là interface của service thường có ít operation hơn, nhưng mỗi operation làm nhiều việc hơn."
     },
     {
       "id": "s03",

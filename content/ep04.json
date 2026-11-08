@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "Service engineering: tìm và phân loại service",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
     }
   },
   "scenes": [
@@ -132,7 +133,7 @@
       "part": 2,
       "speaker": "ask",
       "question": "Nhưng làm sao biết cái nào đáng tách ra thành service?",
-      "narration": "Phân loại thì rõ rồi <short pause> nhưng đứng trước một đống chức năng, làm sao biết cái nào đáng tách ra thành service?"
+      "narration": "Phân loại thì rõ rồi <short pause> nhưng đứng trước cả đống chức năng <laugh>, làm sao biết cái nào đáng tách ra thành service?"
     },
     {
       "id": "s08",
@@ -251,7 +252,7 @@
         "xếp hàng",
         "hạ tầng"
       ],
-      "narration": "Đừng xem yêu cầu phi chức năng là phần phụ, vì chính nó nắn lại thiết kế. Việc giá phải bảo mật theo từng tổ chức là lý do operation đầu tiên có tên MakeCatalog: bắt buộc phải sinh ra một bản riêng cho mỗi khách chứ không dùng chung. Việc chỉ phục vụ từ bảy tới mười một giờ nghĩa là ngoài giờ đó phải có cơ chế xếp hàng hoặc báo lỗi tử tế. Còn con số mười request mỗi giây quyết định hạ tầng và việc có cần cache hay không."
+      "narration": "Đừng xem yêu cầu phi chức năng là phần phụ <short pause>, vì chính nó nắn lại thiết kế. Việc giá phải bảo mật theo từng tổ chức là lý do operation đầu tiên có tên MakeCatalog: bắt buộc phải sinh ra một bản riêng cho mỗi khách chứ không dùng chung. Việc chỉ phục vụ từ bảy tới mười một giờ nghĩa là ngoài giờ đó phải có cơ chế xếp hàng hoặc báo lỗi tử tế. Còn con số mười request mỗi giây quyết định hạ tầng và việc có cần cache hay không."
     },
     {
       "id": "s13",

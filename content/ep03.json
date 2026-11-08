@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "RESTful services",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
     }
   },
   "scenes": [
@@ -112,7 +113,7 @@
         "HTTP",
         "đoán"
       ],
-      "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu, nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
+      "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu <short pause> nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
     },
     {
       "id": "s05",
@@ -163,7 +164,7 @@
         "request",
         "nhân bản"
       ],
-      "narration": "Có một đặc điểm của REST mà người mới hay vấp: service không nhớ lần gọi trước của bạn. Mỗi request phải tự đủ thông tin để xử lý. Bạn vừa đăng nhập ở lời gọi trước không có nghĩa lời gọi sau nó nhớ bạn, mà phải gửi kèm thông tin xác thực mỗi lần. Nghe phiền, nhưng đổi lại được một thứ rất quý: bất kỳ server nào trong cụm cũng xử lý được request đó, nên hệ thống nhân bản ra nhiều máy rất dễ."
+      "narration": "Có một đặc điểm của REST mà người mới hay vấp: service không nhớ lần gọi trước của bạn. Mỗi request phải tự đủ thông tin để xử lý. Bạn vừa đăng nhập ở lời gọi trước không có nghĩa lời gọi sau nó nhớ bạn, mà phải gửi kèm thông tin xác thực mỗi lần. Nghe phiền <laugh> nhưng đổi lại được một thứ rất quý: bất kỳ server nào trong cụm cũng xử lý được request đó, nên hệ thống nhân bản ra nhiều máy rất dễ."
     },
     {
       "id": "s07",

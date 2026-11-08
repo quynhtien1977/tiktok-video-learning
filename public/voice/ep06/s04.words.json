@@ -1,187 +1,187 @@
 [
   {
     "text": "Quy",
-    "startMs": 40,
-    "endMs": 240
+    "startMs": 48,
+    "endMs": 288
   },
   {
     "text": "trình",
-    "startMs": 280,
-    "endMs": 480
+    "startMs": 288,
+    "endMs": 528
   },
   {
     "text": "xây",
-    "startMs": 480,
-    "endMs": 640
+    "startMs": 528,
+    "endMs": 720
   },
   {
     "text": "dựng",
-    "startMs": 640,
-    "endMs": 880
+    "startMs": 720,
+    "endMs": 960
   },
   {
     "text": "bằng",
-    "startMs": 880,
-    "endMs": 1040
+    "startMs": 960,
+    "endMs": 1104
   },
   {
     "text": "cách",
-    "startMs": 1040,
-    "endMs": 1200
+    "startMs": 1104,
+    "endMs": 1297
   },
   {
     "text": "ghép",
-    "startMs": 1200,
-    "endMs": 1560
+    "startMs": 1345,
+    "endMs": 1729
   },
   {
     "text": "gồm",
-    "startMs": 1560,
-    "endMs": 1720
+    "startMs": 1729,
+    "endMs": 1873
   },
   {
     "text": "sáu",
-    "startMs": 1720,
-    "endMs": 1920
+    "startMs": 1873,
+    "endMs": 2113
   },
   {
     "text": "bước,",
-    "startMs": 1920,
-    "endMs": 2280
+    "startMs": 2113,
+    "endMs": 2449
   },
   {
     "text": "và",
-    "startMs": 2280,
-    "endMs": 2400
+    "startMs": 2449,
+    "endMs": 2641
   },
   {
     "text": "sơ",
-    "startMs": 2480,
-    "endMs": 2600
+    "startMs": 2689,
+    "endMs": 2833
   },
   {
     "text": "đồ",
-    "startMs": 2720,
-    "endMs": 2960
+    "startMs": 2977,
+    "endMs": 3217
   },
   {
     "text": "này",
-    "startMs": 2960,
-    "endMs": 3160
+    "startMs": 3217,
+    "endMs": 3409
   },
   {
     "text": "là",
-    "startMs": 3160,
-    "endMs": 3280
+    "startMs": 3409,
+    "endMs": 3553
   },
   {
     "text": "toàn",
-    "startMs": 3280,
-    "endMs": 3520
+    "startMs": 3553,
+    "endMs": 3793
   },
   {
     "text": "cảnh",
-    "startMs": 3520,
-    "endMs": 3720
+    "startMs": 3793,
+    "endMs": 3986
   },
   {
     "text": "của",
-    "startMs": 3760,
-    "endMs": 3920
+    "startMs": 4034,
+    "endMs": 4178
   },
   {
     "text": "chúng.",
-    "startMs": 3920,
-    "endMs": 4320
+    "startMs": 4178,
+    "endMs": 4658
   },
   {
     "text": "Ba",
-    "startMs": 4480,
-    "endMs": 4640
+    "startMs": 4658,
+    "endMs": 4802
   },
   {
     "text": "bước",
-    "startMs": 4680,
-    "endMs": 4840
+    "startMs": 4850,
+    "endMs": 4994
   },
   {
     "text": "đầu",
-    "startMs": 4880,
-    "endMs": 5200
+    "startMs": 5042,
+    "endMs": 5234
   },
   {
     "text": "là",
-    "startMs": 5200,
-    "endMs": 5400
+    "startMs": 5234,
+    "endMs": 5474
   },
   {
     "text": "phác",
-    "startMs": 5400,
-    "endMs": 5720
+    "startMs": 5474,
+    "endMs": 5714
   },
   {
     "text": "thảo",
-    "startMs": 5720,
-    "endMs": 6000
+    "startMs": 5810,
+    "endMs": 6194
   },
   {
     "text": "rồi",
-    "startMs": 6200,
-    "endMs": 6320
+    "startMs": 6194,
+    "endMs": 6339
   },
   {
     "text": "đi",
-    "startMs": 6320,
-    "endMs": 6440
+    "startMs": 6339,
+    "endMs": 6483
   },
   {
     "text": "tìm,",
-    "startMs": 6440,
-    "endMs": 7000
+    "startMs": 6483,
+    "endMs": 7059
   },
   {
     "text": "ba",
-    "startMs": 7120,
-    "endMs": 7240
+    "startMs": 7059,
+    "endMs": 7203
   },
   {
     "text": "bước",
-    "startMs": 7280,
-    "endMs": 7400
+    "startMs": 7251,
+    "endMs": 7347
   },
   {
     "text": "sau",
-    "startMs": 7440,
-    "endMs": 7760
+    "startMs": 7395,
+    "endMs": 7635
   },
   {
     "text": "là",
-    "startMs": 7760,
-    "endMs": 7920
+    "startMs": 7635,
+    "endMs": 7779
   },
   {
     "text": "chọn",
-    "startMs": 7960,
-    "endMs": 8120
+    "startMs": 7827,
+    "endMs": 8019
   },
   {
     "text": "lọc",
-    "startMs": 8240,
-    "endMs": 8560
+    "startMs": 8115,
+    "endMs": 8451
   },
   {
     "text": "rồi",
-    "startMs": 8560,
-    "endMs": 8680
+    "startMs": 8451,
+    "endMs": 8643
   },
   {
     "text": "làm",
-    "startMs": 8680,
-    "endMs": 8840
+    "startMs": 8643,
+    "endMs": 8787
   },
   {
     "text": "thật.",
-    "startMs": 8840,
-    "endMs": 9259
+    "startMs": 8787,
+    "endMs": 9175
   }
 ]

@@ -54,7 +54,8 @@
     "cues": "node scripts/check-cues.ts",
     "sfx": "node scripts/insert-sfx.ts",
     "voice:gemini": "node --env-file-if-exists=.env scripts/tts-gemini.ts",
-    "quota": "node --env-file-if-exists=.env scripts/tts-gemini.ts --quota"
+    "quota": "node --env-file-if-exists=.env scripts/tts-gemini.ts --quota",
+    "retime": "node scripts/retime.ts"
   },
   "allowScripts": {
     "esbuild": false

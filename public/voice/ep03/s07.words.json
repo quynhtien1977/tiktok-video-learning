@@ -1,87 +1,87 @@
 [
   {
     "text": "Nghe",
-    "startMs": 120,
-    "endMs": 360
+    "startMs": 144,
+    "endMs": 287
   },
   {
     "text": "hay",
-    "startMs": 400,
-    "endMs": 600
+    "startMs": 383,
+    "endMs": 574
   },
   {
     "text": "quá",
-    "startMs": 640,
-    "endMs": 920
+    "startMs": 622,
+    "endMs": 957
   },
   {
     "text": "vậy",
-    "startMs": 1320,
-    "endMs": 1520
+    "startMs": 957,
+    "endMs": 1148
   },
   {
     "text": "REST",
-    "startMs": 1760,
-    "endMs": 2120
+    "startMs": 1435,
+    "endMs": 1770
   },
   {
     "text": "thay",
-    "startMs": 2160,
-    "endMs": 2320
+    "startMs": 1770,
+    "endMs": 1961
   },
   {
     "text": "thế",
-    "startMs": 2320,
-    "endMs": 2480
+    "startMs": 1961,
+    "endMs": 2105
   },
   {
     "text": "hẳn",
-    "startMs": 2520,
-    "endMs": 2800
+    "startMs": 2153,
+    "endMs": 2440
   },
   {
     "text": "SOAP",
-    "startMs": 2800,
-    "endMs": 3200
+    "startMs": 2440,
+    "endMs": 2775
   },
   {
     "text": "được",
-    "startMs": 3200,
-    "endMs": 3360
+    "startMs": 2775,
+    "endMs": 2966
   },
   {
     "text": "chưa,",
-    "startMs": 3360,
-    "endMs": 3600
+    "startMs": 2966,
+    "endMs": 3205
   },
   {
     "text": "hay",
-    "startMs": 3680,
-    "endMs": 3840
+    "startMs": 3205,
+    "endMs": 3397
   },
   {
     "text": "vẫn",
-    "startMs": 3840,
-    "endMs": 4000
+    "startMs": 3397,
+    "endMs": 3588
   },
   {
     "text": "có",
-    "startMs": 4000,
-    "endMs": 4160
+    "startMs": 3588,
+    "endMs": 3684
   },
   {
     "text": "chỗ",
-    "startMs": 4160,
-    "endMs": 4360
+    "startMs": 3684,
+    "endMs": 3923
   },
   {
     "text": "nó",
-    "startMs": 4360,
-    "endMs": 4480
+    "startMs": 3923,
+    "endMs": 4162
   },
   {
     "text": "thua?",
-    "startMs": 4520,
-    "endMs": 4962
+    "startMs": 4162,
+    "endMs": 4474
   }
 ]

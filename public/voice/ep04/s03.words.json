@@ -1,337 +1,337 @@
 [
   {
     "text": "Quy",
-    "startMs": 80,
-    "endMs": 280
+    "startMs": 49,
+    "endMs": 294
   },
   {
     "text": "trình",
-    "startMs": 280,
-    "endMs": 520
+    "startMs": 294,
+    "endMs": 588
   },
   {
     "text": "gồm",
-    "startMs": 640,
-    "endMs": 880
+    "startMs": 588,
+    "endMs": 833
   },
   {
     "text": "đúng",
-    "startMs": 920,
-    "endMs": 1120
+    "startMs": 833,
+    "endMs": 1028
   },
   {
     "text": "ba",
-    "startMs": 1120,
-    "endMs": 1280
+    "startMs": 1028,
+    "endMs": 1175
   },
   {
     "text": "giai",
-    "startMs": 1320,
-    "endMs": 1480
+    "startMs": 1175,
+    "endMs": 1322
   },
   {
     "text": "đoạn.",
-    "startMs": 1480,
-    "endMs": 1920
+    "startMs": 1322,
+    "endMs": 1714
   },
   {
     "text": "Candidate",
-    "startMs": 2000,
-    "endMs": 2640
+    "startMs": 1714,
+    "endMs": 2400
   },
   {
     "text": "identification,",
-    "startMs": 2640,
-    "endMs": 3440
+    "startMs": 2400,
+    "endMs": 3281
   },
   {
     "text": "tức",
-    "startMs": 3640,
-    "endMs": 3920
+    "startMs": 3281,
+    "endMs": 3575
   },
   {
     "text": "tìm",
-    "startMs": 3960,
-    "endMs": 4120
+    "startMs": 3575,
+    "endMs": 3771
   },
   {
     "text": "ra",
-    "startMs": 4160,
-    "endMs": 4400
+    "startMs": 3771,
+    "endMs": 3918
   },
   {
     "text": "những",
-    "startMs": 4400,
-    "endMs": 4560
+    "startMs": 3918,
+    "endMs": 4114
   },
   {
     "text": "ứng",
-    "startMs": 4600,
-    "endMs": 4760
+    "startMs": 4114,
+    "endMs": 4310
   },
   {
     "text": "viên",
-    "startMs": 4800,
-    "endMs": 5200
+    "startMs": 4310,
+    "endMs": 4555
   },
   {
     "text": "đáng",
-    "startMs": 5200,
-    "endMs": 5400
+    "startMs": 4555,
+    "endMs": 4750
   },
   {
     "text": "làm",
-    "startMs": 5440,
-    "endMs": 5680
+    "startMs": 4750,
+    "endMs": 4946
   },
   {
     "text": "service",
-    "startMs": 5680,
-    "endMs": 5960
+    "startMs": 4946,
+    "endMs": 5632
   },
   {
     "text": "và",
-    "startMs": 6360,
-    "endMs": 6520
+    "startMs": 5632,
+    "endMs": 5779
   },
   {
     "text": "xác",
-    "startMs": 6560,
-    "endMs": 6680
+    "startMs": 5779,
+    "endMs": 5926
   },
   {
     "text": "định",
-    "startMs": 6680,
-    "endMs": 6880
+    "startMs": 5926,
+    "endMs": 6073
   },
   {
     "text": "yêu",
-    "startMs": 6880,
-    "endMs": 7040
+    "startMs": 6073,
+    "endMs": 6220
   },
   {
     "text": "cầu",
-    "startMs": 7040,
-    "endMs": 7240
+    "startMs": 6220,
+    "endMs": 6416
   },
   {
     "text": "cho",
-    "startMs": 7240,
-    "endMs": 7400
+    "startMs": 6416,
+    "endMs": 6562
   },
   {
     "text": "chúng.",
-    "startMs": 7400,
-    "endMs": 8040
+    "startMs": 6562,
+    "endMs": 7052
   },
   {
     "text": "Service",
-    "startMs": 8120,
-    "endMs": 8320
+    "startMs": 7052,
+    "endMs": 7395
   },
   {
     "text": "design,",
-    "startMs": 8400,
-    "endMs": 8920
+    "startMs": 7395,
+    "endMs": 7934
   },
   {
     "text": "tức",
-    "startMs": 9000,
-    "endMs": 9080
+    "startMs": 7934,
+    "endMs": 8130
   },
   {
     "text": "thiết",
-    "startMs": 9320,
-    "endMs": 9520
+    "startMs": 8130,
+    "endMs": 8277
   },
   {
     "text": "kế",
-    "startMs": 9520,
-    "endMs": 9800
+    "startMs": 8277,
+    "endMs": 8570
   },
   {
     "text": "interface",
-    "startMs": 9800,
-    "endMs": 10280
+    "startMs": 8570,
+    "endMs": 9060
   },
   {
     "text": "logic",
-    "startMs": 10360,
-    "endMs": 10800
+    "startMs": 9207,
+    "endMs": 9648
   },
   {
     "text": "rồi",
-    "startMs": 11000,
-    "endMs": 11160
+    "startMs": 9746,
+    "endMs": 9893
   },
   {
     "text": "mới",
-    "startMs": 11200,
-    "endMs": 11360
+    "startMs": 9893,
+    "endMs": 10040
   },
   {
     "text": "xuống",
-    "startMs": 11400,
-    "endMs": 11760
+    "startMs": 10040,
+    "endMs": 10284
   },
   {
     "text": "interface",
-    "startMs": 11760,
-    "endMs": 12160
+    "startMs": 10284,
+    "endMs": 10676
   },
   {
     "text": "cụ",
-    "startMs": 12160,
-    "endMs": 12320
+    "startMs": 10676,
+    "endMs": 10872
   },
   {
     "text": "thể",
-    "startMs": 12320,
-    "endMs": 12640
+    "startMs": 10872,
+    "endMs": 11019
   },
   {
     "text": "cho",
-    "startMs": 12640,
-    "endMs": 12800
+    "startMs": 11019,
+    "endMs": 11264
   },
   {
     "text": "SOAP",
-    "startMs": 12800,
-    "endMs": 13280
+    "startMs": 11264,
+    "endMs": 11558
   },
   {
     "text": "hoặc",
-    "startMs": 13280,
-    "endMs": 13480
+    "startMs": 11558,
+    "endMs": 11705
   },
   {
     "text": "REST.",
-    "startMs": 13640,
-    "endMs": 13680
+    "startMs": 11852,
+    "endMs": 12243
   },
   {
     "text": "Và",
-    "startMs": 14080,
-    "endMs": 14320
+    "startMs": 12292,
+    "endMs": 12537
   },
   {
     "text": "implementation",
-    "startMs": 14320,
-    "endMs": 15120
+    "startMs": 12537,
+    "endMs": 13321
   },
   {
     "text": "and",
-    "startMs": 15160,
-    "endMs": 15360
+    "startMs": 13321,
+    "endMs": 13566
   },
   {
     "text": "deployment,",
-    "startMs": 15400,
-    "endMs": 15960
+    "startMs": 13566,
+    "endMs": 14300
   },
   {
     "text": "tức",
-    "startMs": 16120,
-    "endMs": 16320
+    "startMs": 14349,
+    "endMs": 14496
   },
   {
     "text": "viết,",
-    "startMs": 16440,
-    "endMs": 16640
+    "startMs": 14594,
+    "endMs": 14839
   },
   {
     "text": "test,",
-    "startMs": 16840,
-    "endMs": 17000
+    "startMs": 14986,
+    "endMs": 15329
   },
   {
     "text": "rồi",
-    "startMs": 17320,
-    "endMs": 17520
+    "startMs": 15329,
+    "endMs": 15476
   },
   {
     "text": "publish",
-    "startMs": 17600,
-    "endMs": 18080
+    "startMs": 15574,
+    "endMs": 16014
   },
   {
     "text": "lên",
-    "startMs": 18080,
-    "endMs": 18280
+    "startMs": 16063,
+    "endMs": 16308
   },
   {
     "text": "server.",
-    "startMs": 18320,
-    "endMs": 18880
+    "startMs": 16308,
+    "endMs": 16651
   },
   {
     "text": "Tập",
-    "startMs": 18960,
-    "endMs": 19120
+    "startMs": 16798,
+    "endMs": 17043
   },
   {
     "text": "này",
-    "startMs": 19160,
-    "endMs": 19600
+    "startMs": 17043,
+    "endMs": 17190
   },
   {
     "text": "làm",
-    "startMs": 19600,
-    "endMs": 19720
+    "startMs": 17190,
+    "endMs": 17337
   },
   {
     "text": "giai",
-    "startMs": 19720,
-    "endMs": 19880
+    "startMs": 17337,
+    "endMs": 17484
   },
   {
     "text": "đoạn",
-    "startMs": 19880,
-    "endMs": 20040
+    "startMs": 17484,
+    "endMs": 17630
   },
   {
     "text": "một,",
-    "startMs": 20040,
-    "endMs": 20240
+    "startMs": 17630,
+    "endMs": 17973
   },
   {
     "text": "tập",
-    "startMs": 20520,
-    "endMs": 20680
+    "startMs": 17973,
+    "endMs": 18120
   },
   {
     "text": "sau",
-    "startMs": 20720,
-    "endMs": 20880
+    "startMs": 18169,
+    "endMs": 18365
   },
   {
     "text": "làm",
-    "startMs": 21000,
-    "endMs": 21120
+    "startMs": 18365,
+    "endMs": 18512
   },
   {
     "text": "giai",
-    "startMs": 21120,
-    "endMs": 21240
+    "startMs": 18512,
+    "endMs": 18610
   },
   {
     "text": "đoạn",
-    "startMs": 21240,
-    "endMs": 21360
+    "startMs": 18610,
+    "endMs": 18757
   },
   {
     "text": "hai",
-    "startMs": 21360,
-    "endMs": 21880
+    "startMs": 18757,
+    "endMs": 18953
   },
   {
     "text": "và",
-    "startMs": 21880,
-    "endMs": 22000
+    "startMs": 18953,
+    "endMs": 19100
   },
   {
     "text": "ba.",
-    "startMs": 22000,
-    "endMs": 22533
+    "startMs": 19100,
+    "endMs": 19345
   }
 ]

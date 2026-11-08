@@ -4,22 +4,23 @@
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "SOAP và WSDL: mô tả một service thế nào",
   "voice": {
-    "provider": "azure",
-    "name": "vi-VN-Grant:MAI-Voice-2.1",
-    "style": "educational",
-    "rate": "+18%"
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
   },
   "voices": {
     "host": {
-      "provider": "azure",
-      "name": "vi-VN-Grant:MAI-Voice-2.1",
-      "style": "educational",
-      "rate": "+18%"
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
     },
     "ask": {
       "provider": "gemini",
       "name": "aoede",
-      "style": "curious student interrupting the lecture politely, warm and a little playful"
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
     }
   },
   "scenes": [
@@ -96,7 +97,7 @@
       "part": 1,
       "speaker": "ask",
       "question": "Vậy một bản mô tả service phải ghi những gì?",
-      "narration": "Khoan đã <short pause> nếu chỉ có message đi qua lại, thì bản mô tả service phải ghi những gì mới đủ cho người ta dùng?"
+      "narration": "Khoan đã <short pause> <laugh> nếu chỉ có message đi qua lại, thì bản mô tả service phải ghi những gì mới đủ cho người ta dùng?"
     },
     {
       "id": "s06",
@@ -248,7 +249,7 @@
         "XML",
         "dài"
       ],
-      "narration": "Câu hỏi đó chính là điều mà cả ngành đã hỏi. Giáo trình ghi thẳng rằng bộ chuẩn này bị chê là heavyweight, tức quá nặng. Nó quá tổng quát so với phần lớn nhu cầu thực tế. Mỗi lần gọi là một lần gói và mở một đống XML. Và bản thân tài liệu WSDL viết ra thì dài, khó đọc với người. Chính sự nặng nề đó sinh ra một cách làm khác, nhẹ hơn hẳn."
+      "narration": "Câu hỏi đó chính là điều mà cả ngành đã hỏi <laugh> Giáo trình ghi thẳng rằng bộ chuẩn này bị chê là heavyweight, tức quá nặng. Nó quá tổng quát so với phần lớn nhu cầu thực tế. Mỗi lần gọi là một lần gói và mở một đống XML. Và bản thân tài liệu WSDL viết ra thì dài, khó đọc với người. Chính sự nặng nề đó sinh ra một cách làm khác, nhẹ hơn hẳn."
     },
     {
       "id": "s13b",

@@ -8,14 +8,13 @@ import type { Episode } from "./types";
 // Thêm 1 dòng import cho mỗi tập mới
 import ep00 from "../content/ep00.json";
 import ep01 from "../content/ep01.json";
-import ep01g from "../content/ep01g.json";
 import ep02 from "../content/ep02.json";
 import ep03 from "../content/ep03.json";
 import ep04 from "../content/ep04.json";
 import ep05 from "../content/ep05.json";
 import ep06 from "../content/ep06.json";
 
-const episodes = [ep01, ep01g, ep02, ep03, ep04, ep05, ep06, ep00] as unknown as Episode[];
+const episodes = [ep01, ep02, ep03, ep04, ep05, ep06, ep00] as unknown as Episode[];
 
 /**
  * Mỗi tập sinh ra:
