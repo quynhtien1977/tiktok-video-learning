@@ -1,17 +1,21 @@
-export type VoiceProvider = "azure" | "capcut";
+export type VoiceProvider = "azure" | "capcut" | "gemini";
 
 export type Voice = {
   provider: VoiceProvider;
   /**
    * azure:  vi-VN-Grant:MAI-Voice-2.1 (nam) | vi-VN-Harper:MAI-Voice-2.1 (nữ) | vi-VN-NamMinhNeural
    * capcut: voice_type, ví dụ BV075_streaming (xem `npm run voices:capcut`)
+   * gemini: tên giọng, ví dụ achird (nam, ấm) | algieba (nam, trầm) | aoede (nữ)
    */
   name?: string;
   /** Azure: "+3%" | "0.9". CapCut BỎ QUA rate — dùng `speed` bên dưới thay thế. */
   rate?: string;
   /** Chỉ Azure. CapCut bỏ qua pitch. */
   pitch?: string;
-  /** Azure: mstts:express-as style (vi-VN-Grant có educational | narrator | neutral | agent). */
+  /**
+   * azure:  mstts:express-as style (vi-VN-Grant có educational | narrator | neutral | agent)
+   * gemini: chỉ đạo bằng tiếng Anh tự nhiên, ví dụ "warm teacher, brisk pace, a bit playful"
+   */
   style?: string;
   /** Chỉ CapCut: emotion + độ mạnh 1–5. Đây là núm chỉnh duy nhất CapCut thực sự nghe theo. */
   emotion?: string;

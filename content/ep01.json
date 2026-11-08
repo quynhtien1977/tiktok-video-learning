@@ -17,10 +17,9 @@
       "rate": "+18%"
     },
     "ask": {
-      "provider": "azure",
-      "name": "vi-VN-Harper:MAI-Voice-2.1",
-      "style": "neutral",
-      "rate": "+14%"
+      "provider": "gemini",
+      "name": "aoede",
+      "style": "curious student interrupting the lecture politely, warm and a little playful"
     }
   },
   "scenes": [
@@ -114,7 +113,7 @@
       "part": 1,
       "speaker": "ask",
       "question": "Nghe hệt như component. Vậy khác gì?",
-      "narration": "Khoan đã. Nghe mô tả này thì giống hệt component mà chương mười sáu đã học. Vậy rốt cuộc service khác component ở chỗ nào?"
+      "narration": "Khoan đã <short pause> nghe mô tả này thì giống hệt component mà chương mười sáu đã học. <laugh> Vậy rốt cuộc service khác component ở chỗ nào?"
     },
     {
       "id": "s08",
@@ -261,7 +260,7 @@
       "part": 3,
       "speaker": "ask",
       "question": "Vậy học SOA là học những gì?",
-      "narration": "Vậy nếu muốn làm việc với service một cách bài bản, thì thực ra ta phải học những gì?"
+      "narration": "Vậy nếu muốn làm việc với service một cách bài bản <short pause> thì thực ra ta phải học những gì?"
     },
     {
       "id": "s18",

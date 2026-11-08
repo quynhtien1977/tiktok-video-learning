@@ -52,7 +52,9 @@
     "lab:azure": "node --env-file-if-exists=.env scripts/azure-lab.ts",
     "images": "powershell -ExecutionPolicy Bypass -File scripts/extract-slide-images.ps1",
     "cues": "node scripts/check-cues.ts",
-    "sfx": "node scripts/insert-sfx.ts"
+    "sfx": "node scripts/insert-sfx.ts",
+    "voice:gemini": "node --env-file-if-exists=.env scripts/tts-gemini.ts",
+    "quota": "node --env-file-if-exists=.env scripts/tts-gemini.ts --quota"
   },
   "allowScripts": {
     "esbuild": false

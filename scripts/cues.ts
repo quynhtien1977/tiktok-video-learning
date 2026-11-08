@@ -23,6 +23,7 @@ const norm = (t: string) =>
 
 const keyTokens = (text: string) =>
   text
+    .replace(/<[^>]{1,24}>/g, " ")
     .split(/\s+/)
     .map(norm)
     .filter((t) => t.length > 1 && !STOP.has(t));

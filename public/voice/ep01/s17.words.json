@@ -1,97 +1,97 @@
 [
   {
     "text": "Vậy",
-    "startMs": 80,
-    "endMs": 280
+    "startMs": 120,
+    "endMs": 360
   },
   {
     "text": "nếu",
-    "startMs": 320,
-    "endMs": 480
+    "startMs": 440,
+    "endMs": 680
   },
   {
     "text": "muốn",
-    "startMs": 480,
-    "endMs": 640
+    "startMs": 680,
+    "endMs": 840
   },
   {
     "text": "làm",
-    "startMs": 640,
-    "endMs": 760
+    "startMs": 840,
+    "endMs": 960
   },
   {
     "text": "việc",
-    "startMs": 760,
-    "endMs": 920
+    "startMs": 960,
+    "endMs": 1120
   },
   {
     "text": "với",
-    "startMs": 960,
-    "endMs": 1240
+    "startMs": 1240,
+    "endMs": 1520
   },
   {
     "text": "service",
-    "startMs": 1240,
-    "endMs": 1680
-  },
-  {
-    "text": "một",
-    "startMs": 1680,
-    "endMs": 1800
-  },
-  {
-    "text": "cách",
-    "startMs": 1800,
+    "startMs": 1520,
     "endMs": 1960
   },
   {
-    "text": "bài",
-    "startMs": 2000,
-    "endMs": 2280
+    "text": "một",
+    "startMs": 1960,
+    "endMs": 2080
   },
   {
-    "text": "bản,",
-    "startMs": 2280,
-    "endMs": 2400
+    "text": "cách",
+    "startMs": 2080,
+    "endMs": 2240
+  },
+  {
+    "text": "bài",
+    "startMs": 2320,
+    "endMs": 2560
+  },
+  {
+    "text": "bản",
+    "startMs": 2560,
+    "endMs": 2680
   },
   {
     "text": "thì",
-    "startMs": 2680,
-    "endMs": 2800
-  },
-  {
-    "text": "thực",
-    "startMs": 2800,
-    "endMs": 2960
-  },
-  {
-    "text": "ra",
-    "startMs": 2960,
-    "endMs": 3080
-  },
-  {
-    "text": "ta",
     "startMs": 3080,
     "endMs": 3240
   },
   {
-    "text": "phải",
+    "text": "thực",
     "startMs": 3240,
-    "endMs": 3400
+    "endMs": 3360
   },
   {
-    "text": "học",
-    "startMs": 3400,
-    "endMs": 3560
+    "text": "ra",
+    "startMs": 3360,
+    "endMs": 3520
   },
   {
-    "text": "những",
-    "startMs": 3560,
+    "text": "ta",
+    "startMs": 3520,
     "endMs": 3680
   },
   {
-    "text": "gì?",
+    "text": "phải",
     "startMs": 3680,
-    "endMs": 4142
+    "endMs": 3800
+  },
+  {
+    "text": "học",
+    "startMs": 3800,
+    "endMs": 3960
+  },
+  {
+    "text": "những",
+    "startMs": 3960,
+    "endMs": 4120
+  },
+  {
+    "text": "gì?",
+    "startMs": 4120,
+    "endMs": 4452
   }
 ]

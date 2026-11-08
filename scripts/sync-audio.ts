@@ -19,7 +19,8 @@ const scenes: Record<string, unknown> = {};
 const missing: string[] = [];
 
 for (const scene of episode.scenes) {
-  const provider = scene.voice?.provider ?? episode.voice.provider;
+  const role = episode.voices?.[scene.speaker ?? "host"] ?? {};
+  const provider = scene.voice?.provider ?? role.provider ?? episode.voice.provider;
   const mp3 = path.join(dir, `${scene.id}.mp3`);
   const wav = path.join(dir, `${scene.id}.wav`);
   const file = existsSync(mp3) ? mp3 : existsSync(wav) ? wav : null;

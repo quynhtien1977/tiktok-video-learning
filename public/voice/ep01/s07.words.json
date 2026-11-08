@@ -2,17 +2,17 @@
   {
     "text": "Khoan",
     "startMs": 80,
-    "endMs": 320
+    "endMs": 360
   },
   {
-    "text": "đã.",
-    "startMs": 360,
-    "endMs": 800
+    "text": "đã",
+    "startMs": 400,
+    "endMs": 720
   },
   {
-    "text": "Nghe",
-    "startMs": 800,
-    "endMs": 920
+    "text": "nghe",
+    "startMs": 720,
+    "endMs": 840
   },
   {
     "text": "mô",
@@ -21,107 +21,107 @@
   },
   {
     "text": "tả",
-    "startMs": 1080,
+    "startMs": 1040,
     "endMs": 1200
   },
   {
     "text": "này",
-    "startMs": 1240,
-    "endMs": 1400
+    "startMs": 1200,
+    "endMs": 1520
   },
   {
     "text": "thì",
-    "startMs": 1400,
-    "endMs": 1560
-  },
-  {
-    "text": "giống",
-    "startMs": 1560,
+    "startMs": 1600,
     "endMs": 1720
   },
   {
-    "text": "hệt",
+    "text": "giống",
     "startMs": 1720,
-    "endMs": 2000
+    "endMs": 1840
+  },
+  {
+    "text": "hệt",
+    "startMs": 1880,
+    "endMs": 2160
   },
   {
     "text": "component",
-    "startMs": 2000,
-    "endMs": 2680
+    "startMs": 2160,
+    "endMs": 2760
   },
   {
     "text": "mà",
-    "startMs": 2680,
-    "endMs": 2800
+    "startMs": 2760,
+    "endMs": 2920
   },
   {
     "text": "chương",
-    "startMs": 2800,
+    "startMs": 2920,
     "endMs": 3120
   },
   {
     "text": "mười",
     "startMs": 3120,
-    "endMs": 3280
+    "endMs": 3300
   },
   {
     "text": "sáu",
-    "startMs": 3280,
-    "endMs": 3440
+    "startMs": 3300,
+    "endMs": 3480
   },
   {
     "text": "đã",
-    "startMs": 3440,
-    "endMs": 3560
+    "startMs": 3480,
+    "endMs": 3600
   },
   {
     "text": "học.",
-    "startMs": 3600,
-    "endMs": 3880
+    "startMs": 3640,
+    "endMs": 3920
   },
   {
     "text": "Vậy",
-    "startMs": 3880,
-    "endMs": 4040
+    "startMs": 4240,
+    "endMs": 4480
   },
   {
     "text": "rốt",
-    "startMs": 4040,
-    "endMs": 4240
+    "startMs": 4520,
+    "endMs": 4680
   },
   {
     "text": "cuộc",
-    "startMs": 4240,
-    "endMs": 4360
+    "startMs": 4680,
+    "endMs": 4960
   },
   {
     "text": "service",
-    "startMs": 4360,
-    "endMs": 5000
-  },
-  {
-    "text": "khác",
-    "startMs": 5000,
+    "startMs": 4960,
     "endMs": 5280
   },
   {
-    "text": "component",
+    "text": "khác",
     "startMs": 5280,
     "endMs": 5720
   },
   {
-    "text": "ở",
+    "text": "component",
     "startMs": 5720,
-    "endMs": 5840
+    "endMs": 6080
+  },
+  {
+    "text": "ở",
+    "startMs": 6080,
+    "endMs": 6200
   },
   {
     "text": "chỗ",
-    "startMs": 5840,
-    "endMs": 6000
+    "startMs": 6200,
+    "endMs": 6320
   },
   {
     "text": "nào?",
-    "startMs": 6000,
-    "endMs": 6400
+    "startMs": 6360,
+    "endMs": 6620
   }
 ]

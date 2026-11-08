@@ -12,6 +12,9 @@ import { Frame } from "./components/Frame";
 import { Captions } from "./components/Captions";
 import { SceneRenderer } from "./scenes";
 
+/** Tag cảm xúc của Gemini là chỉ dẫn cho engine, không bao giờ hiện lên phụ đề. */
+const stripTags = (t: string) => t.replace(/<[^>]{1,24}>/g, " ").replace(/\s+/g, " ").trim();
+
 /** Ước lượng thời lượng khi chưa có audio (để xem trước trong Studio). */
 const estimateSeconds = (narration: string) => Math.max(2.5, narration.length / 15.5);
 
@@ -95,7 +98,7 @@ export const EpisodeVideo: React.FC<EpisodeProps> = ({ episode, manifest, part }
                 durationInFrames={durationInFrames}
                 cues={entry?.cues}
               />
-              <Captions words={entry?.words} fallbackText={scene.narration} />
+              <Captions words={entry?.words} fallbackText={stripTags(scene.narration)} />
             </Frame>
           </Sequence>
         );

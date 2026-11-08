@@ -130,7 +130,10 @@ def words_from_payload(payload, narration=None):
     if not narration or not raw:
         return raw
 
-    tokens = [t for t in re.split(r"\s+", narration.strip()) if t]
+    # Tag cam xuc cua Gemini (<laugh>, <sigh>, <short pause>) la chi dan cho engine,
+    # khong phai chu de hien len man hinh -> loai khoi phu de.
+    clean = re.sub(r"<[^>]{1,24}>", " ", narration)
+    tokens = [t for t in re.split(r"\s+", clean.strip()) if t]
     return align(tokens, raw)
 
 

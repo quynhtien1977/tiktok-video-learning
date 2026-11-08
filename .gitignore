@@ -33,3 +33,6 @@ whisper.cpp/
 # Python bytecode
 __pycache__/
 *.pyc
+
+# Sổ ghi lượt gọi Gemini trong ngày
+.gemini-usage.json
