@@ -29,3 +29,7 @@ whisper.cpp/
 # Cờ đánh dấu của pipeline audio
 *.lufs
 *.sfx
+
+# Python bytecode
+__pycache__/
+*.pyc
