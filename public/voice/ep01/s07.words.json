@@ -1,0 +1,127 @@
+[
+  {
+    "text": "Khoan",
+    "startMs": 80,
+    "endMs": 320
+  },
+  {
+    "text": "đã.",
+    "startMs": 360,
+    "endMs": 800
+  },
+  {
+    "text": "Nghe",
+    "startMs": 800,
+    "endMs": 920
+  },
+  {
+    "text": "mô",
+    "startMs": 920,
+    "endMs": 1040
+  },
+  {
+    "text": "tả",
+    "startMs": 1080,
+    "endMs": 1200
+  },
+  {
+    "text": "này",
+    "startMs": 1240,
+    "endMs": 1400
+  },
+  {
+    "text": "thì",
+    "startMs": 1400,
+    "endMs": 1560
+  },
+  {
+    "text": "giống",
+    "startMs": 1560,
+    "endMs": 1720
+  },
+  {
+    "text": "hệt",
+    "startMs": 1720,
+    "endMs": 2000
+  },
+  {
+    "text": "component",
+    "startMs": 2000,
+    "endMs": 2680
+  },
+  {
+    "text": "mà",
+    "startMs": 2680,
+    "endMs": 2800
+  },
+  {
+    "text": "chương",
+    "startMs": 2800,
+    "endMs": 3120
+  },
+  {
+    "text": "mười",
+    "startMs": 3120,
+    "endMs": 3280
+  },
+  {
+    "text": "sáu",
+    "startMs": 3280,
+    "endMs": 3440
+  },
+  {
+    "text": "đã",
+    "startMs": 3440,
+    "endMs": 3560
+  },
+  {
+    "text": "học.",
+    "startMs": 3600,
+    "endMs": 3880
+  },
+  {
+    "text": "Vậy",
+    "startMs": 3880,
+    "endMs": 4040
+  },
+  {
+    "text": "rốt",
+    "startMs": 4040,
+    "endMs": 4240
+  },
+  {
+    "text": "cuộc",
+    "startMs": 4240,
+    "endMs": 4360
+  },
+  {
+    "text": "service",
+    "startMs": 4360,
+    "endMs": 5000
+  },
+  {
+    "text": "khác",
+    "startMs": 5000,
+    "endMs": 5280
+  },
+  {
+    "text": "component",
+    "startMs": 5280,
+    "endMs": 5720
+  },
+  {
+    "text": "ở",
+    "startMs": 5720,
+    "endMs": 5840
+  },
+  {
+    "text": "chỗ",
+    "startMs": 5840,
+    "endMs": 6000
+  },
+  {
+    "text": "nào?",
+    "startMs": 6000,
+    "endMs": 6400
+  }
+]

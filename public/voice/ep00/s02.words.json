@@ -1,0 +1,107 @@
+[
+  {
+    "text": "Thử",
+    "startMs": 20,
+    "endMs": 210
+  },
+  {
+    "text": "cách",
+    "startMs": 210,
+    "endMs": 410
+  },
+  {
+    "text": "viết",
+    "startMs": 410,
+    "endMs": 570
+  },
+  {
+    "text": "liền",
+    "startMs": 570,
+    "endMs": 870
+  },
+  {
+    "text": "WSDL",
+    "startMs": 1125,
+    "endMs": 2150
+  },
+  {
+    "text": "SOAP",
+    "startMs": 2365,
+    "endMs": 2695
+  },
+  {
+    "text": "REST",
+    "startMs": 2850,
+    "endMs": 3400
+  },
+  {
+    "text": "BPEL",
+    "startMs": 3610,
+    "endMs": 4000
+  },
+  {
+    "text": "Tiếp",
+    "startMs": 4320,
+    "endMs": 4530
+  },
+  {
+    "text": "theo",
+    "startMs": 4530,
+    "endMs": 4795
+  },
+  {
+    "text": "SOA",
+    "startMs": 5040,
+    "endMs": 5375
+  },
+  {
+    "text": "API",
+    "startMs": 5510,
+    "endMs": 5955
+  },
+  {
+    "text": "HTTP",
+    "startMs": 6150,
+    "endMs": 6980
+  },
+  {
+    "text": "XML",
+    "startMs": 7220,
+    "endMs": 7770
+  },
+  {
+    "text": "Và",
+    "startMs": 8025,
+    "endMs": 8290
+  },
+  {
+    "text": "các",
+    "startMs": 8290,
+    "endMs": 8480
+  },
+  {
+    "text": "từ",
+    "startMs": 8480,
+    "endMs": 8640
+  },
+  {
+    "text": "thường",
+    "startMs": 8640,
+    "endMs": 9020
+  },
+  {
+    "text": "service",
+    "startMs": 9270,
+    "endMs": 9970
+  },
+  {
+    "text": "workflow",
+    "startMs": 10240,
+    "endMs": 10880
+  },
+  {
+    "text": "binding",
+    "startMs": 11095,
+    "endMs": 11595
+  }
+]

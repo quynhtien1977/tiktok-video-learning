@@ -1,0 +1,202 @@
+[
+  {
+    "text": "Và",
+    "startMs": 15,
+    "endMs": 235
+  },
+  {
+    "text": "đây",
+    "startMs": 235,
+    "endMs": 395
+  },
+  {
+    "text": "là",
+    "startMs": 395,
+    "endMs": 500
+  },
+  {
+    "text": "một",
+    "startMs": 500,
+    "endMs": 695
+  },
+  {
+    "text": "câu",
+    "startMs": 695,
+    "endMs": 855
+  },
+  {
+    "text": "giảng",
+    "startMs": 855,
+    "endMs": 1075
+  },
+  {
+    "text": "thật",
+    "startMs": 1075,
+    "endMs": 1260
+  },
+  {
+    "text": "Chuẩn",
+    "startMs": 1590,
+    "endMs": 1910
+  },
+  {
+    "text": "WSDL",
+    "startMs": 1910,
+    "endMs": 2850
+  },
+  {
+    "text": "trả",
+    "startMs": 2850,
+    "endMs": 3045
+  },
+  {
+    "text": "lời",
+    "startMs": 3045,
+    "endMs": 3230
+  },
+  {
+    "text": "ba",
+    "startMs": 3230,
+    "endMs": 3400
+  },
+  {
+    "text": "câu",
+    "startMs": 3400,
+    "endMs": 3605
+  },
+  {
+    "text": "hỏi",
+    "startMs": 3605,
+    "endMs": 3855
+  },
+  {
+    "text": "what",
+    "startMs": 4150,
+    "endMs": 4420
+  },
+  {
+    "text": "tức",
+    "startMs": 4655,
+    "endMs": 4785
+  },
+  {
+    "text": "service",
+    "startMs": 4785,
+    "endMs": 5305
+  },
+  {
+    "text": "hỗ",
+    "startMs": 5305,
+    "endMs": 5460
+  },
+  {
+    "text": "trợ",
+    "startMs": 5460,
+    "endMs": 5710
+  },
+  {
+    "text": "những",
+    "startMs": 5710,
+    "endMs": 5890
+  },
+  {
+    "text": "operation",
+    "startMs": 5890,
+    "endMs": 6380
+  },
+  {
+    "text": "nào",
+    "startMs": 6380,
+    "endMs": 6635
+  },
+  {
+    "text": "how",
+    "startMs": 6885,
+    "endMs": 7185
+  },
+  {
+    "text": "tức",
+    "startMs": 7455,
+    "endMs": 7610
+  },
+  {
+    "text": "binding",
+    "startMs": 7610,
+    "endMs": 7985
+  },
+  {
+    "text": "ánh",
+    "startMs": 7985,
+    "endMs": 8130
+  },
+  {
+    "text": "xạ",
+    "startMs": 8130,
+    "endMs": 8355
+  },
+  {
+    "text": "interface",
+    "startMs": 8355,
+    "endMs": 9065
+  },
+  {
+    "text": "xuống",
+    "startMs": 9065,
+    "endMs": 9290
+  },
+  {
+    "text": "giao",
+    "startMs": 9290,
+    "endMs": 9445
+  },
+  {
+    "text": "thức",
+    "startMs": 9445,
+    "endMs": 9635
+  },
+  {
+    "text": "cụ",
+    "startMs": 9635,
+    "endMs": 9780
+  },
+  {
+    "text": "thể",
+    "startMs": 9780,
+    "endMs": 10085
+  },
+  {
+    "text": "và",
+    "startMs": 10360,
+    "endMs": 10560
+  },
+  {
+    "text": "where",
+    "startMs": 10560,
+    "endMs": 10905
+  },
+  {
+    "text": "tức",
+    "startMs": 11180,
+    "endMs": 11365
+  },
+  {
+    "text": "endpoint",
+    "startMs": 11365,
+    "endMs": 11700
+  },
+  {
+    "text": "nằm",
+    "startMs": 11700,
+    "endMs": 11890
+  },
+  {
+    "text": "ở",
+    "startMs": 11890,
+    "endMs": 11970
+  },
+  {
+    "text": "đâu",
+    "startMs": 11970,
+    "endMs": 12245
+  }
+]

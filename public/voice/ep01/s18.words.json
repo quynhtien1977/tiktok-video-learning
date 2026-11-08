@@ -1,0 +1,417 @@
+[
+  {
+    "text": "Câu",
+    "startMs": 40,
+    "endMs": 280
+  },
+  {
+    "text": "trả",
+    "startMs": 280,
+    "endMs": 400
+  },
+  {
+    "text": "lời",
+    "startMs": 400,
+    "endMs": 640
+  },
+  {
+    "text": "là",
+    "startMs": 640,
+    "endMs": 760
+  },
+  {
+    "text": "hai",
+    "startMs": 760,
+    "endMs": 960
+  },
+  {
+    "text": "nhánh,",
+    "startMs": 960,
+    "endMs": 1160
+  },
+  {
+    "text": "và",
+    "startMs": 1440,
+    "endMs": 1600
+  },
+  {
+    "text": "chương",
+    "startMs": 1680,
+    "endMs": 1960
+  },
+  {
+    "text": "này",
+    "startMs": 2000,
+    "endMs": 2280
+  },
+  {
+    "text": "dạy",
+    "startMs": 2280,
+    "endMs": 2480
+  },
+  {
+    "text": "cả",
+    "startMs": 2560,
+    "endMs": 2720
+  },
+  {
+    "text": "hai.",
+    "startMs": 2720,
+    "endMs": 3200
+  },
+  {
+    "text": "Nhánh",
+    "startMs": 3200,
+    "endMs": 3360
+  },
+  {
+    "text": "thứ",
+    "startMs": 3400,
+    "endMs": 3560
+  },
+  {
+    "text": "nhất",
+    "startMs": 3560,
+    "endMs": 3800
+  },
+  {
+    "text": "là",
+    "startMs": 3800,
+    "endMs": 3920
+  },
+  {
+    "text": "service",
+    "startMs": 4000,
+    "endMs": 4440
+  },
+  {
+    "text": "engineering:",
+    "startMs": 4440,
+    "endMs": 5240
+  },
+  {
+    "text": "làm",
+    "startMs": 5360,
+    "endMs": 5520
+  },
+  {
+    "text": "ra",
+    "startMs": 5520,
+    "endMs": 5720
+  },
+  {
+    "text": "những",
+    "startMs": 5720,
+    "endMs": 5880
+  },
+  {
+    "text": "service",
+    "startMs": 5920,
+    "endMs": 6200
+  },
+  {
+    "text": "đáng",
+    "startMs": 6200,
+    "endMs": 6400
+  },
+  {
+    "text": "tin",
+    "startMs": 6480,
+    "endMs": 6640
+  },
+  {
+    "text": "cậy",
+    "startMs": 6680,
+    "endMs": 7000
+  },
+  {
+    "text": "để",
+    "startMs": 7200,
+    "endMs": 7320
+  },
+  {
+    "text": "người",
+    "startMs": 7320,
+    "endMs": 7440
+  },
+  {
+    "text": "khác",
+    "startMs": 7440,
+    "endMs": 7600
+  },
+  {
+    "text": "dùng",
+    "startMs": 7600,
+    "endMs": 7760
+  },
+  {
+    "text": "lại.",
+    "startMs": 7800,
+    "endMs": 8360
+  },
+  {
+    "text": "Nhánh",
+    "startMs": 8360,
+    "endMs": 8520
+  },
+  {
+    "text": "thứ",
+    "startMs": 8560,
+    "endMs": 8680
+  },
+  {
+    "text": "hai",
+    "startMs": 8680,
+    "endMs": 9200
+  },
+  {
+    "text": "là",
+    "startMs": 9200,
+    "endMs": 9360
+  },
+  {
+    "text": "development",
+    "startMs": 9440,
+    "endMs": 10000
+  },
+  {
+    "text": "with",
+    "startMs": 10040,
+    "endMs": 10280
+  },
+  {
+    "text": "services:",
+    "startMs": 10360,
+    "endMs": 10840
+  },
+  {
+    "text": "ghép",
+    "startMs": 11120,
+    "endMs": 11360
+  },
+  {
+    "text": "các",
+    "startMs": 11360,
+    "endMs": 11520
+  },
+  {
+    "text": "service",
+    "startMs": 11520,
+    "endMs": 11920
+  },
+  {
+    "text": "có",
+    "startMs": 11920,
+    "endMs": 12040
+  },
+  {
+    "text": "sẵn",
+    "startMs": 12080,
+    "endMs": 12280
+  },
+  {
+    "text": "thành",
+    "startMs": 12280,
+    "endMs": 12480
+  },
+  {
+    "text": "ứng",
+    "startMs": 12520,
+    "endMs": 12640
+  },
+  {
+    "text": "dụng",
+    "startMs": 12640,
+    "endMs": 12840
+  },
+  {
+    "text": "của",
+    "startMs": 12840,
+    "endMs": 12960
+  },
+  {
+    "text": "mình.",
+    "startMs": 12960,
+    "endMs": 13400
+  },
+  {
+    "text": "Nói",
+    "startMs": 13400,
+    "endMs": 13520
+  },
+  {
+    "text": "gọn",
+    "startMs": 13560,
+    "endMs": 13720
+  },
+  {
+    "text": "lại,",
+    "startMs": 13800,
+    "endMs": 14200
+  },
+  {
+    "text": "nhánh",
+    "startMs": 14200,
+    "endMs": 14440
+  },
+  {
+    "text": "một",
+    "startMs": 14520,
+    "endMs": 14760
+  },
+  {
+    "text": "là",
+    "startMs": 14760,
+    "endMs": 14920
+  },
+  {
+    "text": "phát",
+    "startMs": 14920,
+    "endMs": 15040
+  },
+  {
+    "text": "triển",
+    "startMs": 15040,
+    "endMs": 15400
+  },
+  {
+    "text": "để",
+    "startMs": 15400,
+    "endMs": 15520
+  },
+  {
+    "text": "tái",
+    "startMs": 15640,
+    "endMs": 15880
+  },
+  {
+    "text": "sử",
+    "startMs": 15880,
+    "endMs": 16040
+  },
+  {
+    "text": "dụng,",
+    "startMs": 16040,
+    "endMs": 16200
+  },
+  {
+    "text": "còn",
+    "startMs": 16400,
+    "endMs": 16600
+  },
+  {
+    "text": "nhánh",
+    "startMs": 16640,
+    "endMs": 16760
+  },
+  {
+    "text": "hai",
+    "startMs": 16760,
+    "endMs": 17400
+  },
+  {
+    "text": "là",
+    "startMs": 17400,
+    "endMs": 17520
+  },
+  {
+    "text": "phát",
+    "startMs": 17520,
+    "endMs": 17560
+  },
+  {
+    "text": "triển",
+    "startMs": 17560,
+    "endMs": 17880
+  },
+  {
+    "text": "bằng",
+    "startMs": 17880,
+    "endMs": 18120
+  },
+  {
+    "text": "tái",
+    "startMs": 18120,
+    "endMs": 18320
+  },
+  {
+    "text": "sử",
+    "startMs": 18360,
+    "endMs": 18440
+  },
+  {
+    "text": "dụng.",
+    "startMs": 18440,
+    "endMs": 18560
+  },
+  {
+    "text": "Tập",
+    "startMs": 18840,
+    "endMs": 19000
+  },
+  {
+    "text": "bốn",
+    "startMs": 19000,
+    "endMs": 19320
+  },
+  {
+    "text": "và",
+    "startMs": 19320,
+    "endMs": 19480
+  },
+  {
+    "text": "tập",
+    "startMs": 19520,
+    "endMs": 19640
+  },
+  {
+    "text": "năm",
+    "startMs": 19680,
+    "endMs": 19880
+  },
+  {
+    "text": "sẽ",
+    "startMs": 19920,
+    "endMs": 20080
+  },
+  {
+    "text": "làm",
+    "startMs": 20080,
+    "endMs": 20280
+  },
+  {
+    "text": "nhánh",
+    "startMs": 20320,
+    "endMs": 20520
+  },
+  {
+    "text": "một,",
+    "startMs": 20520,
+    "endMs": 20680
+  },
+  {
+    "text": "tập",
+    "startMs": 20840,
+    "endMs": 20960
+  },
+  {
+    "text": "sáu",
+    "startMs": 20960,
+    "endMs": 21400
+  },
+  {
+    "text": "làm",
+    "startMs": 21400,
+    "endMs": 21520
+  },
+  {
+    "text": "nhánh",
+    "startMs": 21560,
+    "endMs": 21720
+  },
+  {
+    "text": "hai.",
+    "startMs": 21720,
+    "endMs": 22180
+  }
+]

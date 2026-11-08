@@ -1,0 +1,77 @@
+{
+  "id": "ep00",
+  "episodeNumber": 0,
+  "seriesTitle": "Test giọng & thuật ngữ",
+  "title": "Nghe thử trước khi làm cả loạt",
+  "voice": {
+    "provider": "capcut",
+    "name": "BV075_streaming",
+    "rate": "1.0"
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "title",
+      "title": "Test giọng đọc",
+      "subtitle": "CapCut · BV075_streaming",
+      "narration": "Đây là bài kiểm tra giọng đọc cho loạt video Công nghệ phần mềm. Nếu bạn nghe rõ câu này, phần giọng đọc đã chạy đúng."
+    },
+    {
+      "id": "s02",
+      "type": "bullets",
+      "heading": "Thuật ngữ viết liền",
+      "bullets": [
+        "WSDL, SOAP, REST, BPEL",
+        "SOA, API, HTTP, XML",
+        "service, workflow, binding"
+      ],
+      "narration": "Thử cách viết liền: WSDL, SOAP, REST, BPEL. Tiếp theo: SOA, API, HTTP, XML. Và các từ thường: service, workflow, binding."
+    },
+    {
+      "id": "s03",
+      "type": "bullets",
+      "heading": "Thuật ngữ tách chữ",
+      "bullets": [
+        "W S D L · S O A P",
+        "S O A · A P I · X M L",
+        "bi pèo · rét · sốp"
+      ],
+      "narration": "Thử cách tách chữ: W S D L, rồi S O A P. Tiếp theo S O A, A P I, X M L. Và thử phiên âm: bi pèo, rét, sốp."
+    },
+    {
+      "id": "s04",
+      "type": "formula",
+      "heading": "Câu giảng mẫu",
+      "latex": "\\text{SOAP} \\;+\\; \\text{WSDL} \\;\\longrightarrow\\; \\text{service interface}",
+      "caption": "what · how · where",
+      "narration": "Và đây là một câu giảng thật. Chuẩn WSDL trả lời ba câu hỏi: what, tức service hỗ trợ những operation nào; how, tức binding ánh xạ interface xuống giao thức cụ thể; và where, tức endpoint nằm ở đâu."
+    },
+    {
+      "id": "s05",
+      "type": "question",
+      "speaker": "ask",
+      "question": "Vậy REST khác SOAP ở điểm nào?",
+      "hint": "giọng đặt câu hỏi — nền và viền đổi màu",
+      "narration": "Khoan đã. Vậy REST khác SOAP ở điểm nào, và khi nào thì nên chọn REST?"
+    },
+    {
+      "id": "s06",
+      "type": "image",
+      "src": "images/ch18/slide13-image3.png",
+      "caption": "Hình trong slide 13 — trích nguyên bản từ giáo trình",
+      "narration": "Và đây là sơ đồ lấy thẳng từ slide, đặt trên nền giấy của video."
+    }
+  ],
+  "voices": {
+    "host": {
+      "provider": "capcut",
+      "name": "BV075_streaming",
+      "rate": "1.0"
+    },
+    "ask": {
+      "provider": "capcut",
+      "name": "BV562_streaming",
+      "rate": "1.0"
+    }
+  }
+}

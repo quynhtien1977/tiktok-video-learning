@@ -1,0 +1,82 @@
+[
+  {
+    "text": "Khoan",
+    "startMs": 15,
+    "endMs": 245
+  },
+  {
+    "text": "đã",
+    "startMs": 245,
+    "endMs": 400
+  },
+  {
+    "text": "Vậy",
+    "startMs": 615,
+    "endMs": 780
+  },
+  {
+    "text": "REST",
+    "startMs": 780,
+    "endMs": 1130
+  },
+  {
+    "text": "khác",
+    "startMs": 1130,
+    "endMs": 1295
+  },
+  {
+    "text": "SOAP",
+    "startMs": 1295,
+    "endMs": 1535
+  },
+  {
+    "text": "ở",
+    "startMs": 1535,
+    "endMs": 1610
+  },
+  {
+    "text": "điểm",
+    "startMs": 1610,
+    "endMs": 1785
+  },
+  {
+    "text": "nào",
+    "startMs": 1785,
+    "endMs": 2115
+  },
+  {
+    "text": "và",
+    "startMs": 2400,
+    "endMs": 2515
+  },
+  {
+    "text": "khi",
+    "startMs": 2515,
+    "endMs": 2685
+  },
+  {
+    "text": "nào",
+    "startMs": 2685,
+    "endMs": 2920
+  },
+  {
+    "text": "thì",
+    "startMs": 2920,
+    "endMs": 3065
+  },
+  {
+    "text": "nên",
+    "startMs": 3065,
+    "endMs": 3215
+  },
+  {
+    "text": "chọn",
+    "startMs": 3215,
+    "endMs": 3440
+  },
+  {
+    "text": "REST",
+    "startMs": 3440,
+    "endMs": 3985
+  }
+]
