@@ -1,23 +1,32 @@
 {
-  "name": "_scaffold",
+  "name": "theory-video-series",
   "version": "1.0.0",
-  "description": "My Remotion video",
+  "description": "Video giải thích lý thuyết nhiều tập — Remotion + TTS (Azure / CapCut)",
   "repository": {},
   "license": "UNLICENSED",
   "engines": {
     "node": "^20.19.0 || ^22.13.0 || >=24"
   },
   "private": true,
+  "type": "module",
   "dependencies": {
+    "@google/genai": "^3.0.0",
     "@remotion/cli": "4.0.541",
+    "@remotion/google-fonts": "^4.0.541",
+    "@remotion/media-utils": "^4.0.541",
+    "@remotion/shapes": "^4.0.541",
+    "@remotion/tailwind-v4": "4.0.541",
+    "@remotion/transitions": "^4.0.541",
+    "katex": "^0.19.1",
+    "microsoft-cognitiveservices-speech-sdk": "^1.53.0",
     "react": "19.3.1",
     "react-dom": "19.3.1",
     "remotion": "4.0.541",
-    "@remotion/tailwind-v4": "4.0.541",
     "tailwindcss": "4.0.0"
   },
   "devDependencies": {
     "@remotion/eslint-config-flat": "4.0.541",
+    "@types/katex": "^0.16.8",
     "@types/react": "19.3.0",
     "@types/web": "0.0.166",
     "eslint": "10.12.0",
@@ -26,9 +35,24 @@
   },
   "scripts": {
     "dev": "remotion studio",
+    "voice": "node --env-file-if-exists=.env scripts/tts-azure.ts",
+    "sync": "node scripts/sync-audio.ts",
+    "capcut": "node scripts/capcut-export.ts",
+    "split": "node scripts/capcut-split.ts",
+    "render": "remotion render",
+    "still": "remotion still",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
-    "lint": "eslint src && tsc"
+    "lint": "eslint src scripts && tsc",
+    "voice:capcut": "python -I scripts/tts_capcut.py",
+    "voices:capcut": "python -I scripts/tts_capcut.py --list-voices",
+    "align": "python -I scripts/align_stt.py",
+    "lab:voice": "python -I scripts/voice_lab.py",
+    "lab:emotion": "python -I scripts/emotion_lab.py",
+    "lab:azure": "node --env-file-if-exists=.env scripts/azure-lab.ts",
+    "images": "powershell -ExecutionPolicy Bypass -File scripts/extract-slide-images.ps1",
+    "cues": "node scripts/check-cues.ts",
+    "sfx": "node scripts/insert-sfx.ts"
   },
   "allowScripts": {
     "esbuild": false
