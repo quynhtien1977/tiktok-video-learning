@@ -1,7 +1,31 @@
 node_modules
 dist
 .DS_Store
+
+# Khoá API — không bao giờ commit
 .env
 
-# Ignore the output video from Git but not videos you import into src/.
-out
+# Video và mọi thứ render ra
+out/
+dist/
+
+# Slide gốc của giáo trình: tài liệu có bản quyền của nhà xuất bản,
+# để trên máy chứ không đưa lên git
+docs/*.pptx
+
+# Code ngoài, cài lại bằng lệnh trong README
+vendor/
+whisper.cpp/
+
+# Agent skills — cài lại bằng: npx remotion skills add
+.agents/
+.claude/
+
+# Ảnh chụp khung hình khi review thiết kế, sinh lại được
+.impeccable/review/
+.impeccable/mocks/
+.impeccable/hook.cache.json
+
+# Cờ đánh dấu của pipeline audio
+*.lufs
+*.sfx
