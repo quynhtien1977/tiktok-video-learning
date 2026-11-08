@@ -71,10 +71,18 @@ python -I scripts/align_stt.py --ep ep01    # BẮT BUỘC, Gemini không trả 
   Chúng bị lọc khỏi phụ đề và khỏi từ khoá dò mốc, nên cứ viết thẳng vào `narration`.
 - **Hai tầng key khác model**: key trực tiếp chạy `gemini-3.8-flash-tts` (free ~10 lượt/ngày/key,
   có `style`); key Beeknoee chạy `3.1-flash-tts-preview` (trả tiền, **gateway nuốt mất `style`**
-  nên đọc chậm hơn). Đừng để một tập lẫn hai tầng — dùng `--free` hoặc `--paid` để ép một tầng.
-- Nhịp đọc giữa hai tầng lệch nhau nhiều. Sau khi sinh, **luôn đo lại và kéo về cùng nhịp**:
-  `npm run retime -- --ep epNN --target 19.0` (19,0 ký tự/giây là nhịp chuẩn của loạt này).
-  Lệnh này sửa cả mp3 lẫn timing phụ đề, không gọi API.
+  nên đọc chậm hơn khoảng 18%).
+- **Hết lượt free thì cứ gen tiếp sang tầng trả tiền, không xoá làm lại** — chủ dự án đã chốt
+  như vậy để tối ưu chi phí. Trộn tầng trong một tập là chấp nhận được, miễn là chạy
+  `retime --per-scene` sau đó.
+- Nhịp đọc **luôn phải đo lại sau khi sinh**, vì mỗi tầng đọc một nhịp:
+  `npm run retime -- --ep epNN --target 19.0 --per-scene`
+  19,0 ký tự/giây là nhịp chuẩn của loạt này. `--per-scene` chỉ đụng vào scene lệch quá 8%
+  nên giữ được dao động tự nhiên giữa các scene. Lệnh này sửa cả mp3 lẫn timing phụ đề,
+  không gọi API lần nào.
+- **Dùng tag cảm xúc thoải mái.** Gemini nghe theo `<laugh>`, `<sigh>`, `<gasp>`, `<breath>`,
+  `<short pause>`. Mỗi tập nên có 5–8 chỗ, rải ở câu chuyển ý, câu đùa, chỗ thở trước một ý
+  nặng. Giảng đều đều suốt 5 phút là người xem bỏ. Tag bị lọc khỏi phụ đề nên cứ viết thẳng.
 
 
 
@@ -171,6 +179,10 @@ npm run dev                                   # Remotion Studio
 npm run still -- ep01 out/check.png --frame=900
 npm run render -- ep01 out/ep01.mp4 --concurrency=4
 ```
+
+## 6. Đăng TikTok
+Kế hoạch đăng, caption và hashtag cho từng phần: `TIKTOK.md`.
+Một video mỗi ngày, đúng thứ tự tập và phần, vì nội dung có nợ khái niệm.
 
 ## Quy ước
 - Audio trong `public/voice/<ep>/`, ảnh trong `public/images/`.
