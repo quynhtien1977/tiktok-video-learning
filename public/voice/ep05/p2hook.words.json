@@ -1,0 +1,112 @@
+[
+  {
+    "text": "Một",
+    "startMs": 0,
+    "endMs": 287
+  },
+  {
+    "text": "operation",
+    "startMs": 287,
+    "endMs": 746
+  },
+  {
+    "text": "của",
+    "startMs": 804,
+    "endMs": 1033
+  },
+  {
+    "text": "SOAP,",
+    "startMs": 1033,
+    "endMs": 1550
+  },
+  {
+    "text": "sang",
+    "startMs": 1550,
+    "endMs": 1665
+  },
+  {
+    "text": "REST",
+    "startMs": 1894,
+    "endMs": 2181
+  },
+  {
+    "text": "phải",
+    "startMs": 2239,
+    "endMs": 2411
+  },
+  {
+    "text": "tách",
+    "startMs": 2468,
+    "endMs": 2698
+  },
+  {
+    "text": "thành",
+    "startMs": 2698,
+    "endMs": 2927
+  },
+  {
+    "text": "bốn",
+    "startMs": 2927,
+    "endMs": 3100
+  },
+  {
+    "text": "bước.",
+    "startMs": 3100,
+    "endMs": 3501
+  },
+  {
+    "text": "Hai",
+    "startMs": 3501,
+    "endMs": 3674
+  },
+  {
+    "text": "phút",
+    "startMs": 3674,
+    "endMs": 3846
+  },
+  {
+    "text": "nữa",
+    "startMs": 3846,
+    "endMs": 4018
+  },
+  {
+    "text": "bạn",
+    "startMs": 4133,
+    "endMs": 4305
+  },
+  {
+    "text": "tự",
+    "startMs": 4305,
+    "endMs": 4477
+  },
+  {
+    "text": "chuyển",
+    "startMs": 4477,
+    "endMs": 4707
+  },
+  {
+    "text": "được",
+    "startMs": 4707,
+    "endMs": 4936
+  },
+  {
+    "text": "một",
+    "startMs": 4936,
+    "endMs": 5108
+  },
+  {
+    "text": "operation",
+    "startMs": 5166,
+    "endMs": 5568
+  },
+  {
+    "text": "sang",
+    "startMs": 5568,
+    "endMs": 5682
+  },
+  {
+    "text": "REST.",
+    "startMs": 5797,
+    "endMs": 6213
+  }
+]

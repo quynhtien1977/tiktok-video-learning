@@ -2,356 +2,356 @@
   {
     "text": "Bắt",
     "startMs": 0,
-    "endMs": 160
+    "endMs": 89
   },
   {
     "text": "đầu",
-    "startMs": 160,
-    "endMs": 280
+    "startMs": 89,
+    "endMs": 223
   },
   {
     "text": "từ",
-    "startMs": 280,
-    "endMs": 440
+    "startMs": 223,
+    "endMs": 356
   },
   {
     "text": "định",
-    "startMs": 480,
-    "endMs": 720
+    "startMs": 401,
+    "endMs": 668
   },
   {
     "text": "nghĩa",
-    "startMs": 720,
-    "endMs": 960
+    "startMs": 668,
+    "endMs": 890
   },
   {
     "text": "gốc.",
-    "startMs": 960,
-    "endMs": 1320
+    "startMs": 935,
+    "endMs": 1513
   },
   {
     "text": "Một",
-    "startMs": 1320,
-    "endMs": 1480
+    "startMs": 1513,
+    "endMs": 1691
   },
   {
     "text": "service",
-    "startMs": 1560,
-    "endMs": 2000
+    "startMs": 1780,
+    "endMs": 2270
   },
   {
     "text": "là",
-    "startMs": 2000,
-    "endMs": 2160
+    "startMs": 2270,
+    "endMs": 2492
   },
   {
     "text": "một",
-    "startMs": 2160,
-    "endMs": 2280
+    "startMs": 2492,
+    "endMs": 2581
   },
   {
     "text": "hành",
-    "startMs": 2320,
-    "endMs": 2480
+    "startMs": 2626,
+    "endMs": 2804
   },
   {
     "text": "vi,",
-    "startMs": 2520,
-    "endMs": 2800
+    "startMs": 2804,
+    "endMs": 3160
   },
   {
     "text": "hay",
-    "startMs": 2960,
-    "endMs": 3120
+    "startMs": 3204,
+    "endMs": 3427
   },
   {
     "text": "một",
-    "startMs": 3120,
-    "endMs": 3200
+    "startMs": 3427,
+    "endMs": 3560
   },
   {
     "text": "việc,",
-    "startMs": 3200,
-    "endMs": 3600
+    "startMs": 3560,
+    "endMs": 3916
   },
   {
     "text": "mà",
-    "startMs": 3600,
-    "endMs": 3760
+    "startMs": 3916,
+    "endMs": 4094
   },
   {
     "text": "bên",
-    "startMs": 3760,
-    "endMs": 3920
+    "startMs": 4139,
+    "endMs": 4317
   },
   {
     "text": "này",
-    "startMs": 3920,
-    "endMs": 4080
+    "startMs": 4317,
+    "endMs": 4539
   },
   {
     "text": "cung",
-    "startMs": 4080,
-    "endMs": 4200
+    "startMs": 4539,
+    "endMs": 4628
   },
   {
     "text": "cấp",
-    "startMs": 4200,
-    "endMs": 4400
+    "startMs": 4628,
+    "endMs": 4895
   },
   {
     "text": "cho",
-    "startMs": 4400,
-    "endMs": 4560
+    "startMs": 4895,
+    "endMs": 5073
   },
   {
     "text": "bên",
-    "startMs": 4560,
-    "endMs": 4680
+    "startMs": 5118,
+    "endMs": 5251
   },
   {
     "text": "kia.",
-    "startMs": 4680,
-    "endMs": 5080
+    "startMs": 5251,
+    "endMs": 5563
   },
   {
     "text": "Giáo",
-    "startMs": 5080,
-    "endMs": 5200
+    "startMs": 5563,
+    "endMs": 5785
   },
   {
     "text": "trình",
-    "startMs": 5280,
-    "endMs": 5560
+    "startMs": 5785,
+    "endMs": 6052
   },
   {
     "text": "nhấn",
-    "startMs": 5560,
-    "endMs": 5760
+    "startMs": 6052,
+    "endMs": 6275
   },
   {
     "text": "mạnh",
-    "startMs": 5800,
-    "endMs": 5960
+    "startMs": 6319,
+    "endMs": 6497
   },
   {
     "text": "rằng",
-    "startMs": 6040,
-    "endMs": 6360
+    "startMs": 6586,
+    "endMs": 6898
   },
   {
     "text": "service",
-    "startMs": 6360,
-    "endMs": 6640
+    "startMs": 6898,
+    "endMs": 7254
   },
   {
     "text": "về",
-    "startMs": 6640,
-    "endMs": 6840
+    "startMs": 7254,
+    "endMs": 7432
   },
   {
     "text": "bản",
-    "startMs": 6880,
-    "endMs": 7040
+    "startMs": 7476,
+    "endMs": 7654
   },
   {
     "text": "chất",
-    "startMs": 7040,
-    "endMs": 7280
+    "startMs": 7654,
+    "endMs": 7833
   },
   {
     "text": "là",
-    "startMs": 7280,
-    "endMs": 7400
+    "startMs": 7833,
+    "endMs": 8011
   },
   {
     "text": "vô",
-    "startMs": 7440,
-    "endMs": 7600
+    "startMs": 8011,
+    "endMs": 8189
   },
   {
     "text": "hình,",
-    "startMs": 7600,
-    "endMs": 8080
+    "startMs": 8189,
+    "endMs": 8723
   },
   {
     "text": "và",
-    "startMs": 8080,
-    "endMs": 8240
+    "startMs": 8767,
+    "endMs": 8901
   },
   {
     "text": "việc",
-    "startMs": 8240,
-    "endMs": 8360
+    "startMs": 8901,
+    "endMs": 9034
   },
   {
     "text": "dùng",
-    "startMs": 8360,
-    "endMs": 8560
+    "startMs": 9079,
+    "endMs": 9257
   },
   {
     "text": "nó",
-    "startMs": 8560,
-    "endMs": 8720
+    "startMs": 9257,
+    "endMs": 9479
   },
   {
     "text": "không",
-    "startMs": 8720,
-    "endMs": 8880
+    "startMs": 9479,
+    "endMs": 9657
   },
   {
     "text": "dẫn",
-    "startMs": 8880,
-    "endMs": 9200
+    "startMs": 9702,
+    "endMs": 10013
   },
   {
     "text": "tới",
-    "startMs": 9200,
-    "endMs": 9320
+    "startMs": 10013,
+    "endMs": 10147
   },
   {
     "text": "chuyện",
-    "startMs": 9360,
-    "endMs": 9520
+    "startMs": 10191,
+    "endMs": 10458
   },
   {
     "text": "bạn",
-    "startMs": 9520,
-    "endMs": 9680
+    "startMs": 10458,
+    "endMs": 10636
   },
   {
     "text": "sở",
-    "startMs": 9680,
-    "endMs": 9800
+    "startMs": 10636,
+    "endMs": 10814
   },
   {
     "text": "hữu",
-    "startMs": 9800,
-    "endMs": 9960
+    "startMs": 10814,
+    "endMs": 10992
   },
   {
     "text": "cái",
-    "startMs": 9960,
-    "endMs": 10080
+    "startMs": 10992,
+    "endMs": 11126
   },
   {
     "text": "gì",
-    "startMs": 10080,
-    "endMs": 10240
+    "startMs": 11126,
+    "endMs": 11304
   },
   {
     "text": "cả.",
-    "startMs": 10240,
-    "endMs": 10440
+    "startMs": 11304,
+    "endMs": 11882
   },
   {
     "text": "Điểm",
-    "startMs": 10440,
-    "endMs": 10600
+    "startMs": 11882,
+    "endMs": 12060
   },
   {
     "text": "mấu",
-    "startMs": 10600,
-    "endMs": 10800
+    "startMs": 12149,
+    "endMs": 12372
   },
   {
     "text": "chốt",
-    "startMs": 10920,
-    "endMs": 11160
+    "startMs": 12461,
+    "endMs": 12728
   },
   {
     "text": "nằm",
-    "startMs": 11160,
-    "endMs": 11320
+    "startMs": 12728,
+    "endMs": 12906
   },
   {
     "text": "ở",
-    "startMs": 11320,
-    "endMs": 11440
+    "startMs": 12906,
+    "endMs": 13039
   },
   {
     "text": "vế",
-    "startMs": 11440,
-    "endMs": 11680
+    "startMs": 13039,
+    "endMs": 13306
   },
   {
     "text": "sau:",
-    "startMs": 11680,
-    "endMs": 11960
+    "startMs": 13306,
+    "endMs": 13618
   },
   {
     "text": "việc",
-    "startMs": 12080,
-    "endMs": 12200
+    "startMs": 13707,
+    "endMs": 13840
   },
   {
     "text": "cung",
-    "startMs": 12240,
-    "endMs": 12320
+    "startMs": 13885,
+    "endMs": 13974
   },
   {
     "text": "cấp",
-    "startMs": 12320,
-    "endMs": 12600
+    "startMs": 13974,
+    "endMs": 14241
   },
   {
     "text": "service",
-    "startMs": 12600,
-    "endMs": 13120
+    "startMs": 14241,
+    "endMs": 14597
   },
   {
     "text": "hoàn",
-    "startMs": 13120,
-    "endMs": 13280
+    "startMs": 14597,
+    "endMs": 14775
   },
   {
     "text": "toàn",
-    "startMs": 13280,
-    "endMs": 13440
+    "startMs": 14775,
+    "endMs": 14997
   },
   {
     "text": "độc",
-    "startMs": 13440,
-    "endMs": 13640
+    "startMs": 14997,
+    "endMs": 15175
   },
   {
     "text": "lập",
-    "startMs": 13640,
-    "endMs": 13920
+    "startMs": 15175,
+    "endMs": 15487
   },
   {
     "text": "với",
-    "startMs": 13920,
-    "endMs": 14080
+    "startMs": 15487,
+    "endMs": 15621
   },
   {
     "text": "ứng",
-    "startMs": 14120,
-    "endMs": 14240
+    "startMs": 15665,
+    "endMs": 15843
   },
   {
     "text": "dụng",
-    "startMs": 14240,
-    "endMs": 14400
+    "startMs": 15843,
+    "endMs": 16021
   },
   {
     "text": "đang",
-    "startMs": 14400,
-    "endMs": 14560
+    "startMs": 16021,
+    "endMs": 16199
   },
   {
     "text": "sử",
-    "startMs": 14560,
-    "endMs": 14680
+    "startMs": 16199,
+    "endMs": 16333
   },
   {
     "text": "dụng",
-    "startMs": 14680,
-    "endMs": 14760
+    "startMs": 16333,
+    "endMs": 16422
   },
   {
     "text": "nó.",
-    "startMs": 14840,
-    "endMs": 15200
+    "startMs": 16466,
+    "endMs": 16844
   }
 ]

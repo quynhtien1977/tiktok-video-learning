@@ -1,6 +1,6 @@
 {
   "episodeId": "ep03",
-  "generatedAt": "2026-11-08T15:40:17.856Z",
+  "generatedAt": "2026-11-09T15:20:22.231Z",
   "scenes": {
     "s01": {
       "file": "voice/ep03/s01.mp3",
@@ -2144,6 +2144,210 @@
         5556,
         11384,
         17167
+      ]
+    },
+    "p1end": {
+      "file": "voice/ep03/p1end.mp3",
+      "durationSeconds": 3.103,
+      "provider": "gemini",
+      "words": [
+        {
+          "text": "Phần",
+          "startMs": 80,
+          "endMs": 240
+        },
+        {
+          "text": "sau:",
+          "startMs": 280,
+          "endMs": 560
+        },
+        {
+          "text": "vì",
+          "startMs": 560,
+          "endMs": 760
+        },
+        {
+          "text": "sao",
+          "startMs": 760,
+          "endMs": 880
+        },
+        {
+          "text": "REST",
+          "startMs": 1040,
+          "endMs": 1320
+        },
+        {
+          "text": "lại",
+          "startMs": 1320,
+          "endMs": 1440
+        },
+        {
+          "text": "nhẹ",
+          "startMs": 1480,
+          "endMs": 1600
+        },
+        {
+          "text": "hơn",
+          "startMs": 1640,
+          "endMs": 1760
+        },
+        {
+          "text": "SOAP.",
+          "startMs": 1760,
+          "endMs": 2160
+        },
+        {
+          "text": "Theo",
+          "startMs": 2160,
+          "endMs": 2280
+        },
+        {
+          "text": "dõi",
+          "startMs": 2280,
+          "endMs": 2440
+        },
+        {
+          "text": "để",
+          "startMs": 2440,
+          "endMs": 2560
+        },
+        {
+          "text": "khỏi",
+          "startMs": 2560,
+          "endMs": 2720
+        },
+        {
+          "text": "lỡ",
+          "startMs": 2720,
+          "endMs": 2880
+        },
+        {
+          "text": "nha.",
+          "startMs": 2960,
+          "endMs": 3105
+        }
+      ]
+    },
+    "p2hook": {
+      "file": "voice/ep03/p2hook.mp3",
+      "durationSeconds": 5.839,
+      "provider": "gemini",
+      "words": [
+        {
+          "text": "Service",
+          "startMs": 0,
+          "endMs": 867
+        },
+        {
+          "text": "không",
+          "startMs": 867,
+          "endMs": 1059
+        },
+        {
+          "text": "nhớ",
+          "startMs": 1059,
+          "endMs": 1300
+        },
+        {
+          "text": "bạn",
+          "startMs": 1300,
+          "endMs": 1396
+        },
+        {
+          "text": "là",
+          "startMs": 1396,
+          "endMs": 1541
+        },
+        {
+          "text": "ai.",
+          "startMs": 1541,
+          "endMs": 1878
+        },
+        {
+          "text": "Mỗi",
+          "startMs": 1878,
+          "endMs": 2022
+        },
+        {
+          "text": "lời",
+          "startMs": 2070,
+          "endMs": 2215
+        },
+        {
+          "text": "gọi",
+          "startMs": 2215,
+          "endMs": 2455
+        },
+        {
+          "text": "phải",
+          "startMs": 2455,
+          "endMs": 2600
+        },
+        {
+          "text": "tự",
+          "startMs": 2600,
+          "endMs": 2792
+        },
+        {
+          "text": "đủ.",
+          "startMs": 2840,
+          "endMs": 3322
+        },
+        {
+          "text": "Xem",
+          "startMs": 3322,
+          "endMs": 3466
+        },
+        {
+          "text": "xong",
+          "startMs": 3466,
+          "endMs": 3659
+        },
+        {
+          "text": "bạn",
+          "startMs": 3659,
+          "endMs": 3803
+        },
+        {
+          "text": "giải",
+          "startMs": 3803,
+          "endMs": 3948
+        },
+        {
+          "text": "thích",
+          "startMs": 3948,
+          "endMs": 4140
+        },
+        {
+          "text": "được",
+          "startMs": 4140,
+          "endMs": 4285
+        },
+        {
+          "text": "vì",
+          "startMs": 4285,
+          "endMs": 4477
+        },
+        {
+          "text": "sao",
+          "startMs": 4477,
+          "endMs": 4766
+        },
+        {
+          "text": "REST",
+          "startMs": 4766,
+          "endMs": 5055
+        },
+        {
+          "text": "phải",
+          "startMs": 5055,
+          "endMs": 5199
+        },
+        {
+          "text": "stateless.",
+          "startMs": 5199,
+          "endMs": 5845
+        }
       ]
     },
     "s05": {
@@ -4378,6 +4582,210 @@
         19742
       ]
     },
+    "p2end": {
+      "file": "voice/ep03/p2end.mp3",
+      "durationSeconds": 2.94,
+      "provider": "gemini",
+      "words": [
+        {
+          "text": "Phần",
+          "startMs": 0,
+          "endMs": 160
+        },
+        {
+          "text": "sau:",
+          "startMs": 240,
+          "endMs": 400
+        },
+        {
+          "text": "ba",
+          "startMs": 560,
+          "endMs": 680
+        },
+        {
+          "text": "chỗ",
+          "startMs": 720,
+          "endMs": 880
+        },
+        {
+          "text": "REST",
+          "startMs": 1080,
+          "endMs": 1160
+        },
+        {
+          "text": "thua",
+          "startMs": 1400,
+          "endMs": 1600
+        },
+        {
+          "text": "SOAP.",
+          "startMs": 1600,
+          "endMs": 1920
+        },
+        {
+          "text": "Theo",
+          "startMs": 1920,
+          "endMs": 2040
+        },
+        {
+          "text": "dõi",
+          "startMs": 2040,
+          "endMs": 2200
+        },
+        {
+          "text": "để",
+          "startMs": 2200,
+          "endMs": 2360
+        },
+        {
+          "text": "khỏi",
+          "startMs": 2360,
+          "endMs": 2520
+        },
+        {
+          "text": "lỡ",
+          "startMs": 2560,
+          "endMs": 2680
+        },
+        {
+          "text": "nha.",
+          "startMs": 2800,
+          "endMs": 2942
+        }
+      ]
+    },
+    "p3hook": {
+      "file": "voice/ep03/p3hook.mp3",
+      "durationSeconds": 5.396,
+      "provider": "gemini",
+      "words": [
+        {
+          "text": "REST",
+          "startMs": 52,
+          "endMs": 415
+        },
+        {
+          "text": "không",
+          "startMs": 415,
+          "endMs": 623
+        },
+        {
+          "text": "thay",
+          "startMs": 623,
+          "endMs": 779
+        },
+        {
+          "text": "thế",
+          "startMs": 779,
+          "endMs": 1038
+        },
+        {
+          "text": "hẳn",
+          "startMs": 1038,
+          "endMs": 1375
+        },
+        {
+          "text": "SOAP.",
+          "startMs": 1375,
+          "endMs": 1713
+        },
+        {
+          "text": "Có",
+          "startMs": 1713,
+          "endMs": 1868
+        },
+        {
+          "text": "ba",
+          "startMs": 1868,
+          "endMs": 2024
+        },
+        {
+          "text": "chỗ",
+          "startMs": 2076,
+          "endMs": 2284
+        },
+        {
+          "text": "nó",
+          "startMs": 2284,
+          "endMs": 2387
+        },
+        {
+          "text": "thua.",
+          "startMs": 2439,
+          "endMs": 2647
+        },
+        {
+          "text": "Nhớ",
+          "startMs": 2803,
+          "endMs": 3010
+        },
+        {
+          "text": "đủ",
+          "startMs": 3010,
+          "endMs": 3166
+        },
+        {
+          "text": "ba",
+          "startMs": 3218,
+          "endMs": 3374
+        },
+        {
+          "text": "chỗ",
+          "startMs": 3374,
+          "endMs": 3529
+        },
+        {
+          "text": "đó",
+          "startMs": 3529,
+          "endMs": 3737
+        },
+        {
+          "text": "là",
+          "startMs": 3737,
+          "endMs": 3893
+        },
+        {
+          "text": "đủ",
+          "startMs": 3893,
+          "endMs": 4100
+        },
+        {
+          "text": "trả",
+          "startMs": 4100,
+          "endMs": 4256
+        },
+        {
+          "text": "lời",
+          "startMs": 4256,
+          "endMs": 4412
+        },
+        {
+          "text": "câu",
+          "startMs": 4463,
+          "endMs": 4671
+        },
+        {
+          "text": "so",
+          "startMs": 4671,
+          "endMs": 4775
+        },
+        {
+          "text": "sánh",
+          "startMs": 4827,
+          "endMs": 4982
+        },
+        {
+          "text": "trong",
+          "startMs": 4982,
+          "endMs": 5138
+        },
+        {
+          "text": "đề.",
+          "startMs": 5190,
+          "endMs": 5424
+        }
+      ]
+    },
     "s09": {
       "file": "voice/ep03/s09.mp3",
       "durationSeconds": 13.514,
@@ -5511,6 +5919,128 @@
           "text": "service.",
           "startMs": 20547,
           "endMs": 21072
+        }
+      ]
+    },
+    "p3end": {
+      "file": "voice/ep03/p3end.mp3",
+      "durationSeconds": 5.561,
+      "provider": "gemini",
+      "words": [
+        {
+          "text": "Hết",
+          "startMs": 0,
+          "endMs": 156
+        },
+        {
+          "text": "tập",
+          "startMs": 259,
+          "endMs": 415
+        },
+        {
+          "text": "ba.",
+          "startMs": 518,
+          "endMs": 830
+        },
+        {
+          "text": "Tập",
+          "startMs": 830,
+          "endMs": 933
+        },
+        {
+          "text": "bốn:",
+          "startMs": 933,
+          "endMs": 1400
+        },
+        {
+          "text": "nhìn",
+          "startMs": 1400,
+          "endMs": 1607
+        },
+        {
+          "text": "vào",
+          "startMs": 1607,
+          "endMs": 1763
+        },
+        {
+          "text": "một",
+          "startMs": 1763,
+          "endMs": 1918
+        },
+        {
+          "text": "công",
+          "startMs": 1970,
+          "endMs": 2074
+        },
+        {
+          "text": "ty,",
+          "startMs": 2074,
+          "endMs": 2437
+        },
+        {
+          "text": "cái",
+          "startMs": 2437,
+          "endMs": 2592
+        },
+        {
+          "text": "gì",
+          "startMs": 2592,
+          "endMs": 2748
+        },
+        {
+          "text": "đáng",
+          "startMs": 2800,
+          "endMs": 3059
+        },
+        {
+          "text": "tách",
+          "startMs": 3059,
+          "endMs": 3318
+        },
+        {
+          "text": "thành",
+          "startMs": 3318,
+          "endMs": 3578
+        },
+        {
+          "text": "service.",
+          "startMs": 3578,
+          "endMs": 3992
+        },
+        {
+          "text": "Bản",
+          "startMs": 4148,
+          "endMs": 4303
+        },
+        {
+          "text": "đầy",
+          "startMs": 4303,
+          "endMs": 4459
+        },
+        {
+          "text": "đủ",
+          "startMs": 4459,
+          "endMs": 4615
+        },
+        {
+          "text": "có",
+          "startMs": 4666,
+          "endMs": 4822
+        },
+        {
+          "text": "trên",
+          "startMs": 4822,
+          "endMs": 5029
+        },
+        {
+          "text": "YouTube",
+          "startMs": 5029,
+          "endMs": 5237
+        },
+        {
+          "text": "nha.",
+          "startMs": 5237,
+          "endMs": 5582
         }
       ]
     }

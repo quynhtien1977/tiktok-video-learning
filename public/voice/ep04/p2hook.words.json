@@ -1,0 +1,127 @@
+[
+  {
+    "text": "Trong",
+    "startMs": 0,
+    "endMs": 100
+  },
+  {
+    "text": "bảng",
+    "startMs": 100,
+    "endMs": 251
+  },
+  {
+    "text": "phân",
+    "startMs": 301,
+    "endMs": 451
+  },
+  {
+    "text": "loại",
+    "startMs": 502,
+    "endMs": 802
+  },
+  {
+    "text": "service,",
+    "startMs": 802,
+    "endMs": 1505
+  },
+  {
+    "text": "có",
+    "startMs": 1505,
+    "endMs": 1655
+  },
+  {
+    "text": "một",
+    "startMs": 1655,
+    "endMs": 1755
+  },
+  {
+    "text": "ô",
+    "startMs": 1806,
+    "endMs": 1956
+  },
+  {
+    "text": "luôn",
+    "startMs": 2056,
+    "endMs": 2257
+  },
+  {
+    "text": "bỏ",
+    "startMs": 2307,
+    "endMs": 2458
+  },
+  {
+    "text": "trống.",
+    "startMs": 2558,
+    "endMs": 3060
+  },
+  {
+    "text": "Vì",
+    "startMs": 3110,
+    "endMs": 3260
+  },
+  {
+    "text": "sao?",
+    "startMs": 3260,
+    "endMs": 3511
+  },
+  {
+    "text": "Hiểu",
+    "startMs": 3511,
+    "endMs": 3762
+  },
+  {
+    "text": "được",
+    "startMs": 3762,
+    "endMs": 3912
+  },
+  {
+    "text": "ô",
+    "startMs": 3962,
+    "endMs": 4163
+  },
+  {
+    "text": "trống",
+    "startMs": 4163,
+    "endMs": 4313
+  },
+  {
+    "text": "đó",
+    "startMs": 4364,
+    "endMs": 4564
+  },
+  {
+    "text": "là",
+    "startMs": 4614,
+    "endMs": 4815
+  },
+  {
+    "text": "hiểu",
+    "startMs": 4815,
+    "endMs": 4965
+  },
+  {
+    "text": "luôn",
+    "startMs": 5016,
+    "endMs": 5216
+  },
+  {
+    "text": "cả",
+    "startMs": 5216,
+    "endMs": 5417
+  },
+  {
+    "text": "bảng",
+    "startMs": 5417,
+    "endMs": 5567
+  },
+  {
+    "text": "phân",
+    "startMs": 5617,
+    "endMs": 5718
+  },
+  {
+    "text": "loại.",
+    "startMs": 5768,
+    "endMs": 6108
+  }
+]

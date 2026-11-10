@@ -1,0 +1,117 @@
+[
+  {
+    "text": "Service",
+    "startMs": 0,
+    "endMs": 867
+  },
+  {
+    "text": "không",
+    "startMs": 867,
+    "endMs": 1059
+  },
+  {
+    "text": "nhớ",
+    "startMs": 1059,
+    "endMs": 1300
+  },
+  {
+    "text": "bạn",
+    "startMs": 1300,
+    "endMs": 1396
+  },
+  {
+    "text": "là",
+    "startMs": 1396,
+    "endMs": 1541
+  },
+  {
+    "text": "ai.",
+    "startMs": 1541,
+    "endMs": 1878
+  },
+  {
+    "text": "Mỗi",
+    "startMs": 1878,
+    "endMs": 2022
+  },
+  {
+    "text": "lời",
+    "startMs": 2070,
+    "endMs": 2215
+  },
+  {
+    "text": "gọi",
+    "startMs": 2215,
+    "endMs": 2455
+  },
+  {
+    "text": "phải",
+    "startMs": 2455,
+    "endMs": 2600
+  },
+  {
+    "text": "tự",
+    "startMs": 2600,
+    "endMs": 2792
+  },
+  {
+    "text": "đủ.",
+    "startMs": 2840,
+    "endMs": 3322
+  },
+  {
+    "text": "Xem",
+    "startMs": 3322,
+    "endMs": 3466
+  },
+  {
+    "text": "xong",
+    "startMs": 3466,
+    "endMs": 3659
+  },
+  {
+    "text": "bạn",
+    "startMs": 3659,
+    "endMs": 3803
+  },
+  {
+    "text": "giải",
+    "startMs": 3803,
+    "endMs": 3948
+  },
+  {
+    "text": "thích",
+    "startMs": 3948,
+    "endMs": 4140
+  },
+  {
+    "text": "được",
+    "startMs": 4140,
+    "endMs": 4285
+  },
+  {
+    "text": "vì",
+    "startMs": 4285,
+    "endMs": 4477
+  },
+  {
+    "text": "sao",
+    "startMs": 4477,
+    "endMs": 4766
+  },
+  {
+    "text": "REST",
+    "startMs": 4766,
+    "endMs": 5055
+  },
+  {
+    "text": "phải",
+    "startMs": 5055,
+    "endMs": 5199
+  },
+  {
+    "text": "stateless.",
+    "startMs": 5199,
+    "endMs": 5845
+  }
+]

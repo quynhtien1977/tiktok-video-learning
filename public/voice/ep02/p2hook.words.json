@@ -1,0 +1,132 @@
+[
+  {
+    "text": "Một",
+    "startMs": 0,
+    "endMs": 160
+  },
+  {
+    "text": "bản",
+    "startMs": 200,
+    "endMs": 360
+  },
+  {
+    "text": "mô",
+    "startMs": 360,
+    "endMs": 560
+  },
+  {
+    "text": "tả",
+    "startMs": 560,
+    "endMs": 760
+  },
+  {
+    "text": "service",
+    "startMs": 760,
+    "endMs": 1040
+  },
+  {
+    "text": "chỉ",
+    "startMs": 1120,
+    "endMs": 1240
+  },
+  {
+    "text": "cần",
+    "startMs": 1240,
+    "endMs": 1360
+  },
+  {
+    "text": "trả",
+    "startMs": 1360,
+    "endMs": 1480
+  },
+  {
+    "text": "lời",
+    "startMs": 1480,
+    "endMs": 1560
+  },
+  {
+    "text": "ba",
+    "startMs": 1600,
+    "endMs": 1720
+  },
+  {
+    "text": "câu:",
+    "startMs": 1720,
+    "endMs": 2160
+  },
+  {
+    "text": "what,",
+    "startMs": 2200,
+    "endMs": 2360
+  },
+  {
+    "text": "how,",
+    "startMs": 2520,
+    "endMs": 2680
+  },
+  {
+    "text": "where.",
+    "startMs": 2920,
+    "endMs": 3000
+  },
+  {
+    "text": "Hai",
+    "startMs": 3000,
+    "endMs": 3400
+  },
+  {
+    "text": "phút",
+    "startMs": 3400,
+    "endMs": 3560
+  },
+  {
+    "text": "nữa",
+    "startMs": 3560,
+    "endMs": 3680
+  },
+  {
+    "text": "bạn",
+    "startMs": 3680,
+    "endMs": 3840
+  },
+  {
+    "text": "mở",
+    "startMs": 3840,
+    "endMs": 3960
+  },
+  {
+    "text": "một",
+    "startMs": 3960,
+    "endMs": 4080
+  },
+  {
+    "text": "file",
+    "startMs": 4160,
+    "endMs": 4400
+  },
+  {
+    "text": "WSDL",
+    "startMs": 4400,
+    "endMs": 5160
+  },
+  {
+    "text": "ra",
+    "startMs": 5160,
+    "endMs": 5320
+  },
+  {
+    "text": "mà",
+    "startMs": 5320,
+    "endMs": 5440
+  },
+  {
+    "text": "không",
+    "startMs": 5440,
+    "endMs": 5520
+  },
+  {
+    "text": "hoảng.",
+    "startMs": 5560,
+    "endMs": 5878
+  }
+]

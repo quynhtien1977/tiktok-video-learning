@@ -1,0 +1,87 @@
+[
+  {
+    "text": "Hết",
+    "startMs": 0,
+    "endMs": 160
+  },
+  {
+    "text": "tập",
+    "startMs": 240,
+    "endMs": 360
+  },
+  {
+    "text": "một.",
+    "startMs": 400,
+    "endMs": 640
+  },
+  {
+    "text": "Tập",
+    "startMs": 640,
+    "endMs": 760
+  },
+  {
+    "text": "hai",
+    "startMs": 760,
+    "endMs": 1040
+  },
+  {
+    "text": "nói",
+    "startMs": 1040,
+    "endMs": 1200
+  },
+  {
+    "text": "về",
+    "startMs": 1200,
+    "endMs": 1440
+  },
+  {
+    "text": "SOAP",
+    "startMs": 1440,
+    "endMs": 1680
+  },
+  {
+    "text": "và",
+    "startMs": 1680,
+    "endMs": 1800
+  },
+  {
+    "text": "WSDL.",
+    "startMs": 1880,
+    "endMs": 2600
+  },
+  {
+    "text": "Bản",
+    "startMs": 2840,
+    "endMs": 2920
+  },
+  {
+    "text": "đầy",
+    "startMs": 3000,
+    "endMs": 3120
+  },
+  {
+    "text": "đủ",
+    "startMs": 3120,
+    "endMs": 3320
+  },
+  {
+    "text": "có",
+    "startMs": 3320,
+    "endMs": 3440
+  },
+  {
+    "text": "trên",
+    "startMs": 3440,
+    "endMs": 3600
+  },
+  {
+    "text": "YouTube",
+    "startMs": 3600,
+    "endMs": 3880
+  },
+  {
+    "text": "nha.",
+    "startMs": 3880,
+    "endMs": 4117
+  }
+]

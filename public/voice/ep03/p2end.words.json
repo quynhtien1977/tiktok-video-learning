@@ -1,0 +1,67 @@
+[
+  {
+    "text": "Phần",
+    "startMs": 0,
+    "endMs": 160
+  },
+  {
+    "text": "sau:",
+    "startMs": 240,
+    "endMs": 400
+  },
+  {
+    "text": "ba",
+    "startMs": 560,
+    "endMs": 680
+  },
+  {
+    "text": "chỗ",
+    "startMs": 720,
+    "endMs": 880
+  },
+  {
+    "text": "REST",
+    "startMs": 1080,
+    "endMs": 1160
+  },
+  {
+    "text": "thua",
+    "startMs": 1400,
+    "endMs": 1600
+  },
+  {
+    "text": "SOAP.",
+    "startMs": 1600,
+    "endMs": 1920
+  },
+  {
+    "text": "Theo",
+    "startMs": 1920,
+    "endMs": 2040
+  },
+  {
+    "text": "dõi",
+    "startMs": 2040,
+    "endMs": 2200
+  },
+  {
+    "text": "để",
+    "startMs": 2200,
+    "endMs": 2360
+  },
+  {
+    "text": "khỏi",
+    "startMs": 2360,
+    "endMs": 2520
+  },
+  {
+    "text": "lỡ",
+    "startMs": 2560,
+    "endMs": 2680
+  },
+  {
+    "text": "nha.",
+    "startMs": 2800,
+    "endMs": 2942
+  }
+]

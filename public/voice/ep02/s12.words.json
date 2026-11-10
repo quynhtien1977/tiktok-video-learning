@@ -2,116 +2,116 @@
   {
     "text": "Nghe",
     "startMs": 0,
-    "endMs": 450
+    "endMs": 353
   },
   {
     "text": "tới",
-    "startMs": 450,
-    "endMs": 630
+    "startMs": 353,
+    "endMs": 494
   },
   {
     "text": "đây",
-    "startMs": 630,
-    "endMs": 810
+    "startMs": 494,
+    "endMs": 635
   },
   {
     "text": "thì",
-    "startMs": 855,
-    "endMs": 1080
+    "startMs": 670,
+    "endMs": 847
   },
   {
     "text": "thấy",
-    "startMs": 1170,
-    "endMs": 1350
+    "startMs": 917,
+    "endMs": 1059
   },
   {
     "text": "nặng",
-    "startMs": 1395,
-    "endMs": 1575
+    "startMs": 1094,
+    "endMs": 1235
   },
   {
     "text": "nề",
-    "startMs": 1575,
-    "endMs": 1889
+    "startMs": 1235,
+    "endMs": 1481
   },
   {
     "text": "thật",
-    "startMs": 1889,
-    "endMs": 2069
+    "startMs": 1481,
+    "endMs": 1622
   },
   {
     "text": "đấy.",
-    "startMs": 2114,
-    "endMs": 2249
+    "startMs": 1658,
+    "endMs": 1764
   },
   {
     "text": "XML,",
-    "startMs": 2429,
-    "endMs": 3059
+    "startMs": 1905,
+    "endMs": 2399
   },
   {
     "text": "binding,",
-    "startMs": 3374,
-    "endMs": 4184
+    "startMs": 2646,
+    "endMs": 3281
   },
   {
     "text": "fault,",
-    "startMs": 4184,
-    "endMs": 4814
+    "startMs": 3281,
+    "endMs": 3775
   },
   {
     "text": "đủ",
-    "startMs": 4814,
-    "endMs": 4994
+    "startMs": 3775,
+    "endMs": 3916
   },
   {
     "text": "thứ.",
-    "startMs": 5039,
-    "endMs": 5174
+    "startMs": 3951,
+    "endMs": 4057
   },
   {
     "text": "Chẳng",
-    "startMs": 5578,
-    "endMs": 5758
+    "startMs": 4374,
+    "endMs": 4515
   },
   {
     "text": "lẽ",
-    "startMs": 5758,
-    "endMs": 5983
+    "startMs": 4515,
+    "endMs": 4691
   },
   {
     "text": "không",
-    "startMs": 5983,
-    "endMs": 6118
+    "startMs": 4691,
+    "endMs": 4797
   },
   {
     "text": "có",
-    "startMs": 6118,
-    "endMs": 6208
+    "startMs": 4797,
+    "endMs": 4868
   },
   {
     "text": "cách",
-    "startMs": 6208,
-    "endMs": 6388
+    "startMs": 4868,
+    "endMs": 5009
   },
   {
     "text": "nào",
-    "startMs": 6388,
-    "endMs": 6523
+    "startMs": 5009,
+    "endMs": 5115
   },
   {
     "text": "nhẹ",
-    "startMs": 6523,
-    "endMs": 6748
+    "startMs": 5115,
+    "endMs": 5291
   },
   {
     "text": "hơn",
-    "startMs": 6748,
-    "endMs": 6928
+    "startMs": 5291,
+    "endMs": 5433
   },
   {
     "text": "à?",
-    "startMs": 6973,
-    "endMs": 7262
+    "startMs": 5468,
+    "endMs": 5694
   }
 ]

@@ -2,66 +2,66 @@
   {
     "text": "Cho",
     "startMs": 0,
-    "endMs": 288
+    "endMs": 216
   },
   {
     "text": "em",
-    "startMs": 288,
-    "endMs": 432
+    "startMs": 216,
+    "endMs": 324
   },
   {
     "text": "hỏi",
-    "startMs": 432,
-    "endMs": 672
+    "startMs": 324,
+    "endMs": 505
   },
   {
     "text": "cái",
-    "startMs": 1152,
-    "endMs": 1345
+    "startMs": 865,
+    "endMs": 1010
   },
   {
     "text": "workflow",
-    "startMs": 1489,
-    "endMs": 2113
+    "startMs": 1118,
+    "endMs": 1587
   },
   {
     "text": "đó",
-    "startMs": 2209,
-    "endMs": 2401
+    "startMs": 1659,
+    "endMs": 1803
   },
   {
     "text": "thì",
-    "startMs": 2401,
-    "endMs": 2545
+    "startMs": 1803,
+    "endMs": 1911
   },
   {
     "text": "viết",
-    "startMs": 2593,
-    "endMs": 2833
+    "startMs": 1947,
+    "endMs": 2127
   },
   {
     "text": "bằng",
-    "startMs": 2833,
-    "endMs": 2977
+    "startMs": 2127,
+    "endMs": 2235
   },
   {
     "text": "gì",
-    "startMs": 2977,
-    "endMs": 3169
+    "startMs": 2235,
+    "endMs": 2380
   },
   {
     "text": "cho",
-    "startMs": 3169,
-    "endMs": 3313
+    "startMs": 2380,
+    "endMs": 2488
   },
   {
     "text": "dễ",
-    "startMs": 3313,
-    "endMs": 3601
+    "startMs": 2488,
+    "endMs": 2704
   },
   {
     "text": "ạ?",
-    "startMs": 3601,
-    "endMs": 3866
+    "startMs": 2704,
+    "endMs": 2903
   }
 ]

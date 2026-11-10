@@ -1,97 +1,97 @@
 [
   {
     "text": "Vậy",
-    "startMs": 160,
-    "endMs": 440
+    "startMs": 120,
+    "endMs": 331
   },
   {
     "text": "nếu",
-    "startMs": 560,
-    "endMs": 800
+    "startMs": 421,
+    "endMs": 602
   },
   {
     "text": "muốn",
-    "startMs": 800,
-    "endMs": 1000
+    "startMs": 602,
+    "endMs": 752
   },
   {
     "text": "làm",
-    "startMs": 1000,
-    "endMs": 1160
+    "startMs": 752,
+    "endMs": 872
   },
   {
     "text": "việc",
-    "startMs": 1160,
-    "endMs": 1680
+    "startMs": 872,
+    "endMs": 1264
   },
   {
     "text": "với",
-    "startMs": 1680,
-    "endMs": 1920
+    "startMs": 1264,
+    "endMs": 1444
   },
   {
     "text": "service",
-    "startMs": 2160,
-    "endMs": 2600
+    "startMs": 1625,
+    "endMs": 1956
   },
   {
     "text": "một",
-    "startMs": 2840,
-    "endMs": 3000
+    "startMs": 2136,
+    "endMs": 2256
   },
   {
     "text": "cách",
-    "startMs": 3000,
-    "endMs": 3600
+    "startMs": 2256,
+    "endMs": 2708
   },
   {
     "text": "bài",
-    "startMs": 3600,
-    "endMs": 3720
+    "startMs": 2708,
+    "endMs": 2798
   },
   {
     "text": "bản",
-    "startMs": 3880,
-    "endMs": 4400
+    "startMs": 2918,
+    "endMs": 3309
   },
   {
     "text": "thì",
-    "startMs": 4400,
-    "endMs": 4600
+    "startMs": 3309,
+    "endMs": 3460
   },
   {
     "text": "thực",
-    "startMs": 4600,
-    "endMs": 4760
+    "startMs": 3460,
+    "endMs": 3580
   },
   {
     "text": "ra",
-    "startMs": 4800,
-    "endMs": 4960
+    "startMs": 3610,
+    "endMs": 3731
   },
   {
     "text": "ta",
-    "startMs": 4960,
-    "endMs": 5160
+    "startMs": 3731,
+    "endMs": 3881
   },
   {
     "text": "phải",
-    "startMs": 5160,
-    "endMs": 5320
+    "startMs": 3881,
+    "endMs": 4001
   },
   {
     "text": "học",
-    "startMs": 5320,
-    "endMs": 5520
+    "startMs": 4001,
+    "endMs": 4152
   },
   {
     "text": "những",
-    "startMs": 5520,
-    "endMs": 5680
+    "startMs": 4152,
+    "endMs": 4272
   },
   {
     "text": "gì?",
-    "startMs": 5680,
-    "endMs": 6020
+    "startMs": 4272,
+    "endMs": 4528
   }
 ]

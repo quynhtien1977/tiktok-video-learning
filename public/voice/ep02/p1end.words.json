@@ -1,0 +1,77 @@
+[
+  {
+    "text": "Phần",
+    "startMs": 0,
+    "endMs": 160
+  },
+  {
+    "text": "sau:",
+    "startMs": 200,
+    "endMs": 360
+  },
+  {
+    "text": "WSDL",
+    "startMs": 360,
+    "endMs": 1400
+  },
+  {
+    "text": "trả",
+    "startMs": 1400,
+    "endMs": 1520
+  },
+  {
+    "text": "lời",
+    "startMs": 1520,
+    "endMs": 1680
+  },
+  {
+    "text": "đúng",
+    "startMs": 1680,
+    "endMs": 1800
+  },
+  {
+    "text": "ba",
+    "startMs": 1840,
+    "endMs": 1960
+  },
+  {
+    "text": "câu",
+    "startMs": 1960,
+    "endMs": 2080
+  },
+  {
+    "text": "nào.",
+    "startMs": 2120,
+    "endMs": 2360
+  },
+  {
+    "text": "Theo",
+    "startMs": 2360,
+    "endMs": 2480
+  },
+  {
+    "text": "dõi",
+    "startMs": 2480,
+    "endMs": 2680
+  },
+  {
+    "text": "để",
+    "startMs": 2680,
+    "endMs": 2800
+  },
+  {
+    "text": "khỏi",
+    "startMs": 2840,
+    "endMs": 2960
+  },
+  {
+    "text": "lỡ",
+    "startMs": 3040,
+    "endMs": 3200
+  },
+  {
+    "text": "nha.",
+    "startMs": 3280,
+    "endMs": 3451
+  }
+]
