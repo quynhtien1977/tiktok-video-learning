@@ -21,6 +21,7 @@ export const Captions: React.FC<{
   const maxWords = wordsPerLine ?? (L.vertical ? 14 : 18);
 
   let content: React.ReactNode = null;
+  let swap = 1;
 
   if (words && words.length > 0) {
     const lines: Word[][] = [];
@@ -39,9 +40,20 @@ export const Captions: React.FC<{
       }
     }
     if (current.length) lines.push(current);
-    const activeLine =
-      lines.find((line) => ms >= line[0].startMs && ms <= line[line.length - 1].endMs + 250) ??
-      (ms < words[0].startMs ? lines[0] : lines[lines.length - 1]);
+    // Giữ mệnh đề đang hiện cho tới khi mệnh đề sau bắt đầu. Trước đây dùng một khoảng
+    // bám [start, end+250ms] rồi rơi về mệnh đề CUỐI khi không khớp — nên ở mỗi khoảng
+    // lặng giữa hai câu, phụ đề nháy sang câu cuối của cả scene vài frame rồi nhảy ngược
+    // lại. Đó mới là cú giật rõ nhất, không phải lỗi timing.
+    let idx = 0;
+    for (let i = 0; i < lines.length; i++) {
+      if (ms >= lines[i][0].startMs) idx = i;
+    }
+    const activeLine = lines[idx];
+    // Đổi mệnh đề bằng một nhịp mờ ngắn. Cắt phụt sang mệnh đề mới thì mắt đọc ra là giật.
+    swap = interpolate(ms, [activeLine[0].startMs - 50, activeLine[0].startMs + 90], [0, 1], {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+    });
 
     content = (
       <>
@@ -54,10 +66,7 @@ export const Captions: React.FC<{
           return (
             <span
               key={`${w.text}-${i}`}
-              style={{
-                color: interpolateColors(p, [0, 1], [theme.inkSoft, theme.ink]),
-                fontWeight: p > 0.5 ? 700 : 500,
-              }}
+              style={{ color: interpolateColors(p, [0, 1], [theme.inkSoft, theme.ink]) }}
             >
               {w.text}{" "}
             </span>
@@ -87,10 +96,18 @@ export const Captions: React.FC<{
         style={{
           fontFamily: theme.fontFamily,
           fontSize: L.s(36),
-          fontWeight: 600,
+          // Nét chữ cố định cho MỌI từ, đã nói hay chưa. Trước đây từ đang nói nhảy từ
+          // nét 500 sang 700 tức thì; nét đậm rộng hơn nên cả dòng căn giữa bị xô ngang
+          // mỗi lần một từ sáng lên — đo được bề rộng đổi 66px trong 33 frame. Chỉ đổi
+          // màu thì bề rộng không bao giờ đổi, và chữ đứng yên tuyệt đối.
+          fontWeight: 700,
           lineHeight: 1.35,
           textAlign: "center",
           maxWidth: L.captionWidth,
+          // Chừa sẵn chỗ cho hai dòng: mệnh đề một dòng đổi sang hai dòng mà không
+          // chừa chỗ thì cả khối nhảy dựng lên.
+          minHeight: Math.round(L.s(36) * 1.35 * 2),
+          opacity: swap,
         }}
       >
         {content}
