@@ -1,6 +1,8 @@
 import React from "react";
 import { AbsoluteFill, interpolate, useCurrentFrame } from "remotion";
+import type { CharacterOutfit, CharacterPose, Scene } from "../types";
 import { theme, useLayout } from "../theme";
+import { SpeakerBadge } from "./SpeakerBadge";
 
 /**
  * Khung chung của mọi scene: giấy ấm, nhãn chương ở góc, thanh tiến độ ở mép dưới.
@@ -14,7 +16,35 @@ export const Frame: React.FC<{
   /** tiến độ của cả tập, 0–1, vẽ thành thanh mảnh ở đáy khung */
   progress: number;
   speaker?: string;
-}> = ({ children, chapter, episodeLabel, sceneDurationInFrames, progress, speaker }) => {
+  pose?: CharacterPose;
+  poses?: { after: string; pose: CharacterPose }[];
+  outfit?: CharacterOutfit;
+  episodeOutfit?: CharacterOutfit | "auto";
+  part?: number;
+  sceneType?: Scene["type"];
+  narration?: string;
+  words?: { text: string; startMs: number }[];
+  sceneIndex?: number;
+  /** hook, endcard và question đã có nhân vật cỡ lớn ở trung tâm, bật thêm huy hiệu góc là thừa */
+  showBadge?: boolean;
+}> = ({
+  children,
+  chapter,
+  episodeLabel,
+  sceneDurationInFrames,
+  progress,
+  speaker,
+  pose,
+  poses,
+  outfit,
+  episodeOutfit,
+  part,
+  sceneType,
+  narration,
+  words,
+  sceneIndex,
+  showBadge = true,
+}) => {
   const frame = useCurrentFrame();
   const L = useLayout();
   const isAsk = speaker === "ask";
@@ -58,6 +88,22 @@ export const Frame: React.FC<{
       </div>
 
       <AbsoluteFill style={{ opacity: Math.min(enter, exit) }}>{children}</AbsoluteFill>
+
+      {showBadge ? (
+        <SpeakerBadge
+          speaker={speaker}
+          pose={pose}
+          poses={poses}
+          outfit={outfit}
+          episodeOutfit={episodeOutfit}
+          part={part}
+          sceneType={sceneType}
+          narration={narration}
+          words={words}
+          sceneDurationInFrames={sceneDurationInFrames}
+          sceneIndex={sceneIndex}
+        />
+      ) : null}
 
       <div
         style={{
