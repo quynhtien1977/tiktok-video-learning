@@ -40,6 +40,7 @@
     "capcut": "node scripts/capcut-export.ts",
     "split": "node scripts/capcut-split.ts",
     "render": "remotion render",
+    "render:all": "python -I -X utf8 scripts/render_all.py",
     "still": "remotion still",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
@@ -52,7 +53,10 @@
     "lab:azure": "node --env-file-if-exists=.env scripts/azure-lab.ts",
     "images": "powershell -ExecutionPolicy Bypass -File scripts/extract-slide-images.ps1",
     "cues": "node scripts/check-cues.ts",
+    "poses": "node scripts/check-poses.ts",
     "sfx": "node scripts/insert-sfx.ts",
+    "sprites": "python -I -X utf8 scripts/normalize_sprites.py",
+    "sfx:ui": "python -I -X utf8 scripts/make_sfx.py",
     "voice:gemini": "node --env-file-if-exists=.env scripts/tts-gemini.ts",
     "quota": "node --env-file-if-exists=.env scripts/tts-gemini.ts --quota",
     "retime": "node scripts/retime.ts"
