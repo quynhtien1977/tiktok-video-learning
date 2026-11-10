@@ -97,6 +97,25 @@
       "narration": "Ba loại này dễ học thuộc nhưng khó phân biệt khi gặp đề, nên lấy một mốc để nhớ. Utility service dùng được ở mọi phòng ban và không gắn với nghiệp vụ nào: đổi tiền tệ thì phòng kế toán hay phòng kinh doanh đều cần. Business service chỉ có nghĩa trong một nghiệp vụ cụ thể: kiểm tra điểm tín dụng chỉ có nghĩa ở ngân hàng. Còn coordination service thì tự nó không làm gì cả, việc của nó là sai khiến các service khác theo đúng thứ tự."
     },
     {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "Bảng phân loại: một ô luôn bỏ trống",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: bảng phân loại service, và một ô luôn bỏ trống. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Trong bảng phân loại service, có một ô luôn bỏ trống. Vì sao?",
+      "context": "Chapter 18 · Tập 4 · Phần 2/3",
+      "narration": "Trong bảng phân loại service, có một ô luôn bỏ trống. Vì sao? <short pause> Hiểu được ô trống đó là hiểu luôn cả bảng phân loại.",
+      "promise": "Hiểu được ô trống đó là hiểu luôn cả bảng phân loại."
+    },
+    {
       "id": "s05",
       "type": "bullets",
       "part": 2,
@@ -185,6 +204,25 @@
         "state"
       ],
       "narration": "Sáu câu đó không phải để điểm danh, mà để ra quyết định. Càng nhiều câu trả lời là có, thì chức năng đó càng đáng tách ra thành service riêng. Ngược lại, nếu hầu hết câu trả lời là không, thì cứ để nó nằm trong ứng dụng, tách ra chỉ thêm phức tạp mà chẳng ai dùng lại. Riêng câu về state thì ảnh hưởng tới kiến trúc: nếu service phải nhớ trạng thái giữa các lần gọi, bạn sẽ cần database riêng cho nó, và chi phí vận hành tăng hẳn."
+    },
+    {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "Catalog service — ví dụ chạy suốt hai tập",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: catalog service, ví dụ chạy suốt hai tập liền. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "Yêu cầu phi chức năng không phải phần phụ. Nó nắn cả thiết kế.",
+      "context": "Chapter 18 · Tập 4 · Phần 3/3",
+      "narration": "Yêu cầu phi chức năng không phải phần phụ. Nó nắn cả thiết kế. <short pause> Xem xong bạn biết phải hỏi gì trước khi thiết kế interface.",
+      "promise": "Xem xong bạn biết phải hỏi gì trước khi thiết kế interface."
     },
     {
       "id": "s10",
@@ -283,6 +321,15 @@
       ],
       "next": "Tập 5 — Thiết kế interface và triển khai service",
       "narration": "Tóm lại ba ý. Service engineering gồm ba giai đoạn: identification, design, rồi implementation và deployment. Service chia thành ba loại utility, business, coordination, nhân với hai trục task và entity. Và chi tiết hay ra đề: coordination service luôn là task-oriented, ô entity của nó bỏ trống. Tập sau chúng ta lấy sáu operation của catalog service vừa rồi và thiết kế chúng thành interface thật."
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Tập 5 — Thiết kế interface thật",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết tập bốn. Tập năm: thiết kế interface thật. Bản đầy đủ có trên YouTube nha."
     }
   ]
 }

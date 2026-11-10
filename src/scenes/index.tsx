@@ -10,8 +10,15 @@ import {
 } from "remotion";
 import katex from "katex";
 import "katex/dist/katex.min.css";
-import type { Scene } from "../types";
+import type { CharacterOutfit, Scene } from "../types";
 import { theme, useLayout } from "../theme";
+import {
+  Avatar,
+  CAST,
+  resolveCharacterPose,
+  resolveMascotRole,
+  resolveSonOutfit,
+} from "../components/SpeakerBadge";
 import { diagrams } from "../diagrams";
 
 /** Cột nội dung: lề rộng như trang sách, chừa đáy cho phụ đề. */
@@ -316,38 +323,147 @@ const QuoteScene: React.FC<{ scene: Extract<Scene, { type: "quote" }> }> = ({ sc
   );
 };
 
-/** Câu hỏi: giấy đổi màu ở Frame, ở đây chữ lớn dần như ai đó vừa ngắt lời. */
-const QuestionScene: React.FC<{ scene: Extract<Scene, { type: "question" }> }> = ({ scene }) => {
+/**
+ * Câu hỏi của vai SON (ask): giấy đổi màu ở Frame, nhân vật bán thân hiện lớn cùng cử chỉ
+ * (ôm má tò mò / chống cằm suy tư / chạm vành mũ) bên cạnh câu hỏi phản biện.
+ */
+const QuestionScene: React.FC<{
+  scene: Extract<Scene, { type: "question" }>;
+  sceneIndex?: number;
+  episodeOutfit?: CharacterOutfit | "auto";
+}> = ({ scene, sceneIndex, episodeOutfit }) => {
   const L = useLayout();
   const frame = useCurrentFrame();
   const { fps } = useVideoConfig();
   const t = spring({ frame, fps, config: { damping: 180 }, durationInFrames: 20 });
+  const role = scene.speaker === "host" ? "host" : "ask";
+  const outfit = resolveSonOutfit(scene.outfit, episodeOutfit, scene.part, sceneIndex);
+  const pose = resolveCharacterPose({
+    pose: scene.pose,
+    sceneType: "question",
+    narration: scene.narration,
+  });
+  const charSize = L.s(L.vertical ? 340 : 340);
+
+  // Nhân vật đã hiện hình nên không cần nhãn tên: nền đổi màu và người đổi mặt là đủ.
+  // Bật lại bằng theme.showSpeakerName — xem ghi chú trong SpeakerBadge.tsx.
+  const badgeTag = !theme.showSpeakerName ? null : (
+    <span
+      style={{
+        display: "inline-block",
+        fontSize: L.s(20),
+        fontWeight: 800,
+        letterSpacing: L.s(3),
+        color: CAST[role].color,
+        padding: `${L.s(4)}px ${L.s(14)}px`,
+        borderRadius: L.s(999),
+        backgroundColor: CAST[role].soft,
+        border: `1.5px solid ${theme.rule}`,
+      }}
+    >
+      {CAST[role].name} · HỎI
+    </span>
+  );
+
+  if (L.vertical) {
+    return (
+      <Page center>
+        <div
+          style={{
+            opacity: t,
+            transform: `scale(${interpolate(t, [0, 1], [0.965, 1])})`,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+          }}
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "flex-end",
+              gap: L.s(18),
+              marginBottom: L.s(24),
+            }}
+          >
+            <Avatar
+              role={role}
+              size={charSize}
+              pose={pose}
+              outfit={outfit}
+            />
+            <div style={{ marginBottom: L.s(18) }}>{badgeTag}</div>
+          </div>
+          <p
+            style={{
+              fontSize: L.s(64),
+              fontWeight: 800,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.2,
+              margin: 0,
+              color: theme.ask,
+              maxWidth: "100%",
+            }}
+          >
+            {scene.question}
+          </p>
+          {scene.hint ? (
+            <p style={{ fontSize: L.s(28), color: theme.inkSoft, marginTop: L.s(26) }}>
+              {scene.hint}
+            </p>
+          ) : null}
+        </div>
+      </Page>
+    );
+  }
+
   return (
     <Page center>
       <div
         style={{
           opacity: t,
           transform: `scale(${interpolate(t, [0, 1], [0.965, 1])})`,
+          display: "flex",
+          alignItems: "center",
+          gap: L.s(56),
         }}
       >
-        <p
+        <div
           style={{
-            fontSize: L.s(66),
-            fontWeight: 800,
-            letterSpacing: "-0.02em",
-            lineHeight: 1.2,
-            margin: 0,
-            color: theme.ask,
-            maxWidth: L.vertical ? "100%" : "84%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: L.s(10),
+            flexShrink: 0,
           }}
         >
-          {scene.question}
-        </p>
-        {scene.hint ? (
-          <p style={{ fontSize: L.s(28), color: theme.inkSoft, marginTop: L.s(30) }}>
-            {scene.hint}
+          <Avatar
+            role={role}
+            size={charSize}
+            pose={pose}
+            outfit={outfit}
+          />
+          {badgeTag}
+        </div>
+        <div style={{ flex: 1 }}>
+          <p
+            style={{
+              fontSize: L.s(66),
+              fontWeight: 800,
+              letterSpacing: "-0.02em",
+              lineHeight: 1.2,
+              margin: 0,
+              color: theme.ask,
+              maxWidth: "92%",
+            }}
+          >
+            {scene.question}
           </p>
-        ) : null}
+          {scene.hint ? (
+            <p style={{ fontSize: L.s(28), color: theme.inkSoft, marginTop: L.s(30) }}>
+              {scene.hint}
+            </p>
+          ) : null}
+        </div>
       </div>
     </Page>
   );
@@ -400,11 +516,193 @@ const OutroScene: React.FC<{ scene: Extract<Scene, { type: "outro" }> }> = ({ sc
   );
 };
 
+/**
+ * Hook mở đầu một video dọc. Người lướt TikTok rơi thẳng vào đây, không có bối cảnh,
+ * nên câu này phải tự đứng được và đọc hết trong 2–4 giây.
+ */
+/**
+ * Hook mở đầu một video dọc. Hai nhịp, cố ý:
+ * nhịp một là câu hỏi tạo khoảng trống kiến thức, nhịp hai là lời hứa "xem xong làm được gì".
+ * Chỉ có nhịp một thì người xem biết mình chưa biết, nhưng không biết ở lại thì được gì.
+ * Nhân vật to hẳn ở đây vì màn hình còn trống — đây là chỗ nhân vật đáng tiền nhất.
+ */
+const HookScene: React.FC<{
+  scene: Extract<Scene, { type: "hook" }>;
+  durationInFrames: number;
+  sceneIndex?: number;
+  episodeOutfit?: CharacterOutfit | "auto";
+}> = ({ scene, durationInFrames, sceneIndex, episodeOutfit }) => {
+  const L = useLayout();
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = spring({ frame, fps, config: { damping: 170 }, durationInFrames: 16 });
+  // nhịp hai vào ở 42% thời lượng scene: đủ để câu hỏi kịp đọng, chưa đủ để người xem lướt
+  const beat2 = spring({
+    frame: frame - Math.round(durationInFrames * 0.42),
+    fps,
+    config: { damping: 170 },
+    durationInFrames: 16,
+  });
+  const bob = Math.sin(frame / 9) * L.s(5);
+  const role = resolveMascotRole(scene.speaker);
+  const outfit = resolveSonOutfit(scene.outfit, episodeOutfit, scene.part, sceneIndex);
+  const pose = resolveCharacterPose({
+    pose: scene.pose,
+    sceneType: "hook",
+    narration: scene.narration,
+  });
+
+  return (
+    <Page center>
+      <div style={{ opacity: t, transform: `translateY(${interpolate(t, [0, 1], [26, 0])}px)` }}>
+        <div style={{ transform: `translateY(${bob}px)`, marginBottom: L.s(28) }}>
+          <Avatar
+            role={role}
+            size={L.s(360)}
+            pose={pose}
+            outfit={outfit}
+          />
+        </div>
+        <div
+          style={{
+            height: 5,
+            width: `${interpolate(t, [0, 1], [0, 34])}%`,
+            backgroundColor: theme.accent,
+            marginBottom: L.s(32),
+          }}
+        />
+        <p
+          style={{
+            fontSize: L.s(74),
+            fontWeight: 800,
+            letterSpacing: "-0.025em",
+            lineHeight: 1.15,
+            margin: 0,
+          }}
+        >
+          {scene.hook}
+        </p>
+        {scene.promise ? (
+          <p
+            style={{
+              fontSize: L.s(40),
+              fontWeight: 600,
+              lineHeight: 1.3,
+              color: theme.accent,
+              margin: `${L.s(30)}px 0 0`,
+              opacity: beat2,
+              transform: `translateY(${interpolate(beat2, [0, 1], [20, 0])}px)`,
+            }}
+          >
+            {scene.promise}
+          </p>
+        ) : null}
+        {scene.context ? (
+          <p style={{ fontSize: L.s(28), color: theme.inkSoft, marginTop: L.s(28) }}>
+            {scene.context}
+          </p>
+        ) : null}
+      </div>
+    </Page>
+  );
+};
+
+/**
+ * Thẻ kết của một video dọc: trỏ sang phần sau. Có lời thoại — thẻ kết im lặng thì mất
+ * đúng hai giây quan trọng nhất cho việc kêu gọi theo dõi.
+ */
+const EndCardScene: React.FC<{
+  scene: Extract<Scene, { type: "endcard" }>;
+  durationInFrames: number;
+  episodeOutfit?: CharacterOutfit | "auto";
+}> = ({ scene, durationInFrames, episodeOutfit }) => {
+  const L = useLayout();
+  const frame = useCurrentFrame();
+  const { fps } = useVideoConfig();
+  const t = spring({ frame, fps, config: { damping: 200 }, durationInFrames: 18 });
+  const ctaIn = spring({
+    frame: frame - Math.round(durationInFrames * 0.45),
+    fps,
+    config: { damping: 200 },
+    durationInFrames: 14,
+  });
+  // tay vẫy qua lại suốt thẻ kết, tốc độ chậm để không giật
+  const wave = (Math.sin(frame / 6) + 1) / 2;
+  const role = resolveMascotRole(scene.speaker);
+  const outfit = resolveSonOutfit(scene.outfit, episodeOutfit, scene.part);
+  const pose = resolveCharacterPose({
+    pose: scene.pose,
+    sceneType: "endcard",
+    narration: scene.narration,
+  });
+
+  return (
+    <Page center>
+      <div style={{ opacity: t }}>
+        <div style={{ marginBottom: L.s(26) }}>
+          <Avatar
+            role={role}
+            size={L.s(340)}
+            wave={wave}
+            pose={pose}
+            outfit={outfit}
+          />
+        </div>
+        <p
+          style={{
+            fontSize: L.s(30),
+            letterSpacing: L.s(3),
+            textTransform: "uppercase",
+            color: theme.accent,
+            margin: 0,
+          }}
+        >
+          Phần sau
+        </p>
+        <p
+          style={{
+            fontSize: L.s(58),
+            fontWeight: 800,
+            lineHeight: 1.2,
+            margin: `${L.s(22)}px 0 0`,
+            transform: `translateX(${interpolate(t, [0, 1], [-18, 0])}px)`,
+          }}
+        >
+          {scene.next}
+        </p>
+        <div
+          style={{
+            marginTop: L.s(36),
+            paddingTop: L.s(22),
+            borderTop: `2px solid ${theme.rule}`,
+            opacity: ctaIn,
+          }}
+        >
+          <span style={{ fontSize: L.s(34), fontWeight: 700, color: theme.ink }}>
+            {scene.cta ?? "Theo dõi để xem tiếp"}
+          </span>
+          <div
+            style={{
+              height: 4,
+              marginTop: L.s(10),
+              width: `${ctaIn * 100}%`,
+              maxWidth: L.s(300),
+              backgroundColor: theme.accent,
+            }}
+          />
+        </div>
+      </div>
+    </Page>
+  );
+};
+
 export const SceneRenderer: React.FC<{
   scene: Scene;
   durationInFrames: number;
   cues?: number[];
-}> = ({ scene, durationInFrames, cues }) => {
+  sceneIndex?: number;
+  episodeOutfit?: CharacterOutfit | "auto";
+}> = ({ scene, durationInFrames, cues, sceneIndex, episodeOutfit }) => {
   switch (scene.type) {
     case "title":
       return <TitleScene scene={scene} />;
@@ -419,7 +717,30 @@ export const SceneRenderer: React.FC<{
     case "quote":
       return <QuoteScene scene={scene} />;
     case "question":
-      return <QuestionScene scene={scene} />;
+      return (
+        <QuestionScene
+          scene={scene}
+          sceneIndex={sceneIndex}
+          episodeOutfit={episodeOutfit}
+        />
+      );
+    case "hook":
+      return (
+        <HookScene
+          scene={scene}
+          durationInFrames={durationInFrames}
+          sceneIndex={sceneIndex}
+          episodeOutfit={episodeOutfit}
+        />
+      );
+    case "endcard":
+      return (
+        <EndCardScene
+          scene={scene}
+          durationInFrames={durationInFrames}
+          episodeOutfit={episodeOutfit}
+        />
+      );
     case "outro":
       return <OutroScene scene={scene} />;
     default:

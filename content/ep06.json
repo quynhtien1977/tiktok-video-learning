@@ -83,6 +83,25 @@
       "narration": "Quy trình xây dựng bằng cách ghép gồm sáu bước, và sơ đồ này là toàn cảnh của chúng. Ba bước đầu là phác thảo rồi đi tìm, ba bước sau là chọn lọc rồi làm thật."
     },
     {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "Sáu bước ghép service thành hệ thống",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: sáu bước ghép service thành một hệ thống. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Ghép service thành hệ thống gồm sáu bước. Bước nào hay bị bỏ qua?",
+      "context": "Chapter 18 · Tập 6 · Phần 2/3",
+      "narration": "Ghép service thành hệ thống gồm sáu bước. Bước nào hay bị bỏ qua? <short pause> Nhớ được cả sáu bước, và bước hay bị bỏ qua nhất.",
+      "promise": "Nhớ được cả sáu bước, và bước hay bị bỏ qua nhất."
+    },
+    {
       "id": "s05",
       "type": "bullets",
       "part": 2,
@@ -167,6 +186,25 @@
       "narration": "Khi hệ thống chạy qua nhiều tổ chức thì không ai vẽ một workflow khổng lồ chung. Mỗi tổ chức giữ workflow riêng của mình, và hai bên nối với nhau bằng cách trao đổi message. Sơ đồ này cho thấy hai luồng chạy song song, thỉnh thoảng bắn message sang nhau tại những điểm đã thống nhất. Cách làm này giữ được quyền tự chủ của từng bên."
     },
     {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "Vì sao test service lại khó tới vậy",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: vì sao test service lại khó tới vậy. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "Service của người khác là hộp đen, còn tính tiền mỗi lần gọi.",
+      "context": "Chapter 18 · Tập 6 · Phần 3/3",
+      "narration": "Service của người khác là hộp đen, còn tính tiền mỗi lần gọi. <short pause> Xem xong bạn biết vì sao test service lại khó tới vậy.",
+      "promise": "Xem xong bạn biết vì sao test service lại khó tới vậy."
+    },
+    {
       "id": "s10",
       "type": "bullets",
       "part": 3,
@@ -246,6 +284,15 @@
       ],
       "next": "Hết chương. Ôn lại bằng tám key point ở slide 68 và 69",
       "narration": "Ba ý cuối cùng. Workflow là nền tảng để ghép service, và cách làm thực tế là vẽ bằng BPMN rồi sinh ra WS-BPEL. Với hệ liên tổ chức thì mỗi bên giữ workflow riêng và nối nhau bằng message. Còn việc test khó là vì service bên ngoài là hộp đen, có thể bị sửa bất cứ lúc nào, và nhiều khi còn tính tiền từng lượt gọi. Tới đây là hết Chapter 18. Trước khi thi, bạn mở lại slide sáu mươi tám và sáu mươi chín, đối chiếu tám key point ở đó với những gì vừa nghe. Chúc bạn ôn tốt."
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Hết Chapter 18 — xem lại từ tập 1",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết Chapter mười tám. Xem lại từ tập một trên YouTube để nối liền mạch nha."
     }
   ]
 }

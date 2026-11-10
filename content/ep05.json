@@ -101,6 +101,25 @@
       "narration": "Xem ba operation đầu được thiết kế ra sao. MakeCatalog nhận vào mã công ty và một cờ cho biết có cần bản PDF không, trả về URL của bản catalog riêng cho công ty đó, và có fault khi mã công ty không hợp lệ. Lookup nhận URL catalog cùng mã mục, trả về URL của trang chứa thông tin mục đó. Search nhận URL catalog và chuỗi tìm kiếm, trả về URL trang kết quả, fault khi chuỗi tìm kiếm sai cú pháp."
     },
     {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "Cùng chức năng, bản REST phải tách mấy bước",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: cùng một chức năng, bản REST phải tách thành mấy bước. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Một operation của SOAP, sang REST phải tách thành bốn bước.",
+      "context": "Chapter 18 · Tập 5 · Phần 2/3",
+      "narration": "Một operation của SOAP, sang REST phải tách thành bốn bước. <short pause> Hai phút nữa bạn tự chuyển được một operation sang REST.",
+      "promise": "Hai phút nữa bạn tự chuyển được một operation sang REST."
+    },
+    {
       "id": "s05",
       "type": "bullets",
       "part": 2,
@@ -185,6 +204,25 @@
       "narration": "Chỗ Compare phải tách nhiều bước cho ta một bài học quan trọng. Không phải service nào cũng hợp với REST. Những thao tác mang tính hành động, kiểu tính toán rồi trả kết quả, thì SOAP diễn đạt gọn hơn vì nó vốn nghĩ theo lời gọi thủ tục. Bài học thực hành là: hãy làm logical interface trước, rồi mới nhìn vào đó mà quyết định đi theo SOAP hay REST. Chọn lối kỹ thuật trước rồi mới thiết kế là làm ngược."
     },
     {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "Bọc hệ thống cũ thành service",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: bọc hệ thống cũ thành service. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "Hệ thống chạy mười lăm năm rồi. Viết lại hay bọc lại?",
+      "context": "Chapter 18 · Tập 5 · Phần 3/3",
+      "narration": "Hệ thống chạy mười lăm năm rồi. Viết lại hay bọc lại? <short pause> Hết phần này bạn biết khi nào nên bọc, khi nào nên viết lại.",
+      "promise": "Hết phần này bạn biết khi nào nên bọc, khi nào nên viết lại."
+    },
+    {
       "id": "s10",
       "type": "bullets",
       "part": 3,
@@ -264,6 +302,15 @@
       ],
       "next": "Tập 6 — Ghép service thành hệ thống, và vì sao test rất khó",
       "narration": "Tóm lại ba ý. Hai ràng buộc riêng của service là giảm số message và nhét state vào trong message. Thiết kế luôn đi từ logical interface rồi mới xuống bản cụ thể cho SOAP hoặc REST. Và điểm hay ra đề: một operation trong SOAP có thể phải tách thành nhiều bước trong REST, như trường hợp Compare. Tập cuối, chúng ta ghép các service lại thành hệ thống, và xem vì sao việc test lại khó tới vậy."
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Tập 6 — Ghép service, và chuyện test",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết tập năm. Tập sáu: ghép service lại, và chuyện test. Bản đầy đủ có trên YouTube nha."
     }
   ]
 }

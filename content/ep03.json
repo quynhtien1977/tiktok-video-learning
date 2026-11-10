@@ -116,6 +116,25 @@
       "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu <short pause> nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
     },
     {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "Vì sao REST nhẹ hơn SOAP",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: vì sao REST lại nhẹ hơn SOAP. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Service không nhớ bạn là ai. Mỗi lời gọi phải tự đủ.",
+      "context": "Chapter 18 · Tập 3 · Phần 2/3",
+      "narration": "Service không nhớ bạn là ai. Mỗi lời gọi phải tự đủ. <short pause> Xem xong bạn giải thích được vì sao REST phải stateless.",
+      "promise": "Xem xong bạn giải thích được vì sao REST phải stateless."
+    },
+    {
       "id": "s05",
       "type": "bullets",
       "part": 2,
@@ -209,6 +228,25 @@
       "narration": "Nói interface phức tạp thì khó nặn thành resource, nghe cũng trừu tượng, nên lấy luôn ví dụ sẽ gặp ở tập năm. So sánh bốn sản phẩm theo sáu tiêu chí: đó rõ ràng là một hành động chứ không phải một vật. REST chỉ biết thao tác trên vật, nên bạn buộc phải bịa ra một resource mới chỉ để chứa bảng kết quả so sánh, rồi tạo nó bằng POST và lấy về bằng GET. Một việc đơn giản bị tách thành mấy bước."
     },
     {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "Ba chỗ REST thua SOAP",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: ba chỗ REST thua SOAP. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "REST không thay thế hẳn SOAP. Có ba chỗ nó thua.",
+      "context": "Chapter 18 · Tập 3 · Phần 3/3",
+      "narration": "REST không thay thế hẳn SOAP. Có ba chỗ nó thua. <short pause> Nhớ đủ ba chỗ đó là đủ trả lời câu so sánh trong đề.",
+      "promise": "Nhớ đủ ba chỗ đó là đủ trả lời câu so sánh trong đề."
+    },
+    {
       "id": "s09",
       "type": "image",
       "part": 3,
@@ -245,6 +283,15 @@
       ],
       "next": "Tập 4 — Service engineering: tìm và phân loại service",
       "narration": "Tóm lại ba ý. REST là một architectural style dựa trên resource chứ không phải một chuẩn. Bốn thao tác CRUD ánh xạ thẳng sang bốn HTTP verb. Và điểm yếu lớn nhất của nó là không có chuẩn mô tả interface, nên người dùng phải đọc tài liệu viết tay. Hai tập vừa rồi là về cách mô tả và gọi service. Tập sau chúng ta lùi lại một bước để hỏi: rốt cuộc cái gì trong doanh nghiệp thì đáng trở thành service."
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Tập 4 — Cái gì đáng thành service",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết tập ba. Tập bốn: nhìn vào một công ty, cái gì đáng tách thành service. Bản đầy đủ có trên YouTube nha."
     }
   ]
 }

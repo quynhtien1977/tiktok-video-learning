@@ -100,6 +100,25 @@
       "narration": "Khoan đã <short pause> <laugh> nếu chỉ có message đi qua lại, thì bản mô tả service phải ghi những gì mới đủ cho người ta dùng?"
     },
     {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "WSDL trả lời đúng ba câu",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: WSDL trả lời đúng ba câu nào. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Một bản mô tả service chỉ cần trả lời ba câu: what, how, where.",
+      "context": "Chapter 18 · Tập 2 · Phần 2/3",
+      "narration": "Một bản mô tả service chỉ cần trả lời ba câu: what, how, where. <short pause> Hai phút nữa bạn mở một file WSDL ra mà không hoảng.",
+      "promise": "Hai phút nữa bạn mở một file WSDL ra mà không hoảng."
+    },
+    {
       "id": "s06",
       "type": "bullets",
       "part": 2,
@@ -193,6 +212,25 @@
       "narration": "Có một phần trong WSDL mà sinh viên hay bỏ qua khi làm bài: fault. Mỗi operation nên khai báo những lỗi riêng của nó. Nếu thiếu, bên gọi nhận về một thông báo chung chung và không biết là dữ liệu vào sai, hay mã không tồn tại, hay hệ thống đang quá tải. Ở tập bốn chúng ta sẽ gặp một service mà riêng một operation đã có tới ba loại fault khác nhau. Khai báo fault đầy đủ là dấu hiệu của một interface được thiết kế nghiêm túc."
     },
     {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "SOAP làm gì, và vì sao bị chê nặng",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: SOAP làm gì, và vì sao nó bị chê là nặng. Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "WSDL với SOAP là hai thứ khác nhau. Lẫn là mất điểm.",
+      "context": "Chapter 18 · Tập 2 · Phần 3/3",
+      "narration": "WSDL với SOAP là hai thứ khác nhau. Lẫn là mất điểm. <short pause> Hết phần này bạn phân biệt gọn, không lẫn hai thứ nữa.",
+      "promise": "Hết phần này bạn phân biệt gọn, không lẫn hai thứ nữa."
+    },
+    {
       "id": "s11",
       "type": "bullets",
       "part": 3,
@@ -280,6 +318,15 @@
       ],
       "next": "Tập 3 — RESTful services: cách làm nhẹ hơn",
       "narration": "Tóm lại ba ý. WSDL trả lời đúng ba câu: what, how và where. Phần interface khai báo cả operation lẫn fault, binding chốt giao thức, endpoint là địa chỉ thật. Và đừng nhầm hai vai: SOAP lo khuôn của message, WSDL lo mô tả service. Tập sau chúng ta xem cách làm nhẹ hơn mà hiện nay bạn gặp mỗi ngày, đó là REST."
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Tập 3 — REST, cách làm nhẹ hơn",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết tập hai. Tập ba nói về REST, cách làm nhẹ hơn hẳn. Bản đầy đủ có trên YouTube nha."
     }
   ]
 }
