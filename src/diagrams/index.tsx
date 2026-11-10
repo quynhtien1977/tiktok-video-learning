@@ -401,6 +401,47 @@ const ServiceProcess: React.FC<DiagramProps> = ({ durationInFrames, vertical, cu
   );
 };
 
+/**
+ * Chữ trong SVG không tự xuống dòng. Ô của service-matrix ở khổ dọc chỉ rộng 234px,
+ * nên "Process expense claim" ở cỡ 22px tràn ra ngoài ô. Cắt dòng theo bề rộng ô.
+ */
+const wrapWords = (text: string, maxChars: number) => {
+  const lines: string[] = [];
+  let cur = "";
+  for (const w of text.split(" ")) {
+    const next = cur ? `${cur} ${w}` : w;
+    if (next.length > maxChars && cur) {
+      lines.push(cur);
+      cur = w;
+    } else {
+      cur = next;
+    }
+  }
+  if (cur) lines.push(cur);
+  return lines;
+};
+
+const CellText: React.FC<{ cx: number; cy: number; boxW: number; text: string }> = ({
+  cx,
+  cy,
+  boxW,
+  text,
+}) => {
+  const size = 22;
+  const lines = wrapWords(text, Math.max(8, Math.floor(boxW / (size * 0.52))));
+  const lineH = 28;
+  const top = cy - ((lines.length - 1) * lineH) / 2 + 7;
+  return (
+    <text textAnchor="middle" fontFamily={theme.fontFamily} fontSize={size} fill={theme.ink}>
+      {lines.map((ln, k) => (
+        <tspan key={k} x={cx} y={top + k * lineH}>
+          {ln}
+        </tspan>
+      ))}
+    </text>
+  );
+};
+
 /** Slide 38–40 — ba loại service nhân hai trục task / entity. */
 const ServiceMatrix: React.FC<DiagramProps> = ({ durationInFrames, vertical, cues }) => {
   const s = useSteps(4, durationInFrames, cues);
@@ -431,10 +472,12 @@ const ServiceMatrix: React.FC<DiagramProps> = ({ durationInFrames, vertical, cue
                 fill={cell === "—" ? "transparent" : theme.paper}
                 stroke={cell === "—" ? theme.rule : theme.ink} strokeWidth={cell === "—" ? 1.5 : 2}
                 strokeDasharray={cell === "—" ? "6 6" : undefined} />
-              <text x={150 + colW * i + colW / 2} y={162 + r * 160} textAnchor="middle"
-                fontFamily={theme.fontFamily} fontSize={22} fill={theme.ink}>
-                {cell}
-              </text>
+              <CellText
+                cx={150 + colW * i + colW / 2}
+                cy={155 + r * 160}
+                boxW={colW - 16}
+                text={cell}
+              />
             </g>
           ))}
         </g>

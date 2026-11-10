@@ -3,7 +3,7 @@
  * phát ra tiếng cười, thở dài giữa câu bằng tag `<laugh>`, `<sigh>`, `<short pause>`.
  *
  *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep ep01
- *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep ep01 --only s07 --force
+ *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep ep01 --only s07,s09 --force
  *   node --env-file-if-exists=.env scripts/tts-gemini.ts --quota        # chỉ xem còn bao nhiêu lượt
  *
  * Hai tầng key, khai báo trong .env theo thứ tự GEMINI_API_KEY_1, _2, ...:
@@ -231,11 +231,13 @@ const main = async () => {
   mkdirSync(outDir, { recursive: true });
 
   const todo = episode.scenes.filter((scene: Record<string, unknown>) => {
-    if (only && scene.id !== only) return false;
+    // --only nhận nhiều scene, ngăn bởi dấu phẩy: --only p2hook,p3hook,p2end
+    if (only && !only.split(",").map((x) => x.trim()).includes(String(scene.id))) return false;
     const sv = (scene.voice ?? {}) as Record<string, unknown>;
     const role = ((episode.voices ?? {})[(scene.speaker as string) ?? "host"] ?? {}) as Record<string, unknown>;
     const provider = sv.provider ?? role.provider ?? episode.voice.provider;
     if (provider !== "gemini") return false;
+    if (!String(scene.narration ?? "").trim()) return false; // scene không có lời thì bỏ qua
     return force || !existsSync(path.join(outDir, `${scene.id}.mp3`));
   });
 
@@ -267,9 +269,19 @@ const main = async () => {
     try {
       out = await synth(keys, scene.narration, voice, style);
     } catch (e) {
-      console.log(`LỖI ${(e as Error).message}`);
+      const msg = (e as Error).message;
+      console.log(`LỖI ${msg}`);
       writeLedger(keys);
-      console.log("\nDừng lại. Chạy lại sau khi quota reset, các scene đã xong sẽ được bỏ qua.");
+      // Phân biệt hết lượt với hết tiền: hai thứ này chữa bằng hai cách khác hẳn nhau,
+      // mà thông báo chung chung "chạy lại sau khi quota reset" từng làm chẩn đoán sai.
+      const hetTien = /insufficient balance|billing|top up/i.test(msg);
+      console.log(
+        hetTien
+          ? "\nDừng lại vì key trả tiền HẾT SỐ DƯ, không phải hết lượt." +
+              "\nNạp thêm, hoặc chạy lại với --free để dùng tầng miễn phí." +
+              "\nScene đã xong sẽ được bỏ qua."
+          : "\nDừng lại. Chạy lại sau khi quota reset, các scene đã xong sẽ được bỏ qua.",
+      );
       process.exit(1);
     }
 

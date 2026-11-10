@@ -65,7 +65,13 @@ if (!perScene && Math.abs(factor - 1) < 0.02) {
   process.exit(0);
 }
 
-let touched = 0;
+// Tính hệ số cho mọi scene TRƯỚC, kiểm tra hết, rồi mới đụng vào file.
+// Trước đây vừa tính vừa sửa: một hệ số sai làm ffmpeg chết giữa chừng, để lại
+// vài scene đã bị đổi nhịp và vài scene chưa — chạy lại thì những scene kia bị đổi lần hai.
+type Job = { id: string; mp3: string; f: number };
+const jobs: Job[] = [];
+const broken: string[] = [];
+
 for (const scene of episode.scenes) {
   const mp3 = path.join(dir, `${scene.id}.mp3`);
   if (!existsSync(mp3)) continue;
@@ -80,7 +86,30 @@ for (const scene of episode.scenes) {
     // tự nhiên của giọng người, ép tất cả về đúng một con số nghe lại máy móc.
     if (Math.abs(f - 1) < 0.08) continue;
   }
+  // atempo chỉ nhận 0,5–100. Ra ngoài khoảng đó gần như luôn là manifest đã cũ so với
+  // lời thoại vừa sửa, nên dừng hẳn và bảo chạy sync chứ đừng sửa bừa.
+  if (!Number.isFinite(f) || f < 0.5 || f > 100) {
+    broken.push(`${scene.id} (hệ số ${Number.isFinite(f) ? f.toFixed(3) : "?"})`);
+    continue;
+  }
+  jobs.push({ id: scene.id, mp3, f });
+}
 
+if (broken.length) {
+  console.error(
+    `Dừng, chưa sửa file nào. Hệ số ngoài khoảng ffmpeg nhận: ${broken.join(", ")}.
+` +
+      `manifest.json nhiều khả năng cũ hơn narration — chạy "npm run sync -- --ep ${episodeId}" trước rồi retime lại.`,
+  );
+  process.exit(1);
+}
+
+let touched = 0;
+for (const { scene, mp3, f } of jobs.map((j) => ({
+  scene: { id: j.id },
+  mp3: j.mp3,
+  f: j.f,
+}))) {
   const tmp = mp3.replace(/\.mp3$/, ".rt.mp3");
   execFileSync("ffmpeg", [
     "-y", "-hide_banner", "-loglevel", "error", "-i", mp3,
