@@ -17,8 +17,11 @@ docs/*.pptx
 vendor/
 whisper.cpp/
 
-# Agent skills — cài lại bằng: npx remotion skills add
-.agents/
+# Agent skills — cài lại bằng: npx remotion skills add.
+# Loại NỘI DUNG chứ không loại thư mục: git không bỏ ignore được file nằm trong
+# một thư mục đã bị loại, nên "!.agents/rules/" chỉ ăn khi viết ".agents/*".
+.agents/*
+!.agents/rules/
 .claude/
 
 # Ảnh chụp khung hình khi review thiết kế, sinh lại được
