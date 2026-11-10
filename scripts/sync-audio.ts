@@ -26,7 +26,8 @@ for (const scene of episode.scenes) {
   const file = existsSync(mp3) ? mp3 : existsSync(wav) ? wav : null;
 
   if (!file) {
-    missing.push(scene.id);
+    // endcard không có lời thoại nên không có audio — đó là bình thường
+    if (String(scene.narration ?? "").trim()) missing.push(scene.id);
     continue;
   }
 
