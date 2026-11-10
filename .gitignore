@@ -36,3 +36,13 @@ __pycache__/
 
 # Sổ ghi lượt gọi Gemini trong ngày
 .gemini-usage.json
+
+# Nhân vật độc nhất của kênh
+char_reference/
+public/characters/
+
+# Cờ cũ của pipeline audio, còn sót từ đợt trước
+*.lufs.old
+
+# Video tham chiếu tải về để xem phong cách nhân vật — 300MB, không commit
+capcut/
