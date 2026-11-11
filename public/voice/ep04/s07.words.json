@@ -1,117 +1,112 @@
 [
   {
     "text": "Phân",
-    "startMs": 44,
-    "endMs": 222
+    "startMs": 136,
+    "endMs": 318
   },
   {
     "text": "loại",
-    "startMs": 354,
-    "endMs": 576
+    "startMs": 409,
+    "endMs": 637
   },
   {
     "text": "thì",
-    "startMs": 576,
-    "endMs": 709
+    "startMs": 637,
+    "endMs": 819
   },
   {
     "text": "rõ",
-    "startMs": 709,
-    "endMs": 885
+    "startMs": 819,
+    "endMs": 1001
   },
   {
-    "text": "rồi",
-    "startMs": 930,
-    "endMs": 1417
+    "text": "rồi,",
+    "startMs": 1046,
+    "endMs": 1546
   },
   {
     "text": "nhưng",
-    "startMs": 1417,
-    "endMs": 1594
+    "startMs": 1774,
+    "endMs": 2092
   },
   {
     "text": "đứng",
-    "startMs": 1639,
-    "endMs": 1816
+    "startMs": 2092,
+    "endMs": 2274
   },
   {
     "text": "trước",
-    "startMs": 1816,
-    "endMs": 1993
+    "startMs": 2274,
+    "endMs": 2456
   },
   {
     "text": "cả",
-    "startMs": 2037,
-    "endMs": 2215
+    "startMs": 2501,
+    "endMs": 2729
   },
   {
     "text": "đống",
-    "startMs": 2215,
-    "endMs": 2480
+    "startMs": 2729,
+    "endMs": 2911
   },
   {
     "text": "chức",
-    "startMs": 2524,
-    "endMs": 2657
+    "startMs": 3002,
+    "endMs": 3093
   },
   {
-    "text": "năng",
-    "startMs": 2657,
-    "endMs": 3100
-  },
-  {
-    "text": ",",
-    "startMs": 3100,
-    "endMs": 3543
+    "text": "năng,",
+    "startMs": 3093,
+    "endMs": 3638
   },
   {
     "text": "làm",
-    "startMs": 3543,
-    "endMs": 3720
+    "startMs": 3729,
+    "endMs": 3911
   },
   {
     "text": "sao",
-    "startMs": 3720,
-    "endMs": 3898
+    "startMs": 3911,
+    "endMs": 4048
   },
   {
     "text": "biết",
-    "startMs": 3898,
-    "endMs": 4075
+    "startMs": 4048,
+    "endMs": 4184
   },
   {
     "text": "cái",
-    "startMs": 4075,
-    "endMs": 4207
+    "startMs": 4184,
+    "endMs": 4366
   },
   {
     "text": "nào",
-    "startMs": 4207,
-    "endMs": 4384
+    "startMs": 4366,
+    "endMs": 4502
   },
   {
     "text": "đáng",
-    "startMs": 4384,
-    "endMs": 4694
+    "startMs": 4502,
+    "endMs": 4684
   },
   {
     "text": "tách",
-    "startMs": 4694,
-    "endMs": 4871
+    "startMs": 4775,
+    "endMs": 4957
   },
   {
     "text": "ra",
-    "startMs": 4916,
-    "endMs": 5049
+    "startMs": 5003,
+    "endMs": 5185
   },
   {
     "text": "thành",
-    "startMs": 5093,
-    "endMs": 5315
+    "startMs": 5185,
+    "endMs": 5321
   },
   {
     "text": "service?",
-    "startMs": 5315,
-    "endMs": 5760
+    "startMs": 5412,
+    "endMs": 5792
   }
 ]

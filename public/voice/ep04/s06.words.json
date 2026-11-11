@@ -1,372 +1,372 @@
 [
   {
     "text": "Ghép",
-    "startMs": 41,
-    "endMs": 284
+    "startMs": 0,
+    "endMs": 160
   },
   {
     "text": "hai",
-    "startMs": 284,
-    "endMs": 446
+    "startMs": 160,
+    "endMs": 380
   },
   {
     "text": "trục",
-    "startMs": 446,
-    "endMs": 608
+    "startMs": 380,
+    "endMs": 600
   },
   {
     "text": "lại",
-    "startMs": 608,
-    "endMs": 810
+    "startMs": 600,
+    "endMs": 800
   },
   {
     "text": "ta",
-    "startMs": 810,
-    "endMs": 972
+    "startMs": 800,
+    "endMs": 920
   },
   {
     "text": "có",
-    "startMs": 1012,
-    "endMs": 1134
+    "startMs": 920,
+    "endMs": 1000
   },
   {
     "text": "bảng",
-    "startMs": 1175,
-    "endMs": 1337
+    "startMs": 1000,
+    "endMs": 1200
   },
   {
     "text": "này.",
-    "startMs": 1337,
-    "endMs": 1580
+    "startMs": 1200,
+    "endMs": 1360
   },
   {
     "text": "Ở",
-    "startMs": 1580,
-    "endMs": 1701
+    "startMs": 1360,
+    "endMs": 1520
   },
   {
     "text": "ô",
-    "startMs": 1701,
-    "endMs": 2026
+    "startMs": 1520,
+    "endMs": 1780
   },
   {
     "text": "task",
-    "startMs": 2026,
-    "endMs": 2349
+    "startMs": 1780,
+    "endMs": 2040
   },
   {
     "text": "và",
-    "startMs": 2349,
-    "endMs": 2471
+    "startMs": 2040,
+    "endMs": 2240
   },
   {
     "text": "utility",
-    "startMs": 2511,
-    "endMs": 3160
+    "startMs": 2240,
+    "endMs": 2760
   },
   {
     "text": "là",
-    "startMs": 3241,
-    "endMs": 3403
+    "startMs": 2760,
+    "endMs": 2920
   },
   {
     "text": "những",
-    "startMs": 3403,
-    "endMs": 3525
+    "startMs": 2920,
+    "endMs": 3040
   },
   {
     "text": "thứ",
-    "startMs": 3525,
-    "endMs": 3687
+    "startMs": 3040,
+    "endMs": 3160
   },
   {
     "text": "như",
-    "startMs": 3687,
-    "endMs": 3848
+    "startMs": 3160,
+    "endMs": 3320
   },
   {
     "text": "currency",
-    "startMs": 3929,
-    "endMs": 4415
+    "startMs": 3560,
+    "endMs": 3920
   },
   {
     "text": "converter",
-    "startMs": 4415,
-    "endMs": 4942
+    "startMs": 3920,
+    "endMs": 4360
   },
   {
     "text": "hay",
-    "startMs": 5064,
-    "endMs": 5226
+    "startMs": 4480,
+    "endMs": 4600
   },
   {
     "text": "employee",
-    "startMs": 5307,
-    "endMs": 5874
+    "startMs": 4600,
+    "endMs": 5080
   },
   {
     "text": "locator.",
-    "startMs": 5874,
-    "endMs": 6279
+    "startMs": 5080,
+    "endMs": 5440
   },
   {
     "text": "Ô",
-    "startMs": 6279,
-    "endMs": 6563
+    "startMs": 5440,
+    "endMs": 5860
   },
   {
     "text": "task",
-    "startMs": 6563,
-    "endMs": 6846
+    "startMs": 5860,
+    "endMs": 6280
   },
   {
     "text": "và",
-    "startMs": 6846,
-    "endMs": 6967
+    "startMs": 6280,
+    "endMs": 6440
   },
   {
     "text": "business",
-    "startMs": 7008,
-    "endMs": 7372
+    "startMs": 6440,
+    "endMs": 6800
   },
   {
     "text": "là",
-    "startMs": 7454,
-    "endMs": 7656
+    "startMs": 6800,
+    "endMs": 6920
   },
   {
     "text": "validate",
-    "startMs": 7737,
-    "endMs": 8224
+    "startMs": 6960,
+    "endMs": 7400
   },
   {
     "text": "claim",
-    "startMs": 8224,
-    "endMs": 8466
+    "startMs": 7400,
+    "endMs": 7600
   },
   {
     "text": "form,",
-    "startMs": 8466,
-    "endMs": 8790
+    "startMs": 7600,
+    "endMs": 7920
   },
   {
     "text": "check",
-    "startMs": 8790,
-    "endMs": 9033
+    "startMs": 7920,
+    "endMs": 8120
   },
   {
     "text": "credit",
-    "startMs": 9033,
-    "endMs": 9277
+    "startMs": 8120,
+    "endMs": 8440
   },
   {
     "text": "rating.",
-    "startMs": 9317,
-    "endMs": 9844
+    "startMs": 8440,
+    "endMs": 8720
   },
   {
     "text": "Ô",
-    "startMs": 9844,
-    "endMs": 9985
+    "startMs": 8720,
+    "endMs": 8960
   },
   {
     "text": "task",
-    "startMs": 9985,
-    "endMs": 10127
+    "startMs": 8960,
+    "endMs": 9200
   },
   {
     "text": "và",
-    "startMs": 10127,
-    "endMs": 10330
+    "startMs": 9200,
+    "endMs": 9360
   },
   {
     "text": "coordination",
-    "startMs": 10330,
-    "endMs": 10978
+    "startMs": 9400,
+    "endMs": 9920
   },
   {
     "text": "là",
-    "startMs": 10978,
-    "endMs": 11140
+    "startMs": 9920,
+    "endMs": 10080
   },
   {
     "text": "process",
-    "startMs": 11181,
-    "endMs": 11626
+    "startMs": 10080,
+    "endMs": 10440
   },
   {
     "text": "expense",
-    "startMs": 11626,
-    "endMs": 11991
+    "startMs": 10440,
+    "endMs": 10920
   },
   {
     "text": "claim.",
-    "startMs": 12072,
-    "endMs": 12436
+    "startMs": 10920,
+    "endMs": 11240
   },
   {
     "text": "Xuống",
-    "startMs": 12517,
-    "endMs": 12599
+    "startMs": 11320,
+    "endMs": 11440
   },
   {
     "text": "hàng",
-    "startMs": 12639,
-    "endMs": 12801
+    "startMs": 11440,
+    "endMs": 11640
   },
   {
     "text": "entity,",
-    "startMs": 12801,
-    "endMs": 13165
+    "startMs": 11640,
+    "endMs": 12040
   },
   {
     "text": "ô",
-    "startMs": 13165,
-    "endMs": 13530
+    "startMs": 12040,
+    "endMs": 12440
   },
   {
     "text": "utility",
-    "startMs": 13530,
-    "endMs": 14097
+    "startMs": 12440,
+    "endMs": 12920
   },
   {
     "text": "có",
-    "startMs": 14097,
-    "endMs": 14259
+    "startMs": 12920,
+    "endMs": 13120
   },
   {
     "text": "document",
-    "startMs": 14259,
-    "endMs": 14623
+    "startMs": 13160,
+    "endMs": 13560
   },
   {
     "text": "style",
-    "startMs": 14664,
-    "endMs": 14948
+    "startMs": 13560,
+    "endMs": 13840
   },
   {
     "text": "checker,",
-    "startMs": 14948,
-    "endMs": 15272
+    "startMs": 13840,
+    "endMs": 14280
   },
   {
     "text": "ô",
-    "startMs": 15272,
-    "endMs": 15596
+    "startMs": 14280,
+    "endMs": 14480
   },
   {
     "text": "business",
-    "startMs": 15596,
-    "endMs": 16041
+    "startMs": 14480,
+    "endMs": 14800
   },
   {
     "text": "có",
-    "startMs": 16041,
-    "endMs": 16203
+    "startMs": 14880,
+    "endMs": 15080
   },
   {
     "text": "student",
-    "startMs": 16244,
-    "endMs": 16609
+    "startMs": 15080,
+    "endMs": 15400
   },
   {
     "text": "application",
-    "startMs": 16609,
-    "endMs": 16973
+    "startMs": 15400,
+    "endMs": 15760
   },
   {
     "text": "form.",
-    "startMs": 16973,
-    "endMs": 17298
+    "startMs": 15760,
+    "endMs": 16000
   },
   {
     "text": "Còn",
-    "startMs": 17298,
-    "endMs": 17460
+    "startMs": 16240,
+    "endMs": 16520
   },
   {
     "text": "ô",
-    "startMs": 17460,
-    "endMs": 17723
+    "startMs": 16520,
+    "endMs": 16740
   },
   {
     "text": "entity",
-    "startMs": 17723,
-    "endMs": 17986
+    "startMs": 16740,
+    "endMs": 16960
   },
   {
     "text": "và",
-    "startMs": 17986,
-    "endMs": 18107
+    "startMs": 16960,
+    "endMs": 17160
   },
   {
     "text": "coordination",
-    "startMs": 18188,
-    "endMs": 18837
+    "startMs": 17160,
+    "endMs": 17600
   },
   {
     "text": "thì",
-    "startMs": 18837,
-    "endMs": 18959
+    "startMs": 17600,
+    "endMs": 17840
   },
   {
     "text": "bỏ",
-    "startMs": 18999,
-    "endMs": 19120
+    "startMs": 17840,
+    "endMs": 18000
   },
   {
     "text": "trống,",
-    "startMs": 19160,
-    "endMs": 19647
+    "startMs": 18000,
+    "endMs": 18360
   },
   {
     "text": "vì",
-    "startMs": 19647,
-    "endMs": 19768
+    "startMs": 18360,
+    "endMs": 18560
   },
   {
     "text": "như",
-    "startMs": 19768,
-    "endMs": 19890
+    "startMs": 18560,
+    "endMs": 18720
   },
   {
     "text": "vừa",
-    "startMs": 19890,
-    "endMs": 20012
+    "startMs": 18720,
+    "endMs": 18840
   },
   {
     "text": "nói,",
-    "startMs": 20012,
-    "endMs": 20336
+    "startMs": 18880,
+    "endMs": 19120
   },
   {
     "text": "coordination",
-    "startMs": 20336,
-    "endMs": 20862
+    "startMs": 19120,
+    "endMs": 19680
   },
   {
     "text": "không",
-    "startMs": 20862,
-    "endMs": 21024
+    "startMs": 19680,
+    "endMs": 19840
   },
   {
     "text": "bao",
-    "startMs": 21024,
-    "endMs": 21146
+    "startMs": 19840,
+    "endMs": 19880
   },
   {
     "text": "giờ",
-    "startMs": 21146,
-    "endMs": 21227
+    "startMs": 19880,
+    "endMs": 20000
   },
   {
     "text": "là",
-    "startMs": 21227,
-    "endMs": 21389
+    "startMs": 20000,
+    "endMs": 20120
   },
   {
     "text": "entity-oriented.",
-    "startMs": 21389,
-    "endMs": 22280
+    "startMs": 20120,
+    "endMs": 20840
   }
 ]
