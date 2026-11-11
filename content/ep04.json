@@ -30,7 +30,7 @@
       "part": 1,
       "title": "Tìm và phân loại service",
       "subtitle": "Chapter 18 · Tập 4 / 6 — service engineering",
-      "narration": "Ba tập đầu nói về cách mô tả và gọi service. Từ tập này chúng ta sang nhánh khác của chương: tự tay làm ra service cho người khác dùng. Và câu hỏi mở màn là câu khó nhất: nhìn vào một doanh nghiệp, cái gì đáng trở thành service?"
+      "narration": "Ba tập đầu nói về cách mô tả và gọi service. <throat-clearing> Từ tập này chúng ta sang nhánh khác của chương: tự tay làm ra service cho người khác dùng. <cheer> Và câu hỏi mở màn là câu khó nhất: nhìn vào một doanh nghiệp, cái gì đáng trở thành service?"
     },
     {
       "id": "s02",
@@ -47,7 +47,7 @@
         "robust",
         "tài liệu"
       ],
-      "narration": "Service engineering là quá trình làm ra service để dùng lại trong các ứng dụng hướng service. Nó đòi ba thứ. Phải trừu tượng hoá đúng, sao cho nhiều hệ thống khác nhau đều dùng được. Phải robust và đáng tin cậy, vì một khi đã publish thì người khác phụ thuộc vào bạn. Và phải có tài liệu, để người lạ tìm thấy nó và hiểu được nó làm gì."
+      "narration": "Service engineering là quá trình làm ra service để dùng lại trong các ứng dụng hướng service. Nó đòi ba thứ. <throat-clearing> Phải trừu tượng hoá đúng, sao cho nhiều hệ thống khác nhau đều dùng được. Phải robust và đáng tin cậy, vì một khi đã publish thì người khác phụ thuộc vào bạn. <sigh> Và phải có tài liệu, để người lạ tìm thấy nó và hiểu được nó làm gì."
     },
     {
       "id": "s03",
@@ -60,7 +60,7 @@
         "design",
         "implementation"
       ],
-      "narration": "Quy trình gồm đúng ba giai đoạn. Candidate identification, tức tìm ra những ứng viên đáng làm service và xác định yêu cầu cho chúng. Service design, tức thiết kế interface logic rồi mới xuống interface cụ thể cho SOAP hoặc REST. Và implementation and deployment, tức viết, test, rồi publish lên server. Tập này làm giai đoạn một, tập sau làm giai đoạn hai và ba."
+      "narration": "Quy trình gồm đúng ba giai đoạn. Candidate identification, tức tìm ra những ứng viên đáng làm service và xác định yêu cầu cho chúng. <throat-clearing> Service design, tức thiết kế interface logic rồi mới xuống interface cụ thể cho SOAP hoặc REST. Và implementation and deployment, tức viết, test, rồi publish lên server. <cheer> Tập này làm giai đoạn một, tập sau làm giai đoạn hai và ba."
     },
     {
       "id": "s04",
@@ -77,7 +77,7 @@
         "business",
         "coordination"
       ],
-      "narration": "Giáo trình chia service thành ba loại. Utility service là chức năng chung mà nhiều quy trình đều cần, ví dụ đổi tiền tệ hay tìm thông tin nhân viên. Business service gắn với một nghiệp vụ cụ thể của tổ chức, ví dụ đăng ký môn học trong trường đại học. Còn coordination service thì điều phối một quy trình tổng hợp, ví dụ xử lý toàn bộ một đơn hàng từ đầu đến cuối."
+      "narration": "Giáo trình chia service thành ba loại. <throat-clearing> Utility service là chức năng chung mà nhiều quy trình đều cần, ví dụ đổi tiền tệ hay tìm thông tin nhân viên. Business service gắn với một nghiệp vụ cụ thể của tổ chức, ví dụ đăng ký môn học trong trường đại học. <chuckle> Còn coordination service thì điều phối một quy trình tổng hợp, ví dụ xử lý toàn bộ một đơn hàng từ đầu đến cuối."
     },
     {
       "id": "s04b",
@@ -94,7 +94,7 @@
         "nghiệp vụ",
         "sai khiến"
       ],
-      "narration": "Ba loại này dễ học thuộc nhưng khó phân biệt khi gặp đề, nên lấy một mốc để nhớ. Utility service dùng được ở mọi phòng ban và không gắn với nghiệp vụ nào: đổi tiền tệ thì phòng kế toán hay phòng kinh doanh đều cần. Business service chỉ có nghĩa trong một nghiệp vụ cụ thể: kiểm tra điểm tín dụng chỉ có nghĩa ở ngân hàng. Còn coordination service thì tự nó không làm gì cả, việc của nó là sai khiến các service khác theo đúng thứ tự."
+      "narration": "Ba loại này dễ học thuộc nhưng khó phân biệt khi gặp đề, nên lấy một mốc để nhớ. Utility service dùng được ở mọi phòng ban và không gắn với nghiệp vụ nào: đổi tiền tệ thì phòng kế toán hay phòng kinh doanh đều cần. <throat-clearing> Business service chỉ có nghĩa trong một nghiệp vụ cụ thể: kiểm tra điểm tín dụng chỉ có nghĩa ở ngân hàng. <chuckle> Còn coordination service thì tự nó không làm gì cả, việc của nó là sai khiến các service khác theo đúng thứ tự."
     },
     {
       "id": "p1end",
@@ -130,7 +130,7 @@
         "thực",
         "luôn"
       ],
-      "narration": "Ngoài ba loại trên còn một trục phân loại thứ hai. Task-oriented service gắn với một hoạt động, một việc phải làm. Entity-oriented service gắn với một thực thể nghiệp vụ, gần giống như object, ví dụ một mẫu đơn xin việc. Utility và business service có thể rơi vào một trong hai, nhưng coordination service thì luôn luôn là task-oriented, vì bản chất nó là điều phối một chuỗi việc."
+      "narration": "Ngoài ba loại trên còn một trục phân loại thứ hai. <throat-clearing> Task-oriented service gắn với một hoạt động, một việc phải làm. Entity-oriented service gắn với một thực thể nghiệp vụ, gần giống như object, ví dụ một mẫu đơn xin việc. Utility và business service có thể rơi vào một trong hai, nhưng coordination service thì luôn luôn là task-oriented, vì bản chất nó là điều phối một chuỗi việc. <chuckle>"
     },
     {
       "id": "s06",
@@ -144,7 +144,7 @@
         "Entity",
         "Coordination"
       ],
-      "narration": "Ghép hai trục lại ta có bảng này. Ở ô task và utility là những thứ như currency converter hay employee locator. Ô task và business là validate claim form, check credit rating. Ô task và coordination là process expense claim. Xuống hàng entity, ô utility có document style checker, ô business có student application form. Còn ô entity và coordination thì bỏ trống, vì như vừa nói, coordination không bao giờ là entity-oriented."
+      "narration": "Ghép hai trục lại ta có bảng này. Ở ô task và utility là những thứ như currency converter hay employee locator. <throat-clearing> Ô task và business là validate claim form, check credit rating. Ô task và coordination là process expense claim. Xuống hàng entity, ô utility có document style checker, ô business có student application form. <chuckle> Còn ô entity và coordination thì bỏ trống, vì như vừa nói, coordination không bao giờ là entity-oriented."
     },
     {
       "id": "s07",
@@ -152,7 +152,7 @@
       "part": 2,
       "speaker": "ask",
       "question": "Nhưng làm sao biết cái nào đáng tách ra thành service?",
-      "narration": "Phân loại thì rõ rồi <short pause> nhưng đứng trước cả đống chức năng <laugh>, làm sao biết cái nào đáng tách ra thành service?"
+      "narration": "Phân loại thì rõ rồi, <sigh> nhưng đứng trước cả đống chức năng, <laugh> làm sao biết cái nào đáng tách ra thành service?"
     },
     {
       "id": "s08",
@@ -169,7 +169,7 @@
         "nhiều người",
         "độc lập"
       ],
-      "narration": "Giáo trình đưa ra sáu câu hỏi để sàng lọc. Ba câu đầu. Một, nó có gắn với một thực thể logic duy nhất được dùng trong nhiều quy trình khác nhau không. Hai, việc đó có phải là việc mà nhiều người khác nhau trong tổ chức cùng làm không, và nếu có thì có hợp với mô hình RESTful không. Ba, nó có độc lập không, hay dính chặt vào thứ khác đến mức tách ra là gãy."
+      "narration": "Giáo trình đưa ra sáu câu hỏi để sàng lọc. <throat-clearing> Ba câu đầu. Một, nó có gắn với một thực thể logic duy nhất được dùng trong nhiều quy trình khác nhau không. Hai, việc đó có phải là việc mà nhiều người khác nhau trong tổ chức cùng làm không, và nếu có thì có hợp với mô hình RESTful không. <sigh> Ba, nó có độc lập không, hay dính chặt vào thứ khác đến mức tách ra là gãy."
     },
     {
       "id": "s09",
@@ -186,7 +186,7 @@
         "ngoài",
         "phi chức năng"
       ],
-      "narration": "Ba câu còn lại. Bốn, service có phải giữ state không, và có cần database riêng không. Năm, client ở ngoài tổ chức có dùng được nó không, hay nó chỉ có nghĩa trong nội bộ. Sáu, các nhóm người dùng khác nhau có yêu cầu phi chức năng khác nhau không, chẳng hạn nhóm này cần nhanh còn nhóm kia cần bảo mật cao. Trả lời sáu câu này là bạn biết nên tách hay không."
+      "narration": "Ba câu còn lại. Bốn, service có phải giữ state không, và có cần database riêng không. <throat-clearing> Năm, client ở ngoài tổ chức có dùng được nó không, hay nó chỉ có nghĩa trong nội bộ. Sáu, các nhóm người dùng khác nhau có yêu cầu phi chức năng khác nhau không, chẳng hạn nhóm này cần nhanh còn nhóm kia cần bảo mật cao. <chuckle> Trả lời sáu câu này là bạn biết nên tách hay không."
     },
     {
       "id": "s09b",
@@ -203,7 +203,11 @@
         "Ngược",
         "state"
       ],
-      "narration": "Sáu câu đó không phải để điểm danh, mà để ra quyết định. Càng nhiều câu trả lời là có, thì chức năng đó càng đáng tách ra thành service riêng. Ngược lại, nếu hầu hết câu trả lời là không, thì cứ để nó nằm trong ứng dụng, tách ra chỉ thêm phức tạp mà chẳng ai dùng lại. Riêng câu về state thì ảnh hưởng tới kiến trúc: nếu service phải nhớ trạng thái giữa các lần gọi, bạn sẽ cần database riêng cho nó, và chi phí vận hành tăng hẳn."
+      "poses": [
+        { "after": "trong ứng dụng,", "pose": "think-doubt" },
+        { "after": "các lần gọi,", "pose": "shocked" }
+      ],
+      "narration": "Sáu câu đó không phải để điểm danh, mà để ra quyết định. Càng nhiều câu trả lời là có, thì chức năng đó càng đáng tách ra thành service riêng. <sigh> Ngược lại, nếu hầu hết câu trả lời là không, thì cứ để nó nằm trong ứng dụng, tách ra chỉ thêm phức tạp mà chẳng ai dùng lại. <groan> Riêng câu về state thì ảnh hưởng tới kiến trúc: nếu service phải nhớ trạng thái giữa các lần gọi, bạn sẽ cần database riêng cho nó, và chi phí vận hành tăng hẳn."
     },
     {
       "id": "p2end",
@@ -239,7 +243,7 @@
         "không đặt hàng",
         "duyệt mua"
       ],
-      "narration": "Giáo trình dùng một ví dụ chạy xuyên suốt hai tập, nên bạn nhớ kỹ bối cảnh. Một công ty lớn bán thiết bị máy tính, đã thoả thuận giá riêng cho từng khách hàng doanh nghiệp. Họ muốn làm một catalog service để khách chọn thiết bị. Nhưng khác với catalog bán lẻ, khách không đặt hàng thẳng trên đó, vì mỗi công ty có quy trình duyệt ngân sách và duyệt mua riêng của họ."
+      "narration": "Giáo trình dùng một ví dụ chạy xuyên suốt hai tập, nên bạn nhớ kỹ bối cảnh. <throat-clearing> Một công ty lớn bán thiết bị máy tính, đã thoả thuận giá riêng cho từng khách hàng doanh nghiệp. Họ muốn làm một catalog service để khách chọn thiết bị. Nhưng khác với catalog bán lẻ, khách không đặt hàng thẳng trên đó, vì mỗi công ty có quy trình duyệt ngân sách và duyệt mua riêng của họ. <chuckle>"
     },
     {
       "id": "s11",
@@ -256,7 +260,7 @@
         "so sánh",
         "virtual"
       ],
-      "narration": "Yêu cầu chức năng gồm mấy điểm. Mỗi khách hàng có một phiên bản catalog riêng, và phải tải về được. Phải so sánh được tối đa sáu mục cùng lúc, có tìm kiếm và duyệt. Phải dự đoán được ngày giao hàng nếu đặt ngay hôm đó. Và cuối cùng là virtual order: giữ hàng trong bốn mươi tám giờ để bên khách kịp chạy quy trình duyệt nội bộ của họ."
+      "narration": "Yêu cầu chức năng gồm mấy điểm. <throat-clearing> Mỗi khách hàng có một phiên bản catalog riêng, và phải tải về được. Phải so sánh được tối đa sáu mục cùng lúc, có tìm kiếm và duyệt. <cheer> Phải dự đoán được ngày giao hàng nếu đặt ngay hôm đó. Và cuối cùng là virtual order: giữ hàng trong bốn mươi tám giờ để bên khách kịp chạy quy trình duyệt nội bộ của họ."
     },
     {
       "id": "s12",
@@ -273,7 +277,7 @@
         "bí mật",
         "phục vụ"
       ],
-      "narration": "Yêu cầu phi chức năng cũng rất cụ thể, và đây là phần sinh viên hay bỏ qua. Chỉ nhân viên của các tổ chức được cấp phép mới truy cập được. Giá và cấu hình chào cho mỗi tổ chức phải giữ bí mật, không để tổ chức này thấy giá của tổ chức kia. Catalog phục vụ từ bảy giờ tới mười một giờ. Và phải chịu được mười request mỗi giây."
+      "narration": "Yêu cầu phi chức năng cũng rất cụ thể, và đây là phần sinh viên hay bỏ qua. <sigh> Chỉ nhân viên của các tổ chức được cấp phép mới truy cập được. Giá và cấu hình chào cho mỗi tổ chức phải giữ bí mật, không để tổ chức này thấy giá của tổ chức kia. <groan> Catalog phục vụ từ bảy giờ tới mười một giờ. Và phải chịu được mười request mỗi giây."
     },
     {
       "id": "s12b",
@@ -290,7 +294,11 @@
         "xếp hàng",
         "hạ tầng"
       ],
-      "narration": "Đừng xem yêu cầu phi chức năng là phần phụ <short pause>, vì chính nó nắn lại thiết kế. Việc giá phải bảo mật theo từng tổ chức là lý do operation đầu tiên có tên MakeCatalog: bắt buộc phải sinh ra một bản riêng cho mỗi khách chứ không dùng chung. Việc chỉ phục vụ từ bảy tới mười một giờ nghĩa là ngoài giờ đó phải có cơ chế xếp hàng hoặc báo lỗi tử tế. Còn con số mười request mỗi giây quyết định hạ tầng và việc có cần cache hay không."
+      "poses": [
+        { "after": "thiết kế.", "pose": "point-left" },
+        { "after": "không dùng chung.", "pose": "peace-playful" }
+      ],
+      "narration": "Đừng xem yêu cầu phi chức năng là phần phụ, <throat-clearing> vì chính nó nắn lại thiết kế. Việc giá phải bảo mật theo từng tổ chức là lý do operation đầu tiên có tên MakeCatalog: bắt buộc phải sinh ra một bản riêng cho mỗi khách chứ không dùng chung. <chuckle> Việc chỉ phục vụ từ bảy tới mười một giờ nghĩa là ngoài giờ đó phải có cơ chế xếp hàng hoặc báo lỗi tử tế. Còn con số mười request mỗi giây quyết định hạ tầng và việc có cần cache hay không."
     },
     {
       "id": "s13",
@@ -307,7 +315,11 @@
         "Compare",
         "fault"
       ],
-      "narration": "Từ các yêu cầu đó, giáo trình rút ra sáu operation. MakeCatalog tạo bản catalog riêng cho một khách. Lookup hiện toàn bộ dữ liệu của một mục. Search tìm theo biểu thức logic. Compare so sánh tối đa sáu đặc tính của tối đa bốn mục. CheckDelivery trả về ngày giao dự kiến. Và MakeVirtualOrder giữ hàng lại. Sang tập sau, mỗi operation này sẽ được thiết kế đầy đủ input, output và fault."
+      "poses": [
+        { "after": "một khách.", "pose": "point-left" },
+        { "after": "dự kiến.", "pose": "peace-playful" }
+      ],
+      "narration": "Từ các yêu cầu đó, giáo trình rút ra sáu operation. <throat-clearing> MakeCatalog tạo bản catalog riêng cho một khách. Lookup hiện toàn bộ dữ liệu của một mục. Search tìm theo biểu thức logic. <chuckle> Compare so sánh tối đa sáu đặc tính của tối đa bốn mục. CheckDelivery trả về ngày giao dự kiến. Và MakeVirtualOrder giữ hàng lại. <cheer> Sang tập sau, mỗi operation này sẽ được thiết kế đầy đủ input, output và fault."
     },
     {
       "id": "s14",
@@ -320,6 +332,10 @@
         "Coordination service luôn là task-oriented, không bao giờ entity"
       ],
       "next": "Tập 5 — Thiết kế interface và triển khai service",
+      "poses": [
+        { "after": "và deployment.", "pose": "point-explain" },
+        { "after": "bỏ trống.", "pose": "peace-playful" }
+      ],
       "narration": "Tóm lại ba ý. Service engineering gồm ba giai đoạn: identification, design, rồi implementation và deployment. Service chia thành ba loại utility, business, coordination, nhân với hai trục task và entity. Và chi tiết hay ra đề: coordination service luôn là task-oriented, ô entity của nó bỏ trống. Tập sau chúng ta lấy sáu operation của catalog service vừa rồi và thiết kế chúng thành interface thật."
     },
     {

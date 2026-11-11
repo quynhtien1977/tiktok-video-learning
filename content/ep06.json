@@ -72,7 +72,21 @@
         "compensating",
         "nhánh hỏng"
       ],
-      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ <laugh> nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon."
+      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ <laugh> nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon.",
+      "poses": [
+        {
+          "after": "trôi chảy.",
+          "pose": "point-explain"
+        },
+        {
+          "after": "tiền oan.",
+          "pose": "think-doubt"
+        },
+        {
+          "after": "cuối tập.",
+          "pose": "think-left"
+        }
+      ]
     },
     {
       "id": "s04",
@@ -116,7 +130,17 @@
         "discover",
         "select"
       ],
-      "narration": "Ba bước đầu. Một, phác ra workflow lý tưởng dựa trên yêu cầu, lúc này chưa cần quan tâm ai sẽ cung cấp từng mảnh. Hai, discover: tìm trong các registry hoặc catalog xem có service nào làm được việc đó, ai cung cấp, điều kiện ra sao. Ba, select: chọn, và tiêu chí không chỉ là chức năng mà còn cả giá và chất lượng dịch vụ, tức tốc độ đáp ứng và độ sẵn sàng."
+      "narration": "Ba bước đầu. Một, phác ra workflow lý tưởng dựa trên yêu cầu, lúc này chưa cần quan tâm ai sẽ cung cấp từng mảnh. Hai, discover: tìm trong các registry hoặc catalog xem có service nào làm được việc đó, ai cung cấp, điều kiện ra sao. Ba, select: chọn, và tiêu chí không chỉ là chức năng mà còn cả giá và chất lượng dịch vụ, tức tốc độ đáp ứng và độ sẵn sàng.",
+      "poses": [
+        {
+          "after": "hoặc catalog",
+          "pose": "point-explain"
+        },
+        {
+          "after": "chức năng",
+          "pose": "peace-playful"
+        }
+      ]
     },
     {
       "id": "s06",
@@ -133,7 +157,17 @@
         "create",
         "test"
       ],
-      "narration": "Ba bước sau. Bốn, refine: tinh chỉnh lại workflow cho khớp với những service thật sự tìm được, có thể phải thêm hoặc bớt hoạt động so với bản lý tưởng. Năm, create: chuyển bản thiết kế trừu tượng thành chương trình chạy được, bằng ngôn ngữ thường như Java hoặc bằng workflow language như WS-BPEL. Sáu, test. Và bước này phức tạp hơn nhiều so với test một component, nên lát nữa ta nói riêng."
+      "narration": "Ba bước sau. Bốn, refine: tinh chỉnh lại workflow cho khớp với những service thật sự tìm được, có thể phải thêm hoặc bớt hoạt động so với bản lý tưởng. Năm, create: chuyển bản thiết kế trừu tượng thành chương trình chạy được, bằng ngôn ngữ thường như Java hoặc bằng workflow language như WS-BPEL. Sáu, test. Và bước này phức tạp hơn nhiều so với test một component, nên lát nữa ta nói riêng.",
+      "poses": [
+        {
+          "after": "thật sự",
+          "pose": "point-explain"
+        },
+        {
+          "after": "chạy được,",
+          "pose": "peace-playful"
+        }
+      ]
     },
     {
       "id": "s06b",
@@ -150,7 +184,17 @@
         "chia việc",
         "chuyển đổi"
       ],
-      "narration": "Bước refine nghe thừa nhưng thực tế luôn cần. Bản workflow lý tưởng được vẽ khi bạn chưa biết ngoài thị trường có service nào. Tới lúc tìm được thì hoá ra họ chia việc khác với cách bạn tưởng: cái bạn muốn một bước thì họ bắt gọi hai lần, cái bạn định gọi hai lần thì họ gộp sẵn. Nhiều khi còn phải chèn thêm một bước chuyển đổi dữ liệu, vì service này trả ra định dạng mà service kia không nhận."
+      "narration": "Bước refine nghe thừa nhưng thực tế luôn cần. Bản workflow lý tưởng được vẽ khi bạn chưa biết ngoài thị trường có service nào. Tới lúc tìm được thì hoá ra họ chia việc khác với cách bạn tưởng: cái bạn muốn một bước thì họ bắt gọi hai lần, cái bạn định gọi hai lần thì họ gộp sẵn. Nhiều khi còn phải chèn thêm một bước chuyển đổi dữ liệu, vì service này trả ra định dạng mà service kia không nhận.",
+      "poses": [
+        {
+          "after": "hoá ra",
+          "pose": "think-left"
+        },
+        {
+          "after": "hai lần,",
+          "pose": "point-explain"
+        }
+      ]
     },
     {
       "id": "s07",
@@ -183,7 +227,17 @@
       "part": 2,
       "src": "images/ch18/slide65-image13.png",
       "caption": "Hình trong slide 65 — hai workflow của hai tổ chức nối nhau",
-      "narration": "Khi hệ thống chạy qua nhiều tổ chức thì không ai vẽ một workflow khổng lồ chung. Mỗi tổ chức giữ workflow riêng của mình, và hai bên nối với nhau bằng cách trao đổi message. Sơ đồ này cho thấy hai luồng chạy song song, thỉnh thoảng bắn message sang nhau tại những điểm đã thống nhất. Cách làm này giữ được quyền tự chủ của từng bên."
+      "narration": "Khi hệ thống chạy qua nhiều tổ chức thì không ai vẽ một workflow khổng lồ chung. Mỗi tổ chức giữ workflow riêng của mình, và hai bên nối với nhau bằng cách trao đổi message. Sơ đồ này cho thấy hai luồng chạy song song, thỉnh thoảng bắn message sang nhau tại những điểm đã thống nhất. Cách làm này giữ được quyền tự chủ của từng bên.",
+      "poses": [
+        {
+          "after": "của mình,",
+          "pose": "point-explain"
+        },
+        {
+          "after": "song song,",
+          "pose": "peace-playful"
+        }
+      ]
     },
     {
       "id": "p2end",
@@ -219,7 +273,17 @@
         "sửa",
         "binding"
       ],
-      "narration": "Giờ tới phần khó chịu <sigh> Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được."
+      "narration": "Giờ tới phần khó chịu <sigh> Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được.",
+      "poses": [
+        {
+          "after": "lại khó.",
+          "pose": "shocked"
+        },
+        {
+          "after": "vô dụng,",
+          "pose": "think-doubt"
+        }
+      ]
     },
     {
       "id": "s11",
@@ -236,7 +300,17 @@
         "phí",
         "compensating"
       ],
-      "narration": "Ba lý do nữa. Hành vi phi chức năng của service phụ thuộc vào tải tại thời điểm đó, nên hôm nay nhanh không có nghĩa ngày mai nhanh. Nếu service tính phí theo lượt gọi thì mỗi lần chạy bộ test là một lần mất tiền, và test tử tế thì phải chạy rất nhiều lần. Cuối cùng, rất khó dựng tình huống để kích hoạt compensating action, tức hành động bù trừ khi một service trong chuỗi thất bại, bởi vì bạn không ép service của người khác hỏng theo ý mình được."
+      "narration": "Ba lý do nữa. Hành vi phi chức năng của service phụ thuộc vào tải tại thời điểm đó, nên hôm nay nhanh không có nghĩa ngày mai nhanh. Nếu service tính phí theo lượt gọi thì mỗi lần chạy bộ test là một lần mất tiền, và test tử tế thì phải chạy rất nhiều lần. Cuối cùng, rất khó dựng tình huống để kích hoạt compensating action, tức hành động bù trừ khi một service trong chuỗi thất bại, bởi vì bạn không ép service của người khác hỏng theo ý mình được.",
+      "poses": [
+        {
+          "after": "mất tiền,",
+          "pose": "think-doubt"
+        },
+        {
+          "after": "thất bại,",
+          "pose": "point-explain"
+        }
+      ]
     },
     {
       "id": "s11b",
@@ -253,7 +327,17 @@
         "hợp đồng",
         "giám sát"
       ],
-      "narration": "Giáo trình nêu vấn đề nhưng không đưa thuốc chữa, nên nói thêm phần thực hành. Cách thứ nhất là dựng service giả lập thay cho service thật, nhờ đó chủ động tạo ra tình huống hỏng để thử compensating action. Cách thứ hai là test hợp đồng: định kỳ gọi service ngoài bằng vài phép thử nhỏ để biết nó còn hành xử đúng như mô tả hay không. Cách thứ ba là chấp nhận rằng không thể test hết trước, nên phải giám sát chặt khi hệ thống chạy thật."
+      "narration": "Giáo trình nêu vấn đề nhưng không đưa thuốc chữa, nên nói thêm phần thực hành. Cách thứ nhất là dựng service giả lập thay cho service thật, nhờ đó chủ động tạo ra tình huống hỏng để thử compensating action. Cách thứ hai là test hợp đồng: định kỳ gọi service ngoài bằng vài phép thử nhỏ để biết nó còn hành xử đúng như mô tả hay không. Cách thứ ba là chấp nhận rằng không thể test hết trước, nên phải giám sát chặt khi hệ thống chạy thật.",
+      "poses": [
+        {
+          "after": "tình huống hỏng",
+          "pose": "point-explain"
+        },
+        {
+          "after": "hay không.",
+          "pose": "peace-playful"
+        }
+      ]
     },
     {
       "id": "s12",
@@ -270,7 +354,17 @@
         "nhánh",
         "REST"
       ],
-      "narration": "Khép lại cả chương bằng ba ý lớn. Một, SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Hai, môn này có hai nhánh: service engineering là làm ra service cho người khác dùng, còn development with services là ghép service thành hệ thống của mình. Ba, về mặt kỹ thuật có hai lối: bộ chuẩn SOAP cùng WSDL cho những hệ cần ràng buộc chặt, và REST dựa trên resource cho phần lớn trường hợp còn lại."
+      "narration": "Khép lại cả chương bằng ba ý lớn. Một, SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Hai, môn này có hai nhánh: service engineering là làm ra service cho người khác dùng, còn development with services là ghép service thành hệ thống của mình. Ba, về mặt kỹ thuật có hai lối: bộ chuẩn SOAP cùng WSDL cho những hệ cần ràng buộc chặt, và REST dựa trên resource cho phần lớn trường hợp còn lại.",
+      "poses": [
+        {
+          "after": "của mình.",
+          "pose": "point-explain"
+        },
+        {
+          "after": "WSDL",
+          "pose": "peace-playful"
+        }
+      ]
     },
     {
       "id": "s13",
@@ -283,7 +377,17 @@
         "Test khó vì service ngoài là hộp đen, hay đổi, và còn tính tiền"
       ],
       "next": "Hết chương. Ôn lại bằng tám key point ở slide 68 và 69",
-      "narration": "Ba ý cuối cùng. Workflow là nền tảng để ghép service, và cách làm thực tế là vẽ bằng BPMN rồi sinh ra WS-BPEL. Với hệ liên tổ chức thì mỗi bên giữ workflow riêng và nối nhau bằng message. Còn việc test khó là vì service bên ngoài là hộp đen, có thể bị sửa bất cứ lúc nào, và nhiều khi còn tính tiền từng lượt gọi. Tới đây là hết Chapter 18. Trước khi thi, bạn mở lại slide sáu mươi tám và sáu mươi chín, đối chiếu tám key point ở đó với những gì vừa nghe. Chúc bạn ôn tốt."
+      "narration": "Ba ý cuối cùng. Workflow là nền tảng để ghép service, và cách làm thực tế là vẽ bằng BPMN rồi sinh ra WS-BPEL. Với hệ liên tổ chức thì mỗi bên giữ workflow riêng và nối nhau bằng message. Còn việc test khó là vì service bên ngoài là hộp đen, có thể bị sửa bất cứ lúc nào, và nhiều khi còn tính tiền từng lượt gọi. Tới đây là hết Chapter 18. Trước khi thi, bạn mở lại slide sáu mươi tám và sáu mươi chín, đối chiếu tám key point ở đó với những gì vừa nghe. Chúc bạn ôn tốt.",
+      "poses": [
+        {
+          "after": "message.",
+          "pose": "point-explain"
+        },
+        {
+          "after": "lượt gọi.",
+          "pose": "wave-cheer"
+        }
+      ]
     },
     {
       "id": "p3end",

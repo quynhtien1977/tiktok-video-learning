@@ -127,7 +127,7 @@
         "Service chỉ nói chuyện bằng message",
         "Bạn cài component, nhưng chỉ gọi service"
       ],
-      "narration": "Khác ở đúng một chữ thôi <short pause> độc lập! Một component luôn có requires interface, tức là nó khai báo rằng nó cần thứ khác hiện diện thì mới chạy được, <sigh> và bạn phải cài nó vào hệ thống của mình rồi biên dịch cùng. Service thì không có requires interface. Nó đứng một mình, ở một nơi khác, do người khác vận hành, và chỉ nói chuyện với bên ngoài bằng message. Đây là câu rất hay ra đề, nên nhớ kỹ: <throat-clearing> component thì cài, service thì gọi.",
+      "narration": "Khác ở đúng một chữ thôi <short pause> độc lập! Một component luôn có requires interface, tức là nó khai báo rằng nó cần thứ khác hiện diện thì mới chạy được, <sigh> và bạn phải cài nó vào hệ thống của mình rồi biên dịch cùng. Service thì không có requires interface. Nó đứng một mình, ở một nơi khác. <chuckle> Do người khác vận hành, và chỉ nói chuyện với bên ngoài bằng message. Đây là câu rất hay ra đề, nên nhớ kỹ: <throat-clearing> component thì cài, service thì gọi.",
       "cues": [
         "luôn",
         "Service thì không",
@@ -196,7 +196,7 @@
         "Quan trọng với thiết bị di động",
         "Nối service cũ theo cách mới thành service mới"
       ],
-      "narration": "Về phía hệ thống, ứng dụng trở nên nhẹ hơn, vì phần tính toán nặng được đẩy ra cho service bên ngoài. <groan> Điều này đặc biệt quan trọng với thiết bị di động, nơi bộ nhớ và năng lực xử lý đều hạn chế. <short pause> Và một lợi ích nữa dễ bị bỏ qua: nhà cung cấp có thể nối các service sẵn có theo một cách mới để tạo ra service mới, mà gần như không phải viết thêm gì. Giáo trình gọi đây là xây dựng service một cách cơ hội."
+      "narration": "Về phía hệ thống, ứng dụng trở nên nhẹ hơn, vì phần tính toán nặng được đẩy ra cho service bên ngoài. <groan> Điều này đặc biệt quan trọng với thiết bị di động, nơi bộ nhớ và năng lực xử lý đều hạn chế. Và một lợi ích nữa dễ bị bỏ qua: nhà cung cấp có thể nối các service sẵn có theo một cách mới để tạo ra service mới, mà gần như không phải viết thêm gì. <chuckle> Giáo trình gọi đây là xây dựng service một cách cơ hội."
     },
     {
       "id": "s12",
@@ -311,7 +311,7 @@
         "Development with services — ghép service thành ứng dụng",
         "Tức là: làm để tái sử dụng, và làm bằng tái sử dụng"
       ],
-      "narration": "Câu trả lời là hai nhánh, và chương này dạy cả hai. Nhánh thứ nhất là service engineering: làm ra những service đáng tin cậy để người khác dùng lại. Nhánh thứ hai là development with services: ghép các service có sẵn thành ứng dụng của mình. <throat-clearing> Nói gọn lại, nhánh một là phát triển để tái sử dụng, còn nhánh hai là phát triển bằng tái sử dụng. Tập bốn và tập năm sẽ làm nhánh một, tập sáu làm nhánh hai."
+      "narration": "Câu trả lời là hai nhánh, và chương này dạy cả hai. Nhánh thứ nhất là service engineering: làm ra những service đáng tin cậy để người khác dùng lại. Nhánh thứ hai là development with services: ghép các service có sẵn thành ứng dụng của mình. <throat-clearing> Nói gọn lại, nhánh một là phát triển để tái sử dụng, còn nhánh hai là phát triển bằng tái sử dụng. <cheer> Tập bốn và tập năm sẽ làm nhánh một, tập sáu làm nhánh hai."
     },
     {
       "id": "s19",

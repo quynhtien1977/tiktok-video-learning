@@ -30,7 +30,7 @@
       "part": 1,
       "title": "RESTful services",
       "subtitle": "Chapter 18 · Tập 3 / 6 — cách làm nhẹ hơn",
-      "narration": "Tập trước kết thúc ở chỗ bộ chuẩn SOAP và WSDL bị chê là nặng. Hôm nay là cách làm thay thế, nhẹ hơn hẳn, và cũng là cách mà gần như mọi API bạn gọi hằng ngày đang dùng."
+      "narration": "Tập trước kết thúc ở chỗ bộ chuẩn SOAP và WSDL bị chê là nặng. <sigh> Hôm nay là cách làm thay thế, nhẹ hơn hẳn, và cũng là cách mà gần như mọi API bạn gọi hằng ngày đang dùng. <cheer>"
     },
     {
       "id": "s02",
@@ -47,7 +47,7 @@
         "architectural",
         "web"
       ],
-      "narration": "REST viết tắt của Representational State Transfer. Điểm đầu tiên cần nhớ: nó không phải một chuẩn như SOAP, mà là một architectural style, tức một lối kiến trúc. Và nó không phải thứ ai đó mới nghĩ ra, nó chính là cách bản thân web vận hành từ đầu. Bạn mở một trang web là đã dùng REST rồi."
+      "narration": "REST viết tắt của Representational State Transfer. Điểm đầu tiên cần nhớ: nó không phải một chuẩn như SOAP, mà là một architectural style, tức một lối kiến trúc. <throat-clearing> Và nó không phải thứ ai đó mới nghĩ ra, nó chính là cách bản thân web vận hành từ đầu. Bạn mở một trang web là đã dùng REST rồi."
     },
     {
       "id": "s02b",
@@ -64,7 +64,7 @@
         "biểu mẫu",
         "App"
       ],
-      "narration": "Nói REST chính là cách web vận hành nghe hơi trừu tượng, nên cụ thể hoá ngay. Mỗi lần bạn mở một trang web là trình duyệt thực hiện một lời gọi GET tới địa chỉ đó. Mỗi lần bấm nút gửi một biểu mẫu là một lời gọi POST. App trên điện thoại lấy danh sách sản phẩm về cũng chỉ là mấy lời gọi y như vậy. Khác biệt duy nhất là kết quả trả về cho máy đọc chứ không phải cho người xem."
+      "narration": "Nói REST chính là cách web vận hành nghe hơi trừu tượng, nên cụ thể hoá ngay. Mỗi lần bạn mở một trang web là trình duyệt thực hiện một lời gọi GET tới địa chỉ đó. Mỗi lần bấm nút gửi một biểu mẫu là một lời gọi POST. <chuckle> App trên điện thoại lấy danh sách sản phẩm về cũng chỉ là mấy lời gọi y như vậy. <throat-clearing> Khác biệt duy nhất là kết quả trả về cho máy đọc chứ không phải cho người xem."
     },
     {
       "id": "s03",
@@ -81,7 +81,10 @@
         "địa chỉ",
         "representation"
       ],
-      "narration": "Đơn vị cơ bản của REST là resource. Một resource đơn giản là một mẩu dữ liệu: một catalog, một hồ sơ bệnh án, một chương sách. Mỗi resource có một địa chỉ riêng. Và đây là chỗ cái tên của nó bắt nguồn: một resource có thể tồn tại dưới nhiều representation, tức nhiều định dạng. Cùng một chương sách có thể là bản Word, bản PDF, hay bản hiển thị trên trình duyệt."
+      "poses": [
+        { "after": "catalog,", "pose": "point-explain" }
+      ],
+      "narration": "Đơn vị cơ bản của REST là resource. Một resource đơn giản là một mẩu dữ liệu: một catalog, một hồ sơ bệnh án, một chương sách. Mỗi resource có một địa chỉ riêng. <throat-clearing> Và đây là chỗ cái tên của nó bắt nguồn: một resource có thể tồn tại dưới nhiều representation, tức nhiều định dạng. Cùng một chương sách có thể là bản Word, bản PDF, hay bản hiển thị trên trình duyệt."
     },
     {
       "id": "s04",
@@ -96,7 +99,10 @@
         "PUT",
         "DELETE"
       ],
-      "narration": "Và đây là phần đẹp nhất của REST. Với một resource, bạn chỉ có đúng bốn thao tác. POST để tạo resource mới. GET để đọc, trả về một representation của nó. PUT để cập nhật giá trị. Và DELETE để xoá, làm nó không còn truy cập được nữa. Bốn thao tác này chính là bốn việc của CRUD, và chúng ánh xạ thẳng sang bốn HTTP verb."
+      "poses": [
+        { "after": "được nữa.", "pose": "point-explain" }
+      ],
+      "narration": "Và đây là phần đẹp nhất của REST. Với một resource, bạn chỉ có đúng bốn thao tác. POST để tạo resource mới. GET để đọc, trả về một representation của nó. <cheer> PUT để cập nhật giá trị. Và DELETE để xoá, làm nó không còn truy cập được nữa. Bốn thao tác này chính là bốn việc của CRUD, và chúng ánh xạ thẳng sang bốn HTTP verb."
     },
     {
       "id": "s04b",
@@ -113,7 +119,10 @@
         "HTTP",
         "đoán"
       ],
-      "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu <short pause> nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
+      "poses": [
+        { "after": "xoá bỏ.", "pose": "point-explain" }
+      ],
+      "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu, <chuckle> nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. <cheer> Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
     },
     {
       "id": "p1end",
@@ -149,7 +158,10 @@
         "query",
         "danh sách"
       ],
-      "narration": "Khác biệt lớn nhất so với SOAP nằm ở cách truy cập. Dữ liệu lộ thẳng ra qua URL chứ không giấu sau một lớp gọi hàm. Muốn xem nhiệt độ của một thành phố thì gọi URL chứa tên thành phố đó. Muốn lọc theo ngày thì thêm query parameter vào sau. Và khi kết quả là nhiều resource, service trả về luôn danh sách URL của từng cái, bạn cứ thế đi tiếp."
+      "poses": [
+        { "after": "gọi hàm.", "pose": "point-explain" }
+      ],
+      "narration": "Khác biệt lớn nhất so với SOAP nằm ở cách truy cập. <throat-clearing> Dữ liệu lộ thẳng ra qua URL chứ không giấu sau một lớp gọi hàm. Muốn xem nhiệt độ của một thành phố thì gọi URL chứa tên thành phố đó. Muốn lọc theo ngày thì thêm query parameter vào sau. <chuckle> Và khi kết quả là nhiều resource, service trả về luôn danh sách URL của từng cái, bạn cứ thế đi tiếp."
     },
     {
       "id": "s06",
@@ -166,7 +178,10 @@
         "HTTP",
         "trình duyệt"
       ],
-      "narration": "Vì sao gọi là nhẹ hơn. Thứ nhất, không phải gói mỗi lần gọi vào một phong bì XML. Thứ hai, nó dùng thẳng giao thức HTTP có sẵn chứ không chồng thêm tầng nào lên trên. Thứ ba, hệ quả của hai điều trên: chỉ cần trình duyệt là gọi thử được, không cần thư viện riêng nào cả. Chi phí mỗi lần gọi thấp hơn hẳn so với cái mà giáo trình gọi là big web services."
+      "poses": [
+        { "after": "nào cả.", "pose": "point-explain" }
+      ],
+      "narration": "Vì sao gọi là nhẹ hơn. <throat-clearing> Thứ nhất, không phải gói mỗi lần gọi vào một phong bì XML. Thứ hai, nó dùng thẳng giao thức HTTP có sẵn chứ không chồng thêm tầng nào lên trên. <cheer> Thứ ba, hệ quả của hai điều trên: chỉ cần trình duyệt là gọi thử được, không cần thư viện riêng nào cả. Chi phí mỗi lần gọi thấp hơn hẳn so với cái mà giáo trình gọi là big web services."
     },
     {
       "id": "s06b",
@@ -183,7 +198,7 @@
         "request",
         "nhân bản"
       ],
-      "narration": "Có một đặc điểm của REST mà người mới hay vấp: service không nhớ lần gọi trước của bạn. Mỗi request phải tự đủ thông tin để xử lý. Bạn vừa đăng nhập ở lời gọi trước không có nghĩa lời gọi sau nó nhớ bạn, mà phải gửi kèm thông tin xác thực mỗi lần. Nghe phiền <laugh> nhưng đổi lại được một thứ rất quý: bất kỳ server nào trong cụm cũng xử lý được request đó, nên hệ thống nhân bản ra nhiều máy rất dễ."
+      "narration": "Có một đặc điểm của REST mà người mới hay vấp: service không nhớ lần gọi trước của bạn. <groan> Mỗi request phải tự đủ thông tin để xử lý. Bạn vừa đăng nhập ở lời gọi trước không có nghĩa lời gọi sau nó nhớ bạn, mà phải gửi kèm thông tin xác thực mỗi lần. Nghe phiền, <laugh> nhưng đổi lại được một thứ rất quý: bất kỳ server nào trong cụm cũng xử lý được request đó, nên hệ thống nhân bản ra nhiều máy rất dễ."
     },
     {
       "id": "s07",
@@ -191,7 +206,7 @@
       "part": 2,
       "speaker": "ask",
       "question": "Thế REST thay thế hẳn SOAP được chưa?",
-      "narration": "Nghe hay quá <short pause> vậy REST thay thế hẳn SOAP được chưa, hay vẫn có chỗ nó thua?"
+      "narration": "Nghe hay quá! <sigh> Vậy REST thay thế hẳn SOAP được chưa, hay vẫn có chỗ nó thua?"
     },
     {
       "id": "s08",
@@ -208,7 +223,7 @@
         "chuẩn",
         "giám sát"
       ],
-      "narration": "Chưa. Giáo trình nêu ba nhược điểm rất cụ thể. Thứ nhất, khi service có interface phức tạp chứ không phải một resource đơn giản, thì rất khó nặn nó thành tập hợp resource cho gọn. Thứ hai, và đây là điểm đau nhất, REST không có chuẩn mô tả interface như WSDL, nên người dùng phải dựa vào tài liệu viết tay. Thứ ba, bạn phải tự xây lấy phần giám sát và quản lý chất lượng dịch vụ, vì không có chuẩn nào lo giúp."
+      "narration": "Chưa! <groan> Giáo trình nêu ba nhược điểm rất cụ thể. Thứ nhất, khi service có interface phức tạp chứ không phải một resource đơn giản, thì rất khó nặn nó thành tập hợp resource cho gọn. <sigh> Thứ hai, và đây là điểm đau nhất, REST không có chuẩn mô tả interface như WSDL, nên người dùng phải dựa vào tài liệu viết tay. Thứ ba, bạn phải tự xây lấy phần giám sát và quản lý chất lượng dịch vụ, vì không có chuẩn nào lo giúp."
     },
     {
       "id": "s08b",
@@ -225,7 +240,11 @@
         "bịa",
         "tách"
       ],
-      "narration": "Nói interface phức tạp thì khó nặn thành resource, nghe cũng trừu tượng, nên lấy luôn ví dụ sẽ gặp ở tập năm. So sánh bốn sản phẩm theo sáu tiêu chí: đó rõ ràng là một hành động chứ không phải một vật. REST chỉ biết thao tác trên vật, nên bạn buộc phải bịa ra một resource mới chỉ để chứa bảng kết quả so sánh, rồi tạo nó bằng POST và lấy về bằng GET. Một việc đơn giản bị tách thành mấy bước."
+      "poses": [
+        { "after": "một vật.", "pose": "think-doubt" },
+        { "after": "bằng GET.", "pose": "point-explain" }
+      ],
+      "narration": "Nói interface phức tạp thì khó nặn thành resource, nghe cũng trừu tượng, nên lấy luôn ví dụ sẽ gặp ở tập năm. <throat-clearing> So sánh bốn sản phẩm theo sáu tiêu chí: đó rõ ràng là một hành động chứ không phải một vật. REST chỉ biết thao tác trên vật, nên bạn buộc phải bịa ra một resource mới chỉ để chứa bảng kết quả so sánh, rồi tạo nó bằng POST và lấy về bằng GET. <sigh> Một việc đơn giản bị tách thành mấy bước."
     },
     {
       "id": "p2end",
@@ -252,7 +271,7 @@
       "part": 3,
       "src": "images/ch18/slide33-image7.png",
       "caption": "Hình trong slide 33 — so sánh REST và SOAP",
-      "narration": "Đây là bảng so sánh trong giáo trình. Nhìn vào đó bạn sẽ thấy hai bên mạnh yếu bù nhau chứ không phải một bên thắng tuyệt đối. REST thắng ở sự đơn giản và chi phí thấp. SOAP thắng ở chỗ mọi thứ đều có chuẩn, từ mô tả interface cho tới bảo mật và độ tin cậy."
+      "narration": "Đây là bảng so sánh trong giáo trình. <throat-clearing> Nhìn vào đó bạn sẽ thấy hai bên mạnh yếu bù nhau chứ không phải một bên thắng tuyệt đối. <chuckle> REST thắng ở sự đơn giản và chi phí thấp. SOAP thắng ở chỗ mọi thứ đều có chuẩn, từ mô tả interface cho tới bảo mật và độ tin cậy."
     },
     {
       "id": "s10",
@@ -269,7 +288,7 @@
         "SOAP",
         "liên tổ chức"
       ],
-      "narration": "Vậy chọn thế nào. Nếu bài toán xoay quanh dữ liệu rõ ràng với thao tác đơn giản, REST là lựa chọn hiển nhiên. Nếu là quy trình phức tạp, nhiều bên tham gia, cần ràng buộc chặt về bảo mật và độ tin cậy, thì bộ chuẩn SOAP vẫn có lý do tồn tại. Thực tế các hệ liên tổ chức, nhất là trong ngân hàng và bảo hiểm, vẫn bám chuẩn cũ vì lý do đó."
+      "narration": "Vậy chọn thế nào? <throat-clearing> Nếu bài toán xoay quanh dữ liệu rõ ràng với thao tác đơn giản, REST là lựa chọn hiển nhiên. <cheer> Nếu là quy trình phức tạp, nhiều bên tham gia, cần ràng buộc chặt về bảo mật và độ tin cậy, thì bộ chuẩn SOAP vẫn có lý do tồn tại. Thực tế các hệ liên tổ chức, nhất là trong ngân hàng và bảo hiểm, vẫn bám chuẩn cũ vì lý do đó."
     },
     {
       "id": "s11",
@@ -282,7 +301,7 @@
         "Điểm yếu lớn nhất: không có chuẩn mô tả interface như WSDL"
       ],
       "next": "Tập 4 — Service engineering: tìm và phân loại service",
-      "narration": "Tóm lại ba ý. REST là một architectural style dựa trên resource chứ không phải một chuẩn. Bốn thao tác CRUD ánh xạ thẳng sang bốn HTTP verb. Và điểm yếu lớn nhất của nó là không có chuẩn mô tả interface, nên người dùng phải đọc tài liệu viết tay. Hai tập vừa rồi là về cách mô tả và gọi service. Tập sau chúng ta lùi lại một bước để hỏi: rốt cuộc cái gì trong doanh nghiệp thì đáng trở thành service."
+      "narration": "Tóm lại ba ý. <throat-clearing> REST là một architectural style dựa trên resource chứ không phải một chuẩn. Bốn thao tác CRUD ánh xạ thẳng sang bốn HTTP verb. Và điểm yếu lớn nhất của nó là không có chuẩn mô tả interface, nên người dùng phải đọc tài liệu viết tay. <groan> Hai tập vừa rồi là về cách mô tả và gọi service. Tập sau chúng ta lùi lại một bước để hỏi: rốt cuộc cái gì trong doanh nghiệp thì đáng trở thành service. <cheer>"
     },
     {
       "id": "p3end",
