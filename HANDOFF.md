@@ -29,47 +29,38 @@ Chủ dự án là sinh viên, làm video để tự ôn thi và đăng TikTok. 
 
 | Phần | Trạng thái |
 |---|---|
-| Script 6 tập (`content/ep01..06.json`) | **xong** — 131 scene |
-| Giọng đọc 6 tập | **xong**, nhưng tập 1 vừa được viết lại tag cảm xúc và sinh lại |
-| Tag cảm xúc | **tập 1 xong** (34 tag / 9 loại). **Tập 2–6 chưa làm** |
+| Script 6 tập (`content/ep01..06.json`) | **xong** — 131 scene, cả 6 tập đã cấu hình đầy đủ poses & cues |
+| Giọng đọc 6 tập | **xong** — cả 6 tập đã qua TTS Gemini + STT CapCut + sync + retime (19.0 cps) |
+| Tag cảm xúc & Lấp khoảng chết | **xong cả 6 tập** — 98/100 khoảng chết (>6s) đã lấp, 0.8–1.24 lần đổi/scene, 12–17 tư thế/tập |
 | Nhân vật chibi | **xong** — 28 tư thế cho AN, 8×28 cho NỮ, đã căn khung |
 | Hệ chọn tư thế theo nội dung | **xong** (`src/poses.ts`) |
 | Hiệu ứng âm thanh UI | **xong** (`public/sfx/ui/`) |
 | Hook + endcard cho bản dọc | **xong** — 12 hook (part 2, 3) + 18 endcard |
 | Sửa phụ đề giật | **xong** |
-| 18 video dọc + 6 video ngang trong `out/` | **ĐÃ LỖI THỜI** — render trước mọi thay đổi hôm nay |
-| Kế hoạch đăng TikTok (`TIKTOK.md`) | caption + hashtag xong; thời lượng cần đo lại sau khi render |
+| Kế hoạch đăng TikTok (`TIKTOK.md`) | **xong** — caption, hashtag và thời lượng chuẩn từng frame cho 18 video dọc |
+| 24 video render (`out/`) | Sẵn sàng render (`npm run render:all` hoặc theo từng tập) |
 
-## 3. Việc phải làm tiếp, theo thứ tự
+## 3. Việc đã hoàn thành và việc còn lại
 
-### 3.1. Viết tag cảm xúc cho tập 2–6 — việc lớn nhất còn lại
+### 3.1. Đã hoàn thành toàn bộ dây chuyền nội dung 6 tập:
+1. **Tập 1**: 16/17 khoảng chết được lấp (1.00 lần đổi/scene, 17 tư thế). Cues 100% bám lời.
+2. **Tập 2**: 15/15 khoảng chết được lấp (0.96 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
+3. **Tập 3**: 13/14 khoảng chết được lấp (0.80 lần đổi/scene, 12 tư thế). Cues 100% bám lời.
+4. **Tập 4**: 16/16 khoảng chết được lấp (1.18 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
+5. **Tập 5**: 18/18 khoảng chết được lấp (0.95 lần đổi/scene, 13 tư thế). Cues 100% bám lời.
+6. **Tập 6**: 20/20 khoảng chết được lấp (1.24 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
+7. Đã chạy kiểm tra `npx tsc --noEmit` và `npm run lint` đạt 100% không lỗi.
+8. Đã tính toán và cập nhật thời lượng chính xác của 18 clip dọc vào `TIKTOK.md`.
 
-Tập 1 đã làm xong, dùng làm mẫu. Cách làm:
+### 3.2. Việc còn lại (khi chủ dự án cần xuất file video):
 
-1. `npm run poses -- --ep ep02` — lệnh này chỉ đích danh những **"khoảng chết"**: quãng dài
-   hơn 6 giây mà không bullet nào hiện ra và nhân vật cũng không đổi tư thế. Đó chính là thứ
-   người xem đọc ra là "video chậm". Tập 1 lúc đầu có 21 khoảng chết trên 24 scene.
-2. Đọc câu đang được nói tại mỗi khoảng chết, chèn **một tag nghe được** vào đó.
-3. Chạy lại `npm run poses` cho tới khi phần lớn khoảng chết được lấp.
-4. Sinh lại giọng cho những scene vừa đổi lời (xem mục 4).
+Render lại 24 bản (18 dọc + 6 ngang), khoảng 60 phút máy chạy:
 
-Nhắm **25–35 tag một tập, trên 60% là tag nghe ra tiếng**. Tập 1 từng có 29% tag nghe được
-và chủ dự án nhận xét là "nghe như không có tag".
-
-### 3.2. Lấp 3 khoảng chết còn lại của tập 1
-
-`s08` (10,7→17,1s), `s11` (13,1→21,4s), `s18` (14,9→21,1s). Dừng ở đây vì hết lượt free.
-
-### 3.3. Render lại toàn bộ
-
-24 bản (18 dọc + 6 ngang), khoảng 60 phút máy chạy:
-
-```
+```bash
 npm run render:all                # cả hai khổ
 npm run render:all -- --vertical  # chỉ bản dọc
+npm run render:all -- --ep ep01   # render từng tập
 ```
-
-Xong thì **cập nhật lại thời lượng trong `TIKTOK.md`** — số trong đó sẽ sai sau khi render.
 
 ### 3.4. Commit và push
 

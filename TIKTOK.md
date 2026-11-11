@@ -1,6 +1,6 @@
 # Kế hoạch đăng TikTok — Chapter 18
 
-18 video dọc trong `out/tiktok/`, mỗi cái 65–136 giây. Thứ tự đăng theo đúng thứ tự tập
+18 video dọc trong `out/tiktok/`, mỗi cái 66–138 giây. Thứ tự đăng theo đúng thứ tự tập
 và phần, vì nội dung có nợ khái niệm: xem p2 trước p1 sẽ hụt.
 
 ## Quy tắc chung
@@ -37,71 +37,71 @@ Thêm 2–3 hashtag riêng theo nội dung từng video, liệt kê ở bảng d
 
 ## Tập 1 — Service là gì, vì sao cần SOA
 
-**p1 · 2:16** — `out/tiktok/ep01-p1.mp4`
+**p1 · 2:18** — `out/tiktok/ep01-p1.mp4`
 > Bạn đã có object, đã có component rồi. Vậy sao ngành phần mềm còn đẻ thêm "service"?
 > Câu trả lời nằm ở đúng một chữ.
 `#SOA #service #kientrucphanmem`
 
-**p2 · 2:01** — `out/tiktok/ep01-p2.mp4`
+**p2 · 2:03** — `out/tiktok/ep01-p2.mp4`
 > Late binding: ứng dụng chọn nhà cung cấp ngay lúc đang chạy, không phải lúc viết code.
 > Đây là lý do thật sự người ta đổi sang service.
 `#latebinding #SOA #backend`
 
-**p3 · 2:06** — `out/tiktok/ep01-p3.mp4`
+**p3 · 2:02** — `out/tiktok/ep01-p3.mp4`
 > Cả kiến trúc SOA chỉ gồm 3 vai và 3 động tác: publish, find, bind. Nhớ 6 chữ này là
 > nhớ được cả chương.
 `#SOA #webservice #ontapcuoiky`
 
 ## Tập 2 — SOAP và WSDL
 
-**p1 · 1:33** — `out/tiktok/ep02-p1.mp4`
+**p1 · 1:36** — `out/tiktok/ep02-p1.mp4`
 > Hai hệ thống không quen nhau, viết bằng hai ngôn ngữ khác nhau, vẫn gọi được nhau.
 > Nhờ đâu? Nhờ ba cái chuẩn.
 `#SOAP #WSDL #API`
 
-**p2 · 1:55** — `out/tiktok/ep02-p2.mp4`
+**p2 · 1:57** — `out/tiktok/ep02-p2.mp4`
 > WSDL chỉ trả lời đúng 3 câu: what, how, where. Đề thi hỏi WSDL gồm gì là trả lời được ngay.
 `#WSDL #webservice #ontapcuoiky`
 
-**p3 · 1:46** — `out/tiktok/ep02-p3.mp4`
+**p3 · 1:47** — `out/tiktok/ep02-p3.mp4`
 > WSDL hay SOAP — hai cái tên này bị lẫn nhiều nhất. Một bên là tờ khai, một bên là cái phong bì.
 `#SOAP #WSDL #deythi`
 
 ## Tập 3 — RESTful services
 
-**p1 · 1:45** — `out/tiktok/ep03-p1.mp4`
+**p1 · 1:46** — `out/tiktok/ep03-p1.mp4`
 > Bạn gọi REST mỗi ngày mà không biết. Mở một trang web là một lần GET rồi đấy.
 `#REST #API #hoclaptrinh`
 
-**p2 · 1:55** — `out/tiktok/ep03-p2.mp4`
+**p2 · 1:57** — `out/tiktok/ep03-p2.mp4`
 > Vì sao REST nhẹ hơn SOAP? Và vì sao mỗi lời gọi REST phải tự đủ thông tin, không được
 > nhớ lần trước?
 `#REST #stateless #backend`
 
-**p3 · 1:05** — `out/tiktok/ep03-p3.mp4`
+**p3 · 1:06** — `out/tiktok/ep03-p3.mp4`
 > REST không thay thế hẳn SOAP. Có 3 chỗ REST thua, và biết 3 chỗ đó là biết khi nào chọn cái nào.
 `#REST #SOAP #kientrucphanmem`
 
 ## Tập 4 — Tìm và phân loại service
 
-**p1 · 1:35** — `out/tiktok/ep04-p1.mp4`
+**p1 · 1:38** — `out/tiktok/ep04-p1.mp4`
 > Nhìn vào một doanh nghiệp, cái gì đáng tách ra thành service? Có hẳn quy trình 3 bước
 > để trả lời.
 `#SOA #serviceengineering #thietkephanmem`
 
-**p2 · 1:59** — `out/tiktok/ep04-p2.mp4`
+**p2 · 2:01** — `out/tiktok/ep04-p2.mp4`
 > Utility, business, coordination — nhân với task và entity. Một ô trong bảng này luôn
 > bỏ trống, và đề thi rất hay hỏi đúng ô đó.
 `#deythi #SOA #ontapcuoiky`
 
-**p3 · 2:11** — `out/tiktok/ep04-p3.mp4`
+**p3 · 2:12** — `out/tiktok/ep04-p3.mp4`
 > Yêu cầu phi chức năng không phải phần phụ. Chính nó quyết định service của bạn
 > thiết kế ra sao.
 `#requirements #thietkephanmem #SOA`
 
 ## Tập 5 — Thiết kế interface và triển khai
 
-**p1 · 1:37** — `out/tiktok/ep05-p1.mp4`
+**p1 · 1:38** — `out/tiktok/ep05-p1.mp4`
 > Gọi một hàm tốn micro giây. Gọi một service tốn mili giây — chậm hơn nghìn lần.
 > Đó là lý do interface của service trông thô hơn.
 `#API #thietkephanmem #backend`
@@ -118,7 +118,7 @@ Thêm 2–3 hashtag riêng theo nội dung từng video, liệt kê ở bảng d
 
 ## Tập 6 — Ghép service và bài toán testing
 
-**p1 · 1:19** — `out/tiktok/ep06-p1.mp4`
+**p1 · 1:20** — `out/tiktok/ep06-p1.mp4`
 > Đặt được vé máy bay, thuê được xe, tới khách sạn thì hết phòng. Giờ phải huỷ hết.
 > Đó là compensating action.
 `#workflow #microservices #backend`
@@ -128,7 +128,7 @@ Thêm 2–3 hashtag riêng theo nội dung từng video, liệt kê ở bảng d
 > tinh chỉnh lại workflow.
 `#workflow #BPMN #thietkephanmem`
 
-**p3 · 2:07** — `out/tiktok/ep06-p3.mp4`
+**p3 · 2:08** — `out/tiktok/ep06-p3.mp4`
 > Service của người khác là hộp đen, họ sửa lúc nào không báo, gọi nhiều còn tính tiền.
 > Vậy test kiểu gì?
 `#testing #microservices #QA`
