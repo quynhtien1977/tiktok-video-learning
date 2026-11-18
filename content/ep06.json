@@ -30,7 +30,7 @@
       "part": 1,
       "title": "Ghép service thành hệ thống",
       "subtitle": "Chapter 18 · Tập 6 / 6 — composition và testing",
-      "narration": "Tập cuối của chương. Hai tập vừa rồi là làm ra service cho người khác dùng. Hôm nay làm chiều ngược lại: lấy service của người khác ghép thành hệ thống của mình. Và cuối tập là phần khó chịu nhất của cả chương, chuyện kiểm thử."
+      "narration": "Tập cuối của chương. <cheer> Hai tập vừa rồi là làm ra service cho người khác dùng. Hôm nay làm chiều ngược lại: lấy service của người khác ghép thành hệ thống của mình. <groan> Và cuối tập là phần khó chịu nhất của cả chương, chuyện kiểm thử."
     },
     {
       "id": "s02",
@@ -47,7 +47,7 @@
         "workflow",
         "quy trình"
       ],
-      "narration": "Nhánh này giáo trình gọi là development with services. Bạn ghép và cấu hình các service có sẵn để tạo ra service tổng hợp hoặc cả một ứng dụng. Nền tảng để ghép thường là một workflow. Mà workflow thì đơn giản là một chuỗi hoạt động có thứ tự logic, mô tả lại một quy trình nghiệp vụ có thật."
+      "narration": "Nhánh này giáo trình gọi là development with services. <throat-clearing> Bạn ghép và cấu hình các service có sẵn để tạo ra service tổng hợp hoặc cả một ứng dụng. Nền tảng để ghép thường là một workflow. <chuckle> Mà workflow thì đơn giản là một chuỗi hoạt động có thứ tự logic, mô tả lại một quy trình nghiệp vụ có thật."
     },
     {
       "id": "s03",
@@ -55,7 +55,7 @@
       "part": 1,
       "src": "images/ch18/slide59-image10.png",
       "caption": "Hình trong slide 59 — workflow đặt trọn gói kỳ nghỉ",
-      "narration": "Ví dụ kinh điển là đặt trọn gói một kỳ nghỉ. Khách muốn một chuyến đi gồm vé máy bay, thuê xe và đặt khách sạn. Ba việc đó do ba nhà cung cấp khác nhau lo, nhưng với khách thì đó là một thao tác duy nhất. Workflow chính là thứ điều phối ba service đó theo đúng thứ tự và xử lý khi một trong ba thất bại."
+      "narration": "Ví dụ kinh điển là đặt trọn gói một kỳ nghỉ. Khách muốn một chuyến đi gồm vé máy bay, thuê xe và đặt khách sạn. Ba việc đó do ba nhà cung cấp khác nhau lo, nhưng với khách thì đó là một thao tác duy nhất. <gasp> Workflow chính là thứ điều phối ba service đó theo đúng thứ tự và xử lý khi một trong ba thất bại."
     },
     {
       "id": "s03b",
@@ -72,7 +72,7 @@
         "compensating",
         "nhánh hỏng"
       ],
-      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ <laugh> nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon.",
+      "narration": "Nhìn ví dụ kỳ nghỉ thì tưởng dễ <laugh> nhưng cái khó không nằm ở lúc mọi thứ trôi chảy. Giả sử đặt được vé máy bay, thuê được xe, nhưng tới bước khách sạn thì hết phòng. <groan> Lúc đó workflow phải quay lại huỷ vé và huỷ xe, nếu không khách mất tiền oan. <tsk> Hành động quay lại dọn dẹp đó gọi là compensating action, và nó sẽ quay lại ám chúng ta ở phần kiểm thử cuối tập. Phần lớn công sức viết workflow thật ra nằm ở các nhánh hỏng chứ không phải nhánh chạy ngon.",
       "poses": [
         {
           "after": "trôi chảy.",
@@ -94,7 +94,7 @@
       "part": 1,
       "src": "images/ch18/slide60-image11.png",
       "caption": "Hình trong slide 60 — sáu bước xây dựng bằng cách ghép",
-      "narration": "Quy trình xây dựng bằng cách ghép gồm sáu bước, và sơ đồ này là toàn cảnh của chúng. Ba bước đầu là phác thảo rồi đi tìm, ba bước sau là chọn lọc rồi làm thật."
+      "narration": "Quy trình xây dựng bằng cách ghép gồm sáu bước, và sơ đồ này là toàn cảnh của chúng. <throat-clearing> Ba bước đầu là phác thảo rồi đi tìm, ba bước sau là chọn lọc rồi làm thật."
     },
     {
       "id": "p1end",
@@ -103,7 +103,7 @@
       "renderIn": "vertical",
       "next": "Sáu bước ghép service thành hệ thống",
       "cta": "Theo dõi để xem tiếp",
-      "narration": "Phần sau: sáu bước ghép service thành một hệ thống. Theo dõi để khỏi lỡ nha."
+      "narration": "Phần sau: sáu bước ghép service thành một hệ thống. <cheer> Theo dõi để khỏi lỡ nha."
     },
     {
       "id": "p2hook",
@@ -130,7 +130,7 @@
         "discover",
         "select"
       ],
-      "narration": "Ba bước đầu. Một, phác ra workflow lý tưởng dựa trên yêu cầu, lúc này chưa cần quan tâm ai sẽ cung cấp từng mảnh. Hai, discover: tìm trong các registry hoặc catalog xem có service nào làm được việc đó, ai cung cấp, điều kiện ra sao. Ba, select: chọn, và tiêu chí không chỉ là chức năng mà còn cả giá và chất lượng dịch vụ, tức tốc độ đáp ứng và độ sẵn sàng.",
+      "narration": "Ba bước đầu. <throat-clearing> Một, phác ra workflow lý tưởng dựa trên yêu cầu, lúc này chưa cần quan tâm ai sẽ cung cấp từng mảnh. <tsk> Hai, discover: tìm trong các registry hoặc catalog xem có service nào làm được việc đó, ai cung cấp, điều kiện ra sao. Ba, select: chọn, và tiêu chí không chỉ là chức năng mà còn cả giá và chất lượng dịch vụ, tức tốc độ đáp ứng và độ sẵn sàng.",
       "poses": [
         {
           "after": "hoặc catalog",
@@ -157,7 +157,7 @@
         "create",
         "test"
       ],
-      "narration": "Ba bước sau. Bốn, refine: tinh chỉnh lại workflow cho khớp với những service thật sự tìm được, có thể phải thêm hoặc bớt hoạt động so với bản lý tưởng. Năm, create: chuyển bản thiết kế trừu tượng thành chương trình chạy được, bằng ngôn ngữ thường như Java hoặc bằng workflow language như WS-BPEL. Sáu, test. Và bước này phức tạp hơn nhiều so với test một component, nên lát nữa ta nói riêng.",
+      "narration": "Ba bước sau. Bốn, refine: tinh chỉnh lại workflow cho khớp với những service thật sự tìm được, có thể phải thêm hoặc bớt hoạt động so với bản lý tưởng. Năm, create: chuyển bản thiết kế trừu tượng thành chương trình chạy được, bằng ngôn ngữ thường như Java hoặc bằng workflow language như WS-BPEL. Sáu, test. <groan> Và bước này phức tạp hơn nhiều so với test một component, nên lát nữa ta nói riêng.",
       "poses": [
         {
           "after": "thật sự",
@@ -184,7 +184,7 @@
         "chia việc",
         "chuyển đổi"
       ],
-      "narration": "Bước refine nghe thừa nhưng thực tế luôn cần. Bản workflow lý tưởng được vẽ khi bạn chưa biết ngoài thị trường có service nào. Tới lúc tìm được thì hoá ra họ chia việc khác với cách bạn tưởng: cái bạn muốn một bước thì họ bắt gọi hai lần, cái bạn định gọi hai lần thì họ gộp sẵn. Nhiều khi còn phải chèn thêm một bước chuyển đổi dữ liệu, vì service này trả ra định dạng mà service kia không nhận.",
+      "narration": "Bước refine nghe thừa nhưng thực tế luôn cần. <tsk> Bản workflow lý tưởng được vẽ khi bạn chưa biết ngoài thị trường có service nào. Tới lúc tìm được thì hoá ra họ chia việc khác với cách bạn tưởng: cái bạn muốn một bước thì họ bắt gọi hai lần, cái bạn định gọi hai lần thì họ gộp sẵn. <sigh> Nhiều khi còn phải chèn thêm một bước chuyển đổi dữ liệu, vì service này trả ra định dạng mà service kia không nhận.",
       "poses": [
         {
           "after": "hoá ra",
@@ -219,7 +219,7 @@
         "ký hiệu",
         "phổ biến"
       ],
-      "narration": "Có hai lựa chọn. WS-BPEL là chuẩn XML để đặc tả workflow, máy chạy được nhưng người đọc thì rất mệt vì nó dài và rối. BPMN là ký hiệu đồ hoạ, vẽ ra thì cả dân kỹ thuật lẫn dân nghiệp vụ đều nhìn hiểu. Nên cách làm phổ biến là vẽ bằng BPMN cho người, rồi sinh ra WS-BPEL cho máy. Và lưu ý workflow dùng được cho cả service kiểu SOAP lẫn kiểu REST."
+      "narration": "Có hai lựa chọn. WS-BPEL là chuẩn XML để đặc tả workflow, máy chạy được nhưng người đọc thì rất mệt vì nó dài và rối. <groan> BPMN là ký hiệu đồ hoạ, vẽ ra thì cả dân kỹ thuật lẫn dân nghiệp vụ đều nhìn hiểu. Nên cách làm phổ biến là vẽ bằng BPMN cho người, rồi sinh ra WS-BPEL cho máy. <cheer> Và lưu ý workflow dùng được cho cả service kiểu SOAP lẫn kiểu REST."
     },
     {
       "id": "s09",
@@ -227,7 +227,7 @@
       "part": 2,
       "src": "images/ch18/slide65-image13.png",
       "caption": "Hình trong slide 65 — hai workflow của hai tổ chức nối nhau",
-      "narration": "Khi hệ thống chạy qua nhiều tổ chức thì không ai vẽ một workflow khổng lồ chung. Mỗi tổ chức giữ workflow riêng của mình, và hai bên nối với nhau bằng cách trao đổi message. Sơ đồ này cho thấy hai luồng chạy song song, thỉnh thoảng bắn message sang nhau tại những điểm đã thống nhất. Cách làm này giữ được quyền tự chủ của từng bên.",
+      "narration": "Khi hệ thống chạy qua nhiều tổ chức thì không ai vẽ một workflow khổng lồ chung. <chuckle> Mỗi tổ chức giữ workflow riêng của mình, và hai bên nối với nhau bằng cách trao đổi message. Sơ đồ này cho thấy hai luồng chạy song song, thỉnh thoảng bắn message sang nhau tại những điểm đã thống nhất. Cách làm này giữ được quyền tự chủ của từng bên. <cheer>",
       "poses": [
         {
           "after": "của mình,",
@@ -246,7 +246,7 @@
       "renderIn": "vertical",
       "next": "Vì sao test service lại khó tới vậy",
       "cta": "Theo dõi để xem tiếp",
-      "narration": "Phần sau: vì sao test service lại khó tới vậy. Theo dõi để khỏi lỡ nha."
+      "narration": "Phần sau: vì sao test service lại khó tới vậy. <cheer> Theo dõi để khỏi lỡ nha."
     },
     {
       "id": "p3hook",
@@ -273,7 +273,7 @@
         "sửa",
         "binding"
       ],
-      "narration": "Giờ tới phần khó chịu <sigh> Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được.",
+      "narration": "Giờ tới phần khó chịu <sigh> Vì sao test một hệ ghép từ service lại khó. Thứ nhất, service bên ngoài là hộp đen. Mọi kỹ thuật kiểm thử dựa trên source code đều vô dụng, vì bạn không có code của họ. <tsk> Thứ hai, nhà cung cấp có thể sửa service bất cứ lúc nào, và thế là bộ test bạn vừa chạy xong hôm qua không còn giá trị. <gasp> Thứ ba, dynamic binding khiến mỗi lần chạy ứng dụng có thể gọi vào một service khác, nên kết quả test không lặp lại được.",
       "poses": [
         {
           "after": "lại khó.",
@@ -300,7 +300,7 @@
         "phí",
         "compensating"
       ],
-      "narration": "Ba lý do nữa. Hành vi phi chức năng của service phụ thuộc vào tải tại thời điểm đó, nên hôm nay nhanh không có nghĩa ngày mai nhanh. Nếu service tính phí theo lượt gọi thì mỗi lần chạy bộ test là một lần mất tiền, và test tử tế thì phải chạy rất nhiều lần. Cuối cùng, rất khó dựng tình huống để kích hoạt compensating action, tức hành động bù trừ khi một service trong chuỗi thất bại, bởi vì bạn không ép service của người khác hỏng theo ý mình được.",
+      "narration": "Ba lý do nữa. <sigh> Hành vi phi chức năng của service phụ thuộc vào tải tại thời điểm đó, nên hôm nay nhanh không có nghĩa ngày mai nhanh. Nếu service tính phí theo lượt gọi thì mỗi lần chạy bộ test là một lần mất tiền, <groan> và test tử tế thì phải chạy rất nhiều lần. Cuối cùng, rất khó dựng tình huống để kích hoạt compensating action, tức hành động bù trừ khi một service trong chuỗi thất bại, bởi vì bạn không ép service của người khác hỏng theo ý mình được. <tsk>",
       "poses": [
         {
           "after": "mất tiền,",
@@ -327,7 +327,7 @@
         "hợp đồng",
         "giám sát"
       ],
-      "narration": "Giáo trình nêu vấn đề nhưng không đưa thuốc chữa, nên nói thêm phần thực hành. Cách thứ nhất là dựng service giả lập thay cho service thật, nhờ đó chủ động tạo ra tình huống hỏng để thử compensating action. Cách thứ hai là test hợp đồng: định kỳ gọi service ngoài bằng vài phép thử nhỏ để biết nó còn hành xử đúng như mô tả hay không. Cách thứ ba là chấp nhận rằng không thể test hết trước, nên phải giám sát chặt khi hệ thống chạy thật.",
+      "narration": "Giáo trình nêu vấn đề nhưng không đưa thuốc chữa, <tsk> nên nói thêm phần thực hành. Cách thứ nhất là dựng service giả lập thay cho service thật, nhờ đó chủ động tạo ra tình huống hỏng để thử compensating action. Cách thứ hai là test hợp đồng: định kỳ gọi service ngoài bằng vài phép thử nhỏ để biết nó còn hành xử đúng như mô tả hay không. Cách thứ ba là chấp nhận rằng không thể test hết trước, nên phải giám sát chặt khi hệ thống chạy thật. <throat-clearing>",
       "poses": [
         {
           "after": "tình huống hỏng",
@@ -354,7 +354,7 @@
         "nhánh",
         "REST"
       ],
-      "narration": "Khép lại cả chương bằng ba ý lớn. Một, SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Hai, môn này có hai nhánh: service engineering là làm ra service cho người khác dùng, còn development with services là ghép service thành hệ thống của mình. Ba, về mặt kỹ thuật có hai lối: bộ chuẩn SOAP cùng WSDL cho những hệ cần ràng buộc chặt, và REST dựa trên resource cho phần lớn trường hợp còn lại.",
+      "narration": "Khép lại cả chương bằng ba ý lớn. <throat-clearing> Một, SOA chỉ gồm ba vai và ba động tác: publish, find, bind. Hai, môn này có hai nhánh: service engineering là làm ra service cho người khác dùng, còn development with services là ghép service thành hệ thống của mình. Ba, về mặt kỹ thuật có hai lối: bộ chuẩn SOAP cùng WSDL cho những hệ cần ràng buộc chặt, và REST dựa trên resource cho phần lớn trường hợp còn lại.",
       "poses": [
         {
           "after": "của mình.",
@@ -377,7 +377,7 @@
         "Test khó vì service ngoài là hộp đen, hay đổi, và còn tính tiền"
       ],
       "next": "Hết chương. Ôn lại bằng tám key point ở slide 68 và 69",
-      "narration": "Ba ý cuối cùng. Workflow là nền tảng để ghép service, và cách làm thực tế là vẽ bằng BPMN rồi sinh ra WS-BPEL. Với hệ liên tổ chức thì mỗi bên giữ workflow riêng và nối nhau bằng message. Còn việc test khó là vì service bên ngoài là hộp đen, có thể bị sửa bất cứ lúc nào, và nhiều khi còn tính tiền từng lượt gọi. Tới đây là hết Chapter 18. Trước khi thi, bạn mở lại slide sáu mươi tám và sáu mươi chín, đối chiếu tám key point ở đó với những gì vừa nghe. Chúc bạn ôn tốt.",
+      "narration": "Ba ý cuối cùng. Workflow là nền tảng để ghép service, và cách làm thực tế là vẽ bằng BPMN rồi sinh ra WS-BPEL. Với hệ liên tổ chức thì mỗi bên giữ workflow riêng và nối nhau bằng message. Còn việc test khó là vì service bên ngoài là hộp đen, có thể bị sửa bất cứ lúc nào, và nhiều khi còn tính tiền từng lượt gọi. Tới đây là hết Chapter 18. <cheer> Trước khi thi, bạn mở lại slide sáu mươi tám và sáu mươi chín, đối chiếu tám key point ở đó với những gì vừa nghe. <chuckle> Chúc bạn ôn tốt.",
       "poses": [
         {
           "after": "message.",
@@ -396,7 +396,7 @@
       "renderIn": "vertical",
       "next": "Hết Chapter 18 — xem lại từ tập 1",
       "cta": "Xem bản đầy đủ trên YouTube",
-      "narration": "Hết Chapter mười tám. Xem lại từ tập một trên YouTube để nối liền mạch nha."
+      "narration": "Hết Chapter mười tám. <cheer> Xem lại từ tập một trên YouTube để nối liền mạch nha."
     }
   ]
 }

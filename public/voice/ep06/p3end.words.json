@@ -1,82 +1,82 @@
 [
   {
     "text": "Hết",
-    "startMs": 0,
-    "endMs": 240
+    "startMs": 40,
+    "endMs": 200
   },
   {
     "text": "Chapter",
-    "startMs": 360,
-    "endMs": 680
+    "startMs": 320,
+    "endMs": 640
   },
   {
     "text": "mười",
-    "startMs": 680,
-    "endMs": 1020
+    "startMs": 640,
+    "endMs": 1500
   },
   {
     "text": "tám.",
-    "startMs": 1020,
-    "endMs": 1360
+    "startMs": 1500,
+    "endMs": 2360
   },
   {
     "text": "Xem",
-    "startMs": 1360,
-    "endMs": 1480
+    "startMs": 2360,
+    "endMs": 2520
   },
   {
     "text": "lại",
-    "startMs": 1480,
-    "endMs": 1640
-  },
-  {
-    "text": "từ",
-    "startMs": 1640,
-    "endMs": 1800
-  },
-  {
-    "text": "tập",
-    "startMs": 1840,
-    "endMs": 2000
-  },
-  {
-    "text": "một",
-    "startMs": 2000,
-    "endMs": 2200
-  },
-  {
-    "text": "trên",
-    "startMs": 2200,
-    "endMs": 2320
-  },
-  {
-    "text": "YouTube",
-    "startMs": 2360,
+    "startMs": 2520,
     "endMs": 2640
   },
   {
-    "text": "để",
+    "text": "từ",
     "startMs": 2640,
-    "endMs": 2760
+    "endMs": 2800
   },
   {
-    "text": "nối",
-    "startMs": 2840,
+    "text": "tập",
+    "startMs": 2800,
+    "endMs": 2960
+  },
+  {
+    "text": "một",
+    "startMs": 2960,
     "endMs": 3080
   },
   {
-    "text": "liền",
+    "text": "trên",
     "startMs": 3080,
-    "endMs": 3280
+    "endMs": 3200
+  },
+  {
+    "text": "YouTube",
+    "startMs": 3200,
+    "endMs": 3400
+  },
+  {
+    "text": "để",
+    "startMs": 3400,
+    "endMs": 3480
+  },
+  {
+    "text": "nối",
+    "startMs": 3520,
+    "endMs": 3680
+  },
+  {
+    "text": "liền",
+    "startMs": 3680,
+    "endMs": 3880
   },
   {
     "text": "mạch",
-    "startMs": 3320,
-    "endMs": 3520
+    "startMs": 3880,
+    "endMs": 4080
   },
   {
     "text": "nha.",
-    "startMs": 3600,
-    "endMs": 3803
+    "startMs": 4160,
+    "endMs": 4276
   }
 ]

@@ -1,82 +1,82 @@
 [
   {
     "text": "Phần",
-    "startMs": 46,
-    "endMs": 229
+    "startMs": 40,
+    "endMs": 200
   },
   {
     "text": "sau:",
-    "startMs": 275,
-    "endMs": 458
+    "startMs": 240,
+    "endMs": 520
   },
   {
     "text": "vì",
-    "startMs": 549,
-    "endMs": 732
+    "startMs": 520,
+    "endMs": 680
   },
   {
     "text": "sao",
-    "startMs": 732,
-    "endMs": 961
+    "startMs": 680,
+    "endMs": 800
   },
   {
     "text": "test",
-    "startMs": 1053,
-    "endMs": 1144
+    "startMs": 920,
+    "endMs": 1160
   },
   {
     "text": "service",
-    "startMs": 1327,
-    "endMs": 1739
+    "startMs": 1160,
+    "endMs": 1440
   },
   {
     "text": "lại",
-    "startMs": 1739,
-    "endMs": 1876
+    "startMs": 1520,
+    "endMs": 1640
   },
   {
     "text": "khó",
-    "startMs": 1876,
-    "endMs": 2059
+    "startMs": 1640,
+    "endMs": 1800
   },
   {
     "text": "tới",
-    "startMs": 2105,
-    "endMs": 2243
+    "startMs": 1800,
+    "endMs": 1960
   },
   {
     "text": "vậy.",
-    "startMs": 2243,
-    "endMs": 2517
+    "startMs": 1960,
+    "endMs": 2560
   },
   {
     "text": "Theo",
-    "startMs": 2517,
-    "endMs": 2654
+    "startMs": 2560,
+    "endMs": 2680
   },
   {
     "text": "dõi",
-    "startMs": 2654,
-    "endMs": 2883
+    "startMs": 2680,
+    "endMs": 2880
   },
   {
     "text": "để",
-    "startMs": 2883,
-    "endMs": 3021
+    "startMs": 2880,
+    "endMs": 3000
   },
   {
     "text": "khỏi",
-    "startMs": 3021,
-    "endMs": 3204
+    "startMs": 3000,
+    "endMs": 3160
   },
   {
     "text": "lỡ",
-    "startMs": 3249,
-    "endMs": 3432
+    "startMs": 3160,
+    "endMs": 3320
   },
   {
     "text": "nha.",
-    "startMs": 3524,
-    "endMs": 3739
+    "startMs": 3400,
+    "endMs": 3556
   }
 ]
