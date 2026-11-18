@@ -265,25 +265,43 @@ const main = async () => {
     const mp3 = path.join(outDir, `${scene.id}.mp3`);
     process.stdout.write(`· ${scene.id}: `);
 
-    let out: Synth;
-    try {
-      out = await synth(keys, scene.narration, voice, style);
-    } catch (e) {
-      const msg = (e as Error).message;
-      console.log(`LỖI ${msg}`);
-      writeLedger(keys);
-      // Phân biệt hết lượt với hết tiền: hai thứ này chữa bằng hai cách khác hẳn nhau,
-      // mà thông báo chung chung "chạy lại sau khi quota reset" từng làm chẩn đoán sai.
-      const hetTien = /insufficient balance|billing|top up/i.test(msg);
-      console.log(
-        hetTien
-          ? "\nDừng lại vì key trả tiền HẾT SỐ DƯ, không phải hết lượt." +
-              "\nNạp thêm, hoặc chạy lại với --free để dùng tầng miễn phí." +
-              "\nScene đã xong sẽ được bỏ qua."
-          : "\nDừng lại. Chạy lại sau khi quota reset, các scene đã xong sẽ được bỏ qua.",
-      );
-      process.exit(1);
+    // Lỗi mạng chập chờn thì THỬ LẠI, đừng bỏ cả lượt chạy. Một lần `fetch failed` ở
+    // giữa chừng từng làm hỏng nguyên một tập: 12 scene đã sinh xong, 6 scene còn lại
+    // bỏ dở, mà `words.json` thì đã xoá trước đó nên `cues` báo 30 chỗ lệch.
+    const TAM_THOI = /fetch failed|ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket hang up|timeout|\b(429|500|502|503|504)\b/i;
+    const CHO = [2000, 5000, 12000];
+    let out: Synth | null = null;
+    for (let lan = 0; lan <= CHO.length; lan++) {
+      try {
+        out = await synth(keys, scene.narration, voice, style);
+        break;
+      } catch (e) {
+        const msg = (e as Error).message;
+        if (TAM_THOI.test(msg) && lan < CHO.length) {
+          process.stdout.write(`lỗi mạng, thử lại sau ${CHO[lan] / 1000}s… `);
+          await new Promise((r) => setTimeout(r, CHO[lan]));
+          continue;
+        }
+        console.log(`LỖI ${msg}`);
+        writeLedger(keys);
+        // Ba nguyên nhân khác nhau, chữa bằng ba cách khác nhau — thông báo chung chung
+        // "chạy lại sau khi quota reset" từng làm chẩn đoán sai hai lần.
+        const hetTien = /insufficient balance|billing|top up/i.test(msg);
+        const loiMang = TAM_THOI.test(msg);
+        console.log(
+          hetTien
+            ? "\nDừng lại vì key trả tiền HẾT SỐ DƯ, không phải hết lượt." +
+                "\nNạp thêm, hoặc chạy lại với --free để dùng tầng miễn phí."
+            : loiMang
+              ? `\nDừng lại vì LỖI MẠNG sau ${CHO.length} lần thử lại, không phải hết lượt.` +
+                "\nKiểm tra mạng rồi chạy lại ngay, không cần chờ quota."
+              : "\nDừng lại. Chạy lại sau khi quota reset.",
+        );
+        console.log("Scene đã xong sẽ được bỏ qua.\nNhớ chạy align_stt + sync trước khi render.");
+        process.exit(1);
+      }
     }
+    if (!out) process.exit(1);
 
     if (out.format === "wav") {
       const wav = mp3.replace(/\.mp3$/, ".tmp.wav");

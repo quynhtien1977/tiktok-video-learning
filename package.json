@@ -41,6 +41,7 @@
     "split": "node scripts/capcut-split.ts",
     "render": "remotion render",
     "render:all": "python -I -X utf8 scripts/render_all.py",
+    "render:resume": "python -I -X utf8 scripts/render_all.py --resume",
     "still": "remotion still",
     "build": "remotion bundle",
     "upgrade": "remotion upgrade",
