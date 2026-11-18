@@ -1,9 +1,9 @@
 {
-  "episodeId": "ep06",
+  "episodeId": "c18e06",
   "generatedAt": "2026-11-18T05:44:36.430Z",
   "scenes": {
     "s01": {
-      "file": "voice/ep06/s01.mp3",
+      "file": "voice/c18e06/s01.mp3",
       "durationSeconds": 12.141,
       "provider": "gemini",
       "words": [
@@ -245,7 +245,7 @@
       ]
     },
     "s02": {
-      "file": "voice/ep06/s02.mp3",
+      "file": "voice/c18e06/s02.mp3",
       "durationSeconds": 15.558,
       "provider": "gemini",
       "words": [
@@ -562,7 +562,7 @@
       ]
     },
     "s03": {
-      "file": "voice/ep06/s03.mp3",
+      "file": "voice/c18e06/s03.mp3",
       "durationSeconds": 16.034,
       "provider": "gemini",
       "words": [
@@ -919,7 +919,7 @@
       ]
     },
     "s03b": {
-      "file": "voice/ep06/s03b.mp3",
+      "file": "voice/c18e06/s03b.mp3",
       "durationSeconds": 23.829,
       "provider": "gemini",
       "words": [
@@ -1421,7 +1421,7 @@
       ]
     },
     "s04": {
-      "file": "voice/ep06/s04.mp3",
+      "file": "voice/c18e06/s04.mp3",
       "durationSeconds": 8.458,
       "provider": "gemini",
       "words": [
@@ -1613,7 +1613,7 @@
       ]
     },
     "p1end": {
-      "file": "voice/ep06/p1end.mp3",
+      "file": "voice/c18e06/p1end.mp3",
       "durationSeconds": 3.854,
       "provider": "gemini",
       "words": [
@@ -1700,7 +1700,7 @@
       ]
     },
     "p2hook": {
-      "file": "voice/ep06/p2hook.mp3",
+      "file": "voice/c18e06/p2hook.mp3",
       "durationSeconds": 6.133,
       "provider": "gemini",
       "words": [
@@ -1837,7 +1837,7 @@
       ]
     },
     "s05": {
-      "file": "voice/ep06/s05.mp3",
+      "file": "voice/c18e06/s05.mp3",
       "durationSeconds": 18.979,
       "provider": "gemini",
       "words": [
@@ -2234,7 +2234,7 @@
       ]
     },
     "s06": {
-      "file": "voice/ep06/s06.mp3",
+      "file": "voice/c18e06/s06.mp3",
       "durationSeconds": 20.662,
       "provider": "gemini",
       "words": [
@@ -2626,7 +2626,7 @@
       ]
     },
     "s06b": {
-      "file": "voice/ep06/s06b.mp3",
+      "file": "voice/c18e06/s06b.mp3",
       "durationSeconds": 21.03,
       "provider": "gemini",
       "words": [
@@ -3063,7 +3063,7 @@
       ]
     },
     "s07": {
-      "file": "voice/ep06/s07.mp3",
+      "file": "voice/c18e06/s07.mp3",
       "durationSeconds": 2.907,
       "provider": "gemini",
       "words": [
@@ -3135,7 +3135,7 @@
       ]
     },
     "s08": {
-      "file": "voice/ep06/s08.mp3",
+      "file": "voice/c18e06/s08.mp3",
       "durationSeconds": 18.071,
       "provider": "gemini",
       "words": [
@@ -3532,7 +3532,7 @@
       ]
     },
     "s09": {
-      "file": "voice/ep06/s09.mp3",
+      "file": "voice/c18e06/s09.mp3",
       "durationSeconds": 17.661,
       "provider": "gemini",
       "words": [
@@ -3884,7 +3884,7 @@
       ]
     },
     "p2end": {
-      "file": "voice/ep06/p2end.mp3",
+      "file": "voice/c18e06/p2end.mp3",
       "durationSeconds": 3.554,
       "provider": "gemini",
       "words": [
@@ -3971,7 +3971,7 @@
       ]
     },
     "p3hook": {
-      "file": "voice/ep06/p3hook.mp3",
+      "file": "voice/c18e06/p3hook.mp3",
       "durationSeconds": 6.196,
       "provider": "gemini",
       "words": [
@@ -4103,7 +4103,7 @@
       ]
     },
     "s10": {
-      "file": "voice/ep06/s10.mp3",
+      "file": "voice/c18e06/s10.mp3",
       "durationSeconds": 23.032,
       "provider": "gemini",
       "words": [
@@ -4590,7 +4590,7 @@
       ]
     },
     "s11": {
-      "file": "voice/ep06/s11.mp3",
+      "file": "voice/c18e06/s11.mp3",
       "durationSeconds": 23.975,
       "provider": "gemini",
       "words": [
@@ -5077,7 +5077,7 @@
       ]
     },
     "s11b": {
-      "file": "voice/ep06/s11b.mp3",
+      "file": "voice/c18e06/s11b.mp3",
       "durationSeconds": 23.194,
       "provider": "gemini",
       "words": [
@@ -5549,7 +5549,7 @@
       ]
     },
     "s12": {
-      "file": "voice/ep06/s12.mp3",
+      "file": "voice/c18e06/s12.mp3",
       "durationSeconds": 21.099,
       "provider": "gemini",
       "words": [
@@ -5966,7 +5966,7 @@
       ]
     },
     "s13": {
-      "file": "voice/ep06/s13.mp3",
+      "file": "voice/c18e06/s13.mp3",
       "durationSeconds": 25.045,
       "provider": "gemini",
       "words": [
@@ -6498,7 +6498,7 @@
       ]
     },
     "p3end": {
-      "file": "voice/ep06/p3end.mp3",
+      "file": "voice/c18e06/p3end.mp3",
       "durationSeconds": 4.274,
       "provider": "gemini",
       "words": [

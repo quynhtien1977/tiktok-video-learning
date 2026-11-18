@@ -1,7 +1,7 @@
 /**
  * Soi độ khớp giữa animation và lời nói, từng dòng một.
  *
- *   npm run cues -- --ep ep01
+ *   npm run cues -- --ep c18e01
  *
  * In ra: mỗi bullet / mỗi bước sơ đồ rơi vào giây nào, và lúc đó giọng đang nói gì.
  * Cột cuối là chẩn đoán:
@@ -14,7 +14,7 @@ import path from "node:path";
 import { argOf, loadEpisode, voiceDir } from "./lib.ts";
 import type { Word } from "../src/types.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const episode = loadEpisode(episodeId);
 const manifestPath = path.join(voiceDir(episodeId), "manifest.json");
 if (!existsSync(manifestPath)) {

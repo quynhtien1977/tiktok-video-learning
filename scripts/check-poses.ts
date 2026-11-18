@@ -1,7 +1,7 @@
 /**
  * Soi tư thế nhân vật của từng scene, và những chỗ màn hình đứng im quá lâu.
  *
- *   npm run poses -- --ep ep01
+ *   npm run poses -- --ep c18e01
  *
  * Dùng **chính hàm `resolvePoseTimeline` mà video đang chạy**, không chép lại logic —
  * nên số in ra ở đây luôn đúng bằng thứ người xem thấy.
@@ -25,7 +25,7 @@ const TAIL_DEFAULT = 0.4;
 // đó là báo động giả — hook và scene câu hỏi vốn chỉ dài 5–7 giây.
 const MIN_SCENE_FOR_CHANGE_MS = 3000 * 2 + 2000 * 2;
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const episode = loadEpisode(episodeId);
 const manifestPath = path.join(voiceDir(episodeId), "manifest.json");
 if (!existsSync(manifestPath)) {

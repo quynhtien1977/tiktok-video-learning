@@ -1,7 +1,7 @@
 /**
  * Xuất lời thoại ra file text để dán vào CapCut (Đọc văn bản / Text-to-speech).
  *
- *   node scripts/capcut-export.ts --ep ep01
+ *   node scripts/capcut-export.ts --ep c18e01
  *
  * CapCut không có API công khai => bước tạo giọng là thủ công, nhưng tên file
  * và thứ tự thì cố định, nên pipeline vẫn tự động hoá được phần còn lại.
@@ -10,7 +10,7 @@ import { writeFileSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { argOf, loadEpisode, root } from "./lib.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const episode = loadEpisode(episodeId);
 const outDir = path.join(root, "capcut");
 mkdirSync(outDir, { recursive: true });

@@ -1,5 +1,5 @@
 {
-  "id": "ep02",
+  "id": "c18e02",
   "episodeNumber": 2,
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "SOAP và WSDL: mô tả một service thế nào",
@@ -288,7 +288,10 @@
         "dài"
       ],
       "poses": [
-        { "after": "quá nặng.", "pose": "think-doubt" }
+        {
+          "after": "quá nặng.",
+          "pose": "think-doubt"
+        }
       ],
       "narration": "Câu hỏi đó chính là điều mà cả ngành đã hỏi! <laugh> Giáo trình ghi thẳng rằng bộ chuẩn này bị chê là heavyweight, tức quá nặng. Nó quá tổng quát so với phần lớn nhu cầu thực tế. Mỗi lần gọi là một lần gói và mở một đống XML. Và bản thân tài liệu WSDL viết ra thì dài, khó đọc với người. Chính sự nặng nề đó sinh ra một cách làm khác, nhẹ hơn hẳn. <cheer>"
     },

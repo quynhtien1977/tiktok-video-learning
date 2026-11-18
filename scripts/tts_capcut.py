@@ -2,7 +2,7 @@
 """
 Sinh voiceover bằng CapCut TTS (API không chính thức, qua vendor/capcut-tts-api).
 
-    python -I scripts/tts_capcut.py --ep ep01 [--force] [--only s03] [--voice BV075_streaming]
+    python -I scripts/tts_capcut.py --ep c18e01 [--force] [--only s03] [--voice BV075_streaming]
     python -I scripts/tts_capcut.py --list-voices
 
 Khác với SDK gốc:
@@ -193,7 +193,7 @@ def restore_case(utterances, narration):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--ep", default="ep01")
+    ap.add_argument("--ep", default="c18e01")
     ap.add_argument("--only")
     ap.add_argument("--voice", help="ghi de voice_type, vi du BV075_streaming")
     ap.add_argument("--rate", default="1.0", help="CapCut BO QUA rate - dung speed trong JSON")

@@ -1,7 +1,7 @@
 /**
  * Sinh voiceover bằng Azure AI Speech, mỗi scene 1 file mp3 + timing từng chữ.
  *
- *   node --env-file-if-exists=.env scripts/tts-azure.ts --ep ep01 [--force] [--only s03]
+ *   node --env-file-if-exists=.env scripts/tts-azure.ts --ep c18e01 [--force] [--only s03]
  *
  * Scene nào khai báo voice.provider = "capcut" sẽ được bỏ qua (xem scripts/capcut.ts).
  */
@@ -11,7 +11,7 @@ import { execFileSync } from "node:child_process";
 import path from "node:path";
 import { argOf, hasFlag, loadEpisode, voiceDir } from "./lib.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const only = argOf("only");
 const force = hasFlag("force");
 

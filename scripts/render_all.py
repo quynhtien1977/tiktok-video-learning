@@ -3,7 +3,7 @@
 
     python -I -X utf8 scripts/render_all.py              # tất cả
     python -I -X utf8 scripts/render_all.py --vertical   # chỉ bản dọc
-    python -I -X utf8 scripts/render_all.py --ep ep03    # một tập
+    python -I -X utf8 scripts/render_all.py --ep c18e03    # một tập
     python -I -X utf8 scripts/render_all.py --resume     # chỉ render bản đã cũ
 
 Bản ngang ra `out/epNN.mp4`, bản dọc ra `out/tiktok/epNN-pK.mp4` (TIKTOK.md đăng theo
@@ -75,7 +75,8 @@ def main():
     ap.add_argument("--resume", action="store_true", help="bỏ qua bản đã mới hơn mọi đầu vào")
     a = ap.parse_args()
 
-    eps = sorted((ROOT / "content").glob("ep[0-9][0-9].json"))
+    # Tên tập theo chương: cCCeEE (c18e01 = Chapter 18, tập 1). ep00 là tập thử giọng, không render.
+    eps = sorted((ROOT / "content").glob("c[0-9][0-9]e[0-9][0-9].json"))
     eps = [e for e in eps if e.stem != "ep00" and (not a.ep or e.stem == a.ep)]
 
     shared = newest(SHARED_INPUTS) if a.resume else 0.0

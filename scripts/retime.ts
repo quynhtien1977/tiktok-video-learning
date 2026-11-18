@@ -1,9 +1,9 @@
 /**
  * Chỉnh lại nhịp đọc của một tập đã sinh, không gọi API lần nào.
  *
- *   node scripts/retime.ts --ep ep03 --target 19.0               # cả tập một hệ số
- *   node scripts/retime.ts --ep ep03 --target 19.0 --per-scene   # mỗi scene một hệ số
- *   node scripts/retime.ts --ep ep03 --factor 0.85               # ép thẳng hệ số
+ *   node scripts/retime.ts --ep c18e03 --target 19.0               # cả tập một hệ số
+ *   node scripts/retime.ts --ep c18e03 --target 19.0 --per-scene   # mỗi scene một hệ số
+ *   node scripts/retime.ts --ep c18e03 --factor 0.85               # ép thẳng hệ số
  *
  * Vì sao cần: mỗi engine, mỗi tầng key đọc một nhịp khác nhau. Gateway bỏ qua `style`
  * nên bản qua gateway đọc chậm hơn, bù bằng `speed` thì hay quá tay. Script này đo
@@ -22,7 +22,7 @@ import path from "node:path";
 import { argOf, hasFlag, loadEpisode, voiceDir } from "./lib.ts";
 import type { Word } from "../src/types.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const target = Number(argOf("target", "0"));
 const forced = Number(argOf("factor", "0"));
 const perScene = hasFlag("per-scene");

@@ -18,7 +18,7 @@ cắt thành 18 video dọc.
 Dây chuyền:
 
 ```
-docs/*.pptx  →  content/epNN.json  →  public/voice/epNN/*.mp3 + manifest.json  →  out/
+docs/*.pptx  →  content/cCCeEE.json  →  public/voice/cCCeEE/*.mp3 + manifest.json  →  out/
  (đọc slide)    (script, agent viết)   (Gemini TTS + align + sync + retime)     (Remotion)
 ```
 
@@ -33,7 +33,7 @@ Chủ dự án là sinh viên, làm video để tự ôn thi và đăng TikTok. 
 | Giọng đọc + tag cảm xúc | **xong cả 6 tập** — 29–36 tag mỗi tập, 7–9 loại, 69–94% là tag nghe ra tiếng |
 | Nhịp đọc | trung vị **đúng 19,0** ký tự/giây ở cả 6 tập (dao động 17,7–20,6) |
 | Tư thế nhân vật | **xong** — 0,80–1,33 lần đổi mỗi scene, 12–17 tư thế mỗi tập |
-| Khoảng chết >6s | 94/97 đã lấp; 3 chỗ còn lại ở ep01, ep03, ep05 (mỗi tập một chỗ) |
+| Khoảng chết >6s | 94/97 đã lấp; 3 chỗ còn lại ở c18e01, c18e03, c18e05 (mỗi tập một chỗ) |
 | Mốc animation (`npm run cues`) | cả 6 tập "Tất cả mốc đều bám lời nói" |
 | **24 video trong `out/`** | **xong, render ngày 2026-11-18**, khớp với giọng hiện tại |
 | `TIKTOK.md` | thời lượng đo từ chính file mp4 đã render |
@@ -49,7 +49,7 @@ Theo `TIKTOK.md`: một video mỗi ngày, đúng thứ tự tập và phần.
 ### 3.2. Chương tiếp theo
 
 Xem `OUTLINE.md` để biết chương nào làm tiếp. Quy trình y như Chapter 18:
-đọc slide → viết `content/epNN.json` (kèm tag cảm xúc ngay từ đầu, đừng để thêm sau) →
+đọc slide → viết `content/cCCeEE.json` (kèm tag cảm xúc ngay từ đầu, đừng để thêm sau) →
 sinh giọng → align → sync → retime → sync → `cues` → `poses` → render.
 
 Bài học từ Chapter 18: **viết tag ngay lúc viết script**. Thêm tag sau nghĩa là sinh lại
@@ -57,7 +57,7 @@ giọng gần như toàn bộ — Chapter 18 tốn ~130 lượt TTS chỉ cho vi
 
 ### 3.3. Ba khoảng chết nhỏ còn sót (tuỳ chọn)
 
-`npm run poses -- --ep ep01` (và ep03, ep05) chỉ đích danh từng chỗ. Không cản việc đăng.
+`npm run poses -- --ep c18e01` (và c18e03, c18e05) chỉ đích danh từng chỗ. Không cản việc đăng.
 
 ### 3.4. Commit và push
 
@@ -68,7 +68,7 @@ Chủ dự án tự push. Agent chỉ commit, chia theo chủ đề.
 ```bash
 npm run render:resume             # CHỈ render bản đã cũ hơn đầu vào — dùng cái này
 npm run render:all                # render lại tất cả từ đầu
-npm run render:all -- --ep ep03   # một tập
+npm run render:all -- --ep c18e03   # một tập
 ```
 
 Một lượt đủ 24 bản mất ~60 phút. Từng có lần tắt máy giữa chừng phải chạy lại cả tiếng cho
@@ -78,14 +78,14 @@ Một lượt đủ 24 bản mất ~60 phút. Từng có lần tắt máy giữa
 
 ```
 npm run quota                                        # xem còn bao nhiêu lượt
-rm public/voice/epNN/<scene>.words.json              # BẮT BUỘC cho scene vừa đổi lời
-npm run voice:gemini -- --ep epNN --only s01,s02 --force --free
-python -I -X utf8 scripts/align_stt.py --ep epNN
-npm run sync   -- --ep epNN
-npm run retime -- --ep epNN --target 19.0 --per-scene
-npm run sync   -- --ep epNN                          # chạy sync LẦN NỮA
-npm run cues   -- --ep epNN                          # phải in "Tất cả mốc đều bám lời nói"
-npm run poses  -- --ep epNN                          # soi tư thế và khoảng chết
+rm public/voice/cCCeEE/<scene>.words.json              # BẮT BUỘC cho scene vừa đổi lời
+npm run voice:gemini -- --ep cCCeEE --only s01,s02 --force --free
+python -I -X utf8 scripts/align_stt.py --ep cCCeEE
+npm run sync   -- --ep cCCeEE
+npm run retime -- --ep cCCeEE --target 19.0 --per-scene
+npm run sync   -- --ep cCCeEE                          # chạy sync LẦN NỮA
+npm run cues   -- --ep cCCeEE                          # phải in "Tất cả mốc đều bám lời nói"
+npm run poses  -- --ep cCCeEE                          # soi tư thế và khoảng chết
 ```
 
 Ba cái bẫy đã dính, đừng dính lại:
@@ -174,7 +174,7 @@ thông báo: nó phân biệt hết tiền / lỗi mạng / hết lượt, ba c�
 | `npm run poses` | soi tư thế nhân vật và **khoảng chết** |
 | `npm run sprites` | căn khung lại cho sprite nhân vật |
 | `npm run sfx:ui` | sinh lại bộ hiệu ứng âm thanh |
-| `npm run render:all` | render trọn bộ, `--vertical` / `--horizontal` / `--ep epNN` |
+| `npm run render:all` | render trọn bộ, `--vertical` / `--horizontal` / `--ep cCCeEE` |
 | `npm run render:resume` | chỉ render bản đã cũ hơn đầu vào — chạy tiếp sau khi bị ngắt |
 
 `npm run poses` import thẳng hàm thật từ `src/poses.ts`, nên số nó in ra luôn đúng bằng thứ

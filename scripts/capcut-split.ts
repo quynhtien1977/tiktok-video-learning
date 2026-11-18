@@ -1,7 +1,7 @@
 /**
  * Cắt 1 file audio dài (xuất từ CapCut) thành từng scene, dựa trên khoảng lặng.
  *
- *   node scripts/capcut-split.ts --ep ep01 --in capcut/ep01-raw.mp3 [--noise -32dB] [--min 0.6]
+ *   node scripts/capcut-split.ts --ep c18e01 --in capcut/c18e01-raw.mp3 [--noise -32dB] [--min 0.6]
  *
  * Script chọn đúng (số scene - 1) khoảng lặng dài nhất làm điểm cắt, nên hãy
  * để một dòng trống giữa các scene khi dán text vào CapCut.
@@ -11,7 +11,7 @@ import { existsSync, mkdirSync } from "node:fs";
 import path from "node:path";
 import { argOf, loadEpisode, root, voiceDir } from "./lib.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const input = argOf("in");
 const noise = argOf("noise", "-32dB")!;
 const minSilence = Number(argOf("min", "0.6"));

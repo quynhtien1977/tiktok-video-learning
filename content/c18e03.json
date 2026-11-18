@@ -1,5 +1,5 @@
 {
-  "id": "ep03",
+  "id": "c18e03",
   "episodeNumber": 3,
   "seriesTitle": "Service-oriented Software Engineering",
   "title": "RESTful services",
@@ -82,7 +82,10 @@
         "representation"
       ],
       "poses": [
-        { "after": "catalog,", "pose": "point-explain" }
+        {
+          "after": "catalog,",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Đơn vị cơ bản của REST là resource. Một resource đơn giản là một mẩu dữ liệu: một catalog, một hồ sơ bệnh án, một chương sách. Mỗi resource có một địa chỉ riêng. <throat-clearing> Và đây là chỗ cái tên của nó bắt nguồn: một resource có thể tồn tại dưới nhiều representation, tức nhiều định dạng. Cùng một chương sách có thể là bản Word, bản PDF, hay bản hiển thị trên trình duyệt."
     },
@@ -100,7 +103,10 @@
         "DELETE"
       ],
       "poses": [
-        { "after": "được nữa.", "pose": "point-explain" }
+        {
+          "after": "được nữa.",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Và đây là phần đẹp nhất của REST. Với một resource, bạn chỉ có đúng bốn thao tác. POST để tạo resource mới. GET để đọc, trả về một representation của nó. <cheer> PUT để cập nhật giá trị. Và DELETE để xoá, làm nó không còn truy cập được nữa. Bốn thao tác này chính là bốn việc của CRUD, và chúng ánh xạ thẳng sang bốn HTTP verb."
     },
@@ -120,7 +126,10 @@
         "đoán"
       ],
       "poses": [
-        { "after": "xoá bỏ.", "pose": "point-explain" }
+        {
+          "after": "xoá bỏ.",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Nghe chỉ có bốn thao tác thì tưởng thiếu, <chuckle> nhưng thực ra đủ. Vì mọi việc làm với dữ liệu, xét cho cùng, đều quy về bốn việc: tạo mới, đọc ra, sửa đi, xoá bỏ. Và cái hay là bốn verb này đã nằm sẵn trong giao thức HTTP từ lâu, REST không phát minh gì thêm. <cheer> Hệ quả rất dễ chịu: nhìn một URL cùng với verb là bên gọi đoán được chuyện gì sắp xảy ra, không cần đọc tài liệu."
     },
@@ -159,7 +168,10 @@
         "danh sách"
       ],
       "poses": [
-        { "after": "gọi hàm.", "pose": "point-explain" }
+        {
+          "after": "gọi hàm.",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Khác biệt lớn nhất so với SOAP nằm ở cách truy cập. <throat-clearing> Dữ liệu lộ thẳng ra qua URL chứ không giấu sau một lớp gọi hàm. Muốn xem nhiệt độ của một thành phố thì gọi URL chứa tên thành phố đó. Muốn lọc theo ngày thì thêm query parameter vào sau. <chuckle> Và khi kết quả là nhiều resource, service trả về luôn danh sách URL của từng cái, bạn cứ thế đi tiếp."
     },
@@ -179,7 +191,10 @@
         "trình duyệt"
       ],
       "poses": [
-        { "after": "nào cả.", "pose": "point-explain" }
+        {
+          "after": "nào cả.",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Vì sao gọi là nhẹ hơn. <throat-clearing> Thứ nhất, không phải gói mỗi lần gọi vào một phong bì XML. Thứ hai, nó dùng thẳng giao thức HTTP có sẵn chứ không chồng thêm tầng nào lên trên. <cheer> Thứ ba, hệ quả của hai điều trên: chỉ cần trình duyệt là gọi thử được, không cần thư viện riêng nào cả. Chi phí mỗi lần gọi thấp hơn hẳn so với cái mà giáo trình gọi là big web services."
     },
@@ -241,8 +256,14 @@
         "tách"
       ],
       "poses": [
-        { "after": "một vật.", "pose": "think-doubt" },
-        { "after": "bằng GET.", "pose": "point-explain" }
+        {
+          "after": "một vật.",
+          "pose": "think-doubt"
+        },
+        {
+          "after": "bằng GET.",
+          "pose": "point-explain"
+        }
       ],
       "narration": "Nói interface phức tạp thì khó nặn thành resource, nghe cũng trừu tượng, nên lấy luôn ví dụ sẽ gặp ở tập năm. <throat-clearing> So sánh bốn sản phẩm theo sáu tiêu chí: đó rõ ràng là một hành động chứ không phải một vật. REST chỉ biết thao tác trên vật, nên bạn buộc phải bịa ra một resource mới chỉ để chứa bảng kết quả so sánh, rồi tạo nó bằng POST và lấy về bằng GET. <sigh> Một việc đơn giản bị tách thành mấy bước."
     },

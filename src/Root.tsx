@@ -5,16 +5,16 @@ import { EpisodeVideo, calculateEpisodeMetadata, partsOf } from "./Episode";
 import { theme } from "./theme";
 import type { Episode } from "./types";
 
-// Thêm 1 dòng import cho mỗi tập mới
+// Thêm 1 dòng import cho mỗi tập mới. Tên theo chương: cCCeEE (c18e01 = Chapter 18, tập 1)
 import ep00 from "../content/ep00.json";
-import ep01 from "../content/ep01.json";
-import ep02 from "../content/ep02.json";
-import ep03 from "../content/ep03.json";
-import ep04 from "../content/ep04.json";
-import ep05 from "../content/ep05.json";
-import ep06 from "../content/ep06.json";
+import c18e01 from "../content/c18e01.json";
+import c18e02 from "../content/c18e02.json";
+import c18e03 from "../content/c18e03.json";
+import c18e04 from "../content/c18e04.json";
+import c18e05 from "../content/c18e05.json";
+import c18e06 from "../content/c18e06.json";
 
-const episodes = [ep01, ep02, ep03, ep04, ep05, ep06, ep00] as unknown as Episode[];
+const episodes = [c18e01, c18e02, c18e03, c18e04, c18e05, c18e06, ep00] as unknown as Episode[];
 
 /**
  * Mỗi tập sinh ra:

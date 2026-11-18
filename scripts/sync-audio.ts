@@ -2,7 +2,7 @@
  * Đọc mọi file audio trong public/voice/<ep>/ và sinh manifest.json
  * (thời lượng thật + timing từng chữ nếu có). Remotion lấy timeline từ file này.
  *
- *   node scripts/sync-audio.ts --ep ep01
+ *   node scripts/sync-audio.ts --ep c18e01
  */
 import { readFileSync, writeFileSync, existsSync, mkdirSync, renameSync } from "node:fs";
 import { execFileSync } from "node:child_process";
@@ -10,7 +10,7 @@ import path from "node:path";
 import { argOf, loadEpisode, probeDuration, voiceDir } from "./lib.ts";
 import { resolveCues } from "./cues.ts";
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const episode = loadEpisode(episodeId);
 const dir = voiceDir(episodeId);
 mkdirSync(dir, { recursive: true });

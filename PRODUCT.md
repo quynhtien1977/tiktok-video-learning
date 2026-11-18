@@ -28,7 +28,7 @@ Sơ đồ lấy thẳng từ slide gốc (EMF vector) nên nội dung không sai
 ## Operating Context
 
 - Nguồn: `docs/*.pptx` (25 chương). Chapter 18 làm trước, các chương khác xếp theo `OUTLINE.md`.
-- Pipeline: viết `content/epNN.json` → sinh giọng → căn timing → `sync` → render Remotion.
+- Pipeline: viết `content/cCCeEE.json` → sinh giọng → căn timing → `sync` → render Remotion.
 - Giọng: Azure MAI-Voice (`vi-VN-Grant` host, `vi-VN-Harper` hỏi); CapCut TTS là đường lui.
 - Phụ đề: chữ lấy từ script, thời gian lấy từ STT CapCut, căn bằng Needleman-Wunsch.
 - Phát hành: xem/ôn riêng và chia sẻ nhóm lớp; có thể cắt tập thành nhiều phần ngắn đăng TikTok.
@@ -52,7 +52,7 @@ Sơ đồ lấy thẳng từ slide gốc (EMF vector) nên nội dung không sai
 
 - `docs/` — 25 file slide gốc của môn học.
 - `public/images/ch18/` — 12 sơ đồ Chapter 18 đã trích từ EMF, 3x, nền trắng.
-- `out/ep01-service-va-soa.mp4` — tập 1 bản đầu, 5 phút 29 giây, đã render thật.
+- `out/c18e01-service-va-soa.mp4` — tập 1 bản đầu, 5 phút 29 giây, đã render thật.
 - `OUTLINE.md` — dàn ý 6 tập Chapter 18 và lộ trình 24 chương còn lại.
 - Chưa có: logo, nhạc nền, ảnh thumbnail. Không được bịa số liệu hay nguồn ngoài giáo trình.
 

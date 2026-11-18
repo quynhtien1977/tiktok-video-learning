@@ -10,7 +10,7 @@ Remotion. Đang làm Chapter 18: 6 tập, xuất hai khổ — 16:9 cho YouTube 
 cho TikTok.
 
 ```
-docs/*.pptx → content/epNN.json → public/voice/epNN/*.mp3 + manifest.json → out/
+docs/*.pptx → content/cCCeEE.json → public/voice/cCCeEE/*.mp3 + manifest.json → out/
   (slide)      (script, agent viết)   (Gemini TTS + align + sync + retime)   (Remotion)
 ```
 
@@ -55,11 +55,11 @@ một vòng thử sai đã tốn thời gian thật.
 
 ```bash
 npm run quota                      # còn bao nhiêu lượt Gemini hôm nay
-npm run voice:gemini -- --ep ep01 --only s01,s02 --force --free
-npm run sync   -- --ep ep01        # manifest + mốc animation + chuẩn âm lượng
-npm run retime -- --ep ep01 --target 19.0 --per-scene
-npm run cues   -- --ep ep01        # mốc animation có bám lời nói không
-npm run poses  -- --ep ep01        # tư thế nhân vật và "khoảng chết"
+npm run voice:gemini -- --ep c18e01 --only s01,s02 --force --free
+npm run sync   -- --ep c18e01        # manifest + mốc animation + chuẩn âm lượng
+npm run retime -- --ep c18e01 --target 19.0 --per-scene
+npm run cues   -- --ep c18e01        # mốc animation có bám lời nói không
+npm run poses  -- --ep c18e01        # tư thế nhân vật và "khoảng chết"
 npm run sprites                    # căn khung lại cho sprite
 npm run sfx:ui                     # sinh lại bộ hiệu ứng âm thanh
 npm run render:all                 # render trọn bộ
@@ -98,7 +98,7 @@ giữa chúng, trong một lượt.
 ## Bản đồ thư mục
 
 ```
-content/epNN.json        script từng tập — nguồn duy nhất cho giọng đọc và phụ đề
+content/cCCeEE.json        script từng tập — nguồn duy nhất cho giọng đọc và phụ đề
 src/
   Episode.tsx            dựng timeline từ manifest, gắn hiệu ứng âm thanh
   poses.ts               chọn tư thế nhân vật theo nội dung lời thoại
@@ -107,7 +107,7 @@ src/
   scenes/index.tsx       10 kiểu scene: title, bullets, diagram, question, hook, endcard…
   diagrams/index.tsx     sơ đồ vẽ bằng code, có bản riêng cho khổ dọc
 scripts/                 dây chuyền giọng đọc, đo đạc, render — đọc phần đầu mỗi file
-public/voice/epNN/       mp3 + manifest.json + words.json (script sinh ra)
+public/voice/cCCeEE/       mp3 + manifest.json + words.json (script sinh ra)
 public/characters/       sprite nhân vật (gitignore)
 public/sfx/ui/           hiệu ứng âm thanh (sinh bằng npm run sfx:ui)
 out/                     video render ra (gitignore)

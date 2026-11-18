@@ -1,7 +1,7 @@
 /**
  * Chèn tiếng phi lời nói (cười, thở dài, hừm) vào GIỮA câu đã tổng hợp.
  *
- *   node scripts/insert-sfx.ts --ep ep01
+ *   node scripts/insert-sfx.ts --ep c18e01
  *
  * Vì sao cần: Azure MAI và CapCut đều KHÔNG hiểu audio tag kiểu ElevenLabs — viết
  * "[laughs]" thì chúng đọc thành chữ "laughs" (đã đo: +0.67s đúng bằng thời gian đọc từ đó).
@@ -23,7 +23,7 @@ import type { Word } from "../src/types.ts";
 
 type Insert = { after: string; file: string; gainDb?: number; overlap?: number };
 
-const episodeId = argOf("ep", "ep01")!;
+const episodeId = argOf("ep", "c18e01")!;
 const only = argOf("only");
 const force = hasFlag("force");
 
