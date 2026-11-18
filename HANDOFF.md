@@ -25,46 +25,54 @@ docs/*.pptx  →  content/epNN.json  →  public/voice/epNN/*.mp3 + manifest.jso
 Chủ dự án là sinh viên, làm video để tự ôn thi và đăng TikTok. Yêu cầu nhất quán suốt dự án:
 **giảng bằng tiếng Việt, giữ nguyên thuật ngữ tiếng Anh.**
 
-## 2. Trạng thái từng phần
+## 2. Trạng thái — Chapter 18 đã xong trọn vẹn
 
 | Phần | Trạng thái |
 |---|---|
-| Script 6 tập (`content/ep01..06.json`) | **xong** — 131 scene, cả 6 tập đã cấu hình đầy đủ poses & cues |
-| Giọng đọc 6 tập | **xong** — cả 6 tập đã qua TTS Gemini + STT CapCut + sync + retime (19.0 cps) |
-| Tag cảm xúc & Lấp khoảng chết | **xong cả 6 tập** — 98/100 khoảng chết (>6s) đã lấp, 0.8–1.24 lần đổi/scene, 12–17 tư thế/tập |
-| Nhân vật chibi | **xong** — 28 tư thế cho AN, 8×28 cho NỮ, đã căn khung |
-| Hệ chọn tư thế theo nội dung | **xong** (`src/poses.ts`) |
-| Hiệu ứng âm thanh UI | **xong** (`public/sfx/ui/`) |
-| Hook + endcard cho bản dọc | **xong** — 12 hook (part 2, 3) + 18 endcard |
-| Sửa phụ đề giật | **xong** |
-| Kế hoạch đăng TikTok (`TIKTOK.md`) | **xong** — caption, hashtag và thời lượng chuẩn từng frame cho 18 video dọc |
-| 24 video render (`out/`) | Sẵn sàng render (`npm run render:all` hoặc theo từng tập) |
+| Script 6 tập | **xong** — 131 scene |
+| Giọng đọc + tag cảm xúc | **xong cả 6 tập** — 29–36 tag mỗi tập, 7–9 loại, 69–94% là tag nghe ra tiếng |
+| Nhịp đọc | trung vị **đúng 19,0** ký tự/giây ở cả 6 tập (dao động 17,7–20,6) |
+| Tư thế nhân vật | **xong** — 0,80–1,33 lần đổi mỗi scene, 12–17 tư thế mỗi tập |
+| Khoảng chết >6s | 94/97 đã lấp; 3 chỗ còn lại ở ep01, ep03, ep05 (mỗi tập một chỗ) |
+| Mốc animation (`npm run cues`) | cả 6 tập "Tất cả mốc đều bám lời nói" |
+| **24 video trong `out/`** | **xong, render ngày 2026-11-18**, khớp với giọng hiện tại |
+| `TIKTOK.md` | thời lượng đo từ chính file mp4 đã render |
 
-## 3. Việc đã hoàn thành và việc còn lại
+Tổng: 18 video dọc **33,3 phút**, 6 video ngang **30,7 phút**.
 
-### 3.1. Đã hoàn thành toàn bộ dây chuyền nội dung 6 tập:
-1. **Tập 1**: 16/17 khoảng chết được lấp (1.00 lần đổi/scene, 17 tư thế). Cues 100% bám lời.
-2. **Tập 2**: 15/15 khoảng chết được lấp (0.96 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
-3. **Tập 3**: 13/14 khoảng chết được lấp (0.80 lần đổi/scene, 12 tư thế). Cues 100% bám lời.
-4. **Tập 4**: 16/16 khoảng chết được lấp (1.18 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
-5. **Tập 5**: 18/18 khoảng chết được lấp (0.95 lần đổi/scene, 13 tư thế). Cues 100% bám lời.
-6. **Tập 6**: 20/20 khoảng chết được lấp (1.24 lần đổi/scene, 15 tư thế). Cues 100% bám lời.
-7. Đã chạy kiểm tra `npx tsc --noEmit` và `npm run lint` đạt 100% không lỗi.
-8. Đã tính toán và cập nhật thời lượng chính xác của 18 clip dọc vào `TIKTOK.md`.
+## 3. Việc còn lại
 
-### 3.2. Việc còn lại (khi chủ dự án cần xuất file video):
+### 3.1. Đăng bài
 
-Render lại 24 bản (18 dọc + 6 ngang), khoảng 60 phút máy chạy:
+Theo `TIKTOK.md`: một video mỗi ngày, đúng thứ tự tập và phần.
 
-```bash
-npm run render:all                # cả hai khổ
-npm run render:all -- --vertical  # chỉ bản dọc
-npm run render:all -- --ep ep01   # render từng tập
-```
+### 3.2. Chương tiếp theo
+
+Xem `OUTLINE.md` để biết chương nào làm tiếp. Quy trình y như Chapter 18:
+đọc slide → viết `content/epNN.json` (kèm tag cảm xúc ngay từ đầu, đừng để thêm sau) →
+sinh giọng → align → sync → retime → sync → `cues` → `poses` → render.
+
+Bài học từ Chapter 18: **viết tag ngay lúc viết script**. Thêm tag sau nghĩa là sinh lại
+giọng gần như toàn bộ — Chapter 18 tốn ~130 lượt TTS chỉ cho việc đó.
+
+### 3.3. Ba khoảng chết nhỏ còn sót (tuỳ chọn)
+
+`npm run poses -- --ep ep01` (và ep03, ep05) chỉ đích danh từng chỗ. Không cản việc đăng.
 
 ### 3.4. Commit và push
 
 Chủ dự án tự push. Agent chỉ commit, chia theo chủ đề.
+
+### 3.5. Render
+
+```bash
+npm run render:resume             # CHỈ render bản đã cũ hơn đầu vào — dùng cái này
+npm run render:all                # render lại tất cả từ đầu
+npm run render:all -- --ep ep03   # một tập
+```
+
+Một lượt đủ 24 bản mất ~60 phút. Từng có lần tắt máy giữa chừng phải chạy lại cả tiếng cho
+3 bản đã xong — `render:resume` sinh ra từ đó. Log ghi ở `out/render.log`.
 
 ## 4. Quy trình sinh giọng — sai thứ tự là hỏng
 
@@ -93,9 +101,13 @@ Ba cái bẫy đã dính, đừng dính lại:
 
 ### Key và chi phí
 
-5 key free (≈50 lượt/ngày, reset theo ngày giờ Thái Bình Dương) + 1 key trả tiền
-**đã hết số dư** (còn 195đ, mỗi scene tốn ~230đ). Chủ dự án nói sẽ bỏ key trả tiền.
-Dùng `--free`. ~85 scene còn lại của tập 2–6 chạy gọn trong 2 ngày.
+5 key free (≈50 lượt/ngày, reset theo ngày giờ Thái Bình Dương — tức khoảng 15h giờ
+Việt Nam) + 1 key trả tiền **đã hết số dư**. Dùng `--free`.
+
+Lỗi mạng tạm thời (`fetch failed`, timeout, 429, 5xx) giờ được **thử lại 3 lần** tự động.
+Trước đây một lần `fetch failed` làm dừng cả lượt, lại in nhầm thành "hết quota", để lại
+một tập dở dang — 6 scene vừa mất giọng mới vừa mất timing. Nếu vẫn dừng thì đọc kỹ
+thông báo: nó phân biệt hết tiền / lỗi mạng / hết lượt, ba cái chữa ba kiểu.
 
 ## 5. Những điều đã đo được — đừng làm lại từ đầu
 
@@ -163,6 +175,7 @@ Dùng `--free`. ~85 scene còn lại của tập 2–6 chạy gọn trong 2 ngà
 | `npm run sprites` | căn khung lại cho sprite nhân vật |
 | `npm run sfx:ui` | sinh lại bộ hiệu ứng âm thanh |
 | `npm run render:all` | render trọn bộ, `--vertical` / `--horizontal` / `--ep epNN` |
+| `npm run render:resume` | chỉ render bản đã cũ hơn đầu vào — chạy tiếp sau khi bị ngắt |
 
 `npm run poses` import thẳng hàm thật từ `src/poses.ts`, nên số nó in ra luôn đúng bằng thứ
 người xem thấy. Giữ nguyên tính chất đó: **đừng chép lại logic tư thế sang chỗ khác.**
