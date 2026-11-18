@@ -1,0 +1,77 @@
+[
+  {
+    "text": "Phần",
+    "startMs": 50,
+    "endMs": 250
+  },
+  {
+    "text": "sau:",
+    "startMs": 300,
+    "endMs": 700
+  },
+  {
+    "text": "software",
+    "startMs": 700,
+    "endMs": 1201
+  },
+  {
+    "text": "engineering",
+    "startMs": 1201,
+    "endMs": 1901
+  },
+  {
+    "text": "khác",
+    "startMs": 1901,
+    "endMs": 1951
+  },
+  {
+    "text": "computer",
+    "startMs": 2101,
+    "endMs": 2501
+  },
+  {
+    "text": "science",
+    "startMs": 2501,
+    "endMs": 2852
+  },
+  {
+    "text": "ở",
+    "startMs": 2902,
+    "endMs": 3052
+  },
+  {
+    "text": "đâu.",
+    "startMs": 3052,
+    "endMs": 3302
+  },
+  {
+    "text": "Theo",
+    "startMs": 3302,
+    "endMs": 3402
+  },
+  {
+    "text": "dõi",
+    "startMs": 3402,
+    "endMs": 3652
+  },
+  {
+    "text": "để",
+    "startMs": 3652,
+    "endMs": 3802
+  },
+  {
+    "text": "khỏi",
+    "startMs": 3802,
+    "endMs": 3952
+  },
+  {
+    "text": "lỡ",
+    "startMs": 4002,
+    "endMs": 4152
+  },
+  {
+    "text": "nha.",
+    "startMs": 4302,
+    "endMs": 4529
+  }
+]

@@ -208,3 +208,69 @@ Gom theo cụm, mỗi cụm 4–8 tập, thứ tự dưới đây tôn trọng "
 3. **Hình từ slide**: trích ảnh có sẵn trong file .pptx ra `public/images/` (nhanh, đúng nguyên bản)
    hay vẽ lại bằng React cho sắc nét? Đề xuất: sơ đồ đơn giản (SOA triangle, REST verbs) vẽ lại,
    sơ đồ phức tạp (workflow, in-car system) lấy ảnh từ slide.
+
+---
+
+# CHAPTER 1 — Introduction (5 tập)
+
+Mã tập: `c01e01` … `c01e05`. Cả loạt đặt tên theo chương: `cCCeEE` (Chapter 18 là `c18e01..c18e06`).
+Chương gồm 3 chủ đề: *Professional software development · Software engineering ethics ·
+Case studies* (slide 2). Chương nhập môn nên nhẹ lý thuyết, nặng định nghĩa — đúng loại
+câu hỏi hay ra đề trắc nghiệm.
+
+**Viết tag cảm xúc ngay lúc viết script** — Chapter 18 thêm tag sau nên phải sinh lại giọng
+gần như toàn bộ.
+
+## Tập 1 — Software engineering là gì, và vì sao cần nó
+**Câu hỏi trung tâm**: Viết code thì ai cũng viết được, vậy software engineering thêm được gì?
+*Slides 3–5, 7, 12–13 · ~5 phút*
+
+1. Phần mềm ở khắp nơi: kinh tế mọi nước phát triển dựa vào nó; chi tiêu chiếm phần đáng kể GNP.
+2. Chi phí: phần mềm thường đắt hơn phần cứng; **bảo trì đắt hơn phát triển**.
+3. Hai lý do dự án thất bại: độ phức tạp tăng mãi · không dùng phương pháp SE.
+4. Định nghĩa gốc (học nguyên văn): *engineering discipline · all aspects of software production*.
+5. Phần mềm = **chương trình + tài liệu**.
+6. SE vs computer science vs systems engineering — sơ đồ `se-landscape`.
+7. Vì sao làm bài bản rẻ hơn về lâu dài · ba thách thức: đa dạng, giao nhanh, đáng tin.
+
+## Tập 2 — Thế nào là một phần mềm tốt
+**Câu hỏi trung tâm**: Chạy được rồi thì đã là phần mềm tốt chưa?
+*Slides 8–11, 14 · ~5 phút*
+
+1. Generic product vs customized product — **ai sở hữu bản đặc tả**.
+2. Bốn thuộc tính: **maintainability · dependability & security · efficiency · acceptability**.
+3. Bốn hoạt động của mọi quy trình: **specification · development · validation · evolution**.
+4. Chi phí: ~60% phát triển, ~40% kiểm thử; phần mềm đặt riêng thì evolution vượt cả development.
+5. Không có phương pháp tốt nhất: game làm bằng prototype, hệ safety-critical cần đặc tả đầy đủ.
+
+## Tập 3 — Không có một cách làm cho mọi loại phần mềm
+**Câu hỏi trung tâm**: Làm app điện thoại và làm phần mềm máy bay có giống nhau không?
+*Slides 15–25 · ~6 phút*
+
+1. Bốn vấn đề chung: heterogeneity · business & social change · security & trust · scale.
+2. Tám loại ứng dụng: stand-alone · interactive transaction-based · embedded control · batch ·
+   entertainment · modeling & simulation · data collection · systems of systems.
+3. Bốn nguyên tắc nền tảng đúng với mọi loại: quy trình được quản lý · dependability &
+   performance · quản lý requirements · reuse.
+4. Web software engineering: reuse · incremental & agile · service-oriented · rich interfaces; cloud.
+
+## Tập 4 — Đạo đức nghề nghiệp
+**Câu hỏi trung tâm**: Làm đúng luật đã đủ để là một kỹ sư tử tế chưa?
+*Slides 26–35 · ~5 phút*
+
+1. Trách nhiệm rộng hơn kỹ năng; đạo đức là hơn cả tuân thủ pháp luật.
+2. Bốn vấn đề: confidentiality · competence · intellectual property rights · computer misuse.
+3. ACM/IEEE Code of Ethics — 8 nguyên tắc: PUBLIC · CLIENT AND EMPLOYER · PRODUCT · JUDGMENT ·
+   MANAGEMENT · PROFESSION · COLLEAGUES · SELF.
+4. Tình huống khó xử: bất đồng với cấp trên · phát hành hệ safety-critical chưa test xong ·
+   tham gia hệ vũ khí.
+
+## Tập 5 — Bốn case study theo suốt giáo trình
+**Câu hỏi trung tâm**: Bốn hệ thống nào sẽ còn quay lại ở mọi chương sau?
+*Slides 36–55 · ~6 phút*
+
+1. **Insulin pump** — embedded, safety-critical (hình kiến trúc phần cứng, activity model).
+2. **Mentcare** — hệ thông tin bệnh nhân sức khoẻ tâm thần; privacy và safety.
+3. **Wilderness weather station** — hệ thu thập dữ liệu; ba hệ con.
+4. **iLearn** — service-oriented; utility / application / configuration services;
+   integrated vs independent services.

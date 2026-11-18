@@ -1,0 +1,352 @@
+[
+  {
+    "text": "Tóm",
+    "startMs": 0,
+    "endMs": 240
+  },
+  {
+    "text": "lại",
+    "startMs": 240,
+    "endMs": 400
+  },
+  {
+    "text": "ba",
+    "startMs": 400,
+    "endMs": 780
+  },
+  {
+    "text": "ý.",
+    "startMs": 780,
+    "endMs": 1160
+  },
+  {
+    "text": "Software",
+    "startMs": 1160,
+    "endMs": 1640
+  },
+  {
+    "text": "engineering",
+    "startMs": 1640,
+    "endMs": 2120
+  },
+  {
+    "text": "là",
+    "startMs": 2200,
+    "endMs": 2360
+  },
+  {
+    "text": "ngành",
+    "startMs": 2360,
+    "endMs": 2600
+  },
+  {
+    "text": "kỹ",
+    "startMs": 2600,
+    "endMs": 2720
+  },
+  {
+    "text": "thuật",
+    "startMs": 2760,
+    "endMs": 3000
+  },
+  {
+    "text": "lo",
+    "startMs": 3000,
+    "endMs": 3160
+  },
+  {
+    "text": "mọi",
+    "startMs": 3160,
+    "endMs": 3360
+  },
+  {
+    "text": "khía",
+    "startMs": 3360,
+    "endMs": 3560
+  },
+  {
+    "text": "cạnh",
+    "startMs": 3560,
+    "endMs": 3800
+  },
+  {
+    "text": "làm",
+    "startMs": 3800,
+    "endMs": 3920
+  },
+  {
+    "text": "ra",
+    "startMs": 3920,
+    "endMs": 4040
+  },
+  {
+    "text": "phần",
+    "startMs": 4080,
+    "endMs": 4200
+  },
+  {
+    "text": "mềm,",
+    "startMs": 4280,
+    "endMs": 4600
+  },
+  {
+    "text": "từ",
+    "startMs": 4600,
+    "endMs": 4720
+  },
+  {
+    "text": "đặc",
+    "startMs": 4720,
+    "endMs": 5040
+  },
+  {
+    "text": "tả",
+    "startMs": 5040,
+    "endMs": 5320
+  },
+  {
+    "text": "tới",
+    "startMs": 5320,
+    "endMs": 5480
+  },
+  {
+    "text": "bảo",
+    "startMs": 5520,
+    "endMs": 5640
+  },
+  {
+    "text": "trì.",
+    "startMs": 5720,
+    "endMs": 6120
+  },
+  {
+    "text": "Phần",
+    "startMs": 6360,
+    "endMs": 6480
+  },
+  {
+    "text": "mềm",
+    "startMs": 6520,
+    "endMs": 6720
+  },
+  {
+    "text": "là",
+    "startMs": 6840,
+    "endMs": 6960
+  },
+  {
+    "text": "chương",
+    "startMs": 6960,
+    "endMs": 7120
+  },
+  {
+    "text": "trình",
+    "startMs": 7120,
+    "endMs": 7400
+  },
+  {
+    "text": "cộng",
+    "startMs": 7400,
+    "endMs": 7640
+  },
+  {
+    "text": "tài",
+    "startMs": 7720,
+    "endMs": 7840
+  },
+  {
+    "text": "liệu,",
+    "startMs": 7920,
+    "endMs": 8200
+  },
+  {
+    "text": "và",
+    "startMs": 8280,
+    "endMs": 8400
+  },
+  {
+    "text": "bảo",
+    "startMs": 8440,
+    "endMs": 8520
+  },
+  {
+    "text": "trì",
+    "startMs": 8560,
+    "endMs": 8800
+  },
+  {
+    "text": "thường",
+    "startMs": 8800,
+    "endMs": 8960
+  },
+  {
+    "text": "đắt",
+    "startMs": 9040,
+    "endMs": 9200
+  },
+  {
+    "text": "hơn",
+    "startMs": 9200,
+    "endMs": 9400
+  },
+  {
+    "text": "làm",
+    "startMs": 9400,
+    "endMs": 9480
+  },
+  {
+    "text": "mới.",
+    "startMs": 9560,
+    "endMs": 9840
+  },
+  {
+    "text": "Còn",
+    "startMs": 9840,
+    "endMs": 10000
+  },
+  {
+    "text": "computer",
+    "startMs": 10040,
+    "endMs": 10480
+  },
+  {
+    "text": "science",
+    "startMs": 10480,
+    "endMs": 10920
+  },
+  {
+    "text": "lo",
+    "startMs": 10920,
+    "endMs": 11040
+  },
+  {
+    "text": "lý",
+    "startMs": 11080,
+    "endMs": 11240
+  },
+  {
+    "text": "thuyết,",
+    "startMs": 11240,
+    "endMs": 11640
+  },
+  {
+    "text": "systems",
+    "startMs": 11640,
+    "endMs": 12160
+  },
+  {
+    "text": "engineering",
+    "startMs": 12160,
+    "endMs": 12720
+  },
+  {
+    "text": "lo",
+    "startMs": 12720,
+    "endMs": 12880
+  },
+  {
+    "text": "cả",
+    "startMs": 12920,
+    "endMs": 13080
+  },
+  {
+    "text": "hệ",
+    "startMs": 13120,
+    "endMs": 13240
+  },
+  {
+    "text": "thống,",
+    "startMs": 13240,
+    "endMs": 13520
+  },
+  {
+    "text": "software",
+    "startMs": 13880,
+    "endMs": 14200
+  },
+  {
+    "text": "engineering",
+    "startMs": 14200,
+    "endMs": 14600
+  },
+  {
+    "text": "nằm",
+    "startMs": 14600,
+    "endMs": 14760
+  },
+  {
+    "text": "bên",
+    "startMs": 14760,
+    "endMs": 14920
+  },
+  {
+    "text": "trong",
+    "startMs": 14920,
+    "endMs": 15080
+  },
+  {
+    "text": "nó.",
+    "startMs": 15080,
+    "endMs": 15240
+  },
+  {
+    "text": "Tập",
+    "startMs": 15960,
+    "endMs": 16120
+  },
+  {
+    "text": "sau,",
+    "startMs": 16160,
+    "endMs": 16360
+  },
+  {
+    "text": "ta",
+    "startMs": 16480,
+    "endMs": 16640
+  },
+  {
+    "text": "xem",
+    "startMs": 16640,
+    "endMs": 16800
+  },
+  {
+    "text": "thế",
+    "startMs": 16800,
+    "endMs": 16960
+  },
+  {
+    "text": "nào",
+    "startMs": 16960,
+    "endMs": 17160
+  },
+  {
+    "text": "mới",
+    "startMs": 17160,
+    "endMs": 17320
+  },
+  {
+    "text": "là",
+    "startMs": 17360,
+    "endMs": 17480
+  },
+  {
+    "text": "một",
+    "startMs": 17480,
+    "endMs": 17680
+  },
+  {
+    "text": "phần",
+    "startMs": 17680,
+    "endMs": 17800
+  },
+  {
+    "text": "mềm",
+    "startMs": 17840,
+    "endMs": 17960
+  },
+  {
+    "text": "tốt.",
+    "startMs": 18000,
+    "endMs": 18250
+  }
+]

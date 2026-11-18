@@ -26,8 +26,9 @@ code. Bản gốc trước khi căn khung giữ ở `public/characters/.raw/`.
 **1. Khuôn mặt lệch giữa 8 bộ trang phục của NỮ.** Mỗi bộ sinh ở một lượt riêng nên ra 8
 khuôn mặt khác nhau: `braid-rose` mặt dài mắt hạnh nhân, `bun-bow` mặt tròn mắt to,
 `maroon-tee` tóc nâu chứ không đen. Trong cùng một bộ thì 28 tư thế giống hệt nhau — không
-sao cả. **Cách xử lý rẻ nhất: khoá một bộ cho cả loạt**, truyền `outfit` cố định thay vì để
-`pickOutfit()` xoay theo part.
+sao cả. **Chủ dự án chọn GIỮ việc xoay trang phục theo part** cho đa dạng, vì kênh chủ yếu
+đăng TikTok và người xem gặp từng part riêng lẻ. Muốn khoá cho một tập thì đặt `"outfit"`
+ở cấp tập.
 
 **2. Nét giống người thật chỉ ở quần áo và tóc.** Mũ nồi, kính tròn, áo đồng phục cổ đỏ,
 áo len đỏ — chuyển sang rất trung thực. Nhưng khuôn mặt theo khuôn mẫu chibi chung, không
@@ -75,5 +76,5 @@ weight, same flat cel shading, same level of detail. Only the pose differs.
 OUTPUT: N separate PNG files, transparent background, the SAME character in all of them.
 ```
 
-Bỏ file vào đúng thư mục ở bảng trên, chạy `npm run sprites`, rồi `npm run poses -- --ep ep01`
+Bỏ file vào đúng thư mục ở bảng trên, chạy `npm run sprites`, rồi `npm run poses -- --ep c18e01`
 để xem tư thế mới có được dùng không. Muốn dùng đích danh thì đặt `"pose"` trong scene.

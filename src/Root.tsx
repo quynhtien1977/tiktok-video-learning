@@ -13,8 +13,9 @@ import c18e03 from "../content/c18e03.json";
 import c18e04 from "../content/c18e04.json";
 import c18e05 from "../content/c18e05.json";
 import c18e06 from "../content/c18e06.json";
+import c01e01 from "../content/c01e01.json";
 
-const episodes = [c18e01, c18e02, c18e03, c18e04, c18e05, c18e06, ep00] as unknown as Episode[];
+const episodes = [c18e01, c18e02, c18e03, c18e04, c18e05, c18e06, c01e01, ep00] as unknown as Episode[];
 
 /**
  * Mỗi tập sinh ra:

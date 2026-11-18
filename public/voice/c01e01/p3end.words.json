@@ -1,0 +1,97 @@
+[
+  {
+    "text": "Hết",
+    "startMs": 0,
+    "endMs": 40
+  },
+  {
+    "text": "tập",
+    "startMs": 200,
+    "endMs": 360
+  },
+  {
+    "text": "một.",
+    "startMs": 400,
+    "endMs": 680
+  },
+  {
+    "text": "Tập",
+    "startMs": 680,
+    "endMs": 800
+  },
+  {
+    "text": "hai:",
+    "startMs": 800,
+    "endMs": 1080
+  },
+  {
+    "text": "thế",
+    "startMs": 1080,
+    "endMs": 1200
+  },
+  {
+    "text": "nào",
+    "startMs": 1200,
+    "endMs": 1360
+  },
+  {
+    "text": "là",
+    "startMs": 1360,
+    "endMs": 1480
+  },
+  {
+    "text": "một",
+    "startMs": 1480,
+    "endMs": 1560
+  },
+  {
+    "text": "phần",
+    "startMs": 1560,
+    "endMs": 1800
+  },
+  {
+    "text": "mềm",
+    "startMs": 1800,
+    "endMs": 2000
+  },
+  {
+    "text": "tốt.",
+    "startMs": 2040,
+    "endMs": 2160
+  },
+  {
+    "text": "Bản",
+    "startMs": 2920,
+    "endMs": 3040
+  },
+  {
+    "text": "đầy",
+    "startMs": 3120,
+    "endMs": 3240
+  },
+  {
+    "text": "đủ",
+    "startMs": 3240,
+    "endMs": 3440
+  },
+  {
+    "text": "có",
+    "startMs": 3440,
+    "endMs": 3560
+  },
+  {
+    "text": "trên",
+    "startMs": 3600,
+    "endMs": 3720
+  },
+  {
+    "text": "YouTube",
+    "startMs": 3720,
+    "endMs": 4040
+  },
+  {
+    "text": "nha.",
+    "startMs": 4040,
+    "endMs": 4272
+  }
+]

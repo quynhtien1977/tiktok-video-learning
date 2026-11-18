@@ -4,7 +4,7 @@ Nội dung: slide môn Software Engineering (Sommerville 10e) trong `docs/`.
 Dàn ý cả loạt + thứ tự tập: xem `OUTLINE.md`. **Đang làm Chapter 18 trước.**
 
 ```
-docs/<slide .pptx>  →  content/epNN.json  →  public/voice/epNN/*.mp3 + manifest.json  →  out/epNN.mp4
+docs/<slide .pptx>  →  content/cCCeEE.json  →  public/voice/cCCeEE/*.mp3 + manifest.json  →  out/cCCeEE.mp4
      (Claude đọc)        (script, Claude viết)     (CapCut API hoặc Azure TTS)            (Remotion render)
 ```
 
@@ -13,7 +13,7 @@ docs/<slide .pptx>  →  content/epNN.json  →  public/voice/epNN/*.mp3 + manif
 `python -I -X utf8 scripts/pptx_dump.py "docs/Ch18 ....pptx"`
 
 ## 2. Viết script tập (Claude làm)
-Tạo/sửa `content/epNN.json` theo `src/types.ts`. Quy tắc:
+Tạo/sửa `content/cCCeEE.json` theo `src/types.ts`. Quy tắc:
 
 **Ngôn ngữ** — giảng cho người Việt:
 - Lời thoại tiếng Việt, **giữ nguyên thuật ngữ tiếng Anh**: service, web service, SOA, SOAP, WSDL,
@@ -51,7 +51,7 @@ Tạo/sửa `content/epNN.json` theo `src/types.ts`. Quy tắc:
   Lệnh sync in ra mốc của từng dòng — nhìn vào đó kiểm tra ngay.
 - Scene `diagram` muốn khớp từng bước thì khai báo `"cues": ["từ khoá bước 1", "bước 2", ...]`
   theo đúng thứ tự các bước của component sơ đồ.
-- Thêm tập mới: tạo `content/epNN.json` **và** thêm 1 dòng import trong `src/Root.tsx`.
+- Thêm tập mới: tạo `content/cCCeEE.json` **và** thêm 1 dòng import trong `src/Root.tsx`.
 
 ## 3. Giọng đọc
 
@@ -61,9 +61,9 @@ Ba nhà cung cấp: `"voice": {"provider": "gemini" | "azure" | "capcut", ...}`.
 **Gemini (đang dùng)** — engine duy nhất phát được tiếng cười giữa câu:
 ```
 npm run quota                               # còn bao nhiêu lượt miễn phí hôm nay
-npm run voice:gemini -- --ep ep01           # free trước, hết thì tràn sang Beeknoee
-npm run voice:gemini -- --ep ep01 --free    # chỉ dùng key free, hết thì dừng (không lẫn model)
-python -I scripts/align_stt.py --ep ep01    # BẮT BUỘC, Gemini không trả word boundary
+npm run voice:gemini -- --ep c18e01           # free trước, hết thì tràn sang Beeknoee
+npm run voice:gemini -- --ep c18e01 --free    # chỉ dùng key free, hết thì dừng (không lẫn model)
+python -I scripts/align_stt.py --ep c18e01    # BẮT BUỘC, Gemini không trả word boundary
 ```
 - Giọng: `achird` (nam, ấm) cho host, `aoede` (nữ) cho vai hỏi.
 - `style` nhận **tiếng Anh tự nhiên**: `"clear and friendly teacher, brisk confident pace"`.
@@ -110,7 +110,7 @@ python -I scripts/align_stt.py --ep ep01    # BẮT BUỘC, Gemini không trả 
   như vậy để tối ưu chi phí. Trộn tầng trong một tập là chấp nhận được, miễn là chạy
   `retime --per-scene` sau đó.
 - Nhịp đọc **luôn phải đo lại sau khi sinh**, vì mỗi tầng đọc một nhịp:
-  `npm run retime -- --ep epNN --target 19.0 --per-scene`
+  `npm run retime -- --ep cCCeEE --target 19.0 --per-scene`
   19,0 ký tự/giây là nhịp chuẩn của loạt này. `--per-scene` chỉ đụng vào scene lệch quá 8%
   nên giữ được dao động tự nhiên giữa các scene. Lệnh này sửa cả mp3 lẫn timing phụ đề,
   không gọi API lần nào.
@@ -121,8 +121,8 @@ python -I scripts/align_stt.py --ep ep01    # BẮT BUỘC, Gemini không trả 
 
 **Azure (chất lượng cao nhất)** — dòng MAI-Voice, cần `AZURE_SPEECH_KEY` trong `.env`:
 ```
-npm run voice -- --ep ep01
-python -I scripts/align_stt.py --ep ep01     # BẮT BUỘC: MAI-Voice không trả word boundary
+npm run voice -- --ep c18e01
+python -I scripts/align_stt.py --ep c18e01     # BẮT BUỘC: MAI-Voice không trả word boundary
 ```
 - `vi-VN-Grant:MAI-Voice-2.1` (nam) — style: `educational`, `narrator`, `neutral`, `agent`, `customer_call_center`
 - `vi-VN-Harper:MAI-Voice-2.1` (nữ) — style: `audiobook`, `neutral`
@@ -146,7 +146,7 @@ python -I scripts/align_stt.py --ep ep01     # BẮT BUỘC: MAI-Voice không tr
 **CapCut (miễn phí, không cần tài khoản)**:
 ```
 npm run voices:capcut                       # 24 giọng vi-VN
-npm run voice:capcut -- --ep ep01           # kèm luôn timing từng chữ
+npm run voice:capcut -- --ep c18e01           # kèm luôn timing từng chữ
 ```
 - Nam: `BV075_streaming`, `multi_male_felipe_uranus_bigtts`, `BV560_streaming`.
 - **CapCut bỏ qua toàn bộ SSML**: `rate`, `pitch`, `volume` vô tác dụng (đã đo bằng md5).
@@ -165,7 +165,7 @@ không đổi cao độ, và timing phụ đề được co giãn theo tự đ�
 
 ## 2b. Cắt phần cho TikTok
 Đánh dấu `"part": 1 | 2 | 3` trên từng scene. Root tự sinh thêm composition dọc 1080×1920
-cho mỗi phần: `ep01-v-p1`, `ep01-v-p2`, … Bản 16:9 đầy đủ vẫn là `ep01`.
+cho mỗi phần: `c18e01-v-p1`, `c18e01-v-p2`, … Bản 16:9 đầy đủ vẫn là `c18e01`.
 Mỗi phần nên dài 2–3 phút và kết bằng một ý trọn vẹn — người xem TikTok vào giữa chừng vẫn hiểu.
 
 **Hook chỉ dành cho phần bị cắt ra từ giữa video gốc, tức part 2 trở đi.** Part 1 đã mở
@@ -182,8 +182,8 @@ giây quan trọng nhất cho việc kêu gọi theo dõi.
 Bố cục tự co theo khung qua `useLayout()` trong `src/theme.ts`; sơ đồ có bản vẽ riêng cho khổ dọc.
 
 ```
-npm run render -- ep01       out/ep01.mp4          # 16:9
-npm run render -- ep01-v-p1  out/tiktok/p1.mp4     # 9:16
+npm run render -- c18e01       out/c18e01.mp4          # 16:9
+npm run render -- c18e01-v-p1  out/tiktok/p1.mp4     # 9:16
 ```
 
 ## 3b. Sơ đồ từ slide
@@ -200,7 +200,7 @@ trên card trắng nên nền trắng của slide không chọi với theme tố
 Khai báo trong scene rồi chạy **trước** `sync`:
 ```
 "inserts": [{ "after": "rất", "file": "sfx/cuoi-nhe.mp3", "gainDb": -2 }]
-npm run sfx -- --ep ep01
+npm run sfx -- --ep c18e01
 ```
 Clip được cắm ngay sau từ `after`, và timing phụ đề phía sau tự dời theo nên vẫn khớp.
 File nguồn để trong `public/sfx/` — tự thu bằng điện thoại, tiếng người thật nghe hơn hẳn.
@@ -248,10 +248,12 @@ Nhãn tên đang **tắt** (`theme.showSpeakerName = false`): nhân vật đã h
 Bản SVG vẽ tay vẫn còn trong `SpeakerBadge.tsx` làm đường lùi, bật tắt bằng
 `theme.useCharacterImages` và `theme.hasMucImages`.
 
-**Khoá một bộ trang phục cho cả loạt.** `pickOutfit()` mặc định xoay trang phục theo part,
-mà **khuôn mặt lệch giữa các bộ** (mỗi bộ sinh ở một lượt riêng: `braid-rose` mặt dài mắt
-hạnh nhân, `bun-bow` mặt tròn mắt to, `maroon-tee` tóc nâu). Xoay bộ nghĩa là mỗi phần một
-khuôn mặt khác. Truyền `outfit` cố định để khoá.
+**Trang phục đổi theo từng part — cố ý, chủ dự án đã chốt.** Kênh chủ yếu đăng TikTok, mỗi
+part là một video riêng, nên đổi trang phục liên tục cho đa dạng và đẹp. Biết trước một
+đánh đổi: **khuôn mặt hơi lệch giữa các bộ** (mỗi bộ sinh ở một lượt riêng: `braid-rose` mặt
+dài mắt hạnh nhân, `bun-bow` mặt tròn mắt to, `maroon-tee` tóc nâu) — chấp nhận được vì
+người xem TikTok gặp từng part riêng lẻ. Muốn khoá một bộ cho tập nào thì đặt `"outfit"`
+ở cấp tập; mặc định `theme.defaultSonOutfit = "auto"`. **Đừng tự ý khoá.**
 
 Hai điều đã thử và hỏng với bản SVG cũ, đừng làm lại: kính chữ nhật ở cỡ nhỏ đọc thành mặt
 nạ (dùng kính tròn), và `<clipPath>` khai báo bên trong `<g clipPath=...>` thì không ăn.
@@ -346,8 +348,8 @@ Tên vẫn nằm ở hằng `CAST` đầu `SpeakerBadge.tsx` — hiện là **AN
 
 ## 4. Đồng bộ timing (BẮT BUỘC sau mỗi lần đổi audio)
 ```
-npm run sync -- --ep ep01     # sinh manifest + mốc animation + chuẩn hoá âm lượng -16 LUFS
-npm run cues -- --ep ep01     # soi từng mốc: dòng nào hiện lúc giọng đang nói gì
+npm run sync -- --ep c18e01     # sinh manifest + mốc animation + chuẩn hoá âm lượng -16 LUFS
+npm run cues -- --ep c18e01     # soi từng mốc: dòng nào hiện lúc giọng đang nói gì
 ```
 **Thứ tự bắt buộc sau khi đổi lời thoại**: `voice:gemini` → `align_stt` → `sync` → `retime`
 → `sync`. `retime` đọc thời lượng từ manifest, nên chạy nó trước `sync` là nó tính trên số
@@ -356,7 +358,7 @@ cũ. (Đã sửa để nó dừng hẳn và báo thay vì sửa bừa, nhưng v�
 Đổi `narration` của scene nào thì **xoá `<scene>.words.json` của scene đó** trước khi chạy
 `align_stt` — script bỏ qua scene đã có timing, mà `--force` thì lại nhận dạng lại cả tập.
 
-`npm run poses -- --ep epNN` soi tư thế: mỗi scene đổi mấy lần, vào giây nào, và quan
+`npm run poses -- --ep cCCeEE` soi tư thế: mỗi scene đổi mấy lần, vào giây nào, và quan
 trọng nhất là **"khoảng chết"** — quãng dài hơn 6 giây không bullet nào hiện ra mà cũng
 không đổi tư thế. Đó chính là thứ người xem đọc ra là "video chậm". Đo tập 1 lần đầu:
 21 khoảng chết trên 24 scene, có chỗ 12 giây đứng im. Scene `quote` và `outro` không có
@@ -370,14 +372,14 @@ vì Node đọc được `.ts` nhưng không đọc `.tsx`.)
 "nội suy" hoặc "THIẾU" là chỗ chữ sẽ hiện lệch với lời nói — sửa bằng cách cho bullet
 dùng lại từ khoá trong lời thoại, hoặc khai báo `"cues": [...]` chỉ đích danh.
 
-Sinh `public/voice/ep01/manifest.json`. Remotion lấy độ dài scene từ file này —
+Sinh `public/voice/c18e01/manifest.json`. Remotion lấy độ dài scene từ file này —
 **không bao giờ hardcode durationInFrames trong component.**
 
 ## 5. Xem trước và render
 ```
 npm run dev                                   # Remotion Studio
-npm run still -- ep01 out/check.png --frame=900
-npm run render -- ep01 out/ep01.mp4 --concurrency=4
+npm run still -- c18e01 out/check.png --frame=900
+npm run render -- c18e01 out/c18e01.mp4 --concurrency=4
 ```
 
 ## 6. Đăng TikTok

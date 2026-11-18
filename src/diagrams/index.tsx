@@ -489,10 +489,67 @@ const ServiceMatrix: React.FC<DiagramProps> = ({ durationInFrames, vertical, cue
   );
 };
 
+/**
+ * Chapter 1, slide 7 — ba ngành hay bị nhầm. Câu hay ra đề: software engineering khác
+ * computer science ở đâu, và quan hệ thế nào với systems engineering.
+ * Bước: 0 computer science · 1 software engineering · 2 khung systems engineering bao ngoài.
+ */
+const SeLandscape: React.FC<DiagramProps> = ({ durationInFrames, vertical, cues }) => {
+  const s = useSteps(3, durationInFrames, cues);
+  const Enclosure: React.FC<{ x: number; y: number; w: number; h: number; big?: boolean }> = ({
+    x, y, w, h, big,
+  }) => (
+    <g opacity={s(2)} style={{ filter: NODE_SHADOW }}>
+      <rect x={x} y={y} width={w} height={h} rx={22} fill={theme.paperDeep}
+        stroke={theme.accent} strokeWidth={2.5} strokeDasharray="10 8" />
+      <text x={x + w / 2} y={y + (big ? 52 : 46)} textAnchor="middle" fontFamily={theme.fontFamily}
+        fontSize={big ? 32 : 27} fontWeight={700} fill={theme.accent}>
+        Systems engineering
+      </text>
+      <text x={x + w / 2} y={y + (big ? 90 : 78)} textAnchor="middle" fontFamily={theme.fontFamily}
+        fontSize={big ? 25 : 21} fill={theme.inkSoft}>
+        phần cứng · phần mềm · quy trình
+      </text>
+    </g>
+  );
+  if (vertical) {
+    // viewBox hẹp (720) để chữ phóng to trên điện thoại — bản 900 cho ra chữ trong ô ~17px.
+    return (
+      <svg viewBox="0 0 720 860" style={{ width: "100%", height: "100%", display: "block" }}>
+        <Node x={360} y={80} w={600} h={120} title="Computer science"
+          sub="lý thuyết, nền tảng" t={s(0)} />
+        <text x={360} y={208} textAnchor="middle" fontFamily={theme.fontFamily} fontSize={26}
+          fill={theme.inkSoft} opacity={s(1)}>
+          lý thuyết ≠ thực hành
+        </text>
+        <Enclosure x={20} y={250} w={680} h={590} big />
+        <Node x={360} y={620} w={600} h={130} title="Software engineering"
+          sub="làm ra và giao phần mềm hữu ích" t={s(1)} tone="accent" />
+      </svg>
+    );
+  }
+  // Khung bao lùi sang trái và lên trên: huy hiệu nhân vật ở góc dưới phải của khung hình,
+  // bản đầu để khung chạm mép phải nên nhân vật đè lên góc khung.
+  return (
+    <svg viewBox="0 0 1280 520" style={{ width: "100%", height: "100%", display: "block" }}>
+      <Node x={210} y={260} w={360} h={120} title="Computer science"
+        sub="lý thuyết, nền tảng" t={s(0)} />
+      <text x={445} y={252} textAnchor="middle" fontFamily={theme.fontFamily} fontSize={26}
+        fill={theme.inkSoft} opacity={s(1)}>
+        ≠
+      </text>
+      <Enclosure x={500} y={20} w={600} h={410} />
+      <Node x={800} y={290} w={480} h={120} title="Software engineering"
+        sub="làm ra và giao phần mềm hữu ích" t={s(1)} tone="accent" />
+    </svg>
+  );
+};
+
 export const diagrams: Record<string, React.FC<DiagramProps>> = {
   "soa-triangle": SoaTriangle,
   "in-car-system": InCarSystem,
   "rest-verbs": RestVerbs,
   "service-process": ServiceProcess,
   "service-matrix": ServiceMatrix,
+  "se-landscape": SeLandscape,
 };

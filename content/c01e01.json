@@ -1,0 +1,315 @@
+{
+  "id": "c01e01",
+  "episodeNumber": 1,
+  "seriesTitle": "Introduction to Software Engineering",
+  "title": "Software engineering là gì, và vì sao cần nó",
+  "voice": {
+    "provider": "gemini",
+    "name": "achird",
+    "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+    "speed": 1.35
+  },
+  "voices": {
+    "host": {
+      "provider": "gemini",
+      "name": "achird",
+      "style": "clear and friendly teacher explaining to university students, brisk confident pace",
+      "speed": 1.35
+    },
+    "ask": {
+      "provider": "gemini",
+      "name": "aoede",
+      "style": "curious student interrupting the lecture politely, warm and a little playful",
+      "speed": 1.35
+    }
+  },
+  "scenes": [
+    {
+      "id": "s01",
+      "type": "title",
+      "part": 1,
+      "title": "Software engineering là gì",
+      "subtitle": "Chapter 1 · Tập 1 / 5 — và vì sao cần nó",
+      "narration": "Viết code thì ai cũng viết được. <chuckle> Vậy một môn học tên là software engineering, tức kỹ nghệ phần mềm, thêm vào được gì? <throat-clearing> Đó là câu hỏi của tập này."
+    },
+    {
+      "id": "s02",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Tập này trả lời ba câu",
+      "bullets": [
+        "Vì sao phần mềm vừa đắt vừa hay thất bại",
+        "Software engineering thật ra là gì",
+        "Nó khác computer science ở chỗ nào"
+      ],
+      "cues": [
+        "vừa đắt",
+        "thật ra là gì",
+        "computer science"
+      ],
+      "narration": "Chúng ta đi qua ba câu hỏi. Thứ nhất, vì sao phần mềm vừa đắt vừa hay thất bại. Thứ hai, software engineering thật ra là gì. Thứ ba, nó khác computer science ở chỗ nào, câu này rất hay ra đề. <cheer> Hết tập bạn trả lời được cả ba."
+    },
+    {
+      "id": "s03",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Phần mềm ở khắp nơi",
+      "bullets": [
+        "Kinh tế mọi nước phát triển đều dựa vào phần mềm",
+        "Ngày càng nhiều hệ thống do phần mềm điều khiển",
+        "Chi tiêu cho phần mềm chiếm phần đáng kể GNP"
+      ],
+      "cues": [
+        "nền kinh tế",
+        "điều khiển",
+        "GNP"
+      ],
+      "narration": "Giáo trình mở đầu bằng một nhận xét rất thẳng. <throat-clearing> Nền kinh tế của mọi nước phát triển đều phụ thuộc vào phần mềm. Từ ngân hàng, lưới điện tới chiếc xe bạn đi, ngày càng nhiều hệ thống do phần mềm điều khiển. Và chi tiêu cho phần mềm chiếm một phần đáng kể trong GNP, tức tổng sản phẩm quốc dân. <gasp> Phần mềm hỏng là cả nền kinh tế chao đảo.",
+      "poses": [
+        {
+          "after": "ngân hàng",
+          "pose": "point-explain"
+        },
+        {
+          "after": "Phần mềm hỏng",
+          "pose": "curious-surprised"
+        }
+      ]
+    },
+    {
+      "id": "s04",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Phần mềm đắt ở đâu",
+      "bullets": [
+        "Thường đắt hơn cả phần cứng",
+        "Bảo trì tốn hơn làm ra",
+        "Hệ sống lâu: bảo trì gấp nhiều lần"
+      ],
+      "cues": [
+        "phần cứng",
+        "bảo trì phần mềm",
+        "gấp nhiều lần"
+      ],
+      "narration": "Điều thứ hai làm nhiều người bất ngờ. Trên một chiếc PC, tiền phần mềm thường còn cao hơn tiền phần cứng. <gasp> Và bất ngờ hơn nữa, bảo trì phần mềm tốn hơn làm ra nó. Với hệ thống sống lâu năm, chi phí bảo trì có thể gấp nhiều lần chi phí phát triển ban đầu. <sigh> Nên software engineering quan tâm nhất tới chuyện làm phần mềm sao cho hiệu quả về chi phí."
+    },
+    {
+      "id": "s05",
+      "type": "question",
+      "part": 1,
+      "speaker": "ask",
+      "question": "Biết đắt vậy mà sao dự án vẫn hay thất bại?",
+      "narration": "Khoan đã! <gasp> Nếu ai cũng biết phần mềm đắt như vậy, sao dự án phần mềm vẫn thất bại hoài vậy ạ?"
+    },
+    {
+      "id": "s06",
+      "type": "bullets",
+      "part": 1,
+      "heading": "Hai lý do dự án thất bại",
+      "bullets": [
+        "Hệ thống ngày càng phức tạp",
+        "Không dùng phương pháp software engineering"
+      ],
+      "cues": [
+        "phức tạp",
+        "phương pháp"
+      ],
+      "narration": "Giáo trình chỉ ra hai lý do. <throat-clearing> Thứ nhất, độ phức tạp tăng mãi. Kỹ thuật mới giúp ta làm được hệ lớn hơn, thế là người ta lại đòi hệ còn lớn hơn, giao còn nhanh hơn. Thứ hai, và cái này phổ biến hơn, là không dùng phương pháp gì cả. <tsk> Nhiều công ty trôi dạt vào nghề làm phần mềm mà chưa từng làm bài bản, nên phần mềm của họ vừa đắt vừa kém tin cậy.",
+      "poses": [
+        {
+          "after": "Kỹ thuật mới",
+          "pose": "think"
+        },
+        {
+          "after": "Nhiều công ty",
+          "pose": "think-doubt"
+        }
+      ]
+    },
+    {
+      "id": "p1end",
+      "type": "endcard",
+      "part": 1,
+      "renderIn": "vertical",
+      "next": "Software engineering thật ra là gì",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: software engineering thật ra là gì. <cheer> Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p2hook",
+      "type": "hook",
+      "part": 2,
+      "renderIn": "vertical",
+      "hook": "Software engineering không chỉ là viết code. Vậy nó gồm những gì?",
+      "promise": "Hết phần này bạn định nghĩa được nó, đúng chữ giáo trình.",
+      "context": "Chapter 1 · Tập 1 · Phần 2/3",
+      "narration": "Software engineering không chỉ là viết code. Vậy nó gồm những gì? <short pause> Hết phần này bạn định nghĩa được nó, đúng chữ giáo trình."
+    },
+    {
+      "id": "s07",
+      "type": "quote",
+      "part": 2,
+      "text": "Software engineering is an engineering discipline that is concerned with all aspects of software production.",
+      "author": "Sommerville — slide 12",
+      "narration": "Đây là định nghĩa gốc, nên học thuộc nguyên văn. <throat-clearing> Software engineering là một ngành kỹ thuật, quan tâm tới mọi khía cạnh của việc làm ra phần mềm. <gasp> Mọi khía cạnh nghĩa là từ lúc đặc tả hệ thống, cho tới khi bảo trì nó sau khi đã đưa vào sử dụng."
+    },
+    {
+      "id": "s08",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Hai cụm từ then chốt",
+      "bullets": [
+        "Engineering discipline — dùng lý thuyết và phương pháp phù hợp",
+        "Luôn trong ràng buộc tổ chức và tài chính",
+        "All aspects — cả quản lý dự án, cả công cụ"
+      ],
+      "cues": [
+        "engineering discipline",
+        "ràng buộc",
+        "all aspects"
+      ],
+      "narration": "Định nghĩa có hai cụm đáng mổ xẻ. Cụm thứ nhất là engineering discipline, tức ngành kỹ thuật. Kỹ sư dùng lý thuyết và phương pháp phù hợp để giải bài toán, <sigh> nhưng luôn trong ràng buộc tổ chức và tài chính. Không có tiền vô hạn, cũng không có thời gian vô hạn. Cụm thứ hai là all aspects, tức mọi khía cạnh. <gasp> Không chỉ quy trình kỹ thuật, mà cả quản lý dự án, cả việc làm ra công cụ hỗ trợ."
+    },
+    {
+      "id": "s08b",
+      "type": "question",
+      "part": 2,
+      "speaker": "ask",
+      "question": "Vậy phần mềm chỉ là code thôi đúng không?",
+      "narration": "Ủa khoan. <laugh> Vậy phần mềm chỉ là code thôi, đúng không ạ?"
+    },
+    {
+      "id": "s09",
+      "type": "bullets",
+      "part": 2,
+      "heading": "Phần mềm là gì",
+      "bullets": [
+        "Chương trình máy tính",
+        "Cộng với tài liệu đi kèm",
+        "Làm cho một khách, hoặc bán cho cả thị trường"
+      ],
+      "cues": [
+        "chương trình máy tính",
+        "tài liệu đi kèm",
+        "thị trường"
+      ],
+      "narration": "Chưa đúng hẳn đâu. <chuckle> Nhiều bạn trả lời phần mềm là chương trình máy tính, và mới đúng một nửa. Theo giáo trình, phần mềm là chương trình cộng với tài liệu đi kèm. <tsk> Thiếu tài liệu thì người sau không bảo trì nổi, mà ta vừa thấy bảo trì mới là khoản đắt nhất. Phần mềm có thể làm cho một khách hàng cụ thể, hoặc bán cho cả thị trường."
+    },
+    {
+      "id": "p2end",
+      "type": "endcard",
+      "part": 2,
+      "renderIn": "vertical",
+      "next": "Software engineering khác computer science ở đâu",
+      "cta": "Theo dõi để xem tiếp",
+      "narration": "Phần sau: software engineering khác computer science ở đâu. <cheer> Theo dõi để khỏi lỡ nha."
+    },
+    {
+      "id": "p3hook",
+      "type": "hook",
+      "part": 3,
+      "renderIn": "vertical",
+      "hook": "Software engineering, computer science, systems engineering. Ba cái tên, ba việc khác nhau.",
+      "promise": "Hai phút nữa bạn phân biệt gọn, đúng như đề thi hỏi.",
+      "context": "Chapter 1 · Tập 1 · Phần 3/3",
+      "narration": "Software engineering, computer science, systems engineering. Ba cái tên nghe na ná, nhưng là ba việc khác nhau. <short pause> Hai phút nữa bạn phân biệt gọn, đúng như đề thi hỏi."
+    },
+    {
+      "id": "s10",
+      "type": "diagram",
+      "part": 3,
+      "name": "se-landscape",
+      "heading": "Ba ngành, ba phạm vi",
+      "cues": [
+        "computer science",
+        "software engineering thì",
+        "systems engineering"
+      ],
+      "narration": "Nhìn sơ đồ này. <throat-clearing> Computer science tập trung vào lý thuyết và nền tảng, như thuật toán hay độ phức tạp tính toán. Còn software engineering thì lo phần thực tế: làm ra và giao được phần mềm hữu ích. <chuckle> Systems engineering thì rộng hơn cả, lo toàn bộ hệ thống dựa trên máy tính, gồm phần cứng, phần mềm lẫn quy trình. <gasp> Software engineering chỉ là một phần nằm bên trong nó.",
+      "poses": [
+        {
+          "after": "software engineering thì",
+          "pose": "point-explain"
+        },
+        {
+          "after": "rộng hơn cả",
+          "pose": "curious"
+        },
+        {
+          "after": "chỉ là một phần",
+          "pose": "curious-surprised"
+        }
+      ]
+    },
+    {
+      "id": "s11",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Vì sao phải làm bài bản",
+      "bullets": [
+        "Xã hội dựa vào phần mềm tin cậy",
+        "Làm bài bản rẻ hơn về lâu dài",
+        "Chi phí lớn nhất là thay đổi sau khi đưa vào dùng"
+      ],
+      "cues": [
+        "xã hội",
+        "rẻ hơn",
+        "thay đổi phần mềm"
+      ],
+      "narration": "Vậy vì sao phải làm bài bản? <throat-clearing> Vì cả xã hội đang dựa vào phần mềm, nên ta cần hệ tin cậy, làm ra nhanh và rẻ. <tsk> Viết phần mềm như làm bài tập cá nhân thì lúc đầu nhanh thật. Nhưng về lâu dài, làm bài bản rẻ hơn nhiều. <sigh> Vì với hầu hết hệ thống, chi phí lớn nhất là thay đổi phần mềm sau khi đã đưa vào dùng."
+    },
+    {
+      "id": "s11b",
+      "type": "bullets",
+      "part": 3,
+      "heading": "Ba thách thức lớn của ngành",
+      "bullets": [
+        "Hệ thống ngày càng đa dạng",
+        "Bị ép giao nhanh hơn",
+        "Phải làm ra phần mềm đáng tin"
+      ],
+      "cues": [
+        "đa dạng",
+        "nhanh hơn",
+        "đáng tin"
+      ],
+      "narration": "Giáo trình gói lại bằng ba thách thức lớn của ngành. Thứ nhất, hệ thống ngày càng đa dạng, không có một cách làm cho tất cả. <groan> Thứ hai, ai cũng muốn giao nhanh hơn. Thứ ba, phần mềm phải đáng tin, vì người dùng đặt cả tiền lẫn tính mạng vào nó. <throat-clearing> Ba thách thức này sẽ quay lại suốt cả môn."
+    },
+    {
+      "id": "s12",
+      "type": "outro",
+      "part": 3,
+      "heading": "Ba ý cần nhớ",
+      "points": [
+        "Software engineering lo mọi khía cạnh làm ra phần mềm, từ đặc tả tới bảo trì",
+        "Phần mềm = chương trình + tài liệu; bảo trì thường đắt hơn làm mới",
+        "Computer science lo lý thuyết, systems engineering lo cả hệ — SE nằm bên trong"
+      ],
+      "next": "Tập 2 — Thế nào là một phần mềm tốt",
+      "narration": "Tóm lại ba ý. <cheer> Software engineering là ngành kỹ thuật lo mọi khía cạnh làm ra phần mềm, từ đặc tả tới bảo trì. Phần mềm là chương trình cộng tài liệu, và bảo trì thường đắt hơn làm mới. Còn computer science lo lý thuyết, systems engineering lo cả hệ thống, software engineering nằm bên trong nó. <chuckle> Tập sau, ta xem thế nào mới là một phần mềm tốt.",
+      "poses": [
+        {
+          "after": "Phần mềm là chương trình",
+          "pose": "point-explain"
+        },
+        {
+          "after": "Còn computer science",
+          "pose": "point"
+        },
+        {
+          "after": "Tập sau",
+          "pose": "heart"
+        }
+      ]
+    },
+    {
+      "id": "p3end",
+      "type": "endcard",
+      "part": 3,
+      "renderIn": "vertical",
+      "next": "Tập 2 — Thế nào là một phần mềm tốt",
+      "cta": "Xem bản đầy đủ trên YouTube",
+      "narration": "Hết tập một. Tập hai: thế nào là một phần mềm tốt. <cheer> Bản đầy đủ có trên YouTube nha."
+    }
+  ]
+}
