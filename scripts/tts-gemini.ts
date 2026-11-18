@@ -2,8 +2,8 @@
  * Sinh giọng đọc bằng Gemini TTS — engine duy nhất (trong bốn cái đã đo) thật sự
  * phát ra tiếng cười, thở dài giữa câu bằng tag `<laugh>`, `<sigh>`, `<short pause>`.
  *
- *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep ep01
- *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep ep01 --only s07,s09 --force
+ *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep c18e01
+ *   node --env-file-if-exists=.env scripts/tts-gemini.ts --ep c18e01 --only s07,s09 --force
  *   node --env-file-if-exists=.env scripts/tts-gemini.ts --quota        # chỉ xem còn bao nhiêu lượt
  *
  * Hai tầng key, khai báo trong .env theo thứ tự GEMINI_API_KEY_1, _2, ...:
@@ -223,7 +223,7 @@ const main = async () => {
     return;
   }
 
-  const episodeId = argOf("ep", "ep01")!;
+  const episodeId = argOf("ep", "c18e01")!;
   const only = argOf("only");
   const force = hasFlag("force");
   const episode = loadEpisode(episodeId);
@@ -268,8 +268,13 @@ const main = async () => {
     // Lỗi mạng chập chờn thì THỬ LẠI, đừng bỏ cả lượt chạy. Một lần `fetch failed` ở
     // giữa chừng từng làm hỏng nguyên một tập: 12 scene đã sinh xong, 6 scene còn lại
     // bỏ dở, mà `words.json` thì đã xoá trước đó nên `cues` báo 30 chỗ lệch.
-    const TAM_THOI = /fetch failed|ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket hang up|timeout|\b(429|500|502|503|504)\b/i;
-    const CHO = [2000, 5000, 12000];
+    // "high demand" / service_unavailable: máy chủ Gemini quá tải tạm thời. Thông báo này
+    // KHÔNG chứa mã 503 nên bản trước không bắt được, dừng cả lượt và đổ nhầm cho quota.
+    const TAM_THOI =
+      /fetch failed|ECONNRESET|ETIMEDOUT|EAI_AGAIN|socket hang up|timeout|high demand|service_unavailable|UNAVAILABLE|overloaded|try again later|\b(500|502|503|504)\b/i;
+    const HET_LUOT = /quota|RESOURCE_EXHAUSTED|rate limit|\b429\b|hết lượt/i;
+    // Quá tải thì phải chờ lâu hơn lỗi mạng mới hết.
+    const CHO = [5000, 15000, 30000, 60000];
     let out: Synth | null = null;
     for (let lan = 0; lan <= CHO.length; lan++) {
       try {
@@ -284,18 +289,22 @@ const main = async () => {
         }
         console.log(`LỖI ${msg}`);
         writeLedger(keys);
-        // Ba nguyên nhân khác nhau, chữa bằng ba cách khác nhau — thông báo chung chung
-        // "chạy lại sau khi quota reset" từng làm chẩn đoán sai hai lần.
+        // Chỉ nói "hết lượt" khi thông báo thật sự nói vậy. Đã ba lần câu chung chung
+        // "chạy lại sau khi quota reset" dẫn tới chẩn đoán sai: hết tiền, rớt mạng, rồi
+        // máy chủ quá tải — cả ba lần quota vẫn còn.
         const hetTien = /insufficient balance|billing|top up/i.test(msg);
-        const loiMang = TAM_THOI.test(msg);
+        const loiTamThoi = TAM_THOI.test(msg);
+        const hetLuot = HET_LUOT.test(msg);
         console.log(
           hetTien
             ? "\nDừng lại vì key trả tiền HẾT SỐ DƯ, không phải hết lượt." +
                 "\nNạp thêm, hoặc chạy lại với --free để dùng tầng miễn phí."
-            : loiMang
-              ? `\nDừng lại vì LỖI MẠNG sau ${CHO.length} lần thử lại, không phải hết lượt.` +
-                "\nKiểm tra mạng rồi chạy lại ngay, không cần chờ quota."
-              : "\nDừng lại. Chạy lại sau khi quota reset.",
+            : loiTamThoi
+              ? `\nDừng lại vì LỖI TẠM THỜI (mạng hoặc máy chủ quá tải) sau ${CHO.length} lần thử lại.` +
+                "\nKhông phải hết lượt — chờ vài phút rồi chạy lại ngay."
+              : hetLuot
+                ? "\nDừng lại vì HẾT LƯỢT. Chạy lại sau khi quota reset (~15h giờ Việt Nam)."
+                : "\nDừng lại vì lỗi chưa rõ loại — đọc dòng LỖI ở trên.",
         );
         console.log("Scene đã xong sẽ được bỏ qua.\nNhớ chạy align_stt + sync trước khi render.");
         process.exit(1);

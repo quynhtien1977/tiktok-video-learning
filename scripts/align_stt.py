@@ -2,8 +2,8 @@
 """
 Sinh timing tung chu cho file audio BANG CAPCUT STT.
 
-    python -I scripts/align_stt.py --ep ep01            # moi scene chua co words.json
-    python -I scripts/align_stt.py --ep ep01 --force
+    python -I scripts/align_stt.py --ep c18e01            # moi scene chua co words.json
+    python -I scripts/align_stt.py --ep c18e01 --force
     python -I scripts/align_stt.py --file out/test.mp3  # mot file le
 
 Dung khi nao: giong Azure dong MAI-Voice (vi-VN-Grant / vi-VN-Harper) cho chat luong tot
@@ -166,6 +166,11 @@ def main():
     episode = json.loads((ROOT / "content" / (args.ep + ".json")).read_text(encoding="utf-8"))
     voice_dir = ROOT / "public" / "voice" / args.ep
 
+    # CapCut STT hay chập chờn. Trước đây một lần lỗi là cả script chết, các scene phía sau
+    # không bao giờ được align — mà nhìn đầu ra thì tưởng đã chạy xong. Giờ thử lại từng
+    # scene, hỏng hẳn thì đi tiếp scene khác, và cuối cùng báo rõ + thoát với mã khác 0.
+    CHO = [3, 10, 30]
+    hong = []
     for scene in episode["scenes"]:
         if args.only and scene["id"] != args.only:
             continue
@@ -179,11 +184,28 @@ def main():
             continue
 
         print("- {}: dang nhan dang... ".format(scene["id"]), end="", flush=True)
-        payload = transcribe(client, mp3, args.lang)
+        payload, loi = None, None
+        for lan in range(len(CHO) + 1):
+            try:
+                payload = transcribe(client, mp3, args.lang)
+                break
+            except Exception as e:  # mạng, timeout, STT trả "failed"
+                loi = e
+                if lan < len(CHO):
+                    print("loi, thu lai sau {}s... ".format(CHO[lan]), end="", flush=True)
+                    time.sleep(CHO[lan])
+        if payload is None:
+            print("HONG: {}".format(str(loi)[:120]))
+            hong.append(scene["id"])
+            continue
         words = words_from_payload(payload, scene["narration"])
         words_file.write_text(json.dumps(words, ensure_ascii=False, indent=2), encoding="utf-8")
         print("{} tu".format(len(words)))
 
+    if hong:
+        print("\nLOI: {} scene chua align duoc: {}".format(len(hong), ", ".join(hong)))
+        print("Chay lai lenh nay — scene da xong se duoc bo qua. DUNG render truoc khi het loi.")
+        sys.exit(1)
     print("\nTiep theo: npm run sync -- --ep " + args.ep)
 
 
